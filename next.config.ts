@@ -1,15 +1,15 @@
 import type { NextConfig } from "next";
 
 const repoName = "ygophmeta";
-const isProd = process.env.NODE_ENV === "production";
+const development = process.env.DEVELOPMENT === "true";
 
 const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? `/${repoName}/` : undefined,
-  basePath: isProd ? `/${repoName}` : undefined,
+  assetPrefix: !development ? `/${repoName}/` : undefined,
+  basePath: !development ? `/${repoName}` : undefined,
 };
 
 export default nextConfig;
