@@ -4,9 +4,8 @@
  * @param {string} relativePath - The path relative to the public/images directory (e.g., 'sample.webp')
  * @returns {string} The full path to use in src attributes
  */
-export function getImagePath(relativePath) {
-  const basePath =
-    process.env.NEXT_PUBLIC_BASE_PATH ||
-    (process.env.NODE_ENV === "development" ? "" : "/ygophmeta");
+export function getImagePath(relativePath: string) {
+  const isProd = process.env.NODE_ENV === "production";
+  const basePath = isProd ? "/ygophmeta" : "";
   return `${basePath}/images/${relativePath}`;
 }

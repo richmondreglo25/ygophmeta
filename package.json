@@ -12,14 +12,23 @@
     "deploy": "npm run build && npx shx touch ./out/.nojekyll && npx gh-pages -d out"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-navigation-menu": "^1.2.14",
+    "@radix-ui/react-slot": "^1.2.4",
     "chart.js": "^4.5.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.561.0",
     "next": "16.0.10",
+    "next-themes": "^0.4.6",
     "react": "19.2.1",
     "react-chartjs-2": "^5.3.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -29,7 +38,7 @@
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "shx": "^0.4.0",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5"
   }
 }
