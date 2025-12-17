@@ -9,7 +9,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && npx shx touch ./out/.nojekyll && npx gh-pages -d out"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.18",
@@ -28,6 +28,7 @@
     "eslint-config-next": "16.0.10",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
+    "shx": "^0.4.0",
     "tailwindcss": "^4.1.18",
     "typescript": "^5"
   }
