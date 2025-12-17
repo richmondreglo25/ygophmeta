@@ -1,25 +1,27 @@
-
 import Image from "next/image";
 import styles from "./page.module.css";
-import ChartComponent from "./ChartComponent";
+import ChartComponent from "../components/ChartComponent";
+import { getImagePath } from "../utils/enviroment-utils";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1 className="text-2xl font-bold mb-4">React + Tailwind + Chart.js + WebP Demo</h1>
+        <h1 className="text-2xl font-bold mb-4">
+          React + Tailwind + Chart.js + WebP Demo
+        </h1>
         <div className="mb-8">
           <ChartComponent />
         </div>
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">Sample WebP Image</h2>
           <Image
-            src="/ygophmeta/images/sample.webp"
+            src={getImagePath("sample.webp")}
             alt="Sample WebP"
             width={300}
             height={200}
             priority
-            style={{ borderRadius: '8px', border: '1px solid #ccc' }}
+            style={{ borderRadius: "8px", border: "1px solid #ccc" }}
           />
         </div>
         <div className={styles.ctas}>
@@ -31,7 +33,7 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src="/ygophmeta/vercel.svg"
+              src={getImagePath("../vercel.svg")}
               alt="Vercel logomark"
               width={16}
               height={16}
