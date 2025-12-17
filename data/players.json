@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Richmond Reglo",
+    "ign": "Richmond",
+    "konamiId": "123456789",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Manila",
+    "team": "MaiTeam",
+    "deck": ["Yummy"],
+    "others": "Nanapak ng madre"
+  },
+  {
+    "name": "Ericka Reglo",
+    "ign": "Ericka",
+    "konamiId": "987654321",
+    "gender": "female",
+    "city": "Manila",
+    "team": "MaiTeam",
+    "deck": ["Yummy"],
+    "others": "Nanapak ng madre"
+  },
+  {
+    "name": "Owen Cruz",
+    "ign": "DmaN14",
+    "konamiId": "0501690339",
+    "gender": "male",
+    "city": "Bulacan",
+    "team": "Team Kwasong",
+    "deck": ["Branded", "Exosister", "Magic Musketeer"]
+  },
+  {
+    "name": "Renz Guizzagan",
+    "ign": "RenzGzzzzzzzzzzzz",
+    "konamiId": "0504226157",
+    "gender": "male",
+    "city": "Bulacan",
+    "team": "Bang",
+    "deck": ["Lunalight", "Branded Dracotail", "Ryzeal"]
+  }
+]
