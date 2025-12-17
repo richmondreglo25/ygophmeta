@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { HomePageJson } from "../types/json";
+import { HomePageJson } from "../../types/json";
 import {
   Card,
   CardContent,
@@ -9,20 +9,23 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { getJsonPath } from "@/utils/enviroment";
+import Loading from "@/components/loading";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<HomePageJson[]>([]);
 
   useEffect(() => {
-    fetch("/data/home.json")
+    const path = getJsonPath("home.json");
+    fetch(path)
       .then((res) => res.json())
       .then((json) => setData(json))
       .finally(() => setLoading(false));
   }, []);
 
   if (loading) {
-    return <div>TODO LOADING COMPONENT!</div>;
+    return <Loading />;
   }
 
   return (

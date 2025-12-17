@@ -9,3 +9,9 @@ export function getImagePath(relativePath: string) {
   const basePath = isProd ? "/ygophmeta" : "";
   return `${basePath}/images/${relativePath}`;
 }
+
+export function getJsonPath(relativePath: string) {
+  const isProd = process.env.NODE_ENV === "production";
+  const basePath = isProd ? "/ygophmeta" : "";
+  return `${basePath}/data/${relativePath}`;
+}

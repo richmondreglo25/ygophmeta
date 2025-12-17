@@ -21,9 +21,9 @@ export function IconX(param: IconXParam) {
       return <CalendarDays height={param.height} width={param.width} />;
     case "chart":
       return <ChartArea height={param.height} width={param.width} />;
-    case "cart":
+    case "shops":
       return <Store height={param.height} width={param.width} />;
-    case "users":
+    case "players":
       return <UserRound height={param.height} width={param.width} />;
     case "info":
       return <Library height={param.height} width={param.width} />;

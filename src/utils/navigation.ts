@@ -1,12 +1,12 @@
-import { NavigationTab } from "@/app/types/navigation";
+import { NavigationTab } from "@/types/navigation";
 
 // App navigation tabs.
 const tabs: NavigationTab[] = [
   { title: "Home", path: "/", icon: "home" },
   { title: "Events", path: "/events", icon: "calendar" },
   { title: "Meta", path: "/meta", icon: "chart" },
-  { title: "Shops", path: "/shops", icon: "cart" },
-  { title: "Players", path: "/players", icon: "users" },
+  { title: "Shops", path: "/shops", icon: "shops" },
+  { title: "Players", path: "/players", icon: "players" },
   { title: "About", path: "/about", icon: "info" },
 ];
 

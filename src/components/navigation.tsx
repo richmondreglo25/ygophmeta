@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { getNavigationTabs } from "@/utils/navigation";
+import { IconX } from "./IconX";
 
 export function Navigation() {
   const pathname = usePathname();
@@ -22,7 +23,6 @@ export function Navigation() {
       <NavigationMenu orientation={isMobile ? "vertical" : "horizontal"}>
         <NavigationMenuList className="flex-wrap">
           {tabs.map((tab) => {
-            // Determine if this tab is selected
             const isSelected = pathname === tab.path;
             return (
               <NavigationMenuItem key={tab.path}>
@@ -31,10 +31,13 @@ export function Navigation() {
                   className={navigationMenuTriggerStyle()}
                 >
                   <Link
-                    className={isSelected ? " !text-blue-600" : ""}
+                    className={`flex items-center gap-1.5 ${
+                      isSelected ? " !text-blue-600" : ""
+                    }`}
                     href={tab.path}
                   >
-                    {tab.title}
+                    <IconX type={tab.icon} height={14} width={14} />
+                    <span className="hidden sm:inline">{tab.title}</span>
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>

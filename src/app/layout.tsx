@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Varela_Round } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navigation } from "@/components/navigation";
 import { Content } from "@/components/content";
@@ -13,6 +13,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const varelaRound = Varela_Round({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-varela-round",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light" style={{ colorScheme: "light" }}>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={` ${varelaRound.variable} ${geistSans.variable} ${geistMono.variable}`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
