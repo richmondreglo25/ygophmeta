@@ -14,7 +14,7 @@ export default function Home() {
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">Sample WebP Image</h2>
           <Image
-            src="/images/sample.webp"
+            src="/ygophmeta/images/sample.webp"
             alt="Sample WebP"
             width={300}
             height={200}
@@ -31,7 +31,7 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src="/vercel.svg"
+              src="/ygophmeta/vercel.svg"
               alt="Vercel logomark"
               width={16}
               height={16}
