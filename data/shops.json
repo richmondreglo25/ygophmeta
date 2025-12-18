@@ -2,7 +2,7 @@
   {
     "name": "Arcane Card Vault",
     "logo": "/shops/richmondreglo.webp",
-    "images": ["/shops/richmondreglo.webp"],
+    "images": ["/shops/richmondreglo.webp", "/shops/richmondreglo.webp"],
     "address": "12 Mana Circle, Silverdeck City",
     "googleMaps": "https://maps.example.com/?q=12+Mana+Circle+Silverdeck",
     "openHours": "Mon-Sun: 9:00 AM - 8:00 PM",
