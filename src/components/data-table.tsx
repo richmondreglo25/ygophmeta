@@ -105,7 +105,12 @@ export function DataTable<TData, TValue>({
                       }
                     >
                       <span
-                        className={`flex justify-start items-center gap-1 ${minWidthClass}`}
+                        className={`flex justify-start items-center gap-1`}
+                        style={
+                          minWidthClass
+                            ? { minWidth: header.column.columnDef.minSize }
+                            : {}
+                        }
                       >
                         {flexRender(
                           header.column.columnDef.header,

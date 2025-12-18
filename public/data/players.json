@@ -6,7 +6,7 @@
     "imagePath": "/people/richmondreglo.webp",
     "gender": "male",
     "city": "Manila",
-    "team": "MaiTeam",
+    "team": "",
     "deck": ["Yummy"]
   },
   {
@@ -45,5 +45,14 @@
     "team": "Team Kwasong",
     "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
     "others": "kalbs"
+  },
+  {
+    "name": "JM Caisip",
+    "ign": "JM Caisip",
+    "konamiId": "0503565744",
+    "gender": "male",
+    "city": "San Jose del Monte",
+    "team": "",
+    "deck": ["Orcust"]
   }
 ]

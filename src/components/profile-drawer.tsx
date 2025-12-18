@@ -74,13 +74,13 @@ export function ProfileDrawer<T = Record<string, unknown>>({
   // Show image at the top if available
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const imagePath = (data as any)?.imagePath;
-  const imageSize = 150;
+  const imageSize = 200;
   const hasImage = typeof imagePath === "string" && imagePath.trim() !== "";
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange} direction="right">
       <DrawerContent className="rounded-none fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-sm">
-        <div className="flex flex-col gap-2 w-full">
+        <div className="flex flex-col gap-2 w-full h-full">
           <DrawerTitle
             className={`flex justify-between items-center p-4 text-sm font-medium border-b`}
           >
@@ -92,9 +92,12 @@ export function ProfileDrawer<T = Record<string, unknown>>({
               <X size={18} />
             </DrawerClose>
           </DrawerTitle>
-          <div className="p-4 flex flex-col items-center">
+          <div className="p-4 flex flex-col items-center flex-1 overflow-auto">
             {hasImage && (
-              <Avatar className={`h-[${imageSize}px] w-[${imageSize}px] mb-10`}>
+              <Avatar
+                className="mb-10"
+                style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
+              >
                 <AvatarImage src={getImagePath(imagePath)} alt="Profile" />
                 <AvatarFallback>?</AvatarFallback>
               </Avatar>
