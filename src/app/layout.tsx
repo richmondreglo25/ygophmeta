@@ -3,10 +3,7 @@ import { Geist, Geist_Mono, Varela_Round } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navigation } from "@/components/navigation";
 import { Content } from "@/components/content";
-import { getRootPath } from "@/utils/enviroment";
 import "./globals.css";
-
-const root = getRootPath();
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +24,9 @@ const varelaRound = Varela_Round({
 export const metadata: Metadata = {
   title: "Yu-Gi-Oh! PH Meta",
   icons: {
-    icon: `${root}/favicon.png`,
-    shortcut: `${root}/favicon.png`,
-    apple: `${root}/apple-touch-icon.png`,
+    icon: `./favicon.png`,
+    shortcut: `./favicon.png`,
+    apple: `./apple-touch-icon.png`,
   },
 };
 

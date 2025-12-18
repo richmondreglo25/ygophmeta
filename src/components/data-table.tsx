@@ -37,12 +37,14 @@ interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
   searchColumn?: string; // Column key to apply search filter.
+  onClick?: (row: TData) => void;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
   searchColumn,
+  onClick,
 }: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
@@ -89,6 +91,9 @@ export function DataTable<TData, TValue>({
                   if (header.isPlaceholder)
                     return <TableHead key={header.id} />;
                   const isSorted = header.column.getIsSorted();
+                  const minWidthClass = header.column.columnDef.minSize
+                    ? `w-[${header.column.columnDef.minSize}px]`
+                    : "";
                   return (
                     <TableHead
                       key={header.id}
@@ -99,7 +104,9 @@ export function DataTable<TData, TValue>({
                           : ""
                       }
                     >
-                      <span className="flex items-center gap-1">
+                      <span
+                        className={`flex justify-start items-center gap-1 ${minWidthClass}`}
+                      >
                         {flexRender(
                           header.column.columnDef.header,
                           header.getContext()
@@ -120,6 +127,7 @@ export function DataTable<TData, TValue>({
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
+                  onClick={() => onClick?.(row.original)}
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>

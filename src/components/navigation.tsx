@@ -19,7 +19,7 @@ export function Navigation() {
   const isMobile = true;
 
   return (
-    <div className="flex justify-center items-center px-3 py-2 border-b-[0.5px]">
+    <div className="flex justify-center items-center px-3 py-2 border-b-[1px]">
       <NavigationMenu orientation={isMobile ? "vertical" : "horizontal"}>
         <NavigationMenuList className="flex-wrap">
           {tabs.map((tab) => {
@@ -36,7 +36,7 @@ export function Navigation() {
                     }`}
                     href={tab.path}
                   >
-                    <IconX type={tab.icon} height={14} width={14} />
+                    <IconX type={tab.icon} size={14} />
                     <span className="hidden sm:inline">{tab.title}</span>
                   </Link>
                 </NavigationMenuLink>

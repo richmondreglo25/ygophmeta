@@ -1,33 +1,38 @@
 import {
   CalendarDays,
   ChartArea,
+  Gavel,
   House,
   Library,
   Store,
   UserRound,
+  UsersRound,
 } from "lucide-react";
 
 type IconXParam = {
   type: string;
-  height: number;
-  width: number;
+  size: number;
 };
 
 export function IconX(param: IconXParam) {
   switch (param.type) {
     case "home":
-      return <House height={param.height} width={param.width} />;
+      return <House size={param.size} width={param.size} />;
     case "calendar":
-      return <CalendarDays height={param.height} width={param.width} />;
+      return <CalendarDays size={param.size} />;
     case "chart":
-      return <ChartArea height={param.height} width={param.width} />;
+      return <ChartArea size={param.size} />;
     case "shops":
-      return <Store height={param.height} width={param.width} />;
+      return <Store size={param.size} />;
+    case "community":
+      return <UsersRound size={param.size} />;
     case "players":
-      return <UserRound height={param.height} width={param.width} />;
+      return <UserRound size={param.size} />;
+    case "judges":
+      return <Gavel size={param.size} />;
     case "info":
-      return <Library height={param.height} width={param.width} />;
+      return <Library size={param.size} />;
     default:
-      return <House height={param.height} width={param.width} />;
+      return <House size={param.size} />;
   }
 }

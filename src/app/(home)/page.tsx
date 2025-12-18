@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Loading } from "@/components/loading";
 import { getJsonPath } from "@/utils/enviroment";
+import { getLightBackgroundStyle } from "@/utils/background";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -34,7 +35,7 @@ export default function Home() {
       {data.map((item, index) => (
         <Card
           key={index}
-          className="w-full border-[0.5px] shadow-none bg-[#fcfcfc] dark:bg-gray-900"
+          className={`w-full border-[1px] shadow-none ${getLightBackgroundStyle()}`}
         >
           <CardHeader>
             <CardTitle className="text-xl">{item.title}</CardTitle>

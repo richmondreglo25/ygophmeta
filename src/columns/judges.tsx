@@ -6,7 +6,7 @@ import { Gender } from "@/enums/gender";
 import { Mars, Venus } from "lucide-react";
 import { getImagePath } from "@/utils/enviroment";
 
-export type Player = {
+export type Judge = {
   name: string;
   ign: string;
   konamiId: string;
@@ -18,7 +18,7 @@ export type Player = {
   others: string;
 };
 
-export const columns: ColumnDef<Player>[] = [
+export const columns: ColumnDef<Judge>[] = [
   {
     accessorKey: "name",
     header: "Name",

@@ -7,18 +7,7 @@
     "gender": "male",
     "city": "Manila",
     "team": "MaiTeam",
-    "deck": ["Yummy"],
-    "others": "Nanapak ng madre"
-  },
-  {
-    "name": "Ericka Reglo",
-    "ign": "Ericka",
-    "konamiId": "987654321",
-    "gender": "female",
-    "city": "Manila",
-    "team": "MaiTeam",
-    "deck": ["Yummy"],
-    "others": "Nanapak ng madre"
+    "deck": ["Yummy"]
   },
   {
     "name": "Owen Cruz",
@@ -37,5 +26,24 @@
     "city": "Bulacan",
     "team": "Bang",
     "deck": ["Lunalight", "Branded Dracotail", "Ryzeal"]
+  },
+  {
+    "name": "Tristan Cruz",
+    "ign": "Threestun",
+    "konamiId": "0501690743",
+    "gender": "male",
+    "city": "Pasig",
+    "team": "Team Kwasong",
+    "deck": ["Killer Tune", "Elvennotes", "White Forest"]
+  },
+  {
+    "name": "Friedrich Ferrer",
+    "ign": "RitoruMikan",
+    "konamiId": "0503455632",
+    "gender": "male",
+    "city": "San Jose del Monte",
+    "team": "Team Kwasong",
+    "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
+    "others": "kalbs"
   }
 ]
