@@ -39,15 +39,18 @@ export const columns: ColumnDef<Judge>[] = [
       );
     },
     minSize: 150,
+    enableSorting: true,
   },
   {
     accessorKey: "ign",
     header: "IGN",
     minSize: 150,
+    enableSorting: true,
   },
   {
     accessorKey: "city",
     header: "City",
     minSize: 100,
+    enableSorting: true,
   },
 ];

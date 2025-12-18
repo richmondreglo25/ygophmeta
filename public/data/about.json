@@ -1,0 +1,67 @@
+[
+  {
+    "value": "mission",
+    "title": "What is YGO PH Meta?",
+    "content": "YGO PH Meta is a community-driven platform for tracking, analyzing, and celebrating the Yu-Gi-Oh! scene in the Philippines."
+  },
+  {
+    "value": "built",
+    "title": "Who built this?",
+    "content": "Built with ❤️ by duelists, for duelists."
+  },
+  {
+    "value": "contribute",
+    "title": "How can I contribute?",
+    "content": "For suggestions or contributions, visit our GitHub or contact the team."
+  },
+  {
+    "value": "consent",
+    "title": "Consent",
+    "content": "We respect your privacy and only display information that has been provided with consent. If you wish to update or remove your information, please contact us."
+  },
+  {
+    "value": "privacy",
+    "title": "Data Privacy",
+    "content": "All data on this site is stored in a public GitHub repository. Please be aware that any information submitted or displayed here is publicly accessible. Do not submit sensitive personal information."
+  },
+  {
+    "value": "support",
+    "title": "Support the Developers",
+    "content": "If you appreciate this project and want to support the developers, you can star the repository on GitHub, share the site with your friends, or reach out for collaboration opportunities. Thank you for helping us grow the community!"
+  },
+  {
+    "value": "contributors",
+    "title": "Message for Contributors",
+    "content": "Thank you to everyone who has contributed their time, skills, and ideas to this project. Your efforts help make the community stronger and the platform better for all duelists."
+  },
+  {
+    "value": "roadmap",
+    "title": "Roadmap",
+    "content": "We are continuously working to add new features and improve the platform. Stay tuned for updates on deck analytics, event integration, and more community tools."
+  },
+  {
+    "value": "contact",
+    "title": "Contact",
+    "content": "For feedback, bug reports, or partnership inquiries, please message us directly through our embedded social media links. There is no contact form on this site."
+  },
+  {
+    "value": "disclaimer",
+    "title": "Disclaimer",
+    "content": "This project is a fan-made, non-commercial platform and is not affiliated with, endorsed by, or connected to Konami, Yu-Gi-Oh!, or any official Yu-Gi-Oh! organizations. All Yu-Gi-Oh! trademarks, logos, card images, and related content are the property of their respective owners. No copyright infringement is intended."
+  },
+  {
+    "value": "open-source",
+    "title": "Open Source",
+    "content": "YGO PH Meta is open source! We welcome code contributions, issue reports, and feature suggestions from the community."
+  },
+  {
+    "value": "community-guidelines",
+    "title": "Community Guidelines",
+    "content": "We encourage respectful and constructive participation. Please be kind and help us maintain a welcoming environment for all duelists."
+  },
+  {
+    "value": "acknowledgements",
+    "title": "Acknowledgements",
+    "content": "Special thanks to everyone who has supported, inspired, or contributed to this project, including the local YGO community and open source developers."
+  }
+]

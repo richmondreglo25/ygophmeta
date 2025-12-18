@@ -113,19 +113,21 @@ export function ProfileDrawer<T = Record<string, unknown>>({
               {data ? (
                 Object.entries(data)
                   .filter(([key]) => key !== "imagePath")
-                  .map(([key, value]) => (
-                    <div
-                      key={key}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between border-b pb-2 last:border-b-0 last:pb-0"
-                    >
-                      <span className="font-medium text-sm text-muted-foreground">
-                        {beautifyKey(key)}
-                      </span>
-                      <span className="text-right text-base font-medium mt-1 sm:mt-0">
-                        {renderValue(key, value)}
-                      </span>
-                    </div>
-                  ))
+                  .map(([key, value]) => {
+                    return key !== "gender" ? (
+                      <div
+                        key={key}
+                        className="flex flex-col border-b pb-2 last:border-b-0 last:pb-0"
+                      >
+                        <span className="font-medium text-sm text-muted-foreground">
+                          {beautifyKey(key)}
+                        </span>
+                        <span className="text-left text-sm font-medium mt-1">
+                          {renderValue(key, value)}
+                        </span>
+                      </div>
+                    ) : null;
+                  })
               ) : (
                 <span className="text-muted-foreground">No data</span>
               )}
