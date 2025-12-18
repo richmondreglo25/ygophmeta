@@ -2,7 +2,6 @@
   {
     "name": "Richmond Reglo",
     "ign": "Richmond",
-    "konamiId": "123456789",
     "imagePath": "/people/richmondreglo.webp",
     "gender": "male",
     "city": "Manila",
@@ -12,7 +11,6 @@
   {
     "name": "Friedrich Ferrer",
     "ign": "RitoruMikan",
-    "konamiId": "0503455632",
     "gender": "male",
     "city": "San Jose del Monte",
     "team": "Team Kwasong",
