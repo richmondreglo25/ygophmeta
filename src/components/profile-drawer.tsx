@@ -54,7 +54,9 @@ function renderValue(key: string, value: unknown) {
   if (typeof value === "object" && value !== null) {
     return <span className="text-sm font-medium">{JSON.stringify(value)}</span>;
   }
-  return <span className="text-sm font-medium">{String(value)}</span>;
+  return (
+    <span className="text-sm font-medium">{value ? String(value) : "-"}</span>
+  );
 }
 
 // Generic Drawer component

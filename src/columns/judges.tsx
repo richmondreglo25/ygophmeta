@@ -3,13 +3,11 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Gender } from "@/enums/gender";
-import { Mars, Venus } from "lucide-react";
 import { getImagePath } from "@/utils/enviroment";
 
 export type Judge = {
   name: string;
   ign: string;
-  konamiId: string;
   imagePath: string;
   gender: Gender;
   city: string;
@@ -46,24 +44,6 @@ export const columns: ColumnDef<Judge>[] = [
     accessorKey: "ign",
     header: "IGN",
     minSize: 150,
-  },
-  {
-    accessorKey: "konamiId",
-    header: "Konami ID",
-    minSize: 100,
-  },
-  {
-    accessorKey: "gender",
-    header: "Gender",
-    cell: ({ row }) => {
-      const size = 15;
-      return row.original.gender === Gender.MALE ? (
-        <Mars className="text-blue-500" size={size} />
-      ) : (
-        <Venus className="text-pink-500" size={size} />
-      );
-    },
-    minSize: 100,
   },
   {
     accessorKey: "city",

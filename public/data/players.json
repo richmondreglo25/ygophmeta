@@ -2,7 +2,6 @@
   {
     "name": "Richmond Reglo",
     "ign": "Richmond",
-    "konamiId": "123456789",
     "imagePath": "/people/richmondreglo.webp",
     "gender": "male",
     "city": "Manila",
@@ -12,7 +11,6 @@
   {
     "name": "Owen Cruz",
     "ign": "DmaN14",
-    "konamiId": "0501690339",
     "gender": "male",
     "city": "Bulacan",
     "team": "Team Kwasong",
@@ -21,7 +19,6 @@
   {
     "name": "Renz Guizzagan",
     "ign": "RenzGzzzzzzzzzzzz",
-    "konamiId": "0504226157",
     "gender": "male",
     "city": "Bulacan",
     "team": "Bang",
@@ -30,7 +27,6 @@
   {
     "name": "Tristan Cruz",
     "ign": "Threestun",
-    "konamiId": "0501690743",
     "gender": "male",
     "city": "Pasig",
     "team": "Team Kwasong",
@@ -39,7 +35,6 @@
   {
     "name": "Friedrich Ferrer",
     "ign": "RitoruMikan",
-    "konamiId": "0503455632",
     "gender": "male",
     "city": "San Jose del Monte",
     "team": "Team Kwasong",
@@ -49,7 +44,6 @@
   {
     "name": "JM Caisip",
     "ign": "JM Caisip",
-    "konamiId": "0503565744",
     "gender": "male",
     "city": "San Jose del Monte",
     "team": "",
