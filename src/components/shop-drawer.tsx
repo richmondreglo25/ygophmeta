@@ -39,8 +39,7 @@ function renderValue(key: string, value: unknown) {
       );
     }
     return <span className="italic text-muted-foreground">No Logo</span>;
-  }
-  if (key === "images" && Array.isArray(value)) {
+  } else if (key === "images" && Array.isArray(value)) {
     // Use Next.js Image for optimization
     return (
       <div className="flex flex-row gap-2 flex-wrap">
@@ -57,8 +56,7 @@ function renderValue(key: string, value: unknown) {
         ))}
       </div>
     );
-  }
-  if (key === "googleMaps" && typeof value === "string") {
+  } else if (key === "googleMaps" && typeof value === "string") {
     return (
       <a
         href={value}
@@ -69,8 +67,7 @@ function renderValue(key: string, value: unknown) {
         View on Google Maps
       </a>
     );
-  }
-  if (key === "tournamentSchedule" && Array.isArray(value)) {
+  } else if (key === "tournamentSchedule" && Array.isArray(value)) {
     return (
       <div className="flex flex-col gap-1">
         {value.map((v, i) => (
@@ -80,8 +77,7 @@ function renderValue(key: string, value: unknown) {
         ))}
       </div>
     );
-  }
-  if (Array.isArray(value)) {
+  } else if (Array.isArray(value)) {
     return (
       <span>
         {value.map((v, i) => (
@@ -92,13 +88,13 @@ function renderValue(key: string, value: unknown) {
         ))}
       </span>
     );
-  }
-  if (typeof value === "object" && value !== null) {
+  } else if (typeof value === "object" && value !== null) {
     return <span className="text-sm font-medium">{JSON.stringify(value)}</span>;
+  } else {
+    return (
+      <span className="text-sm font-medium">{value ? String(value) : "-"}</span>
+    );
   }
-  return (
-    <span className="text-sm font-medium">{value ? String(value) : "-"}</span>
-  );
 }
 
 interface ShopDrawerProps<T = Record<string, unknown>> {
@@ -122,7 +118,7 @@ export function ShopDrawer<T = Record<string, unknown>>({
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange} direction="right">
-      <DrawerContent className="rounded-none fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-sm">
+      <DrawerContent className="rounded-none fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-md">
         <div className="flex flex-col gap-2 w-full h-full">
           <DrawerTitle
             className={`flex justify-between items-center p-4 text-sm font-medium border-b`}

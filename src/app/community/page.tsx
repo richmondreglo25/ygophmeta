@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/accordion";
 import { Loading } from "@/components/loading";
 import { getJsonPath } from "@/utils/enviroment";
-import { getLightBackgroundStyle } from "@/utils/background";
 import { useJsonData } from "../data/api";
 import { IconX } from "@/components/IconX";
 import { ProfileDrawer, useProfileDrawer } from "@/components/profile-drawer";
@@ -66,9 +65,7 @@ export default function Community() {
                 : ""
             }
           >
-            <AccordionTrigger
-              className={`border-x-[1px] px-3 ${getLightBackgroundStyle()}`}
-            >
+            <AccordionTrigger className={`border-x-[1px] px-3 bg-[#fcfcfc]`}>
               <div className="flex items-center gap-2">
                 <IconX type={`${key}`} size={16} />
                 {data.data.length > 1 ? plural : label} ({data.data.length})

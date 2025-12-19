@@ -37,10 +37,6 @@ a {
   text-decoration: none;
 }
 
-/*
----break---
-*/
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -144,10 +140,6 @@ a {
   }
 }
 
-/*
----break---
-*/
-
 @layer base {
   * {
     @apply border-border;
@@ -156,3 +148,9 @@ a {
     @apply bg-background text-foreground;
   }
 }
+
+/* data-table classes */
+/* #data-table th:not(:last-child),
+#data-table td:not(:last-child) {
+  border-right: solid 1px hsl(var(--border));
+} */

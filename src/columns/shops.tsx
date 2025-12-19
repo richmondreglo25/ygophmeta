@@ -47,12 +47,12 @@ export const columns: ColumnDef<Shop>[] = [
   {
     accessorKey: "openHours",
     header: "Open Hours",
-    minSize: 120,
+    minSize: 200,
   },
   {
     accessorKey: "activePlayers",
     header: "Active Players",
-    minSize: 80,
+    minSize: 120,
     enableSorting: true,
   },
 ];

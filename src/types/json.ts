@@ -1,10 +1,10 @@
-export type HomePageJson = {
+export type HomeJson = {
   title: string;
   description: string;
   link?: string; // Optional link property.
 };
 
-export type AboutPageJson = {
+export type AboutJson = {
   value: string;
   title: string;
   content: string;

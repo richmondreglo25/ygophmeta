@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { HomePageJson } from "@/types/json";
+import { HomeJson } from "@/types/json";
 import {
   Card,
   CardContent,
@@ -11,47 +10,45 @@ import {
 } from "@/components/ui/card";
 import { Loading } from "@/components/loading";
 import { getJsonPath } from "@/utils/enviroment";
-import { getLightBackgroundStyle } from "@/utils/background";
+import Link from "next/link";
+import { useJsonData } from "../data/api";
+import Featured from "./featured/featured";
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState<HomePageJson[]>([]);
-
-  useEffect(() => {
-    const path = getJsonPath("home.json");
-    fetch(path)
-      .then((res) => res.json())
-      .then((json) => setData(json))
-      .catch(() => setData([]))
-      .finally(() => setLoading(false));
-  }, []);
+  const { data, loading } = useJsonData<HomeJson[]>(getJsonPath("home.json"));
 
   if (loading) {
     return <Loading />;
   }
 
   return (
-    <div className="flex flex-col gap-5">
-      {data.map((item, index) => (
-        <Card
-          key={index}
-          className={`w-full border-[1px] shadow-none ${getLightBackgroundStyle()}`}
-        >
-          <CardHeader>
-            <CardTitle className="text-xl">{item.title}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>{item.description}</p>
-          </CardContent>
-          {item.link && (
-            <CardFooter>
-              <a href={item.link} className="text-blue-600 hover:underline">
-                Learn more
-              </a>
-            </CardFooter>
-          )}
-        </Card>
-      ))}
-    </div>
+    <>
+      <Featured />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {data.map((item, index) => (
+          <Card
+            key={index}
+            className="w-full p-0 rounded-none border-[1px] shadow-none flex flex-col h-full"
+          >
+            <CardHeader className="p-5">
+              <CardTitle className="text-md">{item.title}</CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm p-5 pt-0 flex-1">
+              {item.description}
+            </CardContent>
+            {item.link && (
+              <CardFooter className="text-sm p-5 pt-0 mt-auto">
+                <Link
+                  href={item.link}
+                  className="text-blue-600 hover:underline"
+                >
+                  Learn more
+                </Link>
+              </CardFooter>
+            )}
+          </Card>
+        ))}
+      </div>
+    </>
   );
 }

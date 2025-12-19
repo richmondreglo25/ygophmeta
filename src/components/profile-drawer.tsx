@@ -33,13 +33,13 @@ function beautifyKey(key: string) {
 // Helper to render value based on key
 function renderValue(key: string, value: unknown) {
   if (key === "gender") {
-    if (value === Gender.MALE)
+    if (value === Gender.MALE) {
       return <Mars className="text-blue-500 inline" size={18} />;
-    if (value === Gender.FEMALE)
+    } else if (value === Gender.FEMALE) {
       return <Venus className="text-pink-500 inline" size={18} />;
+    }
     return String(value);
-  }
-  if (Array.isArray(value)) {
+  } else if (Array.isArray(value)) {
     return (
       <span>
         {value.map((v, i) => (
@@ -50,13 +50,13 @@ function renderValue(key: string, value: unknown) {
         ))}
       </span>
     );
-  }
-  if (typeof value === "object" && value !== null) {
+  } else if (typeof value === "object" && value !== null) {
     return <span className="text-sm font-medium">{JSON.stringify(value)}</span>;
+  } else {
+    return (
+      <span className="text-sm font-medium">{value ? String(value) : "-"}</span>
+    );
   }
-  return (
-    <span className="text-sm font-medium">{value ? String(value) : "-"}</span>
-  );
 }
 
 // Generic Drawer component
@@ -81,7 +81,7 @@ export function ProfileDrawer<T = Record<string, unknown>>({
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange} direction="right">
-      <DrawerContent className="rounded-none fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-sm">
+      <DrawerContent className="rounded-none fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-md">
         <div className="flex flex-col gap-2 w-full h-full">
           <DrawerTitle
             className={`flex justify-between items-center p-4 text-sm font-medium border-b`}
