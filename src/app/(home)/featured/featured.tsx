@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/card";
 import { getTypeBadgeClass } from "@/utils/featured";
 import { useJsonData } from "@/app/data/api";
-import { Sparkle, Star } from "lucide-react";
+import { Sparkle } from "lucide-react";
 
 export type FeaturedItem = {
   id: string;
