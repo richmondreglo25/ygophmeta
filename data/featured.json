@@ -25,25 +25,6 @@
       }
     ]
   },
-  "videos2": {
-    "itemsPerSlide": 2,
-    "items": [
-      {
-        "id": "video-002",
-        "type": "video",
-        "title": "Richmond Reglo: Tournament Highlights",
-        "description": "Highlights from the latest local tournament.",
-        "link": "https://www.youtube.com/watch?v=KQ3nJ9uuqGA"
-      },
-      {
-        "id": "video-003",
-        "type": "video",
-        "title": "Richmond Reglo: Card Market Tips",
-        "description": "Tips for trading and collecting cards.",
-        "link": "https://www.youtube.com/watch?v=po_sB9wyZ_w&t=733s"
-      }
-    ]
-  },
   "banners": {
     "itemsPerSlide": 2,
     "items": [
