@@ -145,7 +145,6 @@ export default function Featured() {
     return null;
   }
 
-  // Dynamically render carousels based on the order and keys in the JSON
   return (
     <div className="flex flex-col gap-2">
       <div className="flex items-center gap-1 text-xs font-normal italic">
@@ -158,7 +157,7 @@ export default function Featured() {
             <div key={group}>
               {renderCarousel(
                 groupData.items,
-                isSm ? 1 : groupData.itemsPerSlide
+                isSm ? 1 : groupData.itemsPerSlide ?? 1 // <-- always fallback to 1 if not set
               )}
             </div>
           ) : null
