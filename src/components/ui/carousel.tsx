@@ -19,6 +19,7 @@ type CarouselProps = {
   plugins?: CarouselPlugin;
   orientation?: "horizontal" | "vertical";
   setApi?: (api: CarouselApi) => void;
+  itemsPerSlide?: number; // <-- add this prop
 };
 
 type CarouselContextProps = {
@@ -28,6 +29,7 @@ type CarouselContextProps = {
   scrollNext: () => void;
   canScrollPrev: boolean;
   canScrollNext: boolean;
+  itemsPerSlide: number;
 } & CarouselProps;
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null);
@@ -54,6 +56,7 @@ const Carousel = React.forwardRef<
       plugins,
       className,
       children,
+      itemsPerSlide = 1, // <-- default to 1
       ...props
     },
     ref
@@ -132,6 +135,7 @@ const Carousel = React.forwardRef<
           scrollNext,
           canScrollPrev,
           canScrollNext,
+          itemsPerSlide,
         }}
       >
         <div
@@ -150,6 +154,7 @@ const Carousel = React.forwardRef<
 );
 Carousel.displayName = "Carousel";
 
+// Update CarouselContent to use itemsPerSlide
 const CarouselContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -165,6 +170,11 @@ const CarouselContent = React.forwardRef<
           orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
           className
         )}
+        style={
+          orientation === "horizontal"
+            ? { width: "100%", display: "flex" }
+            : undefined
+        }
         {...props}
       />
     </div>
@@ -172,11 +182,16 @@ const CarouselContent = React.forwardRef<
 });
 CarouselContent.displayName = "CarouselContent";
 
+// Update CarouselItem to support itemsPerSlide
 const CarouselItem = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => {
-  const { orientation } = useCarousel();
+  const { orientation, itemsPerSlide = 1 } = useCarousel();
+
+  // Calculate basis for items per slide
+  const basis =
+    orientation === "horizontal" ? `calc(100% / ${itemsPerSlide})` : "auto";
 
   return (
     <div
@@ -184,10 +199,14 @@ const CarouselItem = React.forwardRef<
       role="group"
       aria-roledescription="slide"
       className={cn(
-        "min-w-0 shrink-0 grow-0 basis-full",
+        "min-w-0 shrink-0 grow-0",
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className
       )}
+      style={{
+        flexBasis: basis,
+        width: basis,
+      }}
       {...props}
     />
   );
@@ -308,22 +327,31 @@ const CarouselSlideInfo = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => {
-  const { api } = useCarousel();
+  const { api, itemsPerSlide = 1 } = useCarousel();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
     if (!api) return;
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap());
 
-    const onSelect = () => setCurrent(api.selectedScrollSnap());
-    api.on("select", onSelect);
+    const update = () => {
+      const totalItems = api.scrollSnapList().length;
+      const slides = Math.ceil(totalItems / itemsPerSlide);
+      setCount(slides);
+
+      const snap = api.selectedScrollSnap();
+      setCurrent(Math.floor(snap / itemsPerSlide));
+    };
+
+    update();
+    api.on("select", update);
+    api.on("reInit", update);
 
     return () => {
-      api.off("select", onSelect);
+      api.off("select", update);
+      api.off("reInit", update);
     };
-  }, [api]);
+  }, [api, itemsPerSlide]);
 
   if (count <= 1) return null;
 
