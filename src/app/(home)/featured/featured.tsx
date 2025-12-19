@@ -149,7 +149,7 @@ export default function Featured() {
     <div className="flex flex-col gap-2">
       <div className="flex items-center gap-1 text-xs font-normal italic">
         <Sparkle size={10} />
-        <span>Featured Items</span>
+        <span>Featured</span>
       </div>
       <div className="flex flex-col gap-1">
         {Object.entries(data).map(([group, groupData]) =>

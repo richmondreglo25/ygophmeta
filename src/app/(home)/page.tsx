@@ -27,7 +27,7 @@ export default function Home() {
         {data.map((item, index) => (
           <Card
             key={index}
-            className="w-full p-0 rounded-none border-[1px] shadow-none flex flex-col h-full"
+            className="p-0 rounded-none border-[1px] shadow-none flex flex-col"
           >
             <CardHeader className="p-5">
               <CardTitle className="text-md">{item.title}</CardTitle>
