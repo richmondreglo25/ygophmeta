@@ -16,12 +16,12 @@
   },
   {
     "title": "Shops",
-    "description": "Discover tournament-ready shops near you. Find places to buy cards, trade, and connect with other players in your area.",
+    "description": "Discover shops near you. Find places to buy cards, trade, and connect with other players in your area.",
     "link": "/shops"
   },
   {
-    "title": "Players",
+    "title": "Community",
     "description": "Connect with other Yu-Gi-Oh! players. Share strategies, discuss decks, and build a community of duelists.",
-    "link": "/players"
+    "link": "/community"
   }
 ]

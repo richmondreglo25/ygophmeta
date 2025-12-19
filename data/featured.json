@@ -1,0 +1,37 @@
+[
+  {
+    "id": "shop-001",
+    "type": "shop",
+    "title": "Card Haven",
+    "description": "A top-rated shop for trading cards and accessories.",
+    "image": "/shops/richmondreglo.webp"
+  },
+  {
+    "id": "event-001",
+    "type": "event",
+    "title": "Winter Duel Fest",
+    "description": "Annual winter event featuring tournaments and prizes.",
+    "image": "/shops/richmondreglo.webp"
+  },
+  {
+    "id": "video-001",
+    "type": "video",
+    "title": "Ravens OTS Pods 2024 Highlights",
+    "description": "Example feature video showcasing highlights from the Ravens OTS Pods 2024.",
+    "link": "https://www.youtube.com/watch?v=16KTwxJWi1s&t=13s"
+  },
+  {
+    "id": "player-001",
+    "type": "player",
+    "title": "Alex Kim",
+    "description": "2025 National Champion, known for strategic plays.",
+    "image": "/people/richmondreglo.webp"
+  },
+  {
+    "id": "judge-001",
+    "type": "judge",
+    "title": "Morgan Lee",
+    "description": "Senior judge with 10+ years of experience.",
+    "image": "/people/richmondreglo.webp"
+  }
+]
