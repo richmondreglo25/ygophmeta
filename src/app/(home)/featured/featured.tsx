@@ -1,13 +1,9 @@
-import { getImagePath } from "@/utils/enviroment";
+import { getImagePath, getJsonPath } from "@/utils/enviroment";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import {
   Carousel,
   CarouselContent,
-  CarouselControls,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
   CarouselSlideInfo,
 } from "@/components/ui/carousel";
 import {
@@ -18,6 +14,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { getTypeBadgeClass } from "@/utils/featured";
+import { useJsonData } from "@/app/data/api";
 
 export type FeaturedItem = {
   id: string;
@@ -29,16 +26,9 @@ export type FeaturedItem = {
 };
 
 export default function Featured() {
-  const [items, setItems] = useState<FeaturedItem[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch("/data/featured.json")
-      .then((res) => res.json())
-      .then((json) => setItems(json))
-      .catch(() => setItems([]))
-      .finally(() => setLoading(false));
-  }, []);
+  const { data: items, loading } = useJsonData<FeaturedItem[]>(
+    getJsonPath("featured.json")
+  );
 
   if (loading) {
     return null;
