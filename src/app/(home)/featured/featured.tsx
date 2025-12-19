@@ -69,7 +69,7 @@ function getContent(item: FeaturedItem) {
       /(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/
     );
     if (match) {
-      embedUrl = `https://www.youtube.com/embed/${match[1]}`;
+      embedUrl = `https://www.youtube-nocookie.com/embed/${match[1]}`;
     }
     return (
       <div className="w-full h-0 pb-[56.25%] relative">

@@ -23,7 +23,6 @@ export const columns: ColumnDef<Shop>[] = [
       const hasLogo = row.original.logo && row.original.logo.trim() !== "";
       const logoPath = hasLogo ? getImagePath(row.original.logo) : "";
 
-      console.log(logoPath);
       return (
         <div className="flex items-center gap-1.5">
           <Avatar className="h-4 w-4">
@@ -48,11 +47,5 @@ export const columns: ColumnDef<Shop>[] = [
     accessorKey: "openHours",
     header: "Open Hours",
     minSize: 200,
-  },
-  {
-    accessorKey: "activePlayers",
-    header: "Active Players",
-    minSize: 120,
-    enableSorting: true,
   },
 ];
