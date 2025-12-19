@@ -2,6 +2,15 @@ import { getImagePath } from "@/utils/enviroment";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import {
+  Carousel,
+  CarouselContent,
+  CarouselControls,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  CarouselSlideInfo,
+} from "@/components/ui/carousel";
+import {
   Card,
   CardContent,
   CardFooter,
@@ -38,13 +47,13 @@ export default function Featured() {
   function getContent(item: FeaturedItem) {
     if (item.type === "player" || item.type === "judge") {
       return (
-        <div className="p-5">
+        <div className="flex justify-center items-center h-full w-full p-5 bg-[#F3F4F6]">
           <Image
             src={getImagePath(item.image)}
             alt={item.title}
-            width={32}
-            height={32}
-            className="object-cover rounded-full w-32 h-32"
+            width={10}
+            height={10}
+            className="object-cover rounded-full h-full w-full max-h-[25vh] max-w-[25vh]"
           />
         </div>
       );
@@ -53,9 +62,9 @@ export default function Featured() {
         <Image
           src={getImagePath(item.image)}
           alt={item.title}
-          width={32}
-          height={32}
-          className="object-cover rounded-none w-full max-h-[25vh]"
+          width={10}
+          height={10}
+          className="object-cover rounded-none h-full w-full max-h-[40vh]"
         />
       );
     } else if (item.type === "video") {
@@ -85,40 +94,49 @@ export default function Featured() {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {items.map((item) => {
-        const content = getContent(item);
+    <div>
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+      >
+        <CarouselContent>
+          {items.map((item) => {
+            const content = getContent(item);
 
-        if (!content) {
-          return null;
-        }
+            if (!content) {
+              return null;
+            }
 
-        return (
-          <Card
-            key={item.id}
-            className="w-full p-0 rounded-none border-[1px] shadow-none flex flex-col h-full"
-          >
-            <CardHeader className="p-5 py-3 border-b-[1px]">
-              <CardTitle className="text-md flex justify-between items-center gap-2">
-                {item.title}
-                <span
-                  className={`px-2 py-1 text-xs capitalize ${getTypeBadgeClass(
-                    item.type
-                  )}`}
-                >
-                  {item.type}
-                </span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex-1 flex flex-col justify-center items-center p-0 m-0">
-              {content}
-            </CardContent>
-            <CardFooter className="flex justify-start text-sm p-5 py-3 border-t-[1px]">
-              <span>{item.description}</span>
-            </CardFooter>
-          </Card>
-        );
-      })}
+            return (
+              <CarouselItem key={item.id}>
+                <Card className="w-full p-0 rounded-none border-[1px] shadow-none flex flex-col h-full">
+                  <CardHeader className="p-5 py-3 border-b-[1px]">
+                    <CardTitle className="text-md flex justify-between items-center gap-2">
+                      {item.title}
+                      <span
+                        className={`px-2 py-1 text-xs capitalize ${getTypeBadgeClass(
+                          item.type
+                        )}`}
+                      >
+                        {item.type}
+                      </span>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex-1 flex flex-col justify-center items-center p-0 m-0">
+                    {content}
+                  </CardContent>
+                  <CardFooter className="flex justify-start text-sm p-5 py-3 border-t-[1px]">
+                    <span>{item.description}</span>
+                  </CardFooter>
+                </Card>
+              </CarouselItem>
+            );
+          })}
+        </CarouselContent>
+        <CarouselSlideInfo />
+      </Carousel>
     </div>
   );
 }
