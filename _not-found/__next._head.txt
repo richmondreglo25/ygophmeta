@@ -3,6 +3,6 @@
 4:I[97367,["/ygophmeta/_next/static/chunks/0f0c391858e5b16d.js","/ygophmeta/_next/static/chunks/247eb132b7f7b574.js","/ygophmeta/_next/static/chunks/31cc9892fea3850a.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 7:I[27201,["/ygophmeta/_next/static/chunks/0f0c391858e5b16d.js","/ygophmeta/_next/static/chunks/247eb132b7f7b574.js","/ygophmeta/_next/static/chunks/31cc9892fea3850a.js"],"IconMark"]
-0:{"buildId":"rvtaoq4dr4izkqDM8bAoV","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"hSKo9Jjh2y8LdrDFrZX6F","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"Yu-Gi-Oh! PH Meta"}],["$","link","1",{"rel":"shortcut icon","href":"./favicon.png"}],["$","link","2",{"rel":"icon","href":"./favicon.png"}],["$","link","3",{"rel":"apple-touch-icon","href":"./apple-touch-icon.png"}],["$","$L7","4",{}]]
