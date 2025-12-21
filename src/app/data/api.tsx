@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Event } from "@/columns/events";
+import { getJsonPath } from "@/utils/enviroment";
 import { useEffect, useState } from "react";
 
 /**
@@ -69,9 +70,10 @@ export function useEventsByYearMonthRange(
           const startM = y === s.year ? s.month : 1;
           const endM = y === e.year ? e.month : 12;
           for (let m = startM; m <= endM; m++) {
-            files.push(
-              `/data/events/${y}-${m.toString().padStart(2, "0")}.json`
+            const filePath = getJsonPath(
+              `events/${y}-${m.toString().padStart(2, "0")}.json`
             );
+            files.push(filePath);
           }
         }
         const results = await Promise.all(

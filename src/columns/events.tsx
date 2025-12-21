@@ -35,10 +35,12 @@ export const columns: ColumnDef<Event>[] = [
   {
     accessorKey: "title",
     header: "Title",
+    minSize: 150,
   },
   {
     accessorKey: "host",
     header: "Host",
+    minSize: 150,
   },
   {
     accessorKey: "when",
@@ -48,6 +50,7 @@ export const columns: ColumnDef<Event>[] = [
         ? format(new Date(row.original.when), "MMM dd yyyy")
         : "—";
     },
+    minSize: 100,
   },
   {
     accessorKey: "winners",
@@ -56,5 +59,6 @@ export const columns: ColumnDef<Event>[] = [
       const winners = row.original.winners;
       return winners && winners.length > 0 ? winners[0].name : "—";
     },
+    minSize: 150,
   },
 ];

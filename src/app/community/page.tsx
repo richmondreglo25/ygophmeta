@@ -65,7 +65,7 @@ export default function Community() {
                 : ""
             }
           >
-            <AccordionTrigger className={`border-x-[1px] px-3 bg-[#fcfcfc]`}>
+            <AccordionTrigger className="border-x-[1px] px-3">
               <div className="flex items-center gap-2">
                 <IconX type={`${key}`} size={16} />
                 {data.data.length > 1 ? plural : label} ({data.data.length})

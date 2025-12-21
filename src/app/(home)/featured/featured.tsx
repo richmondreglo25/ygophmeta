@@ -39,14 +39,14 @@ type FeaturedJson = Record<string, FeaturedGroup>;
 function getContent(item: FeaturedItem) {
   if (item.type === "player" || item.type === "judge") {
     return (
-      <div className="flex justify-center items-center h-full w-full p-5 bg-[#F3F4F6]">
+      <div className="flex flex-col items-center justify-center h-full w-full p-5 bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8]">
         {item.image && (
           <Image
             src={getImagePath(item.image)}
             alt={item.title}
-            width={10}
-            height={10}
-            className="object-cover rounded-full h-full w-full max-h-[25vh] max-w-[25vh]"
+            width={150}
+            height={150}
+            className="object-cover rounded-full h-[150px] w-[150px] border-4 border-white shadow-lg"
           />
         )}
       </div>

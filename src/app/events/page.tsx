@@ -7,7 +7,6 @@ import { columns, Event } from "@/columns/events";
 import { DataTable } from "@/components/data-table";
 
 export default function Events() {
-  // Fetch events from January 2025 to March 2025
   const start = useMemo(() => ({ year: 2025, month: 1 }), []);
   const end = useMemo(() => ({ year: 2025, month: 12 }), []);
   const { data: events, loading } = useEventsByYearMonthRange(start, end);

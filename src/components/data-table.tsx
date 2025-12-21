@@ -79,7 +79,7 @@ export function DataTable<TData, TValue>({
         <div className="mb-4 flex gap-2">
           <Input
             placeholder={`Search ${searchColumn}...`}
-            className="w-full sm:max-w-xs rounded-none"
+            className="w-full sm:max-w-xs border border-gray-300 bg-white text-gray-700 rounded-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 hover:border-gray-400"
             value={
               (table.getColumn(searchColumn)?.getFilterValue() as string) || ""
             }
@@ -89,7 +89,7 @@ export function DataTable<TData, TValue>({
           />
         </div>
       )}
-      <div className="overflow-hidden border">
+      <div id="data-table-wrapper" className="overflow-hidden border">
         <Table id="data-table">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (

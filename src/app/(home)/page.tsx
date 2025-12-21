@@ -13,6 +13,8 @@ import { getJsonPath } from "@/utils/enviroment";
 import Link from "next/link";
 import { useJsonData } from "../data/api";
 import Featured from "./featured/featured";
+import { getTypeBadgeClass } from "@/utils/featured";
+import { Megaphone } from "lucide-react";
 
 export default function Home() {
   const { data, loading } = useJsonData<HomeJson[]>(getJsonPath("home.json"));
@@ -27,10 +29,22 @@ export default function Home() {
         {data.map((item, index) => (
           <Card
             key={index}
-            className="p-0 rounded-none border-[1px] shadow-none flex flex-col"
+            className="flex flex-col p-0 rounded-none border-[1px] shadow-none"
           >
             <CardHeader className="p-5">
-              <CardTitle className="text-md">{item.title}</CardTitle>
+              <CardTitle className="text-md flex justify-between items-center gap-2">
+                <div className="flex items-center gap-2">
+                  <Megaphone size={12} />
+                  {item.title}
+                </div>
+                <span
+                  className={`px-2 py-1 text-xs capitalize ${getTypeBadgeClass(
+                    "guide"
+                  )}`}
+                >
+                  Guide
+                </span>
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-sm p-5 pt-0 flex-1">
               {item.description}
