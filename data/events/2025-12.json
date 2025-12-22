@@ -126,5 +126,113 @@
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "f3a1c2b7-8e9d-8dy4-9c3e-1a2b3c4d5fff",
+    "title": "OCG Pod 1",
+    "host": "Japan Gacha",
+    "when": "Dec 19 2025",
+    "where": "Manila",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [""],
+    "winners": [
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Joshua Lawagan",
+        "position": 2,
+        "deck": "White Forest Azamina Fiendsmith",
+        "deckImagePath": ""
+      }
+    ],
+    "decks": [
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "White Forest Azamina Fiendsmith",
+        "count": 1
+      },
+      {
+        "name": "Blue Eyes",
+        "count": 1
+      },
+      {
+        "name": "Exosister",
+        "count": 1
+      },
+      {
+        "name": "Runick",
+        "count": 1
+      },
+      {
+        "name": "Lunalight",
+        "count": 1
+      },
+      {
+        "name": "Orcust Mitsurugi",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "f2a1d2b7-8e9d-7su4-9c3e-1a2b3c4d5fff",
+    "title": "AE Pod 1",
+    "host": "Japan Gacha",
+    "when": "Dec 19 2025",
+    "where": "Manila",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": ["b1.webp"],
+    "winners": [
+      {
+        "name": "Jhon Gian Obiena",
+        "position": 1,
+        "deck": "Gimmick Puppet",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Louren Vidad",
+        "position": 2,
+        "deck": "VS K9",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Gimmick Puppet",
+        "count": 1
+      },
+      {
+        "name": "VS K9",
+        "count": 1
+      },
+      {
+        "name": "Mementotlan",
+        "count": 1
+      },
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Maliss",
+        "count": 1
+      },
+      {
+        "name": "Millenium",
+        "count": 1
+      }
+    ],
+    "notes": ""
   }
 ]
