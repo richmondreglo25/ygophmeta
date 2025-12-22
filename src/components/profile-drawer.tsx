@@ -104,6 +104,7 @@ export function ProfileDrawer<T = Record<string, unknown>>({
                   src={getImagePath(imagePath)}
                   alt="Profile"
                   loading="lazy"
+                  className="flex justify-center items-center h-full w-full object-cover"
                 />
                 <AvatarFallback>?</AvatarFallback>
               </Avatar>

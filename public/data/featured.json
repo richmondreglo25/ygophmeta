@@ -58,16 +58,33 @@
       }
     ]
   },
+  "topPlayers": {
+    "itemsPerSlide": 1,
+    "items": [
+      {
+        "id": "tp-001",
+        "type": "player",
+        "title": "Louren Vidad",
+        "description": "Challenger Cup PH 2025 - Champion / Battle Nexus PH 2025 - Champion / Asia Championship Series Finals - Top 9",
+        "image": "/people/lourenvidad.webp"
+      }
+    ]
+  },
+  "topPlayers2": {
+    "itemsPerSlide": 1,
+    "items": [
+      {
+        "id": "tp-001",
+        "type": "player",
+        "title": "Rod Allan Bonavente",
+        "description": "Asian Championship Series - Semi Finalist",
+        "image": "/people/rodallanbonavente.webp"
+      }
+    ]
+  },
   "people": {
     "itemsPerSlide": 2,
     "items": [
-      {
-        "id": "player-001",
-        "type": "player",
-        "title": "Richmond Reglo",
-        "description": "System Admin",
-        "image": "/people/richmondreglo.webp"
-      },
       {
         "id": "judge-001",
         "type": "judge",
