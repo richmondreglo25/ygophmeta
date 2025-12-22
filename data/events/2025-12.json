@@ -1,42 +1,83 @@
 [
   {
-    "id": "f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5e6f",
-    "title": "December Duel Finale TEST",
+    "id": "f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff",
+    "title": "December Duel Finale - Demo",
     "host": "Card Haven",
     "when": "2025-12-13T13:00:00Z",
     "where": "Card Haven, Main Hall, Richmond",
     "format": "OCG",
     "rounds": 6,
+    "images": ["/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-b-1.webp"],
     "winners": [
       {
         "name": "Nova Star",
         "position": 1,
         "deck": "Tri-Brigade",
-        "deckImagePath": "/decks/tribrigade.webp"
+        "deckImagePath": "/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-1.webp"
       },
       {
         "name": "Nova Moon",
         "position": 2,
         "deck": "Yummy",
-        "deckImagePath": "/decks/tribrigade.webp"
+        "deckImagePath": "/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-1.webp"
+      },
+      {
+        "name": "Nova Sun",
+        "position": 3,
+        "deck": "Maliss",
+        "deckImagePath": "/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-1.webp"
+      },
+      {
+        "name": "Nova Sun",
+        "position": 4,
+        "deck": "Maliss",
+        "deckImagePath": "/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-1.webp"
+      },
+      {
+        "name": "Nova Sun",
+        "position": 5,
+        "deck": "Maliss",
+        "deckImagePath": "/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-1.webp"
+      },
+      {
+        "name": "Nova Sun",
+        "position": 6,
+        "deck": "Maliss",
+        "deckImagePath": "/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-1.webp"
+      },
+      {
+        "name": "Nova Sun",
+        "position": 7,
+        "deck": "Maliss",
+        "deckImagePath": "/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-1.webp"
+      },
+      {
+        "name": "Nova Sun",
+        "position": 8,
+        "deck": "Maliss",
+        "deckImagePath": "/events/f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff-1.webp"
       }
     ],
-    "participants": [
+    "decks": [
       {
-        "name": "Nova Star",
-        "deck": "Tri-Brigade"
+        "name": "Tri-Brigade",
+        "count": 2
       },
       {
-        "name": "Luna Gale",
-        "deck": "Salamangreat"
+        "name": "Dragon Link",
+        "count": 1
       },
       {
-        "name": "Blaze Falcon",
-        "deck": "Dragon Link"
+        "name": "Sky Striker",
+        "count": 1
       },
       {
-        "name": "Mystic Shade",
-        "deck": "Sky Striker"
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Maliss",
+        "count": 4
       }
     ],
     "notes": "Year-end celebration with awards and raffles."
