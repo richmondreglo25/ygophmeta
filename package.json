@@ -9,7 +9,10 @@
     "export": "next export",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "npm run build && npx shx touch ./out/.nojekyll && npx gh-pages -d out"
+    "deploy": "npm run build && npx shx touch ./out/.nojekyll && npx gh-pages -d out",
+    "11ty:build": "eleventy",
+    "11ty:serve": "eleventy --serve",
+    "11ty:deploy": "npm run 11ty:build && npx shx touch ./_output/.nojekyll && npx gh-pages -d _output"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
@@ -36,6 +39,7 @@
     "vaul": "^1.1.2"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^20",
     "@types/react": "^19",

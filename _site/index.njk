@@ -1,0 +1,75 @@
+---
+layout: layout.njk
+permalink: /index.html
+---
+
+<div class="container">
+  <h1>Yu-Gi-Oh! PH Meta - Events</h1>
+  
+  <div class="event-list">
+    {% for event in events %}
+    <div class="event-card">
+      <h3><a href="/events/{{ event.id }}.html">{{ event.title }}</a></h3>
+      <div class="event-meta">
+        <span><strong>Host:</strong> {{ event.host }}</span>
+        <span><strong>Date:</strong> {{ event.when | formatDate }}</span>
+      </div>
+      <div class="event-location">
+        📍 {{ event.where }}
+      </div>
+      {% if event.winners and event.winners.length > 0 %}
+      <div class="event-winner">
+        🏆 Winner: {{ event.winners[0].name }} ({{ event.winners[0].deck }})
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .event-list {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .event-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #0070f3;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  .event-card h3 {
+    margin: 0 0 10px 0;
+  }
+  .event-card h3 a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  .event-card h3 a:hover {
+    text-decoration: underline;
+  }
+  .event-meta {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+    font-size: 0.95em;
+    color: #666;
+  }
+  .event-location {
+    margin: 8px 0;
+    color: #666;
+  }
+  .event-winner {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-weight: 500;
+  }
+</style>

@@ -1,0 +1,88 @@
+---
+pagination:
+  data: events
+  size: 1
+  alias: event
+permalink: "events/{{ event.id }}.html"
+---
+{% extends "layout.njk" %}
+
+{% block title %}{{ event.title }} - YGO PH Meta{% endblock %}
+
+{% block content %}
+<div class="container">
+  <a href="/" class="back-link">← Back to Events</a>
+  
+  <h1>{{ event.title }}</h1>
+  
+  <div class="event-info">
+    <div class="info-card">
+      <div class="info-label">Host</div>
+      <div class="info-value">{{ event.host }}</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-label">When</div>
+      <div class="info-value">{{ event.when | formatDate }}</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-label">Where</div>
+      <div class="info-value">{{ event.where }}</div>
+    </div>
+  </div>
+  
+  {% if event.desc and event.desc.length > 0 %}
+  <h2>Event Details</h2>
+  <div class="desc-grid">
+    {% for detail in event.desc %}
+    <div class="info-card">
+      <div class="info-label">{{ detail.name }}</div>
+      <div class="info-value">{{ detail.desc }}</div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  
+  {% if event.winners and event.winners.length > 0 %}
+  <h2>Winners</h2>
+  {% for winner in event.winners %}
+  <div class="winner-card">
+    <div>
+      <span class="position-badge">{{ winner.position | ordinal }}</span>
+      <strong>{{ winner.name }}</strong>
+    </div>
+    <div style="margin-top: 10px; color: #666;">
+      <strong>Deck:</strong> {{ winner.deck }}
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+  
+  {% if event.participants and event.participants.length > 0 %}
+  <h2>Participants ({{ event.participants.length }})</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Deck</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for participant in event.participants %}
+      <tr>
+        <td>{{ participant.name }}</td>
+        <td>{{ participant.deck }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+  
+  {% if event.notes %}
+  <div class="notes">
+    <strong>Notes:</strong> {{ event.notes }}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

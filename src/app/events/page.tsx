@@ -2,23 +2,20 @@
 
 import { Loading } from "@/components/loading";
 import { useEventsByYearMonthRange } from "../data/api";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { columns, Event } from "@/columns/events";
 import { DataTable } from "@/components/data-table";
-import { EventDrawer, useEventDrawer } from "@/components/event-drawer";
+import { useRouter } from "next/navigation";
 
 export default function Events() {
+  const router = useRouter();
   const start = useMemo(() => ({ year: 2025, month: 1 }), []);
   const end = useMemo(() => ({ year: 2025, month: 12 }), []);
   const { data: events, loading } = useEventsByYearMonthRange(start, end);
 
-  // Drawer state
-  const { open, openDrawer, closeDrawer } = useEventDrawer();
-  const [selected, setSelected] = useState<Event | null>(null);
-
   function onClick(row: Event) {
-    setSelected(row);
-    openDrawer();
+    // Navigate to the dynamic Next.js route
+    router.push(`/events/${row.id}`);
   }
 
   return (
@@ -32,10 +29,6 @@ export default function Events() {
           searchColumn="title"
           onClick={onClick}
         />
-      )}
-      {/* Event Drawer */}
-      {selected && (
-        <EventDrawer open={open} onOpenChange={closeDrawer} data={selected} />
       )}
     </div>
   );

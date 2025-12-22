@@ -20,6 +20,9 @@
 # production
 /build
 
+# eleventy output
+/_output/
+
 # misc
 .DS_Store
 *.pem

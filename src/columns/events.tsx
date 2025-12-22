@@ -13,9 +13,9 @@ export type EventWinner = {
   deckImagePath: string;
 };
 
-export type EventParticipant = {
+export type EventDeck = {
   name: string;
-  deck: string;
+  count: number;
 };
 
 export type Event = {
@@ -26,8 +26,9 @@ export type Event = {
   where: string;
   format?: string;
   rounds?: number;
+  images?: string[];
   winners: EventWinner[];
-  participants: EventParticipant[];
+  decks: EventDeck[];
   notes?: string;
 };
 
