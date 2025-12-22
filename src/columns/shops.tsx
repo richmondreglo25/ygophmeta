@@ -26,7 +26,13 @@ export const columns: ColumnDef<Shop>[] = [
       return (
         <div className="flex items-center gap-1.5">
           <Avatar className="h-4 w-4">
-            {hasLogo && <AvatarImage src={logoPath} alt={row.original.name} />}
+            {hasLogo && (
+              <AvatarImage
+                src={logoPath}
+                alt={row.original.name}
+                loading="lazy"
+              />
+            )}
             <AvatarFallback>
               <span className="text-xs">{row.original.name.charAt(0)}</span>
             </AvatarFallback>

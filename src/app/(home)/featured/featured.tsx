@@ -19,6 +19,7 @@ import {
 import { getTypeBadgeClass } from "@/utils/featured";
 import { useJsonData } from "@/app/data/api";
 import { Sparkle } from "lucide-react";
+import Autoplay, { AutoplayType } from "embla-carousel-autoplay";
 
 export type FeaturedItem = {
   id: string;
@@ -78,7 +79,7 @@ function getContent(item: FeaturedItem) {
           title={item.title}
           className="absolute top-0 left-0 w-full h-full"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; useautoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
       </div>
@@ -88,15 +89,21 @@ function getContent(item: FeaturedItem) {
   }
 }
 
-function renderCarousel(items: FeaturedItem[], itemsPerSlide: number = 1) {
+function renderCarousel(
+  items: FeaturedItem[],
+  itemsPerSlide: number = 1,
+  autoplayInstance: AutoplayType
+) {
   if (!items || items.length === 0) return null;
   return (
     <Carousel
-      itemsPerSlide={itemsPerSlide}
+      plugins={[autoplayInstance]}
       opts={{
         align: "start",
         loop: true,
+        startIndex: Math.floor(Math.random() * items.length),
       }}
+      itemsPerSlide={itemsPerSlide}
     >
       <CarouselContent>
         {items.map((item) => {
@@ -145,19 +152,30 @@ export default function Featured() {
     return null;
   }
 
+  // Create a unique autoplay instance for each carousel group
+  const autoplayRefs = Object.keys(data).reduce((acc, group) => {
+    acc[group] = Autoplay({
+      delay: 7000,
+      playOnInit: true,
+      stopOnInteraction: true,
+    });
+    return acc;
+  }, {} as Record<string, AutoplayType>);
+
   return (
     <div className="flex flex-col gap-2">
       <div className="flex items-center gap-1 text-xs font-normal italic">
         <Sparkle size={10} />
         <span>Featured</span>
       </div>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         {Object.entries(data).map(([group, groupData]) =>
           Array.isArray(groupData.items) && groupData.items.length > 0 ? (
             <div key={group}>
               {renderCarousel(
                 groupData.items,
-                isSm ? 1 : groupData.itemsPerSlide ?? 1 // <-- always fallback to 1 if not set
+                isSm ? 1 : groupData.itemsPerSlide ?? 1,
+                autoplayRefs[group]
               )}
             </div>
           ) : null

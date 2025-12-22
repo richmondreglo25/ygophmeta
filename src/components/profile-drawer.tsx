@@ -100,7 +100,11 @@ export function ProfileDrawer<T = Record<string, unknown>>({
                 className="mb-10"
                 style={{ width: `${imageSize}px`, height: `${imageSize}px` }}
               >
-                <AvatarImage src={getImagePath(imagePath)} alt="Profile" />
+                <AvatarImage
+                  src={getImagePath(imagePath)}
+                  alt="Profile"
+                  loading="lazy"
+                />
                 <AvatarFallback>?</AvatarFallback>
               </Avatar>
             )}

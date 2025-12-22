@@ -24,7 +24,8 @@ export type Event = {
   host: string;
   when: string;
   where: string;
-  format?: string;
+  format: string;
+  official: boolean;
   rounds?: number;
   images?: string[];
   winners: EventWinner[];

@@ -28,7 +28,11 @@ export const columns: ColumnDef<Judge>[] = [
         <div className="flex items-center gap-1.5">
           <Avatar className="h-4 w-4">
             {hasImage && (
-              <AvatarImage src={imagePath} alt={row.original.name} />
+              <AvatarImage
+                src={imagePath}
+                alt={row.original.name}
+                loading="lazy"
+              />
             )}
             <AvatarFallback>
               <span className="text-xs">{row.original.name.charAt(0)}</span>

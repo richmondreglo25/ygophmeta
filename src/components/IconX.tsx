@@ -1,9 +1,13 @@
 import {
   CalendarDays,
   ChartArea,
+  Cog,
   Gavel,
   House,
   Library,
+  Logs,
+  MapPin,
+  Network,
   Store,
   UserRound,
   UsersRound,
@@ -32,6 +36,16 @@ export function IconX(param: IconXParam) {
       return <Gavel size={param.size} />;
     case "info":
       return <Library size={param.size} />;
+    case "host":
+      return <Network size={param.size} />;
+    case "when":
+      return <CalendarDays size={param.size} />;
+    case "where":
+      return <MapPin size={param.size} />;
+    case "settings":
+      return <Cog size={param.size} />;
+    case "rounds":
+      return <Logs size={param.size} />;
     default:
       return <House size={param.size} />;
   }

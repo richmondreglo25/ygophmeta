@@ -2,19 +2,21 @@
 import { notFound } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import {
   Calendar,
   ChartArea,
+  ChevronRight,
   Medal,
   NotebookText,
   ScrollText,
   Slash,
 } from "lucide-react";
 import { EventDeck, EventWinner } from "@/columns/events";
-import { getImagePath } from "@/utils/enviroment";
+import { getEventImagePath } from "@/utils/enviroment";
+import { IconX } from "@/components/IconX";
+import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 
 export async function generateStaticParams() {
   const eventsDir = path.join(process.cwd(), "public/data/events");
@@ -74,9 +76,9 @@ export default async function EventPage({
   }
 
   const details = [
-    { label: "Host", value: event.host },
-    { label: "When", value: event.when },
-    { label: "Where", value: event.where },
+    { label: "Host", value: event.host, icon: "host" },
+    { label: "When", value: event.when, icon: "when" },
+    { label: "Where", value: event.where, icon: "where" },
     event.decks &&
       event.decks.length > 0 && {
         label: "Participants",
@@ -84,9 +86,16 @@ export default async function EventPage({
           (acc: number, deck: { count: number }) => acc + deck.count,
           0
         ),
+        icon: "players",
       },
-    event.format && { label: "Format", value: event.format },
-    event.rounds && { label: "Rounds", value: event.rounds },
+    {
+      label: "Format",
+      value: `${event.format} ${
+        event.official ? "(Official)" : "(Unofficial)"
+      }`,
+      icon: "settings",
+    },
+    event.rounds && { label: "Rounds", value: event.rounds, icon: "rounds" },
   ].filter(Boolean);
 
   return (
@@ -99,22 +108,10 @@ export default async function EventPage({
         </h1>
         <Link
           href="/events"
-          className="flex items-center hover:underline font-medium text-sm"
+          className="flex items-center text-blue-600 hover:underline font-medium text-sm "
         >
-          <svg
-            className="w-5 h-5 mr-2"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-          Back
+          <span>Back</span>
+          <ChevronRight size={14} />
         </Link>
       </div>
       {/* Content */}
@@ -124,15 +121,20 @@ export default async function EventPage({
           <div className="flex flex-col gap-3">
             <div className="grid grid-cols-1 gap-3">
               {event.images.map((imagePath: string, index: number) => (
-                <Image
+                <Avatar
                   key={index}
-                  src={getImagePath(imagePath)}
-                  alt={`Event Image ${index + 1}`}
-                  loading="lazy"
-                  width={300}
-                  height={200}
-                  className="text-sm rounded flex-1 object-cover border h-full w-full max-h-[40vh]"
-                />
+                  className="text-sm rounded object-cover border h-full w-full max-h-[40vh]"
+                >
+                  <AvatarImage
+                    src={getEventImagePath(event.id, imagePath)}
+                    alt={`Event Image ${index + 1}`}
+                    loading="lazy"
+                    className="flex justify-center items-center h-full w-full object-cover"
+                  />
+                  <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+                    Unable to load image
+                  </AvatarFallback>
+                </Avatar>
               ))}
             </div>
           </div>
@@ -151,8 +153,11 @@ export default async function EventPage({
                 className="flex flex-col p-0 rounded-none border-[1px] shadow-none"
               >
                 <CardHeader className="p-3 pb-1">
-                  <CardTitle className="text-md flex justify-between items-center gap-2">
-                    <div className="flex items-center gap-2">{item.label}</div>
+                  <CardTitle className="text-sm flex justify-between items-center gap-2">
+                    <div className="flex items-center gap-1">
+                      <IconX type={item.icon} size={11} />
+                      <span>{item.label}</span>
+                    </div>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm p-3 pt-0 flex-1">
@@ -181,7 +186,7 @@ export default async function EventPage({
               <Medal size={10} />
               <span>Winners</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-5">
               {event.winners.map((winner: EventWinner, index: number) => {
                 const badgeColor =
                   index === 0
@@ -207,14 +212,20 @@ export default async function EventPage({
                       <span>{winner.deck}</span>
                     </div>
                     {winner.deckImagePath && (
-                      <Image
-                        src={getImagePath(winner.deckImagePath)}
-                        alt={winner.deck}
-                        loading="lazy"
-                        width={100}
-                        height={100}
-                        className="text-sm rounded flex-1 object-cover border h-full w-full"
-                      />
+                      <Avatar className="text-sm rounded flex-1 object-contain border h-full w-full">
+                        <AvatarImage
+                          src={getEventImagePath(
+                            event.id,
+                            winner.deckImagePath
+                          )}
+                          alt={winner.deck}
+                          loading="lazy"
+                          className="flex justify-center items-center h-full w-full object-contain"
+                        />
+                        <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+                          Unable to load image
+                        </AvatarFallback>
+                      </Avatar>
                     )}
                   </div>
                 );
@@ -262,13 +273,16 @@ function getDeckPercentage(count: number, total: number): string {
  * @returns JSX Element displaying the decks summary table.
  */
 function DecksSummaryTable({ decks }: { decks: EventDeck[] }) {
-  // Calculate total count
+  // Calculate total number of decks.
   const total = decks.reduce(
     (acc: number, deck: EventDeck) => acc + deck.count,
     0
   );
-  // Sort decks by count descending
-  const sortedDecks = [...decks].sort((a, b) => b.count - a.count);
+
+  // Sort decks by count descending, then by name ascending.
+  const sortedDecks = [...decks].sort((a, b) =>
+    b.count !== a.count ? b.count - a.count : a.name.localeCompare(b.name)
+  );
 
   return (
     <div className="flex flex-col gap-3">

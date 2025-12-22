@@ -33,7 +33,7 @@ function renderValue(key: string, value: unknown) {
     if (typeof value === "string" && value.trim() !== "") {
       return (
         <Avatar className="h-12 w-12">
-          <AvatarImage src={getImagePath(value)} alt="Logo" />
+          <AvatarImage src={getImagePath(value)} alt="Logo" loading="lazy" />
           <AvatarFallback>?</AvatarFallback>
         </Avatar>
       );
@@ -134,7 +134,11 @@ export function ShopDrawer<T = Record<string, unknown>>({
                 className="mb-10"
                 style={{ width: `120px`, height: `120px` }}
               >
-                <AvatarImage src={getImagePath(logo)} alt="Shop Logo" />
+                <AvatarImage
+                  src={getImagePath(logo)}
+                  alt="Shop Logo"
+                  loading="lazy"
+                />
                 <AvatarFallback>?</AvatarFallback>
               </Avatar>
             )}
