@@ -6,17 +6,16 @@ export type EventDesc = {
   desc: number | string;
 };
 
-export type Participant = {
-  name: string;
-  deck: string;
-  deckImagePath: string;
-};
-
 export type EventWinner = {
   name: string;
   position: number;
   deck: string;
   deckImagePath: string;
+};
+
+export type EventParticipant = {
+  name: string;
+  deck: string;
 };
 
 export type Event = {
@@ -25,9 +24,10 @@ export type Event = {
   host: string;
   when: string;
   where: string;
-  desc: EventDesc[];
-  participants: Participant[];
+  format?: string;
+  rounds?: number;
   winners: EventWinner[];
+  participants: EventParticipant[];
   notes?: string;
 };
 

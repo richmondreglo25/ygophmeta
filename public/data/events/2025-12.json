@@ -1,43 +1,42 @@
 [
   {
     "id": "f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5e6f",
-    "title": "December Duel Finale",
+    "title": "December Duel Finale TEST",
     "host": "Card Haven",
     "when": "2025-12-13T13:00:00Z",
     "where": "Card Haven, Main Hall, Richmond",
-    "desc": [
-      { "name": "Total Participants", "desc": 66 },
-      { "name": "Rounds", "desc": 6 },
-      { "name": "Format", "desc": "Advanced Constructed" }
-    ],
-    "participants": [
-      {
-        "name": "Nova Star",
-        "deck": "Tri-Brigade",
-        "deckImagePath": "/decks/tribrigade.webp"
-      },
-      {
-        "name": "Luna Gale",
-        "deck": "Salamangreat",
-        "deckImagePath": "/decks/salamangreat.webp"
-      },
-      {
-        "name": "Blaze Falcon",
-        "deck": "Dragon Link",
-        "deckImagePath": "/decks/dragonlink.webp"
-      },
-      {
-        "name": "Mystic Shade",
-        "deck": "Sky Striker",
-        "deckImagePath": "/decks/skystriker.webp"
-      }
-    ],
+    "format": "OCG",
+    "rounds": 6,
     "winners": [
       {
         "name": "Nova Star",
         "position": 1,
         "deck": "Tri-Brigade",
         "deckImagePath": "/decks/tribrigade.webp"
+      },
+      {
+        "name": "Nova Moon",
+        "position": 2,
+        "deck": "Yummy",
+        "deckImagePath": "/decks/tribrigade.webp"
+      }
+    ],
+    "participants": [
+      {
+        "name": "Nova Star",
+        "deck": "Tri-Brigade"
+      },
+      {
+        "name": "Luna Gale",
+        "deck": "Salamangreat"
+      },
+      {
+        "name": "Blaze Falcon",
+        "deck": "Dragon Link"
+      },
+      {
+        "name": "Mystic Shade",
+        "deck": "Sky Striker"
       }
     ],
     "notes": "Year-end celebration with awards and raffles."
