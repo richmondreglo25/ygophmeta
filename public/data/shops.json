@@ -1,1 +1,73 @@
-[]
+[
+  {
+    "name": "Arcane Card Vault",
+    "logo": "/shops/richmondreglo.webp",
+    "images": ["/shops/richmondreglo.webp", "/shops/richmondreglo.webp"],
+    "address": "12 Mana Circle, Silverdeck City",
+    "googleMaps": "https://maps.example.com/?q=12+Mana+Circle+Silverdeck",
+    "openHours": "Mon-Sun: 9:00 AM - 8:00 PM",
+    "tournamentSchedule": [
+      { "day": "Wednesday", "time": "6:00 PM", "event": "Midweek Skirmish" },
+      { "day": "Saturday", "time": "1:00 PM", "event": "Open Bracket" }
+    ],
+    "accolades": ["Rising Shop Award"],
+    "activePlayers": 38,
+    "about": "Arcane Card Vault is a relaxed hub for casual and competitive card players alike."
+  },
+  {
+    "name": "Summoner's Shelf",
+    "logo": "/shops/richmondreglo.webp",
+    "images": ["/shops/richmondreglo.webp"],
+    "address": "88 Rune Road, Deckhaven",
+    "googleMaps": "https://maps.example.com/?q=88+Rune+Road+Deckhaven",
+    "openHours": "Tue-Sun: 10:00 AM - 7:00 PM",
+    "tournamentSchedule": [
+      { "day": "Friday", "time": "5:30 PM", "event": "Friday Free Play" }
+    ],
+    "accolades": ["Best New Store"],
+    "activePlayers": 22,
+    "about": "A cozy shop focused on beginners, collectors, and friendly matches."
+  },
+  {
+    "name": "Mythic Draw",
+    "logo": "/shops/richmondreglo.webp",
+    "images": ["/shops/richmondreglo.webp"],
+    "address": "5 Legend Lane, Crownguard Town",
+    "googleMaps": "https://maps.example.com/?q=5+Legend+Lane+Crownguard",
+    "openHours": "Mon-Sat: 11:00 AM - 9:00 PM",
+    "tournamentSchedule": [
+      { "day": "Saturday", "time": "4:00 PM", "event": "Mythic League" }
+    ],
+    "accolades": ["Top Competitive Scene"],
+    "activePlayers": 50,
+    "about": "Mythic Draw caters to competitive players seeking high-level events."
+  },
+  {
+    "name": "Decksmith Alley",
+    "logo": "/shops/richmondreglo.webp",
+    "images": ["/shops/richmondreglo.webp"],
+    "address": "41 Shuffle Street, Ironvale",
+    "googleMaps": "https://maps.example.com/?q=41+Shuffle+Street+Ironvale",
+    "openHours": "Daily: 12:00 PM - 10:00 PM",
+    "tournamentSchedule": [
+      { "day": "Thursday", "time": "7:00 PM", "event": "Crafted Deck Night" }
+    ],
+    "accolades": [],
+    "activePlayers": 28,
+    "about": "Decksmith Alley is known for creative deck-building sessions."
+  },
+  {
+    "name": "The Final Draw",
+    "logo": "/shops/richmondreglo.webp",
+    "images": ["/shops/richmondreglo.webp"],
+    "address": "9 Endstep Blvd, Lastturn City",
+    "googleMaps": "https://maps.example.com/?q=9+Endstep+Blvd+Lastturn",
+    "openHours": "Mon-Sun: 10:00 AM - 9:30 PM",
+    "tournamentSchedule": [
+      { "day": "Sunday", "time": "2:00 PM", "event": "Weekly Finals" }
+    ],
+    "accolades": ["Community Choice"],
+    "activePlayers": 44,
+    "about": "A lively venue with a strong weekend tournament culture."
+  }
+]
