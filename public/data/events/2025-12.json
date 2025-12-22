@@ -1,9 +1,9 @@
 [
   {
     "id": "f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff",
-    "title": "Pod 1",
+    "title": "OCG Pod 1",
     "host": "RaVens Play Center",
-    "when": "Dec 14 2025",
+    "when": "Dec 13 2025",
     "where": "Bulacan",
     "format": "OCG",
     "official": true,
@@ -65,9 +65,9 @@
   },
   {
     "id": "f3a1c2b7-8e9d-7su4-9c3e-1a2b3c4d5fff",
-    "title": "Pod 2",
+    "title": "OCG Pod 2",
     "host": "RaVens Play Center",
-    "when": "Dec 14 2025",
+    "when": "Dec 13 2025",
     "where": "Bulacan",
     "format": "OCG",
     "official": true,
@@ -142,13 +142,13 @@
         "name": "Emmanuel Jamorabo",
         "position": 1,
         "deck": "Yummy",
-        "deckImagePath": ""
+        "deckImagePath": "1.webp"
       },
       {
         "name": "Joshua Lawagan",
         "position": 2,
         "deck": "White Forest Azamina Fiendsmith",
-        "deckImagePath": ""
+        "deckImagePath": "2.webp"
       }
     ],
     "decks": [
