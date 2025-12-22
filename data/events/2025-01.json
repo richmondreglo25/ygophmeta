@@ -153,7 +153,7 @@
     "host": "Card Haven",
     "when": "2025-01-29T13:00:00Z",
     "where": "Card Haven, Main Hall, Richmond",
-    "desc": [
+    " ": [
       { "name": "Total Participants", "desc": 60 },
       { "name": "Rounds", "desc": 6 },
       { "name": "Format", "desc": "Advanced Constructed" }
