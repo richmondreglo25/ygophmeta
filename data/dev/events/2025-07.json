@@ -1,0 +1,352 @@
+[
+  {
+    "id": "f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5e6f",
+    "title": "July Joust",
+    "host": "Duelist's Corner",
+    "when": "2025-07-12T10:00:00Z",
+    "where": "Duelist's Corner, Expo Center, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 50 },
+      { "name": "Rounds", "desc": 5 },
+      { "name": "Format", "desc": "Swiss" }
+    ],
+    "participants": [
+      {
+        "name": "Blaze Falcon",
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      },
+      {
+        "name": "Nova Star",
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      },
+      {
+        "name": "Luna Gale",
+        "deck": "Salamangreat",
+        "deckImagePath": "/decks/salamangreat.webp"
+      },
+      {
+        "name": "Mystic Shade",
+        "deck": "Sky Striker",
+        "deckImagePath": "/decks/skystriker.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Blaze Falcon",
+        "position": 1,
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      }
+    ],
+    "notes": "Special summer event with exclusive prizes."
+  },
+  {
+    "id": "a7b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "title": "Independence Day Championship",
+    "host": "Card Haven",
+    "when": "2025-07-04T13:00:00Z",
+    "where": "Card Haven, Main Hall, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 64 },
+      { "name": "Rounds", "desc": 6 },
+      { "name": "Format", "desc": "Advanced Constructed" }
+    ],
+    "participants": [
+      {
+        "name": "Luna Gale",
+        "deck": "Salamangreat",
+        "deckImagePath": "/decks/salamangreat.webp"
+      },
+      {
+        "name": "Mystic Shade",
+        "deck": "Sky Striker",
+        "deckImagePath": "/decks/skystriker.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Nova Star",
+        "position": 1,
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      }
+    ],
+    "notes": "Fourth of July celebration with fireworks display."
+  },
+  {
+    "id": "b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+    "title": "Summer Heat Wave",
+    "host": "Duelist's Corner",
+    "when": "2025-07-18T16:00:00Z",
+    "where": "Duelist's Corner, Expo Center, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 42 },
+      { "name": "Rounds", "desc": 5 },
+      { "name": "Format", "desc": "Swiss" }
+    ],
+    "participants": [
+      {
+        "name": "Blaze Falcon",
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      },
+      {
+        "name": "Nova Star",
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Luna Gale",
+        "position": 1,
+        "deck": "Salamangreat",
+        "deckImagePath": "/decks/salamangreat.webp"
+      }
+    ],
+    "notes": "Hot summer tournament with cooling prizes."
+  },
+  {
+    "id": "c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+    "title": "July Grand Prix",
+    "host": "Card Haven",
+    "when": "2025-07-27T11:00:00Z",
+    "where": "Card Haven, Main Hall, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 70 },
+      { "name": "Rounds", "desc": 7 },
+      { "name": "Format", "desc": "Advanced Constructed" }
+    ],
+    "participants": [
+      {
+        "name": "Mystic Shade",
+        "deck": "Sky Striker",
+        "deckImagePath": "/decks/skystriker.webp"
+      },
+      {
+        "name": "Blaze Falcon",
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      },
+      {
+        "name": "Nova Star",
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Mystic Shade",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "/decks/skystriker.webp"
+      }
+    ],
+    "notes": "Grand Prix with double points for rankings."
+  },
+  {
+    "id": "d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+    "title": "Midsummer Madness",
+    "host": "Duelist's Corner",
+    "when": "2025-07-15T14:00:00Z",
+    "where": "Duelist's Corner, Expo Center, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 56 },
+      { "name": "Rounds", "desc": 6 },
+      { "name": "Format", "desc": "Swiss" }
+    ],
+    "participants": [
+      {
+        "name": "Luna Gale",
+        "deck": "Salamangreat",
+        "deckImagePath": "/decks/salamangreat.webp"
+      },
+      {
+        "name": "Nova Star",
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Blaze Falcon",
+        "position": 1,
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      }
+    ],
+    "notes": "Mid-July madness tournament with crazy challenges."
+  },
+  {
+    "id": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
+    "title": "Sunshine Showdown",
+    "host": "Card Haven",
+    "when": "2025-07-06T12:00:00Z",
+    "where": "Card Haven, Main Hall, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 48 },
+      { "name": "Rounds", "desc": 5 },
+      { "name": "Format", "desc": "Swiss" }
+    ],
+    "participants": [
+      {
+        "name": "Mystic Shade",
+        "deck": "Sky Striker",
+        "deckImagePath": "/decks/skystriker.webp"
+      },
+      {
+        "name": "Luna Gale",
+        "deck": "Salamangreat",
+        "deckImagePath": "/decks/salamangreat.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Nova Star",
+        "position": 1,
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      }
+    ],
+    "notes": "Bright sunshine tournament with solar-powered prizes."
+  },
+  {
+    "id": "f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u1",
+    "title": "Pool Party Duel",
+    "host": "Duelist's Corner",
+    "when": "2025-07-20T15:00:00Z",
+    "where": "Duelist's Corner, Expo Center, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 38 },
+      { "name": "Rounds", "desc": 5 },
+      { "name": "Format", "desc": "Swiss" }
+    ],
+    "participants": [
+      {
+        "name": "Nova Star",
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      },
+      {
+        "name": "Blaze Falcon",
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Luna Gale",
+        "position": 1,
+        "deck": "Salamangreat",
+        "deckImagePath": "/decks/salamangreat.webp"
+      }
+    ],
+    "notes": "Pool party themed tournament with water activities."
+  },
+  {
+    "id": "g7h8i9j0-k1l2-m3n4-o5p6-q7r8s9t0u1v2",
+    "title": "July Thunder Storm",
+    "host": "Card Haven",
+    "when": "2025-07-24T17:00:00Z",
+    "where": "Card Haven, Main Hall, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 44 },
+      { "name": "Rounds", "desc": 5 },
+      { "name": "Format", "desc": "Swiss" }
+    ],
+    "participants": [
+      {
+        "name": "Blaze Falcon",
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      },
+      {
+        "name": "Mystic Shade",
+        "deck": "Sky Striker",
+        "deckImagePath": "/decks/skystriker.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Mystic Shade",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "/decks/skystriker.webp"
+      }
+    ],
+    "notes": "Thunder storm themed evening tournament."
+  },
+  {
+    "id": "h8i9j0k1-l2m3-n4o5-p6q7-r8s9t0u1v2w3",
+    "title": "Summer Slam",
+    "host": "Duelist's Corner",
+    "when": "2025-07-31T13:30:00Z",
+    "where": "Duelist's Corner, Expo Center, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 62 },
+      { "name": "Rounds", "desc": 6 },
+      { "name": "Format", "desc": "Swiss" }
+    ],
+    "participants": [
+      {
+        "name": "Luna Gale",
+        "deck": "Salamangreat",
+        "deckImagePath": "/decks/salamangreat.webp"
+      },
+      {
+        "name": "Nova Star",
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      },
+      {
+        "name": "Blaze Falcon",
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Nova Star",
+        "position": 1,
+        "deck": "Tri-Brigade",
+        "deckImagePath": "/decks/tribrigade.webp"
+      }
+    ],
+    "notes": "End of July summer slam tournament."
+  },
+  {
+    "id": "i9j0k1l2-m3n4-o5p6-q7r8-s9t0u1v2w3x4",
+    "title": "Hot Dog Days",
+    "host": "Card Haven",
+    "when": "2025-07-09T11:30:00Z",
+    "where": "Card Haven, Main Hall, Richmond",
+    "desc": [
+      { "name": "Total Participants", "desc": 52 },
+      { "name": "Rounds", "desc": 5 },
+      { "name": "Format", "desc": "Swiss" }
+    ],
+    "participants": [
+      {
+        "name": "Mystic Shade",
+        "deck": "Sky Striker",
+        "deckImagePath": "/decks/skystriker.webp"
+      },
+      {
+        "name": "Luna Gale",
+        "deck": "Salamangreat",
+        "deckImagePath": "/decks/salamangreat.webp"
+      }
+    ],
+    "winners": [
+      {
+        "name": "Blaze Falcon",
+        "position": 1,
+        "deck": "Dragon Link",
+        "deckImagePath": "/decks/dragonlink.webp"
+      }
+    ],
+    "notes": "Dog days of summer with hot dog eating contest."
+  }
+]

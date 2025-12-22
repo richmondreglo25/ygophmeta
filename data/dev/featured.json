@@ -1,0 +1,94 @@
+{
+  "videos": {
+    "itemsPerSlide": 2,
+    "items": [
+      {
+        "id": "video-001",
+        "type": "video",
+        "title": "Richmond Reglo: Deck Profile 2024",
+        "description": "A detailed deck profile and strategy discussion.",
+        "link": "https://www.youtube.com/watch?v=16KTwxJWi1s"
+      },
+      {
+        "id": "video-002",
+        "type": "video",
+        "title": "Richmond Reglo: Tournament Highlights",
+        "description": "Highlights from the latest local tournament.",
+        "link": "https://www.youtube.com/watch?v=KQ3nJ9uuqGA"
+      },
+      {
+        "id": "video-003",
+        "type": "video",
+        "title": "Richmond Reglo: Card Market Tips",
+        "description": "Tips for trading and collecting cards.",
+        "link": "https://www.youtube.com/watch?v=po_sB9wyZ_w&t=733s"
+      }
+    ]
+  },
+  "banners": {
+    "itemsPerSlide": 2,
+    "items": [
+      {
+        "id": "shop-001",
+        "type": "shop",
+        "title": "Card Haven",
+        "description": "A top-rated shop for trading cards and accessories.",
+        "image": "/shops/richmondreglo.webp"
+      },
+      {
+        "id": "shop-002",
+        "type": "shop",
+        "title": "Duelist's Corner",
+        "description": "Your friendly neighborhood card shop.",
+        "image": "/shops/richmondreglo.webp"
+      },
+      {
+        "id": "event-001",
+        "type": "event",
+        "title": "Winter Duel Fest",
+        "description": "Annual winter event featuring tournaments and prizes.",
+        "image": "/shops/richmondreglo.webp"
+      },
+      {
+        "id": "event-002",
+        "type": "event",
+        "title": "Spring Card Expo",
+        "description": "A spring gathering for card game enthusiasts.",
+        "image": "/shops/richmondreglo.webp"
+      }
+    ]
+  },
+  "people": {
+    "itemsPerSlide": 2,
+    "items": [
+      {
+        "id": "player-001",
+        "type": "player",
+        "title": "Blaze Falcon",
+        "description": "Known for creative deck builds and top finishes.",
+        "image": "/people/richmondreglo.webp"
+      },
+      {
+        "id": "player-002",
+        "type": "player",
+        "title": "Mystic Shade",
+        "description": "Specializes in control strategies.",
+        "image": "/people/richmondreglo.webp"
+      },
+      {
+        "id": "judge-001",
+        "type": "judge",
+        "title": "Judge Orion",
+        "description": "Certified judge and event organizer.",
+        "image": "/people/richmondreglo.webp"
+      },
+      {
+        "id": "judge-002",
+        "type": "judge",
+        "title": "Judge Nova",
+        "description": "Expert in tournament rules and fair play.",
+        "image": "/people/richmondreglo.webp"
+      }
+    ]
+  }
+}

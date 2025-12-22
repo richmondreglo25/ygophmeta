@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Richmond Reglo",
+    "ign": "Richmond",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Manila",
+    "team": "",
+    "deck": ["Yummy"]
+  },
+  {
+    "name": "Owen Cruz",
+    "ign": "DmaN14",
+    "gender": "male",
+    "city": "Bulacan",
+    "team": "Team Kwasong",
+    "deck": ["Branded", "Exosister", "Magic Musketeer"]
+  },
+  {
+    "name": "Renz Guizzagan",
+    "ign": "RenzGzzzzzzzzzzzz",
+    "gender": "male",
+    "city": "Bulacan",
+    "team": "Bang",
+    "deck": ["Lunalight", "Branded Dracotail", "Ryzeal"]
+  },
+  {
+    "name": "Tristan Cruz",
+    "ign": "Threestun",
+    "gender": "male",
+    "city": "Pasig",
+    "team": "Team Kwasong",
+    "deck": ["Killer Tune", "Elvennotes", "White Forest"]
+  },
+  {
+    "name": "Friedrich Ferrer",
+    "ign": "RitoruMikan",
+    "gender": "male",
+    "city": "San Jose del Monte",
+    "team": "Team Kwasong",
+    "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
+    "others": "kalbs"
+  },
+  {
+    "name": "JM Caisip",
+    "ign": "JM Caisip",
+    "gender": "male",
+    "city": "San Jose del Monte",
+    "team": "",
+    "deck": ["Orcust"]
+  },
+  {
+    "name": "Kyle Andarin",
+    "ign": "Kyzen",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Quezon City",
+    "team": "Night Shift",
+    "deck": ["Salamangreat", "Code Talker"]
+  },
+  {
+    "name": "Marco Velasquez",
+    "ign": "Velox",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Caloocan",
+    "team": "",
+    "deck": ["Kashtira"]
+  },
+  {
+    "name": "Alyssa Monteverde",
+    "ign": "LyssPlayz",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "female",
+    "city": "Makati",
+    "team": "Cardinals",
+    "deck": ["Labrynth", "Traptrix"]
+  },
+  {
+    "name": "Joshua Lim",
+    "ign": "PaperLion",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Valenzuela",
+    "team": "",
+    "deck": ["Floowandereeze"]
+  },
+  {
+    "name": "Ethan Rosales",
+    "ign": "E10",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Marikina",
+    "team": "Bang",
+    "deck": ["Unchained", "Live☆Twin"]
+  },
+  {
+    "name": "Nicole Reyes",
+    "ign": "Nix",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "female",
+    "city": "Pasay",
+    "team": "Team Kwasong",
+    "deck": ["Sky Striker", "Runick"]
+  },
+  {
+    "name": "Patrick Solis",
+    "ign": "TopDeckPat",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Antipolo",
+    "team": "",
+    "deck": ["Mathmech"]
+  },
+  {
+    "name": "Leo Navarro",
+    "ign": "Navz",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Taguig",
+    "team": "Night Shift",
+    "deck": ["Dragon Link"]
+  },
+  {
+    "name": "Andrea Villanueva",
+    "ign": "AndiDraw",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "female",
+    "city": "Las Piñas",
+    "team": "",
+    "deck": ["Melffy", "Purrely"]
+  },
+  {
+    "name": "Miguel Torres",
+    "ign": "MigzTCG",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Parañaque",
+    "team": "Cardinals",
+    "deck": ["SwordSoul", "Tenyi"]
+  },
+  {
+    "name": "Arvin Delgado",
+    "ign": "ArvDraws",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Mandaluyong",
+    "team": "",
+    "deck": ["Virtual World"]
+  },
+  {
+    "name": "Celine Bautista",
+    "ign": "Ceebee",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "female",
+    "city": "San Juan",
+    "team": "Bang",
+    "deck": ["Eldlich"]
+  },
+  {
+    "name": "Noel Ramirez",
+    "ign": "NullTurn",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Navotas",
+    "team": "",
+    "deck": ["True Draco"]
+  },
+  {
+    "name": "Bryan Estrella",
+    "ign": "Starlord",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Malabon",
+    "team": "Night Shift",
+    "deck": ["Galaxy-Eyes"]
+  },
+  {
+    "name": "Hannah Dizon",
+    "ign": "HanDraw",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "female",
+    "city": "Bacoor",
+    "team": "",
+    "deck": ["Marincess"]
+  },
+  {
+    "name": "Vincent Chua",
+    "ign": "Vinch",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Binondo",
+    "team": "Cardinals",
+    "deck": ["Dark World"]
+  },
+  {
+    "name": "Ronald Espiritu",
+    "ign": "R-Spirit",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Cainta",
+    "team": "",
+    "deck": ["Infernoid"]
+  },
+  {
+    "name": "Paolo Medina",
+    "ign": "LowRoll",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Imus",
+    "team": "Bang",
+    "deck": ["Burn", "Chain Strike"]
+  },
+  {
+    "name": "Jasmine Uy",
+    "ign": "JazTCG",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "female",
+    "city": "Santa Mesa",
+    "team": "",
+    "deck": ["Witchcrafter"]
+  },
+  {
+    "name": "Dennis Alonzo",
+    "ign": "DenDraw",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Dasmariñas",
+    "team": "Team Kwasong",
+    "deck": ["Branded Despia"]
+  }
+]
