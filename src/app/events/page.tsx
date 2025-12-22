@@ -14,7 +14,7 @@ export default function Events() {
   const { data: events, loading } = useEventsByYearMonthRange(start, end);
 
   function onClick(row: Event) {
-    // Navigate to the dynamic Next.js route
+    // Navigate to the dynamic Next.js route.
     router.push(`/events/${row.id}`);
   }
 

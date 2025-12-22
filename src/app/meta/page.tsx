@@ -1,3 +1,5 @@
+import InProgress from "@/components/in-progress";
+
 export default function Meta() {
-  return <div>Meta</div>;
+  return <InProgress />;
 }

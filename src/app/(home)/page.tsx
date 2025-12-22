@@ -14,6 +14,7 @@ import Link from "next/link";
 import { useJsonData } from "../data/api";
 import Featured from "./featured/featured";
 import { getTypeBadgeClass } from "@/utils/featured";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Megaphone } from "lucide-react";
 
 export default function Home() {
@@ -25,6 +26,24 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-4">
+      {/* Announcements */}
+      <Alert variant="default" className="rounded-none p-5">
+        <AlertTitle className="flex items-center gap-2 pb-2">
+          <Megaphone size={12} />
+          Announcement!
+        </AlertTitle>
+        <AlertDescription>
+          Welcome to YGO Ph Meta! Stay tuned for the latest updates on events,
+          decks, and more in the Yu-Gi-Oh! community.
+          <br />
+          <span className="block mt-2 text-xs text-gray-500">
+            <strong>Note:</strong> This site is still in development and
+            currently in the data gathering phase.
+          </span>
+        </AlertDescription>
+      </Alert>
+
+      {/* User Guides */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {data.map((item, index) => (
           <Card
@@ -62,6 +81,8 @@ export default function Home() {
           </Card>
         ))}
       </div>
+
+      {/* Featured */}
       <Featured />
     </div>
   );
