@@ -14,12 +14,14 @@ import {
 } from "@/components/ui/accordion";
 import { v4 as uuidv4 } from "uuid";
 import { format } from "date-fns";
+import { getOrdinal } from "@/utils/ordinal";
+import { isDevelopment } from "@/utils/enviroment";
 
 type Props = {
   onClose: () => void;
 };
 
-export function AddEventFormModal({ onClose }: Props) {
+export function AddEventFormDrawer({ onClose }: Props) {
   const [form, setForm] = useState({
     title: "",
     host: "",
@@ -33,12 +35,14 @@ export function AddEventFormModal({ onClose }: Props) {
     notes: "",
   });
 
-  const [winnerFields, setWinnerFields] = useState<EventWinner[]>([
-    { name: "", position: 1, deck: "", deckImagePath: "" },
-  ]);
-  const [deckFields, setDeckFields] = useState<EventDeck[]>([
-    { name: "", count: 1 },
-  ]);
+  // Initial empty winner and deck entries.
+  const _winners = [{ name: "", position: 1, deck: "", deckImagePath: "" }];
+  const _decks = [{ name: "", count: 1 }];
+
+  // State for winners and decks.
+  const [eventId, setEventId] = useState<string>(uuidv4());
+  const [winners, setWinners] = useState<EventWinner[]>(_winners);
+  const [decks, setDecks] = useState<EventDeck[]>(_decks);
   const [copied, setCopied] = useState(false);
 
   function handleChange(
@@ -60,7 +64,7 @@ export function AddEventFormModal({ onClose }: Props) {
     e: React.ChangeEvent<HTMLInputElement>
   ) {
     const { name, value } = e.target;
-    setWinnerFields((prev) =>
+    setWinners((prev) =>
       prev.map((winner, i) =>
         i === idx ? { ...winner, [name]: value } : winner
       )
@@ -72,7 +76,7 @@ export function AddEventFormModal({ onClose }: Props) {
     e: React.ChangeEvent<HTMLInputElement>
   ) {
     const { name, value } = e.target;
-    setDeckFields((prev) =>
+    setDecks((prev) =>
       prev.map((deck, i) =>
         i === idx
           ? {
@@ -85,27 +89,26 @@ export function AddEventFormModal({ onClose }: Props) {
   }
 
   function handleAddWinner() {
-    setWinnerFields((prev) => [
+    setWinners((prev) => [
       ...prev,
       { name: "", deck: "" } as Partial<EventWinner> as EventWinner,
     ]);
   }
 
   function handleRemoveWinner(idx: number) {
-    setWinnerFields((prev) => prev.filter((_, i) => i !== idx));
+    setWinners((prev) => prev.filter((_, i) => i !== idx));
   }
 
   function handleAddDeck() {
-    setDeckFields((prev) => [...prev, { name: "", count: 1 }]);
+    setDecks((prev) => [...prev, { name: "", count: 1 }]);
   }
 
   function handleRemoveDeck(idx: number) {
-    setDeckFields((prev) => prev.filter((_, i) => i !== idx));
+    setDecks((prev) => prev.filter((_, i) => i !== idx));
   }
 
   // Helper to generate the JSON object with required formatting.
   function getEventJson() {
-    const eventId = uuidv4();
     const formattedDate =
       form.when && form.when !== ""
         ? format(new Date(form.when), "MMM dd yyyy")
@@ -120,14 +123,14 @@ export function AddEventFormModal({ onClose }: Props) {
       format: form.format,
       official: form.official,
       rounds: form.rounds,
-      images: [], // or handle as needed
-      winners: winnerFields.map((winner, idx) => ({
+      images: [], // or handle as needed.
+      winners: winners.map((winner, idx) => ({
         name: winner.name,
         position: idx + 1,
         deck: winner.deck,
         deckImagePath: `${idx + 1}.webp`,
       })),
-      decks: deckFields
+      decks: decks
         .filter((deck) => deck.name.trim())
         .map((deck) => ({
           name: deck.name,
@@ -185,7 +188,7 @@ export function AddEventFormModal({ onClose }: Props) {
                   value={form.title}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-sm placeholder:text-gray-400 outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                   maxLength={80}
                 />
               </label>
@@ -197,7 +200,7 @@ export function AddEventFormModal({ onClose }: Props) {
                   value={form.host}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-sm placeholder:text-gray-400 outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                   maxLength={80}
                 />
               </label>
@@ -209,7 +212,7 @@ export function AddEventFormModal({ onClose }: Props) {
                   value={form.when}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-sm placeholder:text-gray-400 outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                 />
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
@@ -220,7 +223,7 @@ export function AddEventFormModal({ onClose }: Props) {
                   value={form.where}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-sm placeholder:text-gray-400 outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                   maxLength={80}
                 />
               </label>
@@ -231,7 +234,7 @@ export function AddEventFormModal({ onClose }: Props) {
                   value={form.format}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-2 transition text-sm placeholder:text-sm placeholder:text-gray-400 outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-2 transition text-sm placeholder:text-xs outline-none"
                 >
                   {Object.values(EventFormat).map((fmt) => (
                     <option key={fmt} value={fmt}>
@@ -259,28 +262,28 @@ export function AddEventFormModal({ onClose }: Props) {
                   value={form.rounds}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-sm placeholder:text-gray-400 outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                 />
               </label>
               {/* Event Winners Section */}
               <div>
                 <div className="font-semibold mb-2 text-sm">Winners</div>
                 <div className="flex flex-col gap-3">
-                  {winnerFields.map((winner, idx) => (
+                  {winners.map((winner, idx) => (
                     <div
                       key={idx}
-                      className="border border-gray-200 bg-gray-50 p-4 flex flex-col gap-3"
+                      className="border border-gray-200 bg-gray-50 p-4 flex flex-col gap-2"
                     >
-                      <div className="flex justify-between items-center mb-1">
+                      <div className="flex justify-between items-center">
                         <span className="font-medium text-sm">
-                          Winner #{idx + 1}
+                          {getOrdinal(idx + 1)} Place
                         </span>
                         <Button
                           type="button"
                           variant="ghost"
                           className="flex items-center justify-center text-xs rounded-full"
                           onClick={() => handleRemoveWinner(idx)}
-                          disabled={winnerFields.length === 1}
+                          disabled={winners.length === 1}
                         >
                           <Trash2 size={10} className="text-red-600" />
                         </Button>
@@ -291,14 +294,14 @@ export function AddEventFormModal({ onClose }: Props) {
                           placeholder="Name"
                           value={winner.name}
                           onChange={(e) => handleWinnerChange(idx, e)}
-                          className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-sm placeholder:text-gray-400 outline-none"
+                          className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-xs outline-none"
                         />
                         <Input
                           name="deck"
                           placeholder="Deck"
                           value={winner.deck}
                           onChange={(e) => handleWinnerChange(idx, e)}
-                          className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-sm placeholder:text-gray-400 outline-none"
+                          className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-xs outline-none"
                         />
                       </div>
                     </div>
@@ -321,14 +324,14 @@ export function AddEventFormModal({ onClose }: Props) {
                 <div className="font-semibold mb-2 text-sm">
                   Decks Summary / Tally
                 </div>
-                {deckFields.map((deck, idx) => (
+                {decks.map((deck, idx) => (
                   <div key={idx} className="flex items-center gap-2 mb-2">
                     <Input
                       name="name"
                       placeholder="Deck Name"
                       value={deck.name}
                       onChange={(e) => handleDeckChange(idx, e)}
-                      className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-2 transition placeholder:text-sm placeholder:text-gray-400 outline-none flex-1"
+                      className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-2 transition placeholder:text-xs outline-none flex-1"
                       maxLength={80}
                     />
                     <Input
@@ -338,14 +341,14 @@ export function AddEventFormModal({ onClose }: Props) {
                       placeholder="Count"
                       value={deck.count}
                       onChange={(e) => handleDeckChange(idx, e)}
-                      className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-1 py-2 transition placeholder:text-sm placeholder:text-gray-400 outline-none w-[60px] text-center"
+                      className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-1 py-2 transition placeholder:text-xs outline-none w-[60px] text-center"
                     />
                     <Button
                       type="button"
                       variant="ghost"
                       className="flex items-center justify-center text-xs rounded-full"
                       onClick={() => handleRemoveDeck(idx)}
-                      disabled={deckFields.length === 1}
+                      disabled={decks.length === 1}
                     >
                       <Trash2 size={16} className="text-red-600" />
                     </Button>
@@ -370,7 +373,7 @@ export function AddEventFormModal({ onClose }: Props) {
                   placeholder="Notes"
                   value={form.notes}
                   onChange={handleChange}
-                  className="w-full border bg-white text-gray-700 outline-none rounded-none focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-sm placeholder:text-gray-400"
+                  className="w-full border bg-white text-gray-700 outline-none rounded-none focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs"
                   maxLength={200}
                 />
               </label>
@@ -448,7 +451,14 @@ export function AddEventFormModal({ onClose }: Props) {
                           const json = JSON.stringify(getEventJson(), null, 2);
                           navigator.clipboard.writeText(json);
                           setCopied(true);
-                          setTimeout(() => setCopied(false), 1500);
+                          setTimeout(() => {
+                            // In development, generate a new UUID each time for testing.
+                            if (isDevelopment()) {
+                              setEventId(uuidv4());
+                            }
+
+                            setCopied(false);
+                          }, 1500);
                         }}
                       >
                         {copied ? "Copied!" : "Copy"}

@@ -459,5 +459,371 @@
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "075f5391-d869-4769-b7eb-4e8e59027cb9",
+    "title": "Event OTS Premium - Juraishin, the Cursed Thunder God",
+    "host": "Courtside",
+    "when": "Dec 20 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Marlo Delda",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kenneth Febra",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Albert Santiago",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Tristan Cruz",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "33dbfa4d-e354-4929-9bc1-235a52b28e76",
+    "title": "OCG Pod 1",
+    "host": "Courtside",
+    "when": "Dec 20 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Martin Owen Calleja",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eda560e3-aaf9-48b1-9d93-ce7e87ca5d3d",
+    "title": "OCG Pod 1-A",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Frans Cuña",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eda560e3-aaf9-48b1-3433-ce7e87ca5d3d",
+    "title": "OCG Pod 1-B",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Ron Napalan",
+        "position": 1,
+        "deck": "Runick Magnifistorm",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eda560e3-bb43-48b1-9d93-ce7e87ca5d3d",
+    "title": "OCG Pod 1-C",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Aian Maculata",
+        "position": 1,
+        "deck": "Ryzeal Mitsurugi",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eda560e3-aaf9-9d93-48b1-ce7e87ca5d3d",
+    "title": "OCG Pod 1-D",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jonard Cabantog",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "94f23fd0-448c-4897-aab5-1333066fdf25",
+    "title": "AE Pod 1-A",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Nazario Jesus Deladia",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "64279056-7a7a-4f07-b2bb-4d744745bc4b",
+    "title": "AE Pod 1-B",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jorence Quintana",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "54d22b4a-1d9e-4301-935c-b01c41831c28",
+    "title": "AE Pod 1-C",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Kenneth Febra",
+        "position": 1,
+        "deck": "Mitsurugi",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5bcf523b-1263-4985-8d87-6b44508226b7",
+    "title": "OCG Pod 2-A",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "b6720b8f-b9c1-41c7-9241-ef64e8c58e2a",
+    "title": "OCG Pod 2-B",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Miguelle Banjo Manalo",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ef80b5b3-191c-4658-a3cb-4788ef4c8329",
+    "title": "OCG Pod 2-C",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Van Joseph Lipana",
+        "position": 1,
+        "deck": "D/D/D",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "7d535c54-7d95-4176-bdf4-33a49788b547",
+    "title": "AE Pod 2-A",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jan Zedric Lorenzo",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ea846d64-3da9-4e39-b3be-bf44fc0131ac",
+    "title": "AE Pod 2-B",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Louren Vidad",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "12f7a3c0-2664-45cc-a387-8d23d5697f3c",
+    "title": "OCG Pod 1",
+    "host": "Rogue's Passage",
+    "when": "Dec 14 2025",
+    "where": "Pampangga",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": " Charles Wilson Panlilio",
+        "position": 1,
+        "deck": "D/D/D",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kyle Ong",
+        "position": 2,
+        "deck": "Dracotail",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "John Marvin Quindoza",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "D/D/D",
+        "count": 1
+      },
+      {
+        "name": "Dracotail",
+        "count": 1
+      },
+      {
+        "name": "Blue-Eyes",
+        "count": 2
+      },
+      {
+        "name": "Maliss",
+        "count": 1
+      },
+      {
+        "name": "Borea",
+        "count": 1
+      }
+    ],
+    "notes": ""
   }
 ]

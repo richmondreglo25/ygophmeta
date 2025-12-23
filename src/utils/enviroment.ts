@@ -1,4 +1,12 @@
 /**
+ * Check if the current environment is development.
+ * @returns {boolean} True if the environment is development, otherwise false.
+ */
+export function isDevelopment() {
+  return process.env.NODE_ENV === "development";
+}
+
+/**
  * Get the root path based on the environment.
  * @returns {string} The root path.
  */

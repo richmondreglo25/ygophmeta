@@ -6,9 +6,8 @@ import { useMemo, useState } from "react";
 import { columns, Event } from "@/columns/events";
 import { DataTable } from "@/components/data-table";
 import { useRouter } from "next/navigation";
-import { AddEventFormModal } from "@/components/add-event-form-modal";
+import { AddEventFormDrawer } from "@/components/add-event-form-drawer";
 import { Button } from "@/components/ui/button";
-import { Plus } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Megaphone } from "lucide-react";
 
@@ -18,7 +17,7 @@ export default function Events() {
   const end = useMemo(() => ({ year: 2025, month: 12 }), []);
   const { data: events, loading } = useEventsByYearMonthRange(start, end);
 
-  const [showForm, setShowForm] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
 
   function onClick(row: Event) {
     // Navigate to the dynamic Next.js route.
@@ -26,11 +25,11 @@ export default function Events() {
   }
 
   function handleAddEvent() {
-    setShowForm(true);
+    setOpenDrawer(true);
   }
 
   function handleCloseForm() {
-    setShowForm(false);
+    setOpenDrawer(false);
   }
 
   return (
@@ -59,14 +58,13 @@ export default function Events() {
           <div className="flex justify-end">
             <Button
               variant="submit"
-              className="flex gap-0.5 rounded-none"
+              className="rounded-none"
               onClick={handleAddEvent}
             >
-              <Plus size={14} />
               <span>Submit Event</span>
             </Button>
           </div>
-          {showForm && <AddEventFormModal onClose={handleCloseForm} />}
+          {openDrawer && <AddEventFormDrawer onClose={handleCloseForm} />}
         </div>
       )}
     </div>
