@@ -19,7 +19,7 @@
       {
         "id": "video-003",
         "type": "video",
-        "title": "Yubel Fiendsmith Vs Chimera Fiendsmith",
+        "title": "Yubel Vs Chimera",
         "description": "Match Highlights",
         "link": "https://www.youtube.com/watch?v=po_sB9wyZ_w&t=733s"
       }
@@ -31,30 +31,23 @@
       {
         "id": "shop-001",
         "type": "shop",
-        "title": "Card Haven",
-        "description": "A top-rated shop for trading cards and accessories.",
-        "image": "/shops/richmondreglo.webp"
+        "title": "RaVens Play Center",
+        "description": "Get your game on, RaVens!!",
+        "image": "/shops/ravensplaycenterlogo.webp"
       },
       {
         "id": "shop-002",
         "type": "shop",
-        "title": "Duelist's Corner",
-        "description": "Your friendly neighborhood card shop.",
-        "image": "/shops/richmondreglo.webp"
+        "title": "Toy Shogun",
+        "description": "Hobby Distributor and Store",
+        "image": "/shops/toyshogunlogo.webp"
       },
       {
-        "id": "event-001",
-        "type": "event",
-        "title": "Winter Duel Fest",
-        "description": "Annual winter event featuring tournaments and prizes.",
-        "image": "/shops/richmondreglo.webp"
-      },
-      {
-        "id": "event-002",
-        "type": "event",
-        "title": "Spring Card Expo",
-        "description": "A spring gathering for card game enthusiasts.",
-        "image": "/shops/richmondreglo.webp"
+        "id": "shop-003",
+        "type": "shop",
+        "title": "Arken CardZone",
+        "description": "Your Card Games shop for all your Official & Trading Card Needs!",
+        "image": "/shops/arkencardzonelogo.webp"
       }
     ]
   },
@@ -71,6 +64,30 @@
     ]
   },
   "topPlayers2": {
+    "itemsPerSlide": 1,
+    "items": [
+      {
+        "id": "tp-001",
+        "type": "player",
+        "title": "Martin Owen Gonzalez Calleja",
+        "description": "Asia WCQ 2025 Philippines - Champion",
+        "image": "/people/martinowengonzalezcalleja.webp"
+      }
+    ]
+  },
+  "topPlayers3": {
+    "itemsPerSlide": 1,
+    "items": [
+      {
+        "id": "tp-001",
+        "type": "player",
+        "title": "Rob Reyan Yvan Belgica",
+        "description": "Asia Campus League 2025 - Champion",
+        "image": "/people/robreyanivanbelgica.webp"
+      }
+    ]
+  },
+  "topPlayers4": {
     "itemsPerSlide": 1,
     "items": [
       {

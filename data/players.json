@@ -112,5 +112,23 @@
     "city": "Quezon City",
     "team": "Flex City",
     "deck": ["Ryzeal"]
+  },
+  {
+    "name": "Rob Reyan Yvan Belgica",
+    "ign": "Ayana Taketatsu",
+    "imagePath": "/people/robreyanivanbelgica.webp",
+    "gender": "male",
+    "city": "Manila",
+    "team": "",
+    "deck": ["Yummy"]
+  },
+  {
+    "name": "Martin Owen Gonzalez Calleja",
+    "ign": "Ispirikitik",
+    "imagePath": "/people/martinowengonzalezcalleja.webp",
+    "gender": "male",
+    "city": "Manila",
+    "team": "Dark Emperor",
+    "deck": ["Radiant Typhoon"]
   }
 ]

@@ -33,7 +33,7 @@
         "count": 1
       },
       {
-        "name": "Blue Eyes",
+        "name": "Blue-Eyes",
         "count": 1
       },
       {
@@ -97,7 +97,7 @@
         "count": 1
       },
       {
-        "name": "Blue Eyes",
+        "name": "Blue-Eyes",
         "count": 1
       },
       {
@@ -161,7 +161,7 @@
         "count": 1
       },
       {
-        "name": "Blue Eyes",
+        "name": "Blue-Eyes",
         "count": 1
       },
       {
@@ -230,6 +230,128 @@
       },
       {
         "name": "Millenium",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "a1e2c3d4-arkn-1",
+    "title": "AE Pod 1",
+    "host": "Arken CardZone",
+    "when": "Dec 21 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "MJ Buebo",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Edmar Cañete",
+        "position": 2,
+        "deck": "Ryzeal",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Rover Lolarga",
+        "position": 3,
+        "deck": "Voiceless Voice",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Blue-Eyes",
+        "count": 2
+      },
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Ryzeal",
+        "count": 1
+      },
+      {
+        "name": "Voiceless Voice",
+        "count": 1
+      },
+      {
+        "name": "Centur-Ion",
+        "count": 1
+      },
+      {
+        "name": "Lunalight",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "a1e2c3d4-arkn-2",
+    "title": "AE Pod 2",
+    "host": "Arken CardZone",
+    "when": "Dec 21 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jude Cruz",
+        "position": 1,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Vincent Oblefias",
+        "position": 2,
+        "deck": "VSK9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Ken Millar",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Edmar Cañete",
+        "position": 4,
+        "deck": "Ryzeal",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Blue-Eyes",
+        "count": 2
+      },
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Ryzeal",
+        "count": 1
+      },
+      {
+        "name": "Voiceless Voice",
+        "count": 1
+      },
+      {
+        "name": "VSK9",
+        "count": 1
+      },
+      {
+        "name": "Lunalight",
         "count": 1
       }
     ],
