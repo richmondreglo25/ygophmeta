@@ -17,6 +17,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { v4 as uuidv4 } from "uuid";
+import { format } from "date-fns";
 
 type Props = {
   onClose: () => void;
@@ -106,32 +108,44 @@ export function AddEventFormModal({ onClose }: Props) {
     setDeckFields((prev) => prev.filter((_, i) => i !== idx));
   }
 
+  // Helper to generate the JSON object with required formatting.
+  function getEventJson() {
+    const eventId = uuidv4();
+    const formattedDate =
+      form.when && form.when !== ""
+        ? format(new Date(form.when), "MMM dd yyyy")
+        : "";
+
+    return {
+      id: eventId,
+      title: form.title,
+      host: form.host,
+      when: formattedDate,
+      where: form.where,
+      format: form.format,
+      official: form.official,
+      rounds: form.rounds,
+      images: [], // or handle as needed
+      winners: winnerFields.map((winner, idx) => ({
+        name: winner.name,
+        position: idx + 1,
+        deck: winner.deck,
+        deckImagePath: `${idx + 1}.webp`,
+      })),
+      decks: deckFields
+        .filter((deck) => deck.name.trim())
+        .map((deck) => ({
+          name: deck.name,
+          count: deck.count,
+        })),
+      notes: form.notes,
+    };
+  }
+
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const winners = winnerFields.map((winner, idx) => ({
-      name: winner.name,
-      position: idx + 1,
-      deck: winner.deck,
-      deckImagePath: "",
-    }));
-    const decks = deckFields
-      .filter((deck) => deck.name.trim())
-      .map((deck) => ({
-        name: deck.name,
-        count: deck.count,
-      }));
+    const jsonData = JSON.stringify(getEventJson(), null, 2);
 
-    const jsonData = JSON.stringify(
-      {
-        ...form,
-        winners,
-        decks,
-      },
-      null,
-      2
-    );
-
-    // Prepare mailto link
     const subject = encodeURIComponent("Event Listing Request: ygophmeta");
     const body = encodeURIComponent(
       `I consent to my data being used and displayed publicly on ygophmeta.\n\nEvent Data:\n${jsonData}`
@@ -438,25 +452,7 @@ export function AddEventFormModal({ onClose }: Props) {
                         variant="secondary"
                         className="absolute top-2 right-2 z-10 rounded-none"
                         onClick={() => {
-                          const json = JSON.stringify(
-                            {
-                              ...form,
-                              winners: winnerFields.map((winner, idx) => ({
-                                name: winner.name,
-                                position: idx + 1,
-                                deck: winner.deck,
-                                deckImagePath: "",
-                              })),
-                              decks: deckFields
-                                .filter((deck) => deck.name.trim())
-                                .map((deck) => ({
-                                  name: deck.name,
-                                  count: deck.count,
-                                })),
-                            },
-                            null,
-                            2
-                          );
+                          const json = JSON.stringify(getEventJson(), null, 2);
                           navigator.clipboard.writeText(json);
                           setCopied(true);
                           setTimeout(() => setCopied(false), 1500);
@@ -465,25 +461,7 @@ export function AddEventFormModal({ onClose }: Props) {
                         {copied ? "Copied!" : "Copy"}
                       </Button>
                       <div className="bg-gray-100 border border-gray-300 text-xs font-mono p-4 whitespace-pre-wrap rounded-none">
-                        {JSON.stringify(
-                          {
-                            ...form,
-                            winners: winnerFields.map((winner, idx) => ({
-                              name: winner.name,
-                              position: idx + 1,
-                              deck: winner.deck,
-                              deckImagePath: "",
-                            })),
-                            decks: deckFields
-                              .filter((deck) => deck.name.trim())
-                              .map((deck) => ({
-                                name: deck.name,
-                                count: deck.count,
-                              })),
-                          },
-                          null,
-                          2
-                        )}
+                        {JSON.stringify(getEventJson(), null, 2)}
                       </div>
                     </div>
                   </AccordionContent>
