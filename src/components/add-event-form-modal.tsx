@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerTitle,
-  DrawerClose,
-} from "@/components/ui/drawer";
+import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { EventFormat } from "@/enums/event-format";
 import { EventDeck, EventWinner } from "@/columns/events";
 import { Heart, Megaphone, Plus, Trash2, X } from "lucide-react";
