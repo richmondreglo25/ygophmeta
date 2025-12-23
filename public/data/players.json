@@ -1,12 +1,74 @@
 [
   {
-    "name": "Richmond Reglo",
-    "ign": "Richmond",
-    "imagePath": "/people/richmondreglo.webp",
+    "name": "Adrian Viola",
+    "ign": "Kateshi",
+    "imagePath": "/people/adrianviola.webp",
+    "gender": "Male",
+    "city": "Manila",
+    "team": "TEAM RPC",
+    "deck": ["HERO"]
+  },
+  {
+    "name": "Friedrich Ferrer",
+    "ign": "RitoruMikan",
+    "imagePath": "/people/friedrichferrer.webp",
+    "gender": "male",
+    "city": "San Jose del Monte",
+    "team": "Team Kwasong",
+    "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
+    "others": "kalbs"
+  },
+  {
+    "name": "Jayson Bergado",
+    "ign": "Jay Jay",
+    "gender": "male",
+    "city": "Bulacan",
+    "team": "Team San Jose Bulacan",
+    "deck": ["Orcust", "Mermail"]
+  },
+  {
+    "name": "Jhon Gian Obiena",
+    "ign": "Jean",
+    "imagePath": "/people/jhongianobiena.webp",
+    "gender": "Male",
+    "city": "Manila",
+    "team": "None",
+    "deck": ["Gimmick Puppet"]
+  },
+  {
+    "name": "JM Caisip",
+    "ign": "JM Caisip",
+    "gender": "male",
+    "city": "San Jose del Monte",
+    "team": "",
+    "deck": ["Orcust"]
+  },
+  {
+    "name": "Kim Mark Parane",
+    "ign": "Kim",
+    "imagePath": "/people/kimmarkparane.webp",
+    "gender": "Male",
+    "city": "Bulacan",
+    "team": "TEAM RPC",
+    "deck": ["White Forest Azamina, Rishid, Elvennotes"]
+  },
+  {
+    "name": "Louren Vidad",
+    "ign": "Loumen",
+    "imagePath": "/people/lourenvidad.webp",
+    "gender": "male",
+    "city": "Quezon City",
+    "team": "Flex City",
+    "deck": ["Ryzeal"]
+  },
+  {
+    "name": "Martin Owen Gonzalez Calleja",
+    "ign": "Ispirikitik",
+    "imagePath": "/people/martinowengonzalezcalleja.webp",
     "gender": "male",
     "city": "Manila",
-    "team": "",
-    "deck": ["Yummy"]
+    "team": "Dark Emperor",
+    "deck": ["Radiant Typhoon"]
   },
   {
     "name": "Owen Cruz",
@@ -25,93 +87,13 @@
     "deck": ["Lunalight", "Branded Dracotail", "Ryzeal"]
   },
   {
-    "name": "Tristan Cruz",
-    "ign": "Threestun",
-    "imagePath": "/people/tristanjaycruz.webp",
+    "name": "Richmond Reglo",
+    "ign": "Richmond",
+    "imagePath": "/people/richmondreglo.webp",
     "gender": "male",
-    "city": "Pasig",
-    "team": "Team Kwasong",
-    "deck": ["Killer Tune", "Elvennotes", "White Forest"]
-  },
-  {
-    "name": "Friedrich Ferrer",
-    "ign": "RitoruMikan",
-    "imagePath": "/people/friedrichferrer.webp",
-    "gender": "male",
-    "city": "San Jose del Monte",
-    "team": "Team Kwasong",
-    "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
-    "others": "kalbs"
-  },
-  {
-    "name": "JM Caisip",
-    "ign": "JM Caisip",
-    "gender": "male",
-    "city": "San Jose del Monte",
+    "city": "Manila",
     "team": "",
-    "deck": ["Orcust"]
-  },
-  {
-    "name": "Rod Allan Bonavente",
-    "ign": "Hexstia",
-    "imagePath": "/people/rodallanbonavente.webp",
-    "gender": "male",
-    "city": "Manila",
-    "team": "Pack boys",
-    "deck": ["k9"]
-  },
-  {
-    "name": "Jayson Bergado",
-    "ign": "Jay Jay",
-    "gender": "male",
-    "city": "Bulacan",
-    "team": "Team San Jose Bulacan",
-    "deck": ["Orcust", "Mermail"]
-  },
-  {
-    "name": "Adrian Viola",
-    "ign": "Kateshi",
-    "imagePath": "/people/adrianviola.webp",
-    "gender": "Male",
-    "city": "Manila",
-    "team": "TEAM RPC",
-    "deck": ["HERO"]
-  },
-  {
-    "name": "Kim Mark Parane",
-    "ign": "Kim",
-    "imagePath": "/people/kimmarkparane.webp",
-    "gender": "Male",
-    "city": "Bulacan",
-    "team": "TEAM RPC",
-    "deck": ["White Forest Azamina, Rishid, Elvennotes"]
-  },
-  {
-    "name": "Samuel Migs Gamay",
-    "ign": "Sam",
-    "imagePath": "/people/samuelmigsgamay.webp",
-    "gender": "male",
-    "city": "Bulacan",
-    "team": "",
-    "deck": ["Exosister, Rescue-ACE"]
-  },
-  {
-    "name": "Jhon Gian Obiena",
-    "ign": "Jean",
-    "imagePath": "/people/jhongianobiena.webp",
-    "gender": "Male",
-    "city": "Manila",
-    "team": "None",
-    "deck": ["Gimmick Puppet"]
-  },
-  {
-    "name": "Louren Vidad",
-    "ign": "Loumen",
-    "imagePath": "/people/lourenvidad.webp",
-    "gender": "male",
-    "city": "Quezon City",
-    "team": "Flex City",
-    "deck": ["Ryzeal"]
+    "deck": ["Yummy"]
   },
   {
     "name": "Rob Reyan Yvan Belgica",
@@ -123,12 +105,30 @@
     "deck": ["Yummy"]
   },
   {
-    "name": "Martin Owen Gonzalez Calleja",
-    "ign": "Ispirikitik",
-    "imagePath": "/people/martinowengonzalezcalleja.webp",
+    "name": "Rod Allan Bonavente",
+    "ign": "Hexstia",
+    "imagePath": "/people/rodallanbonavente.webp",
     "gender": "male",
     "city": "Manila",
-    "team": "Dark Emperor",
-    "deck": ["Radiant Typhoon"]
+    "team": "Pack boys",
+    "deck": ["k9"]
+  },
+  {
+    "name": "Samuel Migs Gamay",
+    "ign": "Sam",
+    "imagePath": "/people/samuelmigsgamay.webp",
+    "gender": "male",
+    "city": "Bulacan",
+    "team": "",
+    "deck": ["Exosister, Rescue-ACE"]
+  },
+  {
+    "name": "Tristan Cruz",
+    "ign": "Threestun",
+    "imagePath": "/people/tristanjaycruz.webp",
+    "gender": "male",
+    "city": "Pasig",
+    "team": "Team Kwasong",
+    "deck": ["Killer Tune", "Elvennotes", "White Forest"]
   }
 ]

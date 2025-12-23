@@ -155,7 +155,7 @@ export function AddEventFormModal({ onClose }: Props) {
   }
 
   return (
-    <Drawer open onClose={onClose}>
+    <Drawer open dismissible={false} onClose={onClose} direction="right">
       <DrawerContent className="rounded-none fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-lg">
         <div className="flex flex-col gap-2 w-full h-full">
           <DrawerTitle
@@ -165,9 +165,7 @@ export function AddEventFormModal({ onClose }: Props) {
               {/* <IconX type="players" size={18} /> */}
               Submit Event
             </div>
-            <DrawerClose>
-              <X size={18} />
-            </DrawerClose>
+            <X size={18} className="cursor-pointer" onClick={onClose} />
           </DrawerTitle>
           <div className="p-4 flex flex-col items-center flex-1 overflow-auto">
             <Alert className="mb-4 w-full border-blue-300 bg-blue-50 text-blue-900 rounded-none">
