@@ -7,6 +7,10 @@ import { columns, Event } from "@/columns/events";
 import { DataTable } from "@/components/data-table";
 import { useRouter } from "next/navigation";
 import { AddEventFormModal } from "@/components/add-event-form-modal";
+import { Button } from "@/components/ui/button";
+import { Plus } from "lucide-react";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { Megaphone } from "lucide-react";
 
 export default function Events() {
   const router = useRouter();
@@ -31,22 +35,39 @@ export default function Events() {
 
   return (
     <div>
-      <button
-        className="mb-4 rounded bg-blue-600 px-4 py-2 text-white transition-all hover:bg-blue-700"
-        onClick={handleAddEvent}
-      >
-        Add Event
-      </button>
-      {showForm && <AddEventFormModal onClose={handleCloseForm} />}
       {loading ? (
         <Loading />
       ) : (
-        <DataTable
-          columns={columns}
-          data={events}
-          searchColumn="title"
-          onClick={onClick}
-        />
+        <div className="flex flex-col gap-4">
+          <DataTable
+            columns={columns}
+            data={events}
+            searchColumn="title"
+            onClick={onClick}
+          />
+          <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-none">
+            <AlertTitle className="font-semibold flex items-center gap-2">
+              <Megaphone size={16} />
+              Share Your Event Results!
+            </AlertTitle>
+            <AlertDescription className="text-sm pt-2">
+              Help the community grow by submitting your event results. Your
+              contribution makes the meta more accurate and helps other
+              duelists!
+            </AlertDescription>
+          </Alert>
+          <div className="flex justify-end">
+            <Button
+              variant="submit"
+              className="flex gap-0.5 rounded-none"
+              onClick={handleAddEvent}
+            >
+              <Plus size={14} />
+              <span>Submit Event</span>
+            </Button>
+          </div>
+          {showForm && <AddEventFormModal onClose={handleCloseForm} />}
+        </div>
       )}
     </div>
   );
