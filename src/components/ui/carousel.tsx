@@ -357,7 +357,10 @@ const CarouselSlideInfo = ({
 
   return (
     <div
-      className={cn("flex gap-1 justify-center items-center py-2", className)}
+      className={cn(
+        "flex gap-1 justify-center items-center pt-3 pb-2",
+        className
+      )}
       {...props}
     >
       {Array.from({ length: count }).map((_, idx) => (

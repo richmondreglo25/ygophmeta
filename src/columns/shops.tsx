@@ -41,7 +41,7 @@ export const columns: ColumnDef<Shop>[] = [
         </div>
       );
     },
-    minSize: 150,
+    minSize: 250,
     enableSorting: true,
   },
   {

@@ -25,7 +25,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-5">
       {/* Announcements */}
       <Alert variant="default" className="rounded-none p-5">
         <AlertTitle className="flex items-center gap-2 pb-2">
@@ -44,7 +44,7 @@ export default function Home() {
       </Alert>
 
       {/* User Guides */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {data.map((item, index) => (
           <Card
             key={index}

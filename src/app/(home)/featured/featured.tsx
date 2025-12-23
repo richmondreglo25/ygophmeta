@@ -1,7 +1,11 @@
 "use client";
 
 import { useMediaQuery } from "react-responsive";
-import { getImagePath, getJsonPath } from "@/utils/enviroment";
+import {
+  getEventImagePath,
+  getImagePath,
+  getJsonPath,
+} from "@/utils/enviroment";
 import Image from "next/image";
 import {
   Carousel,
@@ -20,6 +24,8 @@ import { getTypeBadgeClass } from "@/utils/featured";
 import { useJsonData } from "@/app/data/api";
 import { Sparkle } from "lucide-react";
 import Autoplay, { AutoplayType } from "embla-carousel-autoplay";
+import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import { get } from "http";
 
 export type FeaturedItem = {
   id: string;
@@ -42,26 +48,36 @@ function getContent(item: FeaturedItem) {
     return (
       <div className="flex flex-col items-center justify-center h-full w-full p-5 bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8]">
         {item.image && (
-          <Image
-            src={getImagePath(item.image)}
-            alt={item.title}
-            width={150}
-            height={150}
-            className="object-cover rounded-full h-[150px] w-[150px] border-4 border-white shadow-lg"
-          />
+          <Avatar key={item.id} className="flex justify-center items-center">
+            <AvatarImage
+              src={getImagePath(item.image)}
+              alt={item.title}
+              loading="lazy"
+              className="object-cover rounded-full h-[150px] w-[150px] border-4 border-white shadow-lg"
+            />
+            <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+              Unable to load image
+            </AvatarFallback>
+          </Avatar>
         )}
       </div>
     );
   } else if (item.type === "shop" || item.type === "event") {
     return (
       item.image && (
-        <Image
-          src={getImagePath(item.image)}
-          alt={item.title}
-          width={10}
-          height={10}
-          className="object-cover rounded-none h-full w-full max-h-[40vh]"
-        />
+        <div className="flex flex-col items-center justify-center h-full w-full p-5 bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8]">
+          <Avatar key={item.id} className="flex justify-center items-center">
+            <AvatarImage
+              src={getImagePath(item.image)}
+              alt={item.title}
+              loading="lazy"
+              className="object-cover rounded-full h-[150px] w-[150px] border-4 border-white shadow-lg"
+            />
+            <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+              Unable to load image
+            </AvatarFallback>
+          </Avatar>
+        </div>
       )
     );
   } else if (item.type === "video") {
@@ -109,10 +125,17 @@ function renderCarousel(
         {items.map((item) => {
           const content = getContent(item);
           if (!content) return null;
+
+          const applyFooterBorder =
+            item.type !== "video" && item.type !== "event";
           return (
             <CarouselItem key={item.id}>
               <Card className="w-full p-0 rounded-none border-none shadow-none flex flex-col h-full">
-                <CardHeader className="p-0 pb-3 border-b-[1px]">
+                <CardHeader
+                  className={`p-0 pb-3 ${
+                    applyFooterBorder ? "border-b-[1px]" : ""
+                  }`}
+                >
                   <CardTitle className="text-md flex justify-between items-center gap-2">
                     {item.title}
                     <span
@@ -124,11 +147,19 @@ function renderCarousel(
                     </span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-center items-center p-0 m-0">
+                <CardContent
+                  className={`flex-1 flex flex-col justify-center items-center p-0 m-0 ${
+                    applyFooterBorder ? "border-[1px] border-b-0 " : ""
+                  }`}
+                >
                   {content}
                 </CardContent>
                 {item.description && (
-                  <CardFooter className="flex justify-start text-sm px-0 py-3 border-t-[1px]">
+                  <CardFooter
+                    className={`flex justify-center text-sm p-3 ${
+                      applyFooterBorder ? "border-[1px]" : "border-t-[1px]"
+                    }`}
+                  >
                     <span>{item.description}</span>
                   </CardFooter>
                 )}
@@ -168,7 +199,7 @@ export default function Featured() {
         <Sparkle size={10} />
         <span>Featured</span>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-5">
         {Object.entries(data).map(([group, groupData]) =>
           Array.isArray(groupData.items) && groupData.items.length > 0 ? (
             <div key={group}>
