@@ -356,5 +356,108 @@
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "f3a1c2b7-f8d9-7ed3-9c3e-1a28r94d5ff1",
+    "title": "RaVens Play Center's YearEnd Tournament 2025",
+    "host": "RaVens Play Center",
+    "when": "Dec 21 2025",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "winners": [
+      {
+        "name": "Raphael Perez",
+        "position": 1,
+        "deck": "Blue-Eyes Primite",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Cedric Soriao",
+        "position": 2,
+        "deck": "Lunalight",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Blue-Eyes Primite",
+        "count": 1
+      },
+      {
+        "name": "Lunalight",
+        "count": 1
+      },
+      {
+        "name": "Mitsurugi",
+        "count": 2
+      },
+      {
+        "name": "Rishid",
+        "count": 1
+      },
+      {
+        "name": "Yummy",
+        "count": 2
+      },
+      {
+        "name": "Maliss",
+        "count": 1
+      },
+      {
+        "name": "Radiant Typhoon",
+        "count": 1
+      },
+      {
+        "name": "Exosister",
+        "count": 2
+      },
+      {
+        "name": "HERO",
+        "count": 1
+      },
+      {
+        "name": "Orcust",
+        "count": 1
+      },
+      {
+        "name": "Runick",
+        "count": 1
+      },
+      {
+        "name": "Swordsoul",
+        "count": 1
+      },
+      {
+        "name": "Enneacraft",
+        "count": 1
+      },
+      {
+        "name": "Dracotail Branded",
+        "count": 1
+      },
+      {
+        "name": "Raidraptor",
+        "count": 1
+      },
+      {
+        "name": "Synchron",
+        "count": 1
+      },
+      {
+        "name": "Blackwing",
+        "count": 1
+      },
+      {
+        "name": "DoomZ",
+        "count": 1
+      },
+      {
+        "name": "Branded",
+        "count": 1
+      }
+    ],
+    "notes": ""
   }
 ]
