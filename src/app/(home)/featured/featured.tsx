@@ -1,12 +1,7 @@
 "use client";
 
 import { useMediaQuery } from "react-responsive";
-import {
-  getEventImagePath,
-  getImagePath,
-  getJsonPath,
-} from "@/utils/enviroment";
-import Image from "next/image";
+import { getImagePath, getJsonPath } from "@/utils/enviroment";
 import {
   Carousel,
   CarouselContent,
@@ -25,7 +20,6 @@ import { useJsonData } from "@/app/data/api";
 import { Sparkle } from "lucide-react";
 import Autoplay, { AutoplayType } from "embla-carousel-autoplay";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
-import { get } from "http";
 
 export type FeaturedItem = {
   id: string;
