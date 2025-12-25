@@ -123,13 +123,13 @@ export default async function EventPage({
               {event.images.map((imagePath: string, index: number) => (
                 <Avatar
                   key={index}
-                  className="text-sm rounded object-cover border h-full w-full max-h-[40vh]"
+                  className="text-sm rounded object-cover border h-full w-full"
                 >
                   <AvatarImage
                     src={getEventImagePath(event.id, imagePath)}
                     alt={`Event Image ${index + 1}`}
                     loading="lazy"
-                    className="flex justify-center items-center h-full w-full object-cover"
+                    className="flex justify-center items-center h-full w-full max-h-[40vh] object-cover"
                   />
                   <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
                     Unable to load image

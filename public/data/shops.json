@@ -1,11 +1,11 @@
 [
   {
-    "name": "Aurorus Collections",
-    "logo": "/shops/auroruscollectionslogo.webp",
-    "address": "B2 L3A Commonwealth Ave. Fairview Quezon City",
-    "googleMaps": "https://www.google.com/maps/place/Aurorus+Collections/data=!4m2!3m1!1s0x0:0x4e8272673159cecc?sa=X&ved=1t:2428&ictx=111",
-    "openHours": "Mon-Sun: 10:00 AM - 9:00 PM",
-    "about": "Aurorus Collections is a card shop located in Quezon City"
+    "name": "Anaheim Hobby Shop ",
+    "logo": "/shops/anaheimhobbyshoplogo.webp",
+    "address": "-",
+    "openHours": "-",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "Gundam, Yugioh Trading Card Game, Anime, Collectible Toys"
   },
   {
     "name": "Aqua Card Games and Collectibles",
@@ -32,6 +32,14 @@
     "about": "Your Card Games shop for all your Official & Trading Card Needs!"
   },
   {
+    "name": "Aurorus Collections",
+    "logo": "/shops/auroruscollectionslogo.webp",
+    "address": "B2 L3A Commonwealth Ave. Fairview Quezon City",
+    "googleMaps": "https://www.google.com/maps/place/Aurorus+Collections/data=!4m2!3m1!1s0x0:0x4e8272673159cecc?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 10:00 AM - 9:00 PM",
+    "about": "Aurorus Collections is a card shop located in Quezon City"
+  },
+  {
     "name": "Courtside",
     "logo": "/shops/courtsidelogo.webp",
     "address": "Level 2, Robinsons Galleria, Ortigas Ave, Ortigas Center, Quezon City, Metro Manila",
@@ -47,6 +55,15 @@
     "about": "Distributor of Cards (NBA, Yugioh, Vanguard, WS, SV, One Piece, Digimon, Dragon Ball, UA and Pokemon)"
   },
   {
+    "name": "Hyuray Trading",
+    "logo": "/shops/hyuraytradinglogo.webp",
+    "address": "Concepcion Townhouse, A. Guisama St, Marikina, 1800 Metro Manila",
+    "googleMaps": "https://www.google.com/maps/place/Hyuray+Trading/data=!4m2!3m1!1s0x0:0x65918e167f15132?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 8:00 AM - 5:00 PM",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "Hobby items, Board Games and Card Games, Collectible toys, gadgets, Rare and Vintage stuff, Electronics security devices. Also Retro video games. 90's Meromies and Vibes"
+  },
+  {
     "name": "Kimochi Hobby Shop",
     "logo": "/shops/kimochihobbyshoplogo.webp",
     "address": "2119 Recto Ave, Sampaloc, Manila, 1008 Metro Manila",
@@ -58,6 +75,15 @@
     ],
     "accolades": ["Official Tournament Store (OTS)"],
     "about": "We cater to your hobby needs!"
+  },
+  {
+    "name": "Madcap Gaming Philippines",
+    "logo": "/shops/madcapgamingphilippineslogo.webp",
+    "address": "Unit 7 Maclane Center Manila S Rd. National Highway, Barangay San Antonio, San Pedro, Philippines",
+    "googleMaps": "https://www.google.com/maps/place/Madcap+Gaming+Philippines/data=!4m2!3m1!1s0x0:0x358e2027e47e34cb?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 11:00 AM - 10:00 PM",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "TCG/OCG, card games, board games and accessories"
   },
   {
     "name": "RaVens Play Center",

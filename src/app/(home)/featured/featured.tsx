@@ -40,7 +40,7 @@ type FeaturedJson = Record<string, FeaturedGroup>;
 function getContent(item: FeaturedItem) {
   if (item.type === "player" || item.type === "judge") {
     return (
-      <div className="flex flex-col items-center justify-center h-full w-full p-5 bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8]">
+      <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8] h-full w-full p-5">
         {item.image && (
           <Avatar key={item.id} className="flex justify-center items-center">
             <AvatarImage
@@ -59,7 +59,7 @@ function getContent(item: FeaturedItem) {
   } else if (item.type === "shop" || item.type === "event") {
     return (
       item.image && (
-        <div className="flex flex-col items-center justify-center h-full w-full p-5 bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8]">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8] h-full w-full p-5 ">
           <Avatar key={item.id} className="flex justify-center items-center">
             <AvatarImage
               src={getImagePath(item.image)}

@@ -331,7 +331,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                       placeholder="Deck Name"
                       value={deck.name}
                       onChange={(e) => handleDeckChange(idx, e)}
-                      className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-2 transition placeholder:text-xs outline-none flex-1"
+                      className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 p-2 transition placeholder:text-xs outline-none flex-1"
                       maxLength={80}
                     />
                     <Input
@@ -373,7 +373,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   placeholder="Notes"
                   value={form.notes}
                   onChange={handleChange}
-                  className="w-full border bg-white text-gray-700 outline-none rounded-none focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs"
+                  className="w-full border bg-white text-gray-700 outline-none rounded-none focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 p-2 transition placeholder:text-xs"
                   maxLength={200}
                 />
               </label>

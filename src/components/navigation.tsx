@@ -31,7 +31,7 @@ export function Navigation() {
                 >
                   <Link
                     className={`flex items-center gap-1.5 ${
-                      isSelected ? " !text-blue-600" : ""
+                      isSelected ? " !text-blue-700" : ""
                     }`}
                     href={tab.path}
                   >

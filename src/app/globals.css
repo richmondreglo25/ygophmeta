@@ -150,7 +150,41 @@ a {
   }
 }
 
+/* --- gradients --- */
+
+.gradient-mojito {
+  background: linear-gradient(135deg, #103ce7 0%, #64e9ff 100%);
+}
+
+.gradient-lime {
+  background: linear-gradient(135deg, #2dfff5 0%, #fff878 100%);
+}
+
+.gradient-neon {
+  background: linear-gradient(135deg, #6157ff 0%, #ee49fd 100%);
+}
+
+.gradient-butterfly {
+  background: linear-gradient(135deg, #ff4066 0%, #fff16a 100%);
+}
+
+.gradient-malibu {
+  background: linear-gradient(135deg, #0700de 0%, #ddffc9 100%);
+}
+
+.gradient-peach {
+  background: linear-gradient(135deg, #ff8473 0%, #fff9d2 100%);
+}
+
+.gradient-azure {
+  background: linear-gradient(135deg, #0172af 0%, #74febd 100%);
+}
+
 /* --- custom classes --- */
+
+.border-color-app-primary {
+  border-color: #f5f5f5;
+}
 
 #data-table-wrapper table {
   border-collapse: collapse;

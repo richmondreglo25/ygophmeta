@@ -27,7 +27,10 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-5">
       {/* Announcements */}
-      <Alert variant="default" className="rounded-none p-5">
+      <Alert
+        variant="default"
+        className="border-red-300 bg-red-50 text-red-900 rounded-none p-5"
+      >
         <AlertTitle className="flex items-center gap-2 pb-2">
           <Megaphone size={12} />
           Announcement!
@@ -57,7 +60,7 @@ export default function Home() {
                   {item.title}
                 </div>
                 <span
-                  className={`px-2 py-1 text-xs capitalize ${getTypeBadgeClass(
+                  className={`text-xs capitalize px-2 py-1 ${getTypeBadgeClass(
                     "guide"
                   )}`}
                 >
