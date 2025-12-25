@@ -48,6 +48,34 @@
         "title": "Arken CardZone",
         "description": "Your Card Games shop for all your Official & Trading Card Needs!",
         "image": "/shops/arkencardzonelogo.webp"
+      },
+      {
+        "id": "shop-004",
+        "type": "shop",
+        "title": "Madcap Gaming Philippines",
+        "description": "TCG/OCG, card games, board games and accessories",
+        "image": "/shops/madcapgamingphilippineslogo.webp"
+      },
+      {
+        "id": "shop-005",
+        "type": "shop",
+        "title": "Kimochi Hobby Shop",
+        "description": "We cater to your hobby needs!",
+        "image": "/shops/kimochihobbyshoplogo.webp"
+      },
+      {
+        "id": "shop-006",
+        "type": "shop",
+        "title": "Aqua Card Games and Collectibles",
+        "description": "Welcome to Aqua Card Games and Collectibles",
+        "image": "/shops/aquacardgamesandcollectibleslogo.webp"
+      },
+      {
+        "id": "shop-007",
+        "type": "shop",
+        "title": "Courtside",
+        "description": "Distributor of Yu-Gi-Oh! Cards",
+        "image": "/shops/courtsidelogo.webp"
       }
     ]
   },
@@ -60,38 +88,23 @@
         "title": "Louren Vidad",
         "description": "Challenger Cup PH 2025 - Champion / Battle Nexus PH 2025 - Champion / Asia Championship Series Finals - Top 9",
         "image": "/people/lourenvidad.webp"
-      }
-    ]
-  },
-  "topPlayers2": {
-    "itemsPerSlide": 1,
-    "items": [
+      },
       {
-        "id": "tp-001",
+        "id": "tp-002",
         "type": "player",
         "title": "Martin Owen Gonzalez Calleja",
         "description": "Asia WCQ 2025 Philippines - Champion",
         "image": "/people/martinowengonzalezcalleja.webp"
-      }
-    ]
-  },
-  "topPlayers3": {
-    "itemsPerSlide": 1,
-    "items": [
+      },
       {
-        "id": "tp-001",
+        "id": "tp-003",
         "type": "player",
         "title": "Rob Reyan Yvan Belgica",
         "description": "Asia Campus League 2025 - Champion",
         "image": "/people/robreyanivanbelgica.webp"
-      }
-    ]
-  },
-  "topPlayers4": {
-    "itemsPerSlide": 1,
-    "items": [
+      },
       {
-        "id": "tp-001",
+        "id": "tp-004",
         "type": "player",
         "title": "Rod Allan Bonavente",
         "description": "Asian Championship Series - Semi Finalist",
