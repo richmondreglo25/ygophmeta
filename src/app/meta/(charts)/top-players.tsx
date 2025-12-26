@@ -6,6 +6,20 @@ import type { Player } from "@/columns/players";
 import { Slash } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { getImagePath } from "@/utils/enviroment";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+
+type TopPlayersProps = {
+  events: Event[];
+  players: Player[];
+  showSelection?: boolean;
+};
 
 type TopPlayer = {
   name: string;
@@ -27,21 +41,25 @@ const monthOptions = [
   { label: "Last 12 Months", value: 12 },
 ];
 
+/**
+ * Top Players Component.
+ * @param props TopPlayersProps.
+ * @returns JSX.Element.
+ */
 export function TopPlayers({
   events,
   players,
-}: {
-  events: Event[];
-  players: Player[];
-}) {
+  showSelection = true,
+}: TopPlayersProps) {
   const [months, setMonths] = useState(1);
 
-  // Filter events by selected months
+  // Filter events by selected months.
   const filteredEvents = useMemo(() => {
     const now = new Date();
     return events.filter((event) => {
       const date = event.when ? new Date(event.when) : null;
       if (!date) return false;
+
       const diff =
         (now.getFullYear() - date.getFullYear()) * 12 +
         (now.getMonth() - date.getMonth());
@@ -49,7 +67,7 @@ export function TopPlayers({
     });
   }, [events, months]);
 
-  // Group 1st place winners by format and official
+  // Group 1st place winners by format and official.
   const grouped = useMemo(() => {
     const groups: Record<string, TopPlayersGroup> = {};
 
@@ -57,6 +75,8 @@ export function TopPlayers({
       const groupKey = `${event.format}__${
         event.official ? "Official" : "Unofficial"
       }`;
+
+      // Initialize group if not exists.
       if (!groups[groupKey]) {
         groups[groupKey] = {
           format: event.format,
@@ -64,8 +84,11 @@ export function TopPlayers({
           players: [],
         };
       }
+
       const playerMap: Record<string, { count: number; decks: Set<string> }> =
         {};
+
+      // Accumulate 1st place winners.
       (event.winners || [])
         .filter((w) => w.position === 1)
         .forEach((w) => {
@@ -75,6 +98,8 @@ export function TopPlayers({
           playerMap[w.name].count += 1;
           if (w.deck) playerMap[w.name].decks.add(w.deck);
         });
+
+      // Accumulate player data into the group.
       Object.entries(playerMap).forEach(([name, data]) => {
         let player = groups[groupKey].players.find((p) => p.name === name);
         if (!player) {
@@ -112,20 +137,35 @@ export function TopPlayers({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-end gap-2">
-        <span className="font-semibold">Show:</span>
-        <select
-          className="border rounded-sm px-2 py-1 text-sm"
-          value={months}
-          onChange={(e) => setMonths(Number(e.target.value))}
-        >
-          {monthOptions.map((opt) => (
-            <option key={opt.value} value={opt.value}>
-              {opt.label}
-            </option>
-          ))}
-        </select>
-      </div>
+      {showSelection && (
+        <>
+          <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
+            <AlertDescription className="text-sm">
+              <span className="font-semibold">Tip:</span> Select the time range
+              to view top players based on 1st place finishes in events.
+            </AlertDescription>
+          </Alert>
+          <div className="flex items-center justify-end gap-2">
+            <span className="font-semibold">Show:</span>
+            <Select
+              value={String(months)}
+              onValueChange={(v) => setMonths(Number(v))}
+            >
+              <SelectTrigger className="w-[160px] text-gray-700 border rounded-sm focus:ring-0 shadow-none">
+                <SelectValue placeholder="Select months" />
+              </SelectTrigger>
+              <SelectContent>
+                {monthOptions.map((opt) => (
+                  <SelectItem key={opt.value} value={String(opt.value)}>
+                    {opt.label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        </>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {grouped.map(([key, group]) => (
           <div key={key} className="flex flex-col gap-3">
@@ -173,11 +213,15 @@ export function TopPlayers({
                     const _player = players.find(
                       (pl) => pl.name.toLowerCase() === p.name.toLowerCase()
                     );
+                    // Check if player has valid image path.
                     const hasImage =
                       _player?.imagePath && _player.imagePath.trim() !== "";
+
+                    // Get full image path.
                     const imagePath = hasImage
                       ? getImagePath(_player.imagePath)
                       : "";
+
                     return (
                       <tr
                         key={p.name}

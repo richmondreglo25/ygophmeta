@@ -16,6 +16,15 @@ import { v4 as uuidv4 } from "uuid";
 import { format } from "date-fns";
 import { getOrdinal } from "@/utils/ordinal";
 import { isDevelopment } from "@/utils/enviroment";
+import { Textarea } from "./ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select";
+import { Checkbox } from "./ui/checkbox";
 
 type Props = {
   onClose: () => void;
@@ -188,7 +197,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.title}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full text-gray-700 rounded-sm"
                   maxLength={80}
                 />
               </label>
@@ -200,7 +209,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.host}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full text-gray-700 rounded-sm"
                   maxLength={80}
                 />
               </label>
@@ -212,7 +221,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.when}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full text-gray-700 rounded-sm"
                 />
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
@@ -223,32 +232,45 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.where}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full text-gray-700 rounded-sm"
                   maxLength={80}
                 />
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
                 Format
-                <select
+                <Select
                   name="format"
                   value={form.format}
-                  onChange={handleChange}
+                  onValueChange={(value) =>
+                    setForm((prev) => ({
+                      ...prev,
+                      format: value as EventFormat,
+                    }))
+                  }
                   required
-                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-2 transition text-sm placeholder:text-xs outline-none"
                 >
-                  {Object.values(EventFormat).map((fmt) => (
-                    <option key={fmt} value={fmt}>
-                      {fmt}
-                    </option>
-                  ))}
-                </select>
+                  <SelectTrigger className="w-full text-gray-700 rounded-sm shadow-none">
+                    <SelectValue placeholder="Select format" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {Object.values(EventFormat).map((fmt) => (
+                      <SelectItem key={fmt} value={fmt}>
+                        {fmt}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </label>
               <label className="flex items-center gap-2 text-sm font-medium">
-                <input
-                  type="checkbox"
+                <Checkbox
                   name="official"
                   checked={form.official}
-                  onChange={handleChange}
+                  onCheckedChange={(checked) =>
+                    setForm((prev) => ({
+                      ...prev,
+                      official: !!checked,
+                    }))
+                  }
                 />
                 Official
               </label>
@@ -262,7 +284,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.rounds}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full text-gray-700 rounded-sm"
                 />
               </label>
               {/* Event Winners Section */}
@@ -294,14 +316,14 @@ export function AddEventFormDrawer({ onClose }: Props) {
                           placeholder="Name"
                           value={winner.name}
                           onChange={(e) => handleWinnerChange(idx, e)}
-                          className="border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-xs outline-none"
+                          className="text-gray-700 rounded-sm"
                         />
                         <Input
                           name="deck"
                           placeholder="Deck"
                           value={winner.deck}
                           onChange={(e) => handleWinnerChange(idx, e)}
-                          className="border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-xs outline-none"
+                          className="text-gray-700 rounded-sm"
                         />
                       </div>
                     </div>
@@ -331,7 +353,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                       placeholder="Deck Name"
                       value={deck.name}
                       onChange={(e) => handleDeckChange(idx, e)}
-                      className="border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 p-2 transition placeholder:text-xs outline-none flex-1"
+                      className="flex-1 text-gray-700 rounded-sm"
                       maxLength={80}
                     />
                     <Input
@@ -341,7 +363,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                       placeholder="Count"
                       value={deck.count}
                       onChange={(e) => handleDeckChange(idx, e)}
-                      className="border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-1 py-2 transition placeholder:text-xs outline-none w-[60px] text-center"
+                      className="w-[60px] text-center text-gray-700 rounded-sm "
                     />
                     <Button
                       type="button"
@@ -368,12 +390,12 @@ export function AddEventFormDrawer({ onClose }: Props) {
               </div>
               <label className="flex flex-col gap-1 text-sm font-medium">
                 Notes
-                <textarea
+                <Textarea
                   name="notes"
                   placeholder="Notes"
                   value={form.notes}
                   onChange={handleChange}
-                  className="w-full border bg-white text-gray-700 outline-none rounded-sm focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 p-2 transition placeholder:text-xs"
+                  className="w-full text-sm font-normal text-gray-700 rounded-sm shadow-none max-h-[150px]"
                   maxLength={200}
                 />
               </label>

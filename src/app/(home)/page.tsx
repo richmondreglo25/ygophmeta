@@ -11,17 +11,56 @@ import {
 import { Loading } from "@/components/loading";
 import { getJsonPath } from "@/utils/enviroment";
 import Link from "next/link";
-import { useJsonData } from "../data/api";
+import { useEventsByYearMonthRange, useJsonData } from "../data/api";
 import Featured from "./featured/featured";
 import { getTypeBadgeClass } from "@/utils/featured";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
-import { Megaphone } from "lucide-react";
+import { Crown, Megaphone, Slash } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { TopPlayers } from "../meta/(charts)/top-players";
+import { useMemo } from "react";
+import { Player } from "@/columns/players";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Facebook } from "@/components/facebook";
+
+function getCurrentMonthYearLabel(date = new Date()) {
+  return date.toLocaleString("default", { month: "long", year: "numeric" });
+}
 
 export default function Home() {
+  // Home Guides.
   const { data, loading } = useJsonData<HomeJson[]>(getJsonPath("home.json"));
 
-  if (loading) {
+  // Events (last 12 months).
+  const now = useMemo(() => new Date(), []);
+  const start = useMemo(() => {
+    const d = new Date(now);
+    d.setMonth(d.getMonth() - 11);
+    return { year: d.getFullYear(), month: d.getMonth() + 1 };
+  }, [now]);
+  const end = useMemo(
+    () => ({
+      year: now.getFullYear(),
+      month: now.getMonth() + 1,
+    }),
+    [now]
+  );
+
+  // Events.
+  const { data: events = [], loading: eventsLoading } =
+    useEventsByYearMonthRange(start, end);
+
+  // Players.
+  const { data: players = [], loading: playersLoading } = useJsonData<Player[]>(
+    getJsonPath("players.json")
+  );
+
+  if (loading || eventsLoading || playersLoading) {
     return <Loading />;
   }
 
@@ -46,6 +85,9 @@ export default function Home() {
           </span>
         </AlertDescription>
       </Alert>
+
+      {/* Facebook Follow */}
+      <Facebook />
 
       {/* User Guides */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -74,9 +116,6 @@ export default function Home() {
             </CardContent>
             {item.link && (
               <CardFooter className="flex justify-end text-sm p-5 pt-0 mt-auto">
-                {/* 
-                  Learn more
-                </Link> */}
                 <Button variant="submit" className="rounded-sm">
                   <Link href={item.link}>Learn more</Link>
                 </Button>
@@ -85,6 +124,26 @@ export default function Home() {
           </Card>
         ))}
       </div>
+
+      <Accordion type="multiple" defaultValue={["top-players"]}>
+        <AccordionItem value="top-players">
+          <AccordionTrigger>
+            <div className="flex items-center gap-1.5">
+              <Crown size={12} />
+              <span>Top Players (1st Place Winners)</span>
+              <Slash size={12} />
+              <span>{getCurrentMonthYearLabel(now)}</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent>
+            <TopPlayers
+              events={events}
+              players={players}
+              showSelection={false}
+            />
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
 
       {/* Featured */}
       <Featured />

@@ -13,10 +13,24 @@ import { Megaphone } from "lucide-react";
 
 export default function Events() {
   const router = useRouter();
-  const start = useMemo(() => ({ year: 2025, month: 1 }), []);
-  const end = useMemo(() => ({ year: 2025, month: 12 }), []);
-  const { data: events, loading } = useEventsByYearMonthRange(start, end);
 
+  // Events (last 12 months).
+  const now = useMemo(() => new Date(), []);
+  const start = useMemo(() => {
+    const d = new Date(now);
+    d.setMonth(d.getMonth() - 11);
+    return { year: d.getFullYear(), month: d.getMonth() + 1 };
+  }, [now]);
+  const end = useMemo(
+    () => ({
+      year: now.getFullYear(),
+      month: now.getMonth() + 1,
+    }),
+    [now]
+  );
+
+  // Data fetching.
+  const { data: events, loading } = useEventsByYearMonthRange(start, end);
   const [openDrawer, setOpenDrawer] = useState(false);
 
   function onClick(row: Event) {
@@ -38,6 +52,12 @@ export default function Events() {
         <Loading />
       ) : (
         <div className="flex flex-col gap-4">
+          <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
+            <AlertDescription className="text-sm">
+              <span className="font-semibold">Tip:</span> You can click on an
+              event row to view more details about that event.
+            </AlertDescription>
+          </Alert>
           <DataTable
             columns={columns}
             data={events}

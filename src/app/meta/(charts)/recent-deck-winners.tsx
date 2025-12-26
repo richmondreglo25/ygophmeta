@@ -11,6 +11,7 @@ import {
   CarouselItem,
   CarouselSlideInfo,
 } from "@/components/ui/carousel";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 type RecentDeckWinner = {
   name: string;
@@ -125,82 +126,92 @@ export function RecentDeckWinners({ events }: { events: Event[] }) {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {Object.entries(grouped)
-        // Sort by official first, then by format.
-        .sort(([, a], [, b]) => {
-          if (a.official !== b.official) return a.official ? -1 : 1;
-          return a.format.localeCompare(b.format);
-        })
-        .map(([key, group]) => (
-          <div key={key} className="flex flex-col gap-3">
-            <div className="flex gap-2 items-center font-semibold text-sm">
-              <div>
-                Format: <span className="text-blue-700">{group.format}</span>
+    <div className="flex flex-col gap-4">
+      <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
+        <AlertDescription className="text-sm">
+          <span className="font-semibold">Tip:</span> You can slide left or
+          right to view deck distributions for different months.
+        </AlertDescription>
+      </Alert>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {Object.entries(grouped)
+          // Sort by official first, then by format.
+          .sort(([, a], [, b]) => {
+            if (a.official !== b.official) return a.official ? -1 : 1;
+            return a.format.localeCompare(b.format);
+          })
+          .map(([key, group]) => (
+            <div key={key} className="flex flex-col gap-3">
+              <div className="flex gap-2 items-center font-semibold text-sm">
+                <div>
+                  Format: <span className="text-blue-700">{group.format}</span>
+                </div>
+                <Slash size={12} />
+                <span
+                  className={group.official ? "text-blue-700" : "text-red-500"}
+                >
+                  {group.official ? "Official" : "Unofficial"}
+                </span>
               </div>
-              <Slash size={12} />
-              <span
-                className={group.official ? "text-blue-700" : "text-red-500"}
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
               >
-                {group.official ? "Official" : "Unofficial"}
-              </span>
-            </div>
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {Object.entries(group.winnersByMonth).map(
-                  ([monthLabel, winners]) => {
-                    // Prepare pie chart data: count decks for this month.
-                    const deckCount: Record<string, number> = {};
-                    winners.forEach((w) => {
-                      deckCount[w.deck] = (deckCount[w.deck] || 0) + 1;
-                    });
-                    // Sort decks by count descending, then by name ascending.
-                    const pieData = Object.entries(deckCount)
-                      .map(([deck, value]) => ({
-                        name: deck,
-                        value,
-                      }))
-                      .sort((a, b) =>
-                        Number(b.value) - Number(a.value) !== 0
-                          ? Number(b.value) - Number(a.value)
-                          : String(a.name).localeCompare(String(b.name))
-                      );
-                    const COLORS = getGraphColors(pieData.length, "#333333");
-                    const pieConfig = pieData.reduce((acc, item, idx) => {
-                      acc[item.name] = {
-                        color: COLORS[idx % COLORS.length],
-                        label: `${item.name} (${item.value})`,
-                      };
-                      return acc;
-                    }, {} as Record<string, { color: string; label: string }>);
+                <CarouselContent>
+                  {Object.entries(group.winnersByMonth).map(
+                    ([monthLabel, winners]) => {
+                      // Prepare pie chart data: count decks for this month.
+                      const deckCount: Record<string, number> = {};
+                      winners.forEach((w) => {
+                        deckCount[w.deck] = (deckCount[w.deck] || 0) + 1;
+                      });
+                      // Sort decks by count descending, then by name ascending.
+                      const pieData = Object.entries(deckCount)
+                        .map(([deck, value]) => ({
+                          name: deck,
+                          value,
+                        }))
+                        .sort((a, b) =>
+                          Number(b.value) - Number(a.value) !== 0
+                            ? Number(b.value) - Number(a.value)
+                            : String(a.name).localeCompare(String(b.name))
+                        );
+                      const COLORS = getGraphColors(pieData.length, "#333333");
+                      const pieConfig = pieData.reduce((acc, item, idx) => {
+                        acc[item.name] = {
+                          color: COLORS[idx % COLORS.length],
+                          label: `${item.name} (${item.value})`,
+                        };
+                        return acc;
+                      }, {} as Record<string, { color: string; label: string }>);
 
-                    return (
-                      <CarouselItem key={monthLabel}>
-                        <ChartPie
-                          data={pieData}
-                          config={pieConfig}
-                          dataKey="value"
-                          nameKey="name"
-                          title={`Deck Distribution (${monthLabel})`}
-                          description={`1st Place Decks for ${group.format} - ${
-                            group.official ? "Official" : "Unofficial"
-                          } Events in ${monthLabel}`}
-                        />
-                      </CarouselItem>
-                    );
-                  }
-                )}
-              </CarouselContent>
-              <CarouselSlideInfo />
-            </Carousel>
-          </div>
-        ))}
+                      return (
+                        <CarouselItem key={monthLabel}>
+                          <ChartPie
+                            data={pieData}
+                            config={pieConfig}
+                            dataKey="value"
+                            nameKey="name"
+                            title={`Deck Distribution (${monthLabel})`}
+                            description={`1st Place Decks for ${
+                              group.format
+                            } - ${
+                              group.official ? "Official" : "Unofficial"
+                            } Events in ${monthLabel}`}
+                          />
+                        </CarouselItem>
+                      );
+                    }
+                  )}
+                </CarouselContent>
+                <CarouselSlideInfo />
+              </Carousel>
+            </div>
+          ))}
+      </div>
     </div>
   );
 }
