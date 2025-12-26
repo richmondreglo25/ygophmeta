@@ -25,64 +25,8 @@
       }
     ]
   },
-  "topPlayers": {
-    "itemsPerSlide": 1,
-    "items": [
-      {
-        "id": "tp-001",
-        "type": "player",
-        "title": "Louren Vidad",
-        "description": [
-          "Challenger Cup PH 2025 - Champion",
-          "Battle Nexus PH 2025 - Champion",
-          "Asia Championship Series Finals - Top 9"
-        ],
-        "image": "/people/lourenvidad.webp"
-      },
-      {
-        "id": "tp-002",
-        "type": "player",
-        "title": "Martin Owen Gonzalez Calleja",
-        "description": ["Asia WCQ 2025 Philippines - Champion"],
-        "image": "/people/martinowengonzalezcalleja.webp"
-      },
-      {
-        "id": "tp-003",
-        "type": "player",
-        "title": "Rob Reyan Yvan Belgica",
-        "description": ["Asia Campus League 2025 - Champion"],
-        "image": "/people/robreyanivanbelgica.webp"
-      },
-      {
-        "id": "tp-004",
-        "type": "player",
-        "title": "Rod Allan Bonavente",
-        "description": ["Asian Championship Series - Semi Finalist"],
-        "image": "/people/rodallanbonavente.webp"
-      }
-    ]
-  },
-  "people": {
-    "itemsPerSlide": 2,
-    "items": [
-      {
-        "id": "judge-001",
-        "type": "judge",
-        "title": "Carlito del Mundo Jr",
-        "description": ["Official Judge"],
-        "image": "/people/carlitodelmundojr.webp"
-      },
-      {
-        "id": "judge-002",
-        "type": "judge",
-        "title": "Clark Jasper Ramos",
-        "description": ["Official Judge"],
-        "image": "/people/clarkjasperramos.webp"
-      }
-    ]
-  },
   "banners": {
-    "itemsPerSlide": 2,
+    "itemsPerSlide": 3,
     "items": [
       {
         "id": "shop-001",
@@ -134,6 +78,62 @@
         "title": "Courtside",
         "description": ["Distributor of Yu-Gi-Oh! Cards"],
         "image": "/shops/courtsidelogo.webp"
+      }
+    ]
+  },
+  "topPlayers": {
+    "itemsPerSlide": 2,
+    "items": [
+      {
+        "id": "tp-001",
+        "type": "player",
+        "title": "Louren Vidad",
+        "description": [
+          "Challenger Cup PH 2025 - Champion",
+          "Battle Nexus PH 2025 - Champion",
+          "Asia Championship Series Finals - Top 9"
+        ],
+        "image": "/people/lourenvidad.webp"
+      },
+      {
+        "id": "tp-002",
+        "type": "player",
+        "title": "Martin Owen Gonzalez Calleja",
+        "description": ["Asia WCQ 2025 Philippines - Champion"],
+        "image": "/people/martinowengonzalezcalleja.webp"
+      },
+      {
+        "id": "tp-003",
+        "type": "player",
+        "title": "Rob Reyan Yvan Belgica",
+        "description": ["Asia Campus League 2025 - Champion"],
+        "image": "/people/robreyanivanbelgica.webp"
+      },
+      {
+        "id": "tp-004",
+        "type": "player",
+        "title": "Rod Allan Bonavente",
+        "description": ["Asian Championship Series - Semi Finalist"],
+        "image": "/people/rodallanbonavente.webp"
+      }
+    ]
+  },
+  "people": {
+    "itemsPerSlide": 2,
+    "items": [
+      {
+        "id": "judge-001",
+        "type": "judge",
+        "title": "Carlito del Mundo Jr",
+        "description": ["Official Judge"],
+        "image": "/people/carlitodelmundojr.webp"
+      },
+      {
+        "id": "judge-002",
+        "type": "judge",
+        "title": "Clark Jasper Ramos",
+        "description": ["Official Judge"],
+        "image": "/people/clarkjasperramos.webp"
       }
     ]
   }
