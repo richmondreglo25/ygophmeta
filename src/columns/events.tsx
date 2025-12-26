@@ -1,5 +1,7 @@
+import { getTypeBadgeClass } from "@/utils/featured";
 import { ColumnDef } from "@tanstack/react-table";
 import { format } from "date-fns";
+import { ExternalLink, Link } from "lucide-react";
 
 export type EventDesc = {
   name: string;
@@ -37,30 +39,51 @@ export const columns: ColumnDef<Event>[] = [
   {
     accessorKey: "title",
     header: "Title",
-    minSize: 150,
+    minSize: 140,
   },
   {
     accessorKey: "host",
     header: "Host",
-    minSize: 150,
+    minSize: 140,
   },
   {
     accessorKey: "when",
     header: "When",
-    cell: ({ row }) => {
-      return row.original.when
+    cell: ({ row }) =>
+      row.original.when
         ? format(new Date(row.original.when), "MMM dd yyyy")
-        : "—";
+        : "—",
+    minSize: 80,
+  },
+  {
+    accessorKey: "format",
+    header: "Format",
+    minSize: 50,
+  },
+  {
+    accessorKey: "official",
+    header: "Official",
+    cell: ({ row }) => {
+      const type = row.original.official ? "official" : "unofficial";
+      return (
+        <span
+          className={`text-xs capitalize px-2 py-1 rounded-sm font-semibold ${getTypeBadgeClass(
+            type
+          )}`}
+        >
+          {type.charAt(0).toUpperCase() + type.slice(1)}
+        </span>
+      );
     },
-    minSize: 100,
+    minSize: 50,
   },
   {
     accessorKey: "winners",
     header: "Winner",
     cell: ({ row }) => {
       const winners = row.original.winners;
-      return winners && winners.length > 0 ? winners[0].name : "—";
+      return winners?.length ? winners[0].name : "—";
     },
-    minSize: 150,
+    minSize: 140,
   },
 ];

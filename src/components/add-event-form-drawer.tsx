@@ -154,7 +154,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
 
   return (
     <Drawer open dismissible={false} onClose={onClose} direction="right">
-      <DrawerContent className="rounded-none fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-lg">
+      <DrawerContent className="rounded-sm fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-lg">
         <div className="flex flex-col gap-2 w-full h-full">
           <DrawerTitle
             className={`flex justify-between items-center p-4 text-sm font-medium border-b`}
@@ -166,7 +166,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
             <X size={18} className="cursor-pointer" onClick={onClose} />
           </DrawerTitle>
           <div className="p-4 flex flex-col items-center flex-1 overflow-auto">
-            <Alert className="mb-4 w-full border-blue-300 bg-blue-50 text-blue-900 rounded-none">
+            <Alert className="mb-4 w-full border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
               <AlertTitle className="font-semibold flex items-center gap-2">
                 <Megaphone size={14} />
                 <span>Notice</span>
@@ -188,7 +188,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.title}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                   maxLength={80}
                 />
               </label>
@@ -200,7 +200,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.host}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                   maxLength={80}
                 />
               </label>
@@ -212,7 +212,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.when}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                 />
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
@@ -223,7 +223,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.where}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                   maxLength={80}
                 />
               </label>
@@ -234,7 +234,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.format}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-2 transition text-sm placeholder:text-xs outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-2 transition text-sm placeholder:text-xs outline-none"
                 >
                   {Object.values(EventFormat).map((fmt) => (
                     <option key={fmt} value={fmt}>
@@ -262,7 +262,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   value={form.rounds}
                   onChange={handleChange}
                   required
-                  className="w-full border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
+                  className="w-full border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-3 py-4 transition placeholder:text-xs outline-none"
                 />
               </label>
               {/* Event Winners Section */}
@@ -272,7 +272,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   {winners.map((winner, idx) => (
                     <div
                       key={idx}
-                      className="border border-gray-200 bg-gray-50 p-4 flex flex-col gap-2"
+                      className="flex flex-col gap-2 bg-gray-50 p-4 border border-gray-200 rounded-sm"
                     >
                       <div className="flex justify-between items-center">
                         <span className="font-medium text-sm">
@@ -294,14 +294,14 @@ export function AddEventFormDrawer({ onClose }: Props) {
                           placeholder="Name"
                           value={winner.name}
                           onChange={(e) => handleWinnerChange(idx, e)}
-                          className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-xs outline-none"
+                          className="border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-xs outline-none"
                         />
                         <Input
                           name="deck"
                           placeholder="Deck"
                           value={winner.deck}
                           onChange={(e) => handleWinnerChange(idx, e)}
-                          className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-xs outline-none"
+                          className="border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-2 py-3 transition placeholder:text-xs outline-none"
                         />
                       </div>
                     </div>
@@ -311,7 +311,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   <Button
                     type="button"
                     variant="submit"
-                    className="text-xs flex gap-0.5 p-2 py-0 h-[32px] rounded-none"
+                    className="text-xs flex gap-0.5 p-2 py-0 h-[32px] rounded-sm"
                     onClick={handleAddWinner}
                   >
                     <Plus size={14} />
@@ -331,7 +331,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                       placeholder="Deck Name"
                       value={deck.name}
                       onChange={(e) => handleDeckChange(idx, e)}
-                      className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 p-2 transition placeholder:text-xs outline-none flex-1"
+                      className="border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 p-2 transition placeholder:text-xs outline-none flex-1"
                       maxLength={80}
                     />
                     <Input
@@ -341,7 +341,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                       placeholder="Count"
                       value={deck.count}
                       onChange={(e) => handleDeckChange(idx, e)}
-                      className="border bg-white text-gray-700 rounded-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-1 py-2 transition placeholder:text-xs outline-none w-[60px] text-center"
+                      className="border bg-white text-gray-700 rounded-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 px-1 py-2 transition placeholder:text-xs outline-none w-[60px] text-center"
                     />
                     <Button
                       type="button"
@@ -358,7 +358,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   <Button
                     type="button"
                     variant="submit"
-                    className="text-xs flex gap-0.5 p-2 py-0 h-[32px] rounded-none"
+                    className="text-xs flex gap-0.5 p-2 py-0 h-[32px] rounded-sm"
                     onClick={handleAddDeck}
                   >
                     <Plus size={14} />
@@ -373,12 +373,12 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   placeholder="Notes"
                   value={form.notes}
                   onChange={handleChange}
-                  className="w-full border bg-white text-gray-700 outline-none rounded-none focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 p-2 transition placeholder:text-xs"
+                  className="w-full border bg-white text-gray-700 outline-none rounded-sm focus:ring-blue-400 focus:border-blue-400 hover:border-blue-400 p-2 transition placeholder:text-xs"
                   maxLength={200}
                 />
               </label>
               {/* Image Upload Info Alert */}
-              <Alert className="w-full border-blue-300 bg-blue-50 text-blue-900 rounded-none">
+              <Alert className="w-full border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
                 <AlertTitle className="font-semibold flex items-center gap-2">
                   <Megaphone size={14} />
                   <span>Optional Image Upload</span>
@@ -397,7 +397,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 </AlertDescription>
               </Alert>
               {/* Decklist Image Notice */}
-              <Alert className="w-full border-blue-300 bg-blue-50 text-blue-900 rounded-none">
+              <Alert className="w-full border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
                 <AlertTitle className="font-semibold flex items-center gap-2">
                   <Heart size={14} />
                   <span>Thank you for your contribution!</span>
@@ -409,7 +409,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
               </Alert>
               {/* Submit Email Danger Alert */}
               <Alert
-                className="w-full border-red-400 bg-red-50 text-red-900 rounded-none"
+                className="w-full border-red-400 bg-red-50 text-red-900 rounded-sm"
                 variant="destructive"
               >
                 <AlertTitle className="font-semibold">
@@ -437,7 +437,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
               {/* Sample JSON Preview */}
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="json-preview">
-                  <AccordionTrigger className="text-sm font-medium px-0 py-2 rounded-none">
+                  <AccordionTrigger className="text-sm font-medium px-0 py-2 rounded-sm">
                     Show JSON Preview
                   </AccordionTrigger>
                   <AccordionContent>
@@ -446,7 +446,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                         type="button"
                         size="xs"
                         variant="secondary"
-                        className="absolute top-2 right-2 z-10 rounded-none"
+                        className="absolute top-2 right-2 z-10 rounded-sm"
                         onClick={() => {
                           const json = JSON.stringify(getEventJson(), null, 2);
                           navigator.clipboard.writeText(json);
@@ -463,7 +463,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                       >
                         {copied ? "Copied!" : "Copy"}
                       </Button>
-                      <div className="bg-gray-100 border border-gray-300 text-xs font-mono p-4 whitespace-pre-wrap rounded-none">
+                      <div className="bg-gray-100 border border-gray-300 text-xs font-mono p-4 whitespace-pre-wrap rounded-sm">
                         {JSON.stringify(getEventJson(), null, 2)}
                       </div>
                     </div>
@@ -474,12 +474,12 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 <Button
                   type="button"
                   variant="cancel"
-                  className="rounded-none"
+                  className="rounded-sm"
                   onClick={onClose}
                 >
                   Cancel
                 </Button>
-                <Button variant="submit" type="submit" className="rounded-none">
+                <Button variant="submit" type="submit" className="rounded-sm">
                   Submit
                 </Button>
               </div>

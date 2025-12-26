@@ -16,6 +16,7 @@ import Featured from "./featured/featured";
 import { getTypeBadgeClass } from "@/utils/featured";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Megaphone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const { data, loading } = useJsonData<HomeJson[]>(getJsonPath("home.json"));
@@ -29,7 +30,7 @@ export default function Home() {
       {/* Announcements */}
       <Alert
         variant="default"
-        className="border-red-300 bg-red-50 text-red-900 rounded-none p-5"
+        className="border-red-300 bg-red-50 text-red-900 rounded-sm p-5"
       >
         <AlertTitle className="flex items-center gap-2 pb-2">
           <Megaphone size={12} />
@@ -39,7 +40,7 @@ export default function Home() {
           Welcome to YGO Ph Meta! Stay tuned for the latest updates on events,
           decks, and more in the Yu-Gi-Oh! community.
           <br />
-          <span className="block mt-2 text-xs text-gray-500">
+          <span className="block mt-2 text-xs text-gray-500 rounded-sm">
             <strong>Note:</strong> This site is still in development and
             currently in the data gathering phase.
           </span>
@@ -51,7 +52,7 @@ export default function Home() {
         {data.map((item, index) => (
           <Card
             key={index}
-            className="flex flex-col p-0 rounded-none border-[1px] shadow-none"
+            className="flex flex-col p-0 rounded-sm border-[1px] shadow-none"
           >
             <CardHeader className="p-5">
               <CardTitle className="text-md flex justify-between items-center gap-2">
@@ -60,7 +61,7 @@ export default function Home() {
                   {item.title}
                 </div>
                 <span
-                  className={`text-xs capitalize px-2 py-1 ${getTypeBadgeClass(
+                  className={`text-xs capitalize px-2 py-1 rounded-sm ${getTypeBadgeClass(
                     "guide"
                   )}`}
                 >
@@ -72,13 +73,13 @@ export default function Home() {
               {item.description}
             </CardContent>
             {item.link && (
-              <CardFooter className="text-sm p-5 pt-0 mt-auto">
-                <Link
-                  href={item.link}
-                  className="text-blue-600 hover:underline"
-                >
+              <CardFooter className="flex justify-end text-sm p-5 pt-0 mt-auto">
+                {/* 
                   Learn more
-                </Link>
+                </Link> */}
+                <Button variant="submit" className="rounded-sm">
+                  <Link href={item.link}>Learn more</Link>
+                </Button>
               </CardFooter>
             )}
           </Card>

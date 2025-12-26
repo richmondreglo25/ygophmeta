@@ -79,7 +79,7 @@ export function DataTable<TData, TValue>({
         <div className="mb-4 flex gap-2">
           <Input
             placeholder={`Search ${searchColumn}...`}
-            className="w-full sm:max-w-xs border border-gray-300 bg-white text-gray-700 rounded-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 hover:border-gray-400"
+            className="w-full sm:max-w-xs border border-gray-300 bg-white text-gray-700 rounded-sm focus:ring-1 focus:ring-gray-400 focus:border-gray-400 hover:border-gray-400"
             value={
               (table.getColumn(searchColumn)?.getFilterValue() as string) || ""
             }
@@ -89,7 +89,10 @@ export function DataTable<TData, TValue>({
           />
         </div>
       )}
-      <div id="data-table-wrapper" className="overflow-hidden border">
+      <div
+        id="data-table-wrapper"
+        className="border rounded-sm overflow-hidden"
+      >
         <Table id="data-table">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -181,7 +184,7 @@ export function DataTable<TData, TValue>({
         <div className="items-center gap-2 hidden sm:flex">
           <span className="text-xs">Rows per page:</span>
           <select
-            className="border px-2 py-1 text-xs bg-background"
+            className="border rounded-sm px-2 py-1 text-xs bg-background"
             value={table.getState().pagination.pageSize}
             onChange={(e) => table.setPageSize(Number(e.target.value))}
           >
@@ -196,7 +199,7 @@ export function DataTable<TData, TValue>({
           <Button
             variant="outline"
             size="sm"
-            className="rounded-none"
+            className="rounded-sm"
             onClick={() => table.setPageIndex(0)}
             disabled={!table.getCanPreviousPage()}
           >
@@ -205,7 +208,7 @@ export function DataTable<TData, TValue>({
           <Button
             variant="outline"
             size="sm"
-            className="rounded-none"
+            className="rounded-sm"
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
           >
@@ -218,7 +221,7 @@ export function DataTable<TData, TValue>({
           <Button
             variant="outline"
             size="sm"
-            className="rounded-none"
+            className="rounded-sm"
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}
           >
@@ -227,7 +230,7 @@ export function DataTable<TData, TValue>({
           <Button
             variant="outline"
             size="sm"
-            className="rounded-none"
+            className="rounded-sm"
             onClick={() => table.setPageIndex(table.getPageCount() - 1)}
             disabled={!table.getCanNextPage()}
           >

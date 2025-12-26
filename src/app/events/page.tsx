@@ -44,7 +44,7 @@ export default function Events() {
             searchColumn="title"
             onClick={onClick}
           />
-          <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-none">
+          <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
             <AlertTitle className="font-semibold flex items-center gap-2">
               <Megaphone size={16} />
               Share Your Event Results!
@@ -58,7 +58,7 @@ export default function Events() {
           <div className="flex justify-end">
             <Button
               variant="submit"
-              className="rounded-none"
+              className="rounded-sm"
               onClick={handleAddEvent}
             >
               <span>Submit Event</span>

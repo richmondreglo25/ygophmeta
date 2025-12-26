@@ -17,6 +17,12 @@ export const colors = {
   video: {
     badge: "bg-red-100 text-red-700",
   },
+  official: {
+    badge: "bg-blue-100 text-blue-700 border border-blue-300",
+  },
+  unofficial: {
+    badge: "bg-red-100 text-red-700 border border-red-300",
+  },
   default: {
     badge: "bg-gray-100 text-gray-700",
   },

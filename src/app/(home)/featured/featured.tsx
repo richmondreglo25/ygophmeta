@@ -124,16 +124,12 @@ function renderCarousel(
             item.type !== "video" && item.type !== "event";
           return (
             <CarouselItem key={item.id}>
-              <Card className="w-full p-0 rounded-none border-none shadow-none flex flex-col h-full">
-                <CardHeader
-                  className={`p-0 pb-3 ${
-                    applyFooterBorder ? "border-b-[1px]" : ""
-                  }`}
-                >
+              <Card className="w-full p-0 rounded-sm border-none shadow-none flex flex-col h-full">
+                <CardHeader className="p-0 pb-3">
                   <CardTitle className="text-md flex justify-between items-center gap-2">
                     {item.title}
                     <span
-                      className={`px-2 py-1 text-xs capitalize ${getTypeBadgeClass(
+                      className={`text-xs capitalize px-2 py-1 rounded-sm ${getTypeBadgeClass(
                         item.type
                       )}`}
                     >
@@ -143,18 +139,28 @@ function renderCarousel(
                 </CardHeader>
                 <CardContent
                   className={`flex-1 flex flex-col justify-center items-center p-0 m-0 ${
-                    applyFooterBorder ? "border-[1px] border-b-0 " : ""
+                    applyFooterBorder
+                      ? "border-[1px] border-b-0 rounded-t-sm overflow-hidden"
+                      : ""
                   }`}
                 >
                   {content}
                 </CardContent>
                 {item.description && (
                   <CardFooter
-                    className={`flex justify-center text-sm p-3 ${
-                      applyFooterBorder ? "border-[1px]" : "border-t-[1px]"
+                    className={`flex flex-col items-center text-sm p-3 ${
+                      applyFooterBorder
+                        ? "border-[1px] rounded-b-sm"
+                        : "border-t-[1px]"
                     }`}
                   >
-                    <span>{item.description}</span>
+                    {Array.isArray(item.description) ? (
+                      item.description.map((desc, idx) => (
+                        <span key={idx}>{desc}</span>
+                      ))
+                    ) : (
+                      <span>{item.description}</span>
+                    )}
                   </CardFooter>
                 )}
               </Card>

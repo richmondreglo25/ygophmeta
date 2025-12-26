@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { notFound } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
@@ -13,10 +12,19 @@ import {
   ScrollText,
   Slash,
 } from "lucide-react";
-import { EventDeck, EventWinner } from "@/columns/events";
+import { Event, EventDeck, EventWinner } from "@/columns/events";
 import { getEventImagePath } from "@/utils/enviroment";
 import { IconX } from "@/components/IconX";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import { ChartPie } from "@/components/charts/pie-chart";
+import { getGraphColors } from "@/utils/colors";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { TableChart } from "@/components/charts/table-chart";
 
 export async function generateStaticParams() {
   const eventsDir = path.join(process.cwd(), "public/data/events");
@@ -24,7 +32,7 @@ export async function generateStaticParams() {
     .readdirSync(eventsDir)
     .filter((file) => file.endsWith(".json"));
 
-  const allEvents: any[] = [];
+  const allEvents: Event[] = [];
   const seenIds = new Set<string>();
 
   files.forEach((file) => {
@@ -32,7 +40,7 @@ export async function generateStaticParams() {
     const content = fs.readFileSync(filePath, "utf8");
     const events = JSON.parse(content);
 
-    events.forEach((event: any) => {
+    events.forEach((event: Event) => {
       if (!seenIds.has(event.id)) {
         seenIds.add(event.id);
         allEvents.push(event);
@@ -56,7 +64,7 @@ async function getEvent(id: string) {
     const content = fs.readFileSync(filePath, "utf8");
     const events = JSON.parse(content);
 
-    const event = events.find((e: any) => e.id === id);
+    const event = events.find((e: Event) => e.id === id);
     if (event) return event;
   }
 
@@ -123,13 +131,13 @@ export default async function EventPage({
               {event.images.map((imagePath: string, index: number) => (
                 <Avatar
                   key={index}
-                  className="text-sm rounded object-cover border h-full w-full"
+                  className="text-sm rounded border h-full w-full max-h-[40vh] overflow-hidden"
                 >
                   <AvatarImage
                     src={getEventImagePath(event.id, imagePath)}
                     alt={`Event Image ${index + 1}`}
                     loading="lazy"
-                    className="flex justify-center items-center h-full w-full max-h-[40vh] object-cover"
+                    className="flex justify-center items-center h-full w-full object-cover"
                   />
                   <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
                     Unable to load image
@@ -146,11 +154,11 @@ export default async function EventPage({
             <ScrollText size={10} />
             <span>Event details</span>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {details.map((item) => (
               <Card
                 key={item.label}
-                className="flex flex-col p-0 rounded-none border-[1px] shadow-none"
+                className="flex flex-col p-0 rounded-sm border-[1px] shadow-none"
               >
                 <CardHeader className="p-3 pb-1">
                   <CardTitle className="text-sm flex justify-between items-center gap-2">
@@ -236,7 +244,25 @@ export default async function EventPage({
 
         {/* Decks Summary */}
         {event.decks && event.decks.length > 0 && (
-          <DecksSummaryTable decks={event.decks} />
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-1 text-xs font-normal italic">
+              <ChartArea size={10} />
+              <span>Decks Summary</span>
+            </div>
+            <DeckSummaryPieChart decks={event.decks} />
+            <Accordion
+              type="single"
+              collapsible
+              defaultValue="decks-summary-table"
+            >
+              <AccordionItem value="decks-summary-table">
+                <AccordionTrigger>Decks Summary Table</AccordionTrigger>
+                <AccordionContent>
+                  <TableChart decks={event.decks} />
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
         )}
       </div>
     </div>
@@ -257,70 +283,43 @@ function getOrdinal(n: number): string {
 }
 
 /**
- * Calculate deck percentage.
- * @param count number of decks.
- * @param total total number of decks.
- * @returns Percentage string.
- */
-function getDeckPercentage(count: number, total: number): string {
-  if (total === 0) return "—";
-  return ((count / total) * 100).toFixed(1) + "%";
-}
-
-/**
- * Decks Summary Table Component.
+ * Deck Summary Pie Chart Component.
  * @param decks - Array of EventDeck objects.
- * @returns JSX Element displaying the decks summary table.
+ * @returns JSX Element displaying the deck summary pie chart.
  */
-function DecksSummaryTable({ decks }: { decks: EventDeck[] }) {
-  // Calculate total number of decks.
-  const total = decks.reduce(
-    (acc: number, deck: EventDeck) => acc + deck.count,
-    0
-  );
-
-  // Sort decks by count descending, then by name ascending.
+function DeckSummaryPieChart({ decks }: { decks: EventDeck[] }) {
+  // Sort decks by count descending
   const sortedDecks = [...decks].sort((a, b) =>
     b.count !== a.count ? b.count - a.count : a.name.localeCompare(b.name)
   );
 
+  // Generate pie chart data from decks, label as "<Deck name> (count)"
+  const pieData = sortedDecks.map((deck) => ({
+    name: deck.name,
+    value: deck.count,
+  }));
+
+  // Generate config with color cycling.
+  const COLORS = getGraphColors(pieData.length, "#333333");
+
+  const pieConfig = pieData.reduce((acc, item, idx) => {
+    acc[item.name] = {
+      color: COLORS[idx % COLORS.length],
+      label: `${item.name} (${item.value})`,
+    };
+    return acc;
+  }, {} as Record<string, { color: string; label: string }>);
+
   return (
-    <div className="flex flex-col gap-3">
-      <div className="flex items-center gap-1 text-xs font-normal italic">
-        <ChartArea size={10} />
-        <span>Decks Summary</span>
-      </div>
-      <div id="data-table-wrapper" className="overflow-auto border">
-        <table id="data-table" className="w-full caption-bottom text-sm">
-          <thead>
-            <tr className="border-b transition-colors hover:bg-muted/50">
-              <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
-                Deck
-              </th>
-              <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
-                Count
-              </th>
-              <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
-                Percentage
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {sortedDecks.map((deck: EventDeck, index: number) => (
-              <tr
-                key={index}
-                className="text-sm border-b last:border-b-0 hover:bg-gray-50 transition"
-              >
-                <td>
-                  <span className="whitespace-nowrap">{deck.name}</span>
-                </td>
-                <td>{deck.count}</td>
-                <td>{getDeckPercentage(deck.count, total)}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <ChartPie
+      data={pieData}
+      config={pieConfig}
+      dataKey="value"
+      nameKey="name"
+      title={`Deck Distribution (Total: ${decks.reduce(
+        (acc, deck) => acc + deck.count,
+        0
+      )})`}
+    />
   );
 }

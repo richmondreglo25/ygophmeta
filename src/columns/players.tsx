@@ -57,4 +57,10 @@ export const columns: ColumnDef<Player>[] = [
     minSize: 100,
     enableSorting: true,
   },
+  {
+    accessorKey: "team",
+    header: "Team",
+    minSize: 100,
+    cell: ({ row }) => row.original.team || "-",
+  },
 ];

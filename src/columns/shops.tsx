@@ -54,4 +54,9 @@ export const columns: ColumnDef<Shop>[] = [
     header: "Open Hours",
     minSize: 200,
   },
+  {
+    accessorKey: "about",
+    header: "About",
+    minSize: 200,
+  },
 ];
