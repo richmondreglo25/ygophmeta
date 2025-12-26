@@ -194,7 +194,7 @@ export default function Featured() {
   }, {} as Record<string, AutoplayType>);
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col">
       <div className="flex items-center gap-1 text-xs font-normal italic">
         <Sparkle size={10} />
         <span>Featured</span>

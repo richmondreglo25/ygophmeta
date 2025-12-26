@@ -53,27 +53,15 @@ export default function Community() {
         className="w-full"
         defaultValue="players"
       >
-        {sources.map(({ key, label, plural, data, columns }, idx) => (
-          <AccordionItem
-            key={key}
-            value={key}
-            className={
-              idx === 0
-                ? "border-y-[1px]"
-                : idx === sources.length - 1
-                ? "border-b-[1px]"
-                : ""
-            }
-          >
-            <AccordionTrigger className="px-3 border-x-[1px]">
+        {sources.map(({ key, label, plural, data, columns }) => (
+          <AccordionItem key={key} value={key}>
+            <AccordionTrigger>
               <div className="flex items-center gap-2">
                 <IconX type={`${key}`} size={16} />
                 {data.data.length > 1 ? plural : label} ({data.data.length})
               </div>
             </AccordionTrigger>
-            <AccordionContent
-              className={`flex flex-col gap-4 text-balance px-1 py-5 border-t-[1px]`}
-            >
+            <AccordionContent className="flex flex-col gap-4 text-balance">
               {data.loading ? (
                 <Loading />
               ) : (

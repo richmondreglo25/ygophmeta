@@ -320,6 +320,7 @@ function DeckSummaryPieChart({ decks }: { decks: EventDeck[] }) {
         (acc, deck) => acc + deck.count,
         0
       )})`}
+      description="Distribution of decks used by participants."
     />
   );
 }

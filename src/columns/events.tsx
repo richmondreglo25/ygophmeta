@@ -1,7 +1,6 @@
 import { getTypeBadgeClass } from "@/utils/featured";
 import { ColumnDef } from "@tanstack/react-table";
 import { format } from "date-fns";
-import { ExternalLink, Link } from "lucide-react";
 
 export type EventDesc = {
   name: string;
