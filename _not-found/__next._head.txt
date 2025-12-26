@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-2:I[97367,["/ygophmeta/_next/static/chunks/ec67f231a4d0793b.js","/ygophmeta/_next/static/chunks/247eb132b7f7b574.js","/ygophmeta/_next/static/chunks/29484100ad7527e4.js"],"ViewportBoundary"]
-4:I[97367,["/ygophmeta/_next/static/chunks/ec67f231a4d0793b.js","/ygophmeta/_next/static/chunks/247eb132b7f7b574.js","/ygophmeta/_next/static/chunks/29484100ad7527e4.js"],"MetadataBoundary"]
+2:I[97367,["/ygophmeta/_next/static/chunks/d98918e157852b65.js","/ygophmeta/_next/static/chunks/1a476e30dee46234.js","/ygophmeta/_next/static/chunks/0f90ef75c25cd9d0.js"],"ViewportBoundary"]
+4:I[97367,["/ygophmeta/_next/static/chunks/d98918e157852b65.js","/ygophmeta/_next/static/chunks/1a476e30dee46234.js","/ygophmeta/_next/static/chunks/0f90ef75c25cd9d0.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
-7:I[27201,["/ygophmeta/_next/static/chunks/ec67f231a4d0793b.js","/ygophmeta/_next/static/chunks/247eb132b7f7b574.js","/ygophmeta/_next/static/chunks/29484100ad7527e4.js"],"IconMark"]
-0:{"buildId":"WYG3gM6o9a9p2z41NC0JU","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+7:I[27201,["/ygophmeta/_next/static/chunks/d98918e157852b65.js","/ygophmeta/_next/static/chunks/1a476e30dee46234.js","/ygophmeta/_next/static/chunks/0f90ef75c25cd9d0.js"],"IconMark"]
+0:{"buildId":"MvGJKKTrp88y6zmJqNLCn","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"Yu-Gi-Oh! PH Meta"}],["$","link","1",{"rel":"shortcut icon","href":"./favicon.ico"}],["$","link","2",{"rel":"icon","href":"./favicon.ico"}],["$","link","3",{"rel":"apple-touch-icon","href":"./apple-touch-icon.png"}],["$","$L7","4",{}]]
