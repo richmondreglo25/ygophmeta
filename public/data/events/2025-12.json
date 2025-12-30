@@ -130,9 +130,9 @@
   {
     "id": "f3a1c2b7-8e9d-8dy4-9c3e-1a2b3c4d5fff",
     "title": "OCG Pod 1",
-    "host": "Japan Gacha",
+    "host": "Kimochi Hobby Shop",
     "when": "Dec 19 2025",
-    "where": "Manila",
+    "where": "Japan Gacha",
     "format": "OCG",
     "official": true,
     "rounds": 3,
@@ -186,9 +186,9 @@
   {
     "id": "f2a1d2b7-8e9d-7su4-9c3e-1a2b3c4d5fff",
     "title": "AE Pod 1",
-    "host": "Japan Gacha",
+    "host": "Kimochi Hobby Shop",
     "when": "Dec 19 2025",
-    "where": "Manila",
+    "where": "Japan Gacha",
     "format": "AE",
     "official": true,
     "rounds": 3,
@@ -238,7 +238,7 @@
   {
     "id": "a1e2c3d4-arkn-1",
     "title": "AE Pod 1",
-    "host": "Arken CardZone",
+    "host": "ARKEN CardZone",
     "when": "Dec 21 2025",
     "where": "Ayala Malls Circuit Makati",
     "format": "AE",
@@ -296,7 +296,7 @@
   {
     "id": "a1e2c3d4-arkn-2",
     "title": "AE Pod 2",
-    "host": "Arken CardZone",
+    "host": "ARKEN CardZone",
     "when": "Dec 21 2025",
     "where": "Ayala Malls Circuit Makati",
     "format": "AE",

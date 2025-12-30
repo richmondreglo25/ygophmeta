@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import { AddEventFormDrawer } from "@/components/add-event-form-drawer";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
-import { Megaphone } from "lucide-react";
+import { Info, Megaphone } from "lucide-react";
 
 export default function Events() {
   const router = useRouter();
@@ -52,10 +52,13 @@ export default function Events() {
         <Loading />
       ) : (
         <div className="flex flex-col gap-4">
-          <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
-            <AlertDescription className="text-sm">
-              <span className="font-semibold">Tip:</span> You can click on an
-              event row to view more details about that event.
+          <Alert variant="info">
+            <AlertDescription className="flex items-center gap-1.5 text-sm">
+              <Info size={14} />
+              <div>
+                <span className="font-semibold">Click</span> an event to learn
+                more.
+              </div>
             </AlertDescription>
           </Alert>
           <DataTable
@@ -64,7 +67,7 @@ export default function Events() {
             searchColumn="title"
             onClick={onClick}
           />
-          <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
+          <Alert variant="info">
             <AlertTitle className="font-semibold flex items-center gap-2">
               <Megaphone size={16} />
               Share Your Event Results!

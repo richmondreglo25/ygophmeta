@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import type { Event } from "@/columns/events";
 import type { Player } from "@/columns/players";
-import { Slash } from "lucide-react";
+import { Info, Slash } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { getImagePath } from "@/utils/enviroment";
 import {
@@ -139,12 +139,16 @@ export function TopPlayers({
     <div className="flex flex-col gap-4">
       {showSelection && (
         <>
-          <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
-            <AlertDescription className="text-sm">
-              <span className="font-semibold">Tip:</span> Select the time range
-              to view top players based on 1st place finishes in events.
+          <Alert variant="info">
+            <AlertDescription className="flex items-center gap-1.5 text-sm">
+              <Info size={14} />
+              <div>
+                <span className="font-semibold">Choose</span> a range to see top
+                winners.
+              </div>
             </AlertDescription>
           </Alert>
+
           <div className="flex items-center justify-end gap-2">
             <span className="font-semibold">Show:</span>
             <Select

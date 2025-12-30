@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import type { Event } from "@/columns/events";
 import { getGraphColors } from "@/utils/colors";
 import { ChartPie } from "@/components/charts/pie-chart";
-import { Slash } from "lucide-react";
+import { Info, Slash } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -127,10 +127,13 @@ export function RecentDeckWinners({ events }: { events: Event[] }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <Alert className="border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
-        <AlertDescription className="text-sm">
-          <span className="font-semibold">Tip:</span> You can slide left or
-          right to view deck distributions for different months.
+      <Alert variant="info">
+        <AlertDescription className="flex items-center gap-1.5 text-sm">
+          <Info size={14} />
+          <div>
+            <span className="font-semibold">Swipe</span> left or right to view
+            other months.
+          </div>
         </AlertDescription>
       </Alert>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -50,10 +50,7 @@ export default function Meta() {
   return (
     <div className="flex flex-col gap-5">
       {/* Announcements */}
-      <Alert
-        variant="default"
-        className="border-red-300 bg-red-50 text-red-900 rounded-sm p-5"
-      >
+      <Alert variant="warning" className="p-5">
         <AlertTitle className="flex items-center gap-2 pb-2">
           <Megaphone size={12} />
           Disclaimer!
@@ -74,7 +71,7 @@ export default function Meta() {
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
               <Crown size={10} />
-              <span>Top Players (Most Wins, Placements)</span>
+              <span>Top Players (Most Championships)</span>
             </div>
           </AccordionTrigger>
           <AccordionContent>

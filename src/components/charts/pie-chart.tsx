@@ -52,33 +52,37 @@ export function ChartPie({
       <CardContent className="flex-1 pb-5">
         <ChartContainer
           config={config}
-          className="[&_.recharts-pie-label-text]:fill-foreground mx-auto w-full max-w-xs min-h-[320px]"
+          className="mx-auto w-full max-w-xs min-h-[320px]"
         >
-          <ResponsiveContainer width="100%" height={320}>
-            <PieChart>
-              <ChartTooltip content={<ChartTooltipContent hideLabel />} />
-              <Pie
-                data={data}
-                dataKey={dataKey}
-                nameKey={nameKey}
-                startAngle={0}
-                endAngle={360}
-                labelLine={false}
-              >
-                {data.map((entry) => (
-                  <Cell
-                    key={`cell-${entry[nameKey]}`}
-                    fill={config[entry[nameKey]]?.color ?? "#ccc"}
-                  />
-                ))}
-              </Pie>
-              <ChartLegend
-                content={<ChartLegendContent nameKey={nameKey} />}
-                wrapperStyle={{ width: "100%" }} // ✅ stabilizes iOS layout
-                className="flex flex-wrap justify-center gap-3 gap-y-1.5 mx-auto text-xs whitespace-nowrap"
-              />
-            </PieChart>
-          </ResponsiveContainer>
+          <div className="w-full h-[320px]">
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <ChartTooltip content={<ChartTooltipContent hideLabel />} />
+
+                <Pie
+                  data={data}
+                  dataKey={dataKey}
+                  nameKey={nameKey}
+                  startAngle={0}
+                  endAngle={360}
+                  labelLine={false}
+                  outerRadius="80%"
+                >
+                  {data.map((entry) => (
+                    <Cell
+                      key={`cell-${entry[nameKey]}`}
+                      fill={config[entry[nameKey]]?.color ?? "#ccc"}
+                    />
+                  ))}
+                </Pie>
+
+                <ChartLegend
+                  content={<ChartLegendContent nameKey={nameKey} />}
+                  className="flex flex-wrap justify-center gap-3 gap-y-1.5 mx-auto text-xs"
+                />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
         </ChartContainer>
       </CardContent>
     </Card>

@@ -66,26 +66,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-5">
-      {/* Announcements */}
-      <Alert
-        variant="default"
-        className="border-red-300 bg-red-50 text-red-900 rounded-sm p-5"
-      >
-        <AlertTitle className="flex items-center gap-2 pb-2">
-          <Megaphone size={12} />
-          Announcement!
-        </AlertTitle>
-        <AlertDescription>
-          Welcome to YGO Ph Meta! Stay tuned for the latest updates on events,
-          decks, and more in the Yu-Gi-Oh! community.
-          <br />
-          <span className="block mt-2 text-xs text-gray-500 rounded-sm">
-            <strong>Note:</strong> This site is still in development and
-            currently in the data gathering phase.
-          </span>
-        </AlertDescription>
-      </Alert>
-
       {/* Facebook Follow */}
       <Facebook />
 

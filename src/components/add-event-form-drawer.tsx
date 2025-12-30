@@ -25,6 +25,8 @@ import {
   SelectValue,
 } from "./ui/select";
 import { Checkbox } from "./ui/checkbox";
+import PlayerQuickSearch from "./player-search";
+import HostQuickSearch from "./ui/host-search";
 
 type Props = {
   onClose: () => void;
@@ -62,6 +64,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
     const { name, value, type } = e.target;
     const checked =
       e.target instanceof HTMLInputElement ? e.target.checked : false;
+
     setForm((prev) => ({
       ...prev,
       [name]: type === "checkbox" ? checked : value,
@@ -174,8 +177,8 @@ export function AddEventFormDrawer({ onClose }: Props) {
             </div>
             <X size={18} className="cursor-pointer" onClick={onClose} />
           </DrawerTitle>
-          <div className="p-4 flex flex-col items-center flex-1 overflow-auto">
-            <Alert className="mb-4 w-full border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
+          <div className="flex flex-col items-center flex-1 gap-4 overflow-auto p-4 ">
+            <Alert variant="info">
               <AlertTitle className="font-semibold flex items-center gap-2">
                 <Megaphone size={14} />
                 <span>Notice</span>
@@ -188,6 +191,12 @@ export function AddEventFormDrawer({ onClose }: Props) {
             <form
               onSubmit={handleSubmit}
               className="flex flex-col gap-5 w-full"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  // Prevent form submit on Enter keydown.
+                  e.preventDefault();
+                }
+              }}
             >
               <label className="flex flex-col gap-1 text-sm font-medium">
                 Title
@@ -196,21 +205,21 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   placeholder="Title"
                   value={form.title}
                   onChange={handleChange}
-                  required
                   className="w-full text-gray-700 rounded-sm"
                   maxLength={80}
+                  required
                 />
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
                 Host
-                <Input
+                <HostQuickSearch
                   name="host"
                   placeholder="Host"
-                  value={form.host}
-                  onChange={handleChange}
-                  required
-                  className="w-full text-gray-700 rounded-sm"
+                  minCharCount={3}
+                  onValueChange={(e) => handleChange(e)}
+                  className="text-gray-700 bg-white rounded-sm"
                   maxLength={80}
+                  required={true}
                 />
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
@@ -220,8 +229,8 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   type="date"
                   value={form.when}
                   onChange={handleChange}
-                  required
                   className="w-full text-gray-700 rounded-sm"
+                  required
                 />
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
@@ -231,9 +240,9 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   placeholder="Where"
                   value={form.where}
                   onChange={handleChange}
-                  required
                   className="w-full text-gray-700 rounded-sm"
                   maxLength={80}
+                  required
                 />
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
@@ -279,14 +288,16 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 <Input
                   name="rounds"
                   type="number"
-                  min={1}
                   placeholder="Rounds"
                   value={form.rounds}
+                  min={1}
+                  max={99}
                   onChange={handleChange}
-                  required
                   className="w-full text-gray-700 rounded-sm"
+                  required
                 />
               </label>
+
               {/* Event Winners Section */}
               <div>
                 <div className="font-semibold mb-2 text-sm">Winners</div>
@@ -311,12 +322,14 @@ export function AddEventFormDrawer({ onClose }: Props) {
                         </Button>
                       </div>
                       <div className="flex flex-col gap-2">
-                        <Input
+                        <PlayerQuickSearch
                           name="name"
                           placeholder="Name"
-                          value={winner.name}
-                          onChange={(e) => handleWinnerChange(idx, e)}
+                          minCharCount={3}
+                          onValueChange={(e) => handleWinnerChange(idx, e)}
                           className="text-gray-700 bg-white rounded-sm"
+                          maxLength={80}
+                          required={true}
                         />
                         <Input
                           name="deck"
@@ -324,6 +337,8 @@ export function AddEventFormDrawer({ onClose }: Props) {
                           value={winner.deck}
                           onChange={(e) => handleWinnerChange(idx, e)}
                           className="text-gray-700 bg-white rounded-sm"
+                          maxLength={80}
+                          required
                         />
                       </div>
                     </div>
@@ -341,6 +356,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   </Button>
                 </div>
               </div>
+
               {/* Event Decks Section */}
               <div>
                 <div className="font-semibold mb-2 text-sm">
@@ -360,10 +376,11 @@ export function AddEventFormDrawer({ onClose }: Props) {
                       name="count"
                       type="number"
                       min={1}
+                      max={99}
                       placeholder="Count"
                       value={deck.count}
                       onChange={(e) => handleDeckChange(idx, e)}
-                      className="w-[60px] text-center text-gray-700 rounded-sm "
+                      className="w-[65px] text-center text-gray-700 rounded-sm "
                     />
                     <Button
                       type="button"
@@ -400,7 +417,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 />
               </label>
               {/* Image Upload Info Alert */}
-              <Alert className="w-full border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
+              <Alert variant="info">
                 <AlertTitle className="font-semibold flex items-center gap-2">
                   <Megaphone size={14} />
                   <span>Optional Image Upload</span>
@@ -419,7 +436,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 </AlertDescription>
               </Alert>
               {/* Decklist Image Notice */}
-              <Alert className="w-full border-blue-300 bg-blue-50 text-blue-900 rounded-sm">
+              <Alert variant="info">
                 <AlertTitle className="font-semibold flex items-center gap-2">
                   <Heart size={14} />
                   <span>Thank you for your contribution!</span>
@@ -430,10 +447,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 </AlertDescription>
               </Alert>
               {/* Submit Email Danger Alert */}
-              <Alert
-                className="w-full border-red-400 bg-red-50 text-red-900 rounded-sm"
-                variant="destructive"
-              >
+              <Alert variant="warning">
                 <AlertTitle className="font-semibold">
                   Important: Email Submission Required
                 </AlertTitle>
