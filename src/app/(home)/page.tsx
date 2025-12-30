@@ -14,7 +14,6 @@ import Link from "next/link";
 import { useEventsByYearMonthRange, useJsonData } from "../data/api";
 import Featured from "./featured/featured";
 import { getTypeBadgeClass } from "@/utils/featured";
-import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Crown, Megaphone, Slash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TopPlayers } from "../meta/(charts)/top-players";
@@ -74,7 +73,7 @@ export default function Home() {
         {data.map((item, index) => (
           <Card
             key={index}
-            className="flex flex-col p-0 rounded-sm border-[1px] shadow-none"
+            className="flex flex-col p-0 rounded-sm border-[1px] shadow-none select-none"
           >
             <CardHeader className="p-5">
               <CardTitle className="text-md flex justify-between items-center gap-2">
@@ -110,7 +109,7 @@ export default function Home() {
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
               <Crown size={12} />
-              <span>Top Players (1st Place Winners)</span>
+              <span>Top Players (Most Championships)</span>
               <Slash size={12} />
               <span>{getCurrentMonthYearLabel(now)}</span>
             </div>

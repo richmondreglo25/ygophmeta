@@ -124,7 +124,7 @@ function renderCarousel(
           // item.type !== "video" && item.type !== "event";
           return (
             <CarouselItem key={item.id}>
-              <Card className="w-full p-0 rounded-sm border-none shadow-none flex flex-col h-full">
+              <Card className="flex flex-col h-full w-full p-0 rounded-sm border-none shadow-none select-none">
                 <CardHeader className="p-0 pb-3">
                   <CardTitle className="text-md flex justify-between items-center gap-2">
                     {item.title}

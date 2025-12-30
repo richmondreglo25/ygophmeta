@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import { AddEventFormDrawer } from "@/components/add-event-form-drawer";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
-import { Info, Megaphone } from "lucide-react";
+import { Info, SquareArrowOutUpRight } from "lucide-react";
 
 export default function Events() {
   const router = useRouter();
@@ -69,10 +69,10 @@ export default function Events() {
           />
           <Alert variant="info">
             <AlertTitle className="font-semibold flex items-center gap-2">
-              <Megaphone size={16} />
+              <SquareArrowOutUpRight size={12} />
               Share Your Event Results!
             </AlertTitle>
-            <AlertDescription className="text-sm pt-2">
+            <AlertDescription className="text-sm pt-1">
               Help the community grow by submitting your event results. Your
               contribution makes the meta more accurate and helps other
               duelists!

@@ -17,7 +17,7 @@
         "deckImagePath": "1.webp"
       },
       {
-        "name": "Mark Kim Parane",
+        "name": "Kim Mark Parane",
         "position": 2,
         "deck": "Elvennotes",
         "deckImagePath": "2.webp"
@@ -203,7 +203,7 @@
       {
         "name": "Louren Vidad",
         "position": 2,
-        "deck": "VS K9",
+        "deck": "VSK9",
         "deckImagePath": "2.webp"
       }
     ],
@@ -213,7 +213,7 @@
         "count": 1
       },
       {
-        "name": "VS K9",
+        "name": "VSK9",
         "count": 1
       },
       {

@@ -183,7 +183,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 <Megaphone size={14} />
                 <span>Notice</span>
               </AlertTitle>
-              <AlertDescription className="text-sm pt-2">
+              <AlertDescription className="text-sm pt-1">
                 By submitting this form, you permit this site to use and display
                 your submitted data publicly.
               </AlertDescription>
@@ -422,7 +422,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   <Megaphone size={14} />
                   <span>Optional Image Upload</span>
                 </AlertTitle>
-                <AlertDescription className="text-sm pt-2">
+                <AlertDescription className="text-sm pt-1">
                   You may upload an image as the event banner or for the event
                   winner.
                   <br />
@@ -441,7 +441,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   <Heart size={14} />
                   <span>Thank you for your contribution!</span>
                 </AlertTitle>
-                <AlertDescription className="text-sm pt-2">
+                <AlertDescription className="text-sm pt-1">
                   We will reach out to players regarding their decklist images
                   if needed.
                 </AlertDescription>

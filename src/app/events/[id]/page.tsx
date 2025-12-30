@@ -13,7 +13,7 @@ import {
   Slash,
 } from "lucide-react";
 import { Event, EventDeck, EventWinner } from "@/columns/events";
-import { getEventImagePath } from "@/utils/enviroment";
+import { getEventImagePath, getImagePath } from "@/utils/enviroment";
 import { IconX } from "@/components/IconX";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import { ChartPie } from "@/components/charts/pie-chart";
@@ -25,6 +25,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { TableChart } from "@/components/charts/table-chart";
+import playersData from "@/../public/data/players.json"; // Import players.json
+import { Player } from "@/columns/players";
 
 export async function generateStaticParams() {
   const eventsDir = path.join(process.cwd(), "public/data/events");
@@ -82,6 +84,11 @@ export default async function EventPage({
   if (!event) {
     notFound();
   }
+
+  // Create a lookup by player name (case-insensitive)
+  const playersByName = Object.fromEntries(
+    (playersData as Player[]).map((p) => [p.name.toLowerCase(), p])
+  );
 
   const details = [
     { label: "Host", value: event.host, icon: "host" },
@@ -209,6 +216,11 @@ export default async function EventPage({
                     : index === 2
                     ? "bg-amber-700 text-white border-amber-700"
                     : "bg-gray-200 text-gray-600 border-gray-300";
+
+                // Find player by name (case-insensitive)
+                const player =
+                  playersByName[winner.name?.toLowerCase?.() || ""];
+
                 return (
                   <div
                     key={index}
@@ -224,6 +236,29 @@ export default async function EventPage({
                       <Slash size={10} />
                       <span>{winner.deck}</span>
                     </div>
+                    {player && (
+                      <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8] h-full w-full p-5 rounded-sm">
+                        <Avatar
+                          key={player.name}
+                          className="flex justify-center items-center"
+                        >
+                          <AvatarImage
+                            src={getImagePath(player.imagePath)}
+                            alt={player.name}
+                            loading="lazy"
+                            className="object-cover rounded-full h-[150px] w-[150px] border-4 border-white shadow-lg"
+                          />
+                          <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+                            Unable to load player image
+                          </AvatarFallback>
+                        </Avatar>
+                      </div>
+                    )}
+                    {!player && (
+                      <div className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5 border rounded-sm">
+                        Player profile not found
+                      </div>
+                    )}
                     {winner.deckImagePath && (
                       <Avatar className="text-sm rounded flex-1 object-contain border h-full w-full">
                         <AvatarImage
@@ -236,7 +271,7 @@ export default async function EventPage({
                           className="flex justify-center items-center h-full w-full object-contain"
                         />
                         <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
-                          Unable to load image
+                          Unable to load deck image
                         </AvatarFallback>
                       </Avatar>
                     )}
