@@ -1,6 +1,6 @@
 "use client";
 
-import { Pie, PieChart, Cell } from "recharts";
+import { Pie, PieChart, Cell, ResponsiveContainer } from "recharts";
 import {
   Card,
   CardContent,
@@ -40,7 +40,7 @@ export function ChartPie({
   description,
 }: ChartPieProps) {
   return (
-    <Card className="flex flex-col p-0 text-sm rounded-sm border-[1px] shadow-none">
+    <Card className="flex flex-col p-0 text-sm h-full w-full rounded-sm border-[1px] shadow-none">
       <CardHeader className="items-center pt-5 pb-0">
         <CardTitle>{title}</CardTitle>
         {description && (
@@ -52,29 +52,33 @@ export function ChartPie({
       <CardContent className="flex-1 pb-5">
         <ChartContainer
           config={config}
-          className="[&_.recharts-pie-label-text]:fill-foreground mx-auto aspect-square h-full w-full max-h-[280px] pb-0"
+          className="[&_.recharts-pie-label-text]:fill-foreground mx-auto w-full max-w-xs min-h-[320px]"
         >
-          <PieChart>
-            <ChartTooltip content={<ChartTooltipContent hideLabel />} />
-            <Pie
-              data={data}
-              dataKey={dataKey}
-              nameKey={nameKey}
-              startAngle={0}
-              endAngle={360}
-            >
-              {data.map((entry) => (
-                <Cell
-                  key={`cell-${entry[nameKey]}`}
-                  fill={config[entry[nameKey]]?.color || "#ccc"}
-                />
-              ))}
-            </Pie>
-            <ChartLegend
-              content={<ChartLegendContent nameKey={nameKey} />}
-              className="flex flex-row flex-wrap justify-center items-center gap-3 gap-y-1.5 max-w-3xl mx-auto text-xs whitespace-nowrap"
-            />
-          </PieChart>
+          <ResponsiveContainer width="100%" height={320}>
+            <PieChart>
+              <ChartTooltip content={<ChartTooltipContent hideLabel />} />
+              <Pie
+                data={data}
+                dataKey={dataKey}
+                nameKey={nameKey}
+                startAngle={0}
+                endAngle={360}
+                labelLine={false}
+              >
+                {data.map((entry) => (
+                  <Cell
+                    key={`cell-${entry[nameKey]}`}
+                    fill={config[entry[nameKey]]?.color ?? "#ccc"}
+                  />
+                ))}
+              </Pie>
+              <ChartLegend
+                content={<ChartLegendContent nameKey={nameKey} />}
+                wrapperStyle={{ width: "100%" }} // ✅ stabilizes iOS layout
+                className="flex flex-wrap justify-center gap-3 gap-y-1.5 mx-auto text-xs whitespace-nowrap"
+              />
+            </PieChart>
+          </ResponsiveContainer>
         </ChartContainer>
       </CardContent>
     </Card>

@@ -316,14 +316,14 @@ export function AddEventFormDrawer({ onClose }: Props) {
                           placeholder="Name"
                           value={winner.name}
                           onChange={(e) => handleWinnerChange(idx, e)}
-                          className="text-gray-700 rounded-sm"
+                          className="text-gray-700 bg-white rounded-sm"
                         />
                         <Input
                           name="deck"
                           placeholder="Deck"
                           value={winner.deck}
                           onChange={(e) => handleWinnerChange(idx, e)}
-                          className="text-gray-700 rounded-sm"
+                          className="text-gray-700 bg-white rounded-sm"
                         />
                       </div>
                     </div>

@@ -122,29 +122,34 @@ export default async function EventPage({
           <ChevronRight size={14} />
         </Link>
       </div>
+
       {/* Content */}
       <div className="flex flex-col gap-6">
         {/* Event Images */}
         {event.images && event.images.length > 0 && (
           <div className="flex flex-col gap-3">
-            <div className="grid grid-cols-1 gap-3">
-              {event.images.map((imagePath: string, index: number) => (
-                <Avatar
-                  key={index}
-                  className="text-sm rounded border h-full w-full max-h-[40vh] overflow-hidden"
-                >
-                  <AvatarImage
-                    src={getEventImagePath(event.id, imagePath)}
-                    alt={`Event Image ${index + 1}`}
-                    loading="lazy"
-                    className="flex justify-center items-center h-full w-full object-cover"
-                  />
-                  <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
-                    Unable to load image
-                  </AvatarFallback>
-                </Avatar>
-              ))}
-            </div>
+            {event.images.map((imagePath: string, index: number) => (
+              <Avatar
+                key={index}
+                className="text-sm rounded border w-full max-h-[40vh] overflow-hidden flex items-center justify-center bg-white"
+              >
+                <AvatarImage
+                  src={getEventImagePath(event.id, imagePath)}
+                  alt={`Event Image ${index + 1}`}
+                  loading="lazy"
+                  className="object-cover w-full h-full block"
+                  style={{
+                    maxHeight: "40vh",
+                    minHeight: 200,
+                    objectFit: "cover",
+                    width: "100%",
+                  }}
+                />
+                <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+                  Unable to load image
+                </AvatarFallback>
+              </Avatar>
+            ))}
           </div>
         )}
 

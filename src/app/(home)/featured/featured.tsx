@@ -120,8 +120,8 @@ function renderCarousel(
           const content = getContent(item);
           if (!content) return null;
 
-          const applyFooterBorder =
-            item.type !== "video" && item.type !== "event";
+          const applyFooterBorder = true;
+          // item.type !== "video" && item.type !== "event";
           return (
             <CarouselItem key={item.id}>
               <Card className="w-full p-0 rounded-sm border-none shadow-none flex flex-col h-full">

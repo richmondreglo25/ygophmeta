@@ -143,12 +143,15 @@ export function RecentDeckWinners({ events }: { events: Event[] }) {
           .map(([key, group]) => (
             <div key={key} className="flex flex-col gap-3">
               <div className="flex gap-2 items-center font-semibold text-sm">
-                <div>
-                  Format: <span className="text-blue-700">{group.format}</span>
+                <div className="flex gap-2 items-center">
+                  <span>Format:</span>
+                  <span className="text-violet-700">{group.format}</span>
                 </div>
                 <Slash size={12} />
                 <span
-                  className={group.official ? "text-blue-700" : "text-red-500"}
+                  className={
+                    group.official ? "text-violet-700" : "text-red-500"
+                  }
                 >
                   {group.official ? "Official" : "Unofficial"}
                 </span>
