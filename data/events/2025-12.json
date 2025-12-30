@@ -21,6 +21,18 @@
         "position": 2,
         "deck": "Elvennotes",
         "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Raphael Perez",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Warren Heromo",
+        "position": 4,
+        "deck": "Blackwing",
+        "deckImagePath": "4.webp"
       }
     ],
     "decks": [
@@ -81,10 +93,22 @@
         "deckImagePath": "1.webp"
       },
       {
-        "name": "Rob Reyan",
+        "name": "Rob Reyan Yvan Belgica",
         "position": 2,
         "deck": "Mitsurugi",
         "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Raphael Perez",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Kim Mark Parane",
+        "position": 4,
+        "deck": "Elvennotes",
+        "deckImagePath": "4.webp"
       }
     ],
     "decks": [
