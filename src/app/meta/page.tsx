@@ -48,7 +48,7 @@ export default function Meta() {
   }
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-4">
       {/* Announcements */}
       <Alert variant="warning" className="p-5">
         <AlertTitle className="flex items-center gap-2 pb-2">
@@ -82,7 +82,7 @@ export default function Meta() {
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
               <Sparkle size={10} />
-              <span>1st Place Deck Winners Distribution (Last 6 Months)</span>
+              <span>Champion Decks - Distribution (Last 6 Months)</span>
             </div>
           </AccordionTrigger>
           <AccordionContent>

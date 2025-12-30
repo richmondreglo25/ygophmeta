@@ -31,7 +31,7 @@ type RecentDeckWinnersGroup = {
 };
 
 /**
- * Displays recent 1st place winners grouped by format and month.
+ * Displays recent champions' decks grouped by format and month.
  * @param props RecentWinnersProps.
  * @returns JSX.Element.
  */
@@ -52,7 +52,7 @@ export function RecentDeckWinners({ events }: { events: Event[] }) {
         return date && date.getMonth() === month && date.getFullYear() === year;
       });
 
-      // For each event, get all 1st place winners.
+      // For each event, get all champions' decks.
       monthEvents.forEach((event) => {
         (event.winners || [])
           .filter((w) => w.position === 1)
@@ -120,7 +120,7 @@ export function RecentDeckWinners({ events }: { events: Event[] }) {
   if (!Object.keys(grouped).length) {
     return (
       <div className="text-muted-foreground text-sm">
-        No 1st place winners in the past 6 months.
+        No recent data available.
       </div>
     );
   }
@@ -202,7 +202,7 @@ export function RecentDeckWinners({ events }: { events: Event[] }) {
                             dataKey="value"
                             nameKey="name"
                             title={`Deck Distribution (${monthLabel})`}
-                            description={`1st Place Decks for ${
+                            description={`Champion Decks for ${
                               group.format
                             } - ${
                               group.official ? "Official" : "Unofficial"

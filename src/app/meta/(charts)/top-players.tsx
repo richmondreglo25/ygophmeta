@@ -67,7 +67,7 @@ export function TopPlayers({
     });
   }, [events, months]);
 
-  // Group 1st place winners by format and official.
+  // Group champions by format and official.
   const grouped = useMemo(() => {
     const groups: Record<string, TopPlayersGroup> = {};
 
@@ -88,7 +88,7 @@ export function TopPlayers({
       const playerMap: Record<string, { count: number; decks: Set<string> }> =
         {};
 
-      // Accumulate 1st place winners.
+      // Accumulate champions.
       (event.winners || [])
         .filter((w) => w.position === 1)
         .forEach((w) => {
