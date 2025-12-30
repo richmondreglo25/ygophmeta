@@ -79,6 +79,15 @@
     "deck": ["Branded", "Exosister", "Magic Musketeer"]
   },
   {
+    "name": "Raphael Perez",
+    "ign": "Rappyraph",
+    "imagePath": "",
+    "gender": "Male",
+    "city": "Bulacan",
+    "team": "",
+    "deck": ["Blue-Eyes"]
+  },
+  {
     "name": "Renz Guizzagan",
     "ign": "RenzGzzzzzzzzzzzz",
     "gender": "male",

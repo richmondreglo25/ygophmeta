@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
-type RecentDeckWinner = {
+type ChampionDeckWinner = {
   name: string;
   deck: string;
   event: string;
@@ -21,24 +21,23 @@ type RecentDeckWinner = {
   month: string;
 };
 
-type DeckWinnersByMonth = Record<string, RecentDeckWinner[]>;
-
-type RecentDeckWinnersGroup = {
+type ChampionDeckWinnersByMonth = Record<string, ChampionDeckWinner[]>;
+type ChampionDeckDistributionGroup = {
   format: string;
   official: boolean;
-  winners: RecentDeckWinner[];
-  winnersByMonth: DeckWinnersByMonth;
+  winners: ChampionDeckWinner[];
+  winnersByMonth: ChampionDeckWinnersByMonth;
 };
 
 /**
  * Displays recent champions' decks grouped by format and month.
- * @param props RecentWinnersProps.
+ * @param props Events.
  * @returns JSX.Element.
  */
-export function RecentDeckWinners({ events }: { events: Event[] }) {
+export function ChampionDeckDistribution({ events }: { events: Event[] }) {
   const grouped = useMemo(() => {
     const now = new Date();
-    const groups: Record<string, RecentDeckWinnersGroup> = {};
+    const groups: Record<string, ChampionDeckDistributionGroup> = {};
 
     // Iterate over the past 6 months.
     for (let i = 0; i < 6; i++) {
@@ -72,9 +71,9 @@ export function RecentDeckWinners({ events }: { events: Event[] }) {
               };
             }
 
-            const winnerObj: RecentDeckWinner = {
+            const winnerObj: ChampionDeckWinner = {
               name: winner.name,
-              deck: winner.deck,
+              deck: winner.deck || "?",
               event: event.title,
               date: event.when,
               month: `${year}-${month + 1}`,
@@ -185,7 +184,7 @@ export function RecentDeckWinners({ events }: { events: Event[] }) {
                             ? Number(b.value) - Number(a.value)
                             : String(a.name).localeCompare(String(b.name))
                         );
-                      const COLORS = getGraphColors(pieData.length, "#333333");
+                      const COLORS = getGraphColors(pieData.length, "#2563eb");
                       const pieConfig = pieData.reduce((acc, item, idx) => {
                         acc[item.name] = {
                           color: COLORS[idx % COLORS.length],

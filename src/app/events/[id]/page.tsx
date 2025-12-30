@@ -340,7 +340,7 @@ function DeckSummaryPieChart({ decks }: { decks: EventDeck[] }) {
   }));
 
   // Generate config with color cycling.
-  const COLORS = getGraphColors(pieData.length, "#333333");
+  const COLORS = getGraphColors(pieData.length, "#2563eb");
 
   const pieConfig = pieData.reduce((acc, item, idx) => {
     acc[item.name] = {
@@ -361,6 +361,7 @@ function DeckSummaryPieChart({ decks }: { decks: EventDeck[] }) {
         0
       )})`}
       description="Distribution of decks used by participants."
+      maxItems={10}
     />
   );
 }

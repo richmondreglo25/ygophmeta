@@ -4,7 +4,7 @@ import { getJsonPath } from "@/utils/enviroment";
 import { useMemo } from "react";
 import { useEventsByYearMonthRange, useJsonData } from "../data/api";
 import { Player } from "@/columns/players";
-import { RecentDeckWinners } from "./(charts)/recent-deck-winners";
+import { ChampionDeckDistribution } from "./(charts)/champion-deck-distribution";
 import { Loading } from "@/components/loading";
 import {
   Accordion,
@@ -12,9 +12,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Crown, Hammer, Megaphone, Sparkle } from "lucide-react";
+import { ChartSpline, Crown, Megaphone } from "lucide-react";
 import { TopPlayers } from "./(charts)/top-players";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { DeckDistribution } from "./(charts)/deck-distribution";
 
 export default function Meta() {
   // -- Data Loading -- //
@@ -65,7 +66,11 @@ export default function Meta() {
 
       <Accordion
         type="multiple"
-        defaultValue={["top-players", "recent-deck-winners"]}
+        defaultValue={[
+          "top-players",
+          "champion-deck-distribution",
+          "deck-distribution",
+        ]}
       >
         <AccordionItem value="top-players">
           <AccordionTrigger>
@@ -78,34 +83,26 @@ export default function Meta() {
             <TopPlayers events={events} players={players} />
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="recent-deck-winners">
+        <AccordionItem value="champion-deck-distribution">
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
-              <Sparkle size={10} />
+              <ChartSpline size={10} />
               <span>Champion Decks - Distribution (Last 6 Months)</span>
             </div>
           </AccordionTrigger>
           <AccordionContent>
-            <RecentDeckWinners events={events} />
+            <ChampionDeckDistribution events={events} />
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="todo-list">
+        <AccordionItem value="deck-distribution">
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
-              <Hammer size={14} />
-              <span>Meta Dashboard - Upcoming Features</span>
+              <ChartSpline size={10} />
+              <span>Decks - Distribution (Last 6 Months)</span>
             </div>
           </AccordionTrigger>
           <AccordionContent>
-            <ul className="list-disc pl-6 space-y-2 text-xs">
-              <li>Event Format Breakdown (number of events per format)</li>
-              <li>Official vs Unofficial Events (ratio, deck popularity)</li>
-              <li>Monthly Trends (events, decks, winners over time)</li>
-              <li>Event Participation (if available)</li>
-            </ul>
-            <p className="mt-6 text-muted-foreground text-xs">
-              We will implement these meta insights one by one.
-            </p>
+            <DeckDistribution events={events} />
           </AccordionContent>
         </AccordionItem>
       </Accordion>

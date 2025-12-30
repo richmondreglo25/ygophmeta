@@ -15,6 +15,8 @@ import { useJsonData } from "../data/api";
 import { IconX } from "@/components/IconX";
 import { ProfileDrawer, useProfileDrawer } from "@/components/profile-drawer";
 import { useState } from "react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Info } from "lucide-react";
 
 export default function Community() {
   const [data, setData] = useState<unknown>(null);
@@ -47,6 +49,15 @@ export default function Community() {
 
   return (
     <>
+      <Alert variant="info">
+        <AlertDescription className="flex items-center gap-1.5 text-sm">
+          <Info size={14} />
+          <div>
+            <span className="font-semibold">Click</span> a community member to
+            learn more.
+          </div>
+        </AlertDescription>
+      </Alert>
       <Accordion
         type="single"
         collapsible

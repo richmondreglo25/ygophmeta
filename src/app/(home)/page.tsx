@@ -14,7 +14,7 @@ import Link from "next/link";
 import { useEventsByYearMonthRange, useJsonData } from "../data/api";
 import Featured from "./featured/featured";
 import { getTypeBadgeClass } from "@/utils/featured";
-import { Crown, Megaphone, Slash } from "lucide-react";
+import { ChartSpline, Crown, Megaphone, Slash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TopPlayers } from "../meta/(charts)/top-players";
 import { useMemo } from "react";
@@ -25,7 +25,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Facebook } from "@/components/facebook";
+import { DeckDistribution } from "../meta/(charts)/deck-distribution";
 
 function getCurrentMonthYearLabel(date = new Date()) {
   return date.toLocaleString("default", { month: "long", year: "numeric" });
@@ -65,9 +65,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-5">
-      {/* Facebook Follow */}
-      <Facebook />
-
       {/* User Guides */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {data.map((item, index) => (
@@ -104,7 +101,10 @@ export default function Home() {
         ))}
       </div>
 
-      <Accordion type="multiple" defaultValue={["top-players"]}>
+      <Accordion
+        type="multiple"
+        defaultValue={["deck-distribution", "top-players"]}
+      >
         <AccordionItem value="top-players">
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
@@ -120,6 +120,19 @@ export default function Home() {
               players={players}
               showSelection={false}
             />
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="deck-distribution">
+          <AccordionTrigger>
+            <div className="flex items-center gap-1.5">
+              <ChartSpline size={12} />
+              <span>Deck Distribution</span>
+              <Slash size={12} />
+              <span>{getCurrentMonthYearLabel(now)}</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent>
+            <DeckDistribution events={events} previousMonthCount={1} />
           </AccordionContent>
         </AccordionItem>
       </Accordion>
