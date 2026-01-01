@@ -31,19 +31,19 @@ export default function Events() {
 
   // Data fetching.
   const { data: events, loading } = useEventsByYearMonthRange(start, end);
-  const [openDrawer, setOpenDrawer] = useState(false);
+  const [openEventFormDrawer, setOpenEventFormDrawer] = useState(false);
 
   function onClick(row: Event) {
     // Navigate to the dynamic Next.js route.
     router.push(`/events/${row.id}`);
   }
 
-  function handleAddEvent() {
-    setOpenDrawer(true);
+  function handleAddEventFormDrawer() {
+    setOpenEventFormDrawer(true);
   }
 
-  function handleCloseForm() {
-    setOpenDrawer(false);
+  function handleCloseEventFormDrawer() {
+    setOpenEventFormDrawer(false);
   }
 
   return (
@@ -82,12 +82,14 @@ export default function Events() {
             <Button
               variant="submit"
               className="rounded-sm"
-              onClick={handleAddEvent}
+              onClick={handleAddEventFormDrawer}
             >
               <span>Submit Event</span>
             </Button>
           </div>
-          {openDrawer && <AddEventFormDrawer onClose={handleCloseForm} />}
+          {openEventFormDrawer && (
+            <AddEventFormDrawer onClose={handleCloseEventFormDrawer} />
+          )}
         </div>
       )}
     </div>

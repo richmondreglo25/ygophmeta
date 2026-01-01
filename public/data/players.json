@@ -3,7 +3,7 @@
     "name": "Adrian Viola",
     "ign": "Kateshi",
     "imagePath": "/people/adrianviola.webp",
-    "gender": "Male",
+    "gender": "MALE",
     "city": "Manila",
     "team": "TEAM RPC",
     "deck": ["HERO"]
@@ -12,7 +12,7 @@
     "name": "Friedrich Ferrer",
     "ign": "RitoruMikan",
     "imagePath": "/people/friedrichferrer.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "San Jose del Monte",
     "team": "Team Kwasong",
     "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
@@ -21,7 +21,7 @@
   {
     "name": "Jayson Bergado",
     "ign": "Jay Jay",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Bulacan",
     "team": "Team San Jose Bulacan",
     "deck": ["Orcust", "Mermail"]
@@ -30,7 +30,7 @@
     "name": "Jhon Gian Obiena",
     "ign": "Jean",
     "imagePath": "/people/jhongianobiena.webp",
-    "gender": "Male",
+    "gender": "MALE",
     "city": "Manila",
     "team": "None",
     "deck": ["Gimmick Puppet"]
@@ -38,7 +38,7 @@
   {
     "name": "JM Caisip",
     "ign": "JM Caisip",
-    "gender": "male",
+    "gender": "MALE",
     "city": "San Jose del Monte",
     "team": "",
     "deck": ["Orcust"]
@@ -47,7 +47,7 @@
     "name": "Kim Mark Parane",
     "ign": "Kim",
     "imagePath": "/people/kimmarkparane.webp",
-    "gender": "Male",
+    "gender": "MALE",
     "city": "Bulacan",
     "team": "TEAM RPC",
     "deck": ["White Forest Azamina, Rishid, Elvennotes"]
@@ -56,7 +56,7 @@
     "name": "Louren Vidad",
     "ign": "Loumen",
     "imagePath": "/people/lourenvidad.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Quezon City",
     "team": "Flex City",
     "deck": ["Ryzeal"]
@@ -65,7 +65,7 @@
     "name": "Martin Owen Gonzalez Calleja",
     "ign": "Ispirikitik",
     "imagePath": "/people/martinowengonzalezcalleja.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Manila",
     "team": "Dark Emperor",
     "deck": ["Radiant Typhoon"]
@@ -73,7 +73,7 @@
   {
     "name": "Owen Cruz",
     "ign": "DmaN14",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Bulacan",
     "team": "Team Kwasong",
     "deck": ["Branded", "Exosister", "Magic Musketeer"]
@@ -82,7 +82,7 @@
     "name": "Raphael Perez",
     "ign": "Rappyraph",
     "imagePath": "",
-    "gender": "Male",
+    "gender": "MALE",
     "city": "Bulacan",
     "team": "",
     "deck": ["Blue-Eyes"]
@@ -90,7 +90,7 @@
   {
     "name": "Renz Guizzagan",
     "ign": "RenzGzzzzzzzzzzzz",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Bulacan",
     "team": "Bang",
     "deck": ["Lunalight", "Branded Dracotail", "Ryzeal"]
@@ -99,7 +99,7 @@
     "name": "Richmond Reglo",
     "ign": "Richmond",
     "imagePath": "/people/richmondreglo.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Manila",
     "team": "",
     "deck": ["Yummy"]
@@ -108,7 +108,7 @@
     "name": "Rob Reyan Yvan Belgica",
     "ign": "Ayana Taketatsu",
     "imagePath": "/people/robreyanivanbelgica.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Manila",
     "team": "",
     "deck": ["Yummy"]
@@ -117,7 +117,7 @@
     "name": "Rod Allan Bonavente",
     "ign": "Hexstia",
     "imagePath": "/people/rodallanbonavente.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Manila",
     "team": "Pack boys",
     "deck": ["k9"]
@@ -126,7 +126,7 @@
     "name": "Samuel Migs Gamay",
     "ign": "Sam",
     "imagePath": "/people/samuelmigsgamay.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Bulacan",
     "team": "",
     "deck": ["Exosister, Rescue-ACE"]
@@ -135,7 +135,7 @@
     "name": "Tristan Cruz",
     "ign": "Threestun",
     "imagePath": "/people/tristanjaycruz.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Pasig",
     "team": "Team Kwasong",
     "deck": ["Killer Tune", "Elvennotes", "White Forest"]

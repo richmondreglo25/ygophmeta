@@ -3,7 +3,7 @@
     "name": "Clark Jasper Ramos",
     "ign": "sLarky",
     "imagePath": "/people/clarkjasperramos.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Pasig",
     "team": "JudgeTeam",
     "deck": ["Dark Magician"]
@@ -12,7 +12,7 @@
     "name": "Carlito del Mundo Jr",
     "ign": "SkullBuster",
     "imagePath": "/people/carlitodelmundojr.webp",
-    "gender": "male",
+    "gender": "MALE",
     "city": "Los Baños"
   }
 ]

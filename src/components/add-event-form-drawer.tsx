@@ -135,7 +135,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
       format: form.format,
       official: form.official,
       rounds: form.rounds,
-      images: [], // or handle as needed.
+      images: [],
       winners: winners.map((winner, idx) => ({
         name: winner.name,
         position: idx + 1,
@@ -171,10 +171,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
           <DrawerTitle
             className={`flex justify-between items-center p-4 text-sm font-medium border-b`}
           >
-            <div className="flex items-center gap-2">
-              {/* <IconX type="players" size={18} /> */}
-              Submit Event
-            </div>
+            <span>Submit Event</span>
             <X size={18} className="cursor-pointer" onClick={onClose} />
           </DrawerTitle>
           <div className="flex flex-col items-center flex-1 gap-4 overflow-auto p-4 ">
@@ -416,6 +413,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   maxLength={200}
                 />
               </label>
+
               {/* Image Upload Info Alert */}
               <Alert variant="info">
                 <AlertTitle className="font-semibold flex items-center gap-2">
@@ -435,6 +433,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   </span>
                 </AlertDescription>
               </Alert>
+
               {/* Decklist Image Notice */}
               <Alert variant="info">
                 <AlertTitle className="font-semibold flex items-center gap-2">
@@ -446,6 +445,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   if needed.
                 </AlertDescription>
               </Alert>
+
               {/* Submit Email Danger Alert */}
               <Alert variant="warning">
                 <AlertTitle className="font-semibold">
@@ -470,6 +470,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   </div>
                 </AlertDescription>
               </Alert>
+
               {/* Sample JSON Preview */}
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="json-preview">

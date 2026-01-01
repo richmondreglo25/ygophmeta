@@ -15,8 +15,10 @@ import { useJsonData } from "../data/api";
 import { IconX } from "@/components/IconX";
 import { ProfileDrawer, useProfileDrawer } from "@/components/profile-drawer";
 import { useState } from "react";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Info } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Info, SquareArrowOutUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
 
 export default function Community() {
   const [data, setData] = useState<unknown>(null);
@@ -40,11 +42,23 @@ export default function Community() {
     },
   ];
 
+  // Add Profile Drawer.
+  const [openAddProfileFormDrawer, setOpenAddProfileFormDrawer] =
+    useState(false);
+
   function onClick(row: unknown) {
     if (!row) return; // Invalid row.
 
     setData(row);
     openDrawer();
+  }
+
+  function handleAddProfileFormDrawer() {
+    setOpenAddProfileFormDrawer(true);
+  }
+
+  function handleCloseProfileFormDrawer() {
+    setOpenAddProfileFormDrawer(false);
   }
 
   return (
@@ -94,6 +108,31 @@ export default function Community() {
         onOpenChange={(o) => (o ? openDrawer() : closeDrawer())}
         data={data}
       />
+
+      <div className="flex flex-col gap-4 pt-4">
+        <Alert variant="info">
+          <AlertTitle className="font-semibold flex items-center gap-2">
+            <SquareArrowOutUpRight size={12} />
+            Share Your Profile!
+          </AlertTitle>
+          <AlertDescription className="text-sm pt-1">
+            Showcase your profile, highlight your strengths, and support the
+            community.
+          </AlertDescription>
+        </Alert>
+        <div className="flex justify-end">
+          <Button
+            variant="submit"
+            className="rounded-sm"
+            onClick={handleAddProfileFormDrawer}
+          >
+            <span>Submit Profile</span>
+          </Button>
+        </div>
+        {openAddProfileFormDrawer && (
+          <AddProfileFormDrawer onClose={handleCloseProfileFormDrawer} />
+        )}
+      </div>
     </>
   );
 }

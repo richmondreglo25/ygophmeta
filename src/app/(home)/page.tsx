@@ -75,7 +75,7 @@ export default function Home() {
             <CardHeader className="p-5">
               <CardTitle className="text-md flex justify-between items-center gap-2">
                 <div className="flex items-center gap-2">
-                  <Megaphone size={12} />
+                  <Megaphone size={12} className="text-blue-700" />
                   {item.title}
                 </div>
                 <span

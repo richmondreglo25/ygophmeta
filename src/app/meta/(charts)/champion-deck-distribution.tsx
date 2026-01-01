@@ -119,7 +119,7 @@ export function ChampionDeckDistribution({ events }: { events: Event[] }) {
   if (!Object.keys(grouped).length) {
     return (
       <div className="text-muted-foreground text-sm">
-        No recent data available.
+        No recent data available
       </div>
     );
   }
