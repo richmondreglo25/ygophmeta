@@ -55,6 +55,18 @@
     "about": "Distributor of Cards (NBA, Yugioh, Vanguard, WS, SV, One Piece, Digimon, Dragon Ball, UA and Pokemon)"
   },
   {
+    "name": "Entei Cards Shop",
+    "logo": "/shops/enteicardsshoplogo.webp",
+    "address": "3803 general santos ave. Lower bicutan, Taguig, Philippines",
+    "openHours": "Mon-Sun: 10:00 AM - 9:00 PM",
+    "tournamentSchedule": [
+      { "day": "Sunday", "time": "1:00 PM", "event": "OCG Pod" },
+      { "day": "Sunday", "time": "1:00 PM", "event": "AE Pod" }
+    ],
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "We’re an official store handling Yu-Gi-Oh!, One Piece, Pokémon, Digimon, Cookie Run, Dragon Ball, and many more TCGs"
+  },
+  {
     "name": "Hyuray Trading",
     "logo": "/shops/hyuraytradinglogo.webp",
     "address": "Concepcion Townhouse, A. Guisama St, Marikina, 1800 Metro Manila",
