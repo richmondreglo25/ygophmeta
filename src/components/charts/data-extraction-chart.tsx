@@ -25,6 +25,7 @@ function groupEventsByHostAndWeek(events: Event[]) {
     string,
     Record<string, Record<string, { official: number; unofficial: number }>>
   > = {};
+  const weekLabelToStartDate = new Map<string, Date>();
 
   events.forEach((event) => {
     let eventDate: Date;
@@ -34,6 +35,10 @@ function groupEventsByHostAndWeek(events: Event[]) {
       eventDate = new Date(event.when);
     }
     const week = getWeekRange(eventDate);
+    // Track the start date for sorting
+    const start = startOfWeek(eventDate, { weekStartsOn: 1 });
+    weekLabelToStartDate.set(week, start);
+
     if (!weekHostMap[week]) weekHostMap[week] = {};
     if (!weekHostMap[week][event.host]) weekHostMap[week][event.host] = {};
     if (!weekHostMap[week][event.host][event.format]) {
@@ -49,10 +54,11 @@ function groupEventsByHostAndWeek(events: Event[]) {
     }
   });
 
-  const allWeeks = Object.keys(weekHostMap).sort(
+  // Sort weeks by their actual start date, not by label
+  const allWeeks = Array.from(weekLabelToStartDate.keys()).sort(
     (a, b) =>
-      new Date(a.split(" - ")[0]).getTime() -
-      new Date(b.split(" - ")[0]).getTime()
+      weekLabelToStartDate.get(a)!.getTime() -
+      weekLabelToStartDate.get(b)!.getTime()
   );
   const allHosts = Array.from(new Set(events.map((e) => e.host))).sort();
 
@@ -72,10 +78,6 @@ export function DataExtractionChart({ events }: Props) {
         <span className="inline-flex items-center gap-1">
           <span className="inline-block w-3 h-3 bg-gray-400 rounded-sm" />{" "}
           Unofficial
-        </span>
-        <span className="text-gray-500 ml-4">
-          <b>Format:</b>{" "}
-          <span className="font-mono">AE (official/unofficial)</span>
         </span>
       </div>
       <table className="min-w-full border text-xs">
@@ -97,29 +99,24 @@ export function DataExtractionChart({ events }: Props) {
               </td>
               {allWeeks.map((week) => {
                 const formats = weekHostMap[week]?.[host] || {};
+                // Show each format+type as a separate colored entry
                 const cells = Object.entries(formats)
-                  .map(([format, counts]) => {
-                    const { official, unofficial } = counts;
-                    let cell = "";
-                    if (official > 0) {
-                      cell +=
-                        `<span style="color:#2563eb;font-weight:bold">` +
-                        `${format} (${official}` +
-                        (unofficial > 0 ? "/" : "") +
-                        `</span>`;
+                  .flatMap(([format, counts]) => {
+                    const parts = [];
+                    if (counts.official > 0) {
+                      parts.push(
+                        `<span style="color:#2563eb;font-weight:bold">${format} (${counts.official})</span>`
+                      );
                     }
-                    if (unofficial > 0) {
-                      cell +=
-                        (official > 0 ? "" : "") +
-                        `<span style="color:#6b7280;">` +
-                        `${official > 0 ? "" : format + " ("}${unofficial}` +
-                        `</span>`;
+                    if (counts.unofficial > 0) {
+                      parts.push(
+                        `<span style="color:#6b7280;">${format} (${counts.unofficial})</span>`
+                      );
                     }
-                    if (official > 0 || unofficial > 0) cell += ")";
-                    return cell;
+                    return parts;
                   })
                   .filter(Boolean)
-                  .join(" ");
+                  .join(", ");
                 return (
                   <td
                     key={week}
