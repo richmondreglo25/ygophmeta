@@ -3,7 +3,6 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { EventFormat } from "@/enums/event-format";
-import { EventDeck, EventWinner } from "@/columns/events";
 import { Heart, Megaphone, Plus, Trash2, X } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import {
@@ -26,7 +25,9 @@ import {
 } from "./ui/select";
 import { Checkbox } from "./ui/checkbox";
 import PlayerQuickSearch from "./player-search";
-import HostQuickSearch from "./ui/host-search";
+import HostQuickSearch from "./host-search";
+import { EventDeck, EventWinner } from "@/types/event";
+import DeckQuickSearch from "./deck-search";
 
 type Props = {
   onClose: () => void;
@@ -127,28 +128,28 @@ export function AddEventFormDrawer({ onClose }: Props) {
         : "";
 
     return {
-      id: eventId,
-      title: form.title,
-      host: form.host,
-      when: formattedDate,
-      where: form.where,
-      format: form.format,
+      id: eventId.trim(),
+      title: form.title.trim(),
+      host: form.host.trim(),
+      when: formattedDate.trim(),
+      where: form.where.trim(),
+      format: form.format.trim(),
       official: form.official,
       rounds: form.rounds,
       images: [],
       winners: winners.map((winner, idx) => ({
-        name: winner.name,
+        name: winner.name.trim(),
         position: idx + 1,
-        deck: winner.deck,
+        deck: winner.deck.trim(),
         deckImagePath: `${idx + 1}.webp`,
       })),
       decks: decks
         .filter((deck) => deck.name.trim())
         .map((deck) => ({
-          name: deck.name,
+          name: deck.name.trim(),
           count: deck.count,
         })),
-      notes: form.notes,
+      notes: form.notes.trim(),
     };
   }
 
@@ -328,11 +329,10 @@ export function AddEventFormDrawer({ onClose }: Props) {
                           maxLength={80}
                           required={true}
                         />
-                        <Input
+                        <DeckQuickSearch
                           name="deck"
                           placeholder="Deck"
-                          value={winner.deck}
-                          onChange={(e) => handleWinnerChange(idx, e)}
+                          onValueChange={(e) => handleWinnerChange(idx, e)}
                           className="text-gray-700 bg-white rounded-sm"
                           maxLength={80}
                           required
@@ -361,11 +361,10 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 </div>
                 {decks.map((deck, idx) => (
                   <div key={idx} className="flex items-center gap-2 mb-2">
-                    <Input
+                    <DeckQuickSearch
                       name="name"
                       placeholder="Deck Name"
-                      value={deck.name}
-                      onChange={(e) => handleDeckChange(idx, e)}
+                      onValueChange={(e) => handleDeckChange(idx, e)}
                       className="flex-1 text-gray-700 rounded-sm"
                       maxLength={80}
                     />

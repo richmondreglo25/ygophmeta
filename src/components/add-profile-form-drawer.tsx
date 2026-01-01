@@ -21,7 +21,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { Player } from "@/columns/players";
+import { Player } from "@/types/player";
+import DeckQuickSearch from "./deck-search";
 
 type Props = {
   onClose: () => void;
@@ -256,11 +257,10 @@ export function AddProfileFormDrawer({ onClose }: Props) {
                   </div>
                   {decks.map((deck, idx) => (
                     <div key={idx} className="flex items-center gap-2 mb-2">
-                      <Input
+                      <DeckQuickSearch
                         name="deck"
                         placeholder="Deck Name"
-                        value={deck}
-                        onChange={(e) => handleDeckChange(idx, e)}
+                        onValueChange={(e) => handleDeckChange(idx, e)}
                         className="flex-1 text-gray-700 rounded-sm"
                         maxLength={80}
                         required

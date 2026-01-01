@@ -18,7 +18,6 @@ import { ChartSpline, Crown, Megaphone, Slash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TopPlayers } from "../meta/(charts)/top-players";
 import { useMemo } from "react";
-import { Player } from "@/columns/players";
 import {
   Accordion,
   AccordionContent,
@@ -26,6 +25,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { DeckDistribution } from "../meta/(charts)/deck-distribution";
+import { Player } from "@/types/player";
 
 function getCurrentMonthYearLabel(date = new Date()) {
   return date.toLocaleString("default", { month: "long", year: "numeric" });

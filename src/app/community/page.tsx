@@ -1,8 +1,8 @@
 "use client";
 
 import { DataTable } from "@/components/data-table";
-import { columns as playerColumns, Player } from "@/columns/players";
-import { columns as judgesColumns, Judge } from "@/columns/judges";
+import { columns as playerColumns } from "@/columns/players";
+import { columns as judgesColumns } from "@/columns/judges";
 import {
   Accordion,
   AccordionContent,
@@ -19,6 +19,8 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Info, SquareArrowOutUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
+import { Player } from "@/types/player";
+import { Judge } from "@/types/judge";
 
 export default function Community() {
   const [data, setData] = useState<unknown>(null);

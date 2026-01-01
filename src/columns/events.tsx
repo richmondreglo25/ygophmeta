@@ -1,38 +1,7 @@
+import { Event } from "@/types/event";
 import { getTypeBadgeClass } from "@/utils/featured";
 import { ColumnDef } from "@tanstack/react-table";
 import { format } from "date-fns";
-
-export type EventDesc = {
-  name: string;
-  desc: number | string;
-};
-
-export type EventWinner = {
-  name: string;
-  position: number;
-  deck: string;
-  deckImagePath: string;
-};
-
-export type EventDeck = {
-  name: string;
-  count: number;
-};
-
-export type Event = {
-  id: string;
-  title: string;
-  host: string;
-  when: string;
-  where: string;
-  format: string;
-  official: boolean;
-  rounds?: number;
-  images?: string[];
-  winners: EventWinner[];
-  decks: EventDeck[];
-  notes?: string;
-};
 
 export const columns: ColumnDef<Event>[] = [
   {
@@ -50,9 +19,9 @@ export const columns: ColumnDef<Event>[] = [
     header: "When",
     cell: ({ row }) =>
       row.original.when
-        ? format(new Date(row.original.when), "MMM dd yyyy")
+        ? format(new Date(row.original.when), "MMM dd yyyy EEE")
         : "—",
-    minSize: 80,
+    minSize: 120,
   },
   {
     accessorKey: "format",

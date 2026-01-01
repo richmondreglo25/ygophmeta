@@ -3,7 +3,6 @@
 import { getJsonPath } from "@/utils/enviroment";
 import { useMemo } from "react";
 import { useEventsByYearMonthRange, useJsonData } from "../data/api";
-import { Player } from "@/columns/players";
 import { ChampionDeckDistribution } from "./(charts)/champion-deck-distribution";
 import { Loading } from "@/components/loading";
 import {
@@ -16,6 +15,8 @@ import { ChartSpline, Crown, Megaphone } from "lucide-react";
 import { TopPlayers } from "./(charts)/top-players";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { DeckDistribution } from "./(charts)/deck-distribution";
+import { DataExtractionChart } from "@/components/charts/data-extraction-chart";
+import { Player } from "@/types/player";
 
 export default function Meta() {
   // -- Data Loading -- //
@@ -63,6 +64,8 @@ export default function Meta() {
           this when interpreting the data.
         </AlertDescription>
       </Alert>
+
+      <DataExtractionChart events={events} />
 
       <Accordion
         type="multiple"

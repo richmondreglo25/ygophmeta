@@ -3,13 +3,14 @@
 import { Loading } from "@/components/loading";
 import { useEventsByYearMonthRange } from "../data/api";
 import { useMemo, useState } from "react";
-import { columns, Event } from "@/columns/events";
+import { columns } from "@/columns/events";
 import { DataTable } from "@/components/data-table";
 import { useRouter } from "next/navigation";
 import { AddEventFormDrawer } from "@/components/add-event-form-drawer";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Info, SquareArrowOutUpRight } from "lucide-react";
+import { Event } from "@/types/event";
 
 export default function Events() {
   const router = useRouter();

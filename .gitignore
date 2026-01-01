@@ -45,3 +45,6 @@ next-env.d.ts
 
 # Ignore local dev data files
 /public/data/dev/
+
+# Ignore scripts folder
+/scripts/

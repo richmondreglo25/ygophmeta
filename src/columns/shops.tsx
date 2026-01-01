@@ -1,19 +1,7 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { getImagePath } from "@/utils/enviroment";
-
-export type Shop = {
-  name: string;
-  logo: string;
-  images: string[];
-  address: string;
-  googleMaps: string;
-  openHours: string;
-  tournamentSchedule: { day: string; time: string; event: string }[];
-  accolades: string[];
-  activePlayers: number;
-  about: string;
-};
+import { Shop } from "@/types/shop";
 
 export const columns: ColumnDef<Shop>[] = [
   {

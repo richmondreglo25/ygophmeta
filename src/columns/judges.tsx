@@ -2,19 +2,8 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Gender } from "@/enums/gender";
 import { getImagePath } from "@/utils/enviroment";
-
-export type Judge = {
-  name: string;
-  ign: string;
-  imagePath: string;
-  gender: Gender;
-  city: string;
-  team: string;
-  deck: string[];
-  others: string;
-};
+import { Judge } from "@/types/judge";
 
 export const columns: ColumnDef<Judge>[] = [
   {
