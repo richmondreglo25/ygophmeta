@@ -24,7 +24,7 @@ const typeBadgeClassMap: Record<string, string> = {
 
 export function getBadgeClass(type: string): string {
   return clsx(
-    "inline-block px-2 rounded text-xs font-semibold",
+    "inline-block px-2 rounded-sm text-xs font-semibold",
     typeBadgeClassMap[type] || "bg-gray-300 text-black"
   );
 }

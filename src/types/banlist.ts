@@ -1,3 +1,7 @@
+/**
+ * Banlist card types.
+ * Based on Yu-Gi-Oh! card classifications.
+ */
 export enum BanlistCardTypes {
   NormalMonster = "Normal Monster",
   EffectMonster = "Effect Monster",
@@ -11,17 +15,35 @@ export enum BanlistCardTypes {
   Trap = "Trap Card",
 }
 
+/**
+ * Banlist format types.
+ * "ocg" - Official Card Game (Japan)
+ * "ae" - Asian English
+ * "tcg" - Trading Card Game (International)
+ */
+export type BanlistFormat = "ocg" | "ae" | "tcg";
+
+/**
+ * Banlist card structure.
+ */
 export type BanlistCard = {
   name: string;
   type: BanlistCardTypes;
 };
 
+/**
+ * Banlist section structure.
+ */
 export type BanlistSection = {
   title: string;
   cards: BanlistCard[];
 };
 
-export type BanlistData = {
-  ocg: BanlistSection[];
-  tcg: BanlistSection[];
-};
+/**
+ * Banlist data structure.
+ * An array of banlist formats, each containing sections of banned/restricted cards.
+ */
+export type Banlist = {
+  format: BanlistFormat;
+  list: BanlistSection[];
+}[];

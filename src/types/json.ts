@@ -1,7 +1,7 @@
 export type HomeJson = {
   title: string;
   description: string;
-  link?: string; // Optional link property.
+  link?: string;
 };
 
 export type AboutJson = {

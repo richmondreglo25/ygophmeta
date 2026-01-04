@@ -3,8 +3,7 @@
 import { columns } from "@/columns/banlist";
 import { DataTable } from "@/components/data-table";
 import { Loading } from "@/components/loading";
-import { BanlistData } from "@/types/banlist";
-import { useEffect, useState } from "react";
+import { Banlist, BanlistFormat } from "@/types/banlist";
 import {
   Accordion,
   AccordionItem,
@@ -13,37 +12,34 @@ import {
 } from "@/components/ui/accordion";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Info, TextAlignJustify } from "lucide-react";
+import { useJsonData } from "../data/api";
+import { getJsonPath } from "@/utils/enviroment";
 
 export default function BanlistPage() {
-  const [banlist, setBanlist] = useState<BanlistData | null>(null);
+  const formats: BanlistFormat[] = ["ocg", "tcg"];
+  const { data: banlist = [], loading } = useJsonData<Banlist>(
+    getJsonPath("banlist.json")
+  );
 
-  useEffect(() => {
-    fetch("/data/banlist.json")
-      .then((res) => res.json())
-      .then(setBanlist);
-  }, []);
-
-  if (!banlist) {
-    return <Loading />;
-  }
+  if (loading) return <Loading />;
 
   return (
     <div className="flex flex-col gap-4">
       <Alert variant="info">
         <AlertDescription className="flex items-center gap-1.5 text-sm">
           <Info size={14} />
-          <div>
+          <span>
             <span className="font-semibold">Click</span> on format to expand or
             collapse the respective banlist.
-          </div>
+          </span>
         </AlertDescription>
       </Alert>
       <Accordion
         type="multiple"
-        className="flex flex-col gap-4"
-        defaultValue={["ocg", "tcg"]}
+        className="flex flex-col"
+        defaultValue={formats}
       >
-        {(["ocg", "tcg"] as const).map((format) => (
+        {banlist.map(({ format, list }) => (
           <AccordionItem key={format} value={format}>
             <AccordionTrigger>
               <div className="flex items-center gap-2">
@@ -53,8 +49,8 @@ export default function BanlistPage() {
             </AccordionTrigger>
             <AccordionContent>
               <div className="flex flex-col gap-6">
-                {banlist[format].map((section) => (
-                  <div key={section.title}>
+                {list.map((section) => (
+                  <div key={section.title} className="flex flex-col gap-2">
                     <h3 className="text-sm font-bold">{section.title}</h3>
                     <DataTable
                       columns={columns}

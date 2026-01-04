@@ -1,1596 +1,1602 @@
-{
-  "ocg": [
-    {
-      "title": "Forbidden",
-      "cards": [
-        {
-          "name": "Agido the Ancient Sentinel",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Amazoness Archer",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Artifact Scythe",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Barrier Statue of the Stormwinds",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Blackwing - Gofu the Vague Shadow",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Cannon Soldier",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Cannon Soldier MK-2",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Catapult Turtle",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Cyber-Stein",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Dandylion",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Djinn Releaser of Rituals",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Fiber Jar",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Fishborg Blaster",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Grinder Golem",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Kashtira Fenrir",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Kelbek the Ancient Vanguard",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Level Eater",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Magical Scientist",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Mind Master",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Phoenixian Cluster Amaryllis",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Substitoad",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Superheavy Samurai Soulbreaker Armor",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "The Tyrant Neptune",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Toon Cannon Soldier",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Victory Dragon",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Wind-Up Hunter",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Elder Entity Norden",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Tearlaments Kitkallos",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Chaos Ruler, the Chaotic Magical Dragon",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Hot Red Dragon Archfiend King Calamity",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Tempest Magician",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Abyss Dweller",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Beatrice, Lady of the Eternal",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Evilswarm Ouroboros",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Lavalval Chain",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 16: Shock Master",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 41: Bagooska the Terribly Tired Tapir",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 67: Pair-a-Dice Smasher",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 86: Heroic Champion - Rhongomyniad",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 95: Galaxy-Eyes Dark Matter Dragon",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number S0: Utopic ZEXAL",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Outer Entity Azathot",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "True King of All Calamities",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Zoodiac Broadbull",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Apollousa, Bow of the Goddess",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Crystron Halqifibrax",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Guardragon Agarpain",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Guardragon Elpy",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Knightmare Mermaid",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Linkross",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Moon of the Closed Heaven",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Predaplant Verte Anaconda",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Splash Mage",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Spright Elf",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Topologic Gumblar Dragon",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Union Carrier",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Butterfly Dagger - Elma",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Card of Safe Return",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Cold Wave",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Confiscation",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Delinquent Duo",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Dimension Fusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Divine Sword - Phoenix Blade",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Giant Trunade",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Graceful Charity",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Kaiser Colosseum",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Last Will",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Mass Driver",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Mirage of Nightmare",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Mystic Mine",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Obedience Schooled",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Painful Choice",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Pot of Greed",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Premature Burial",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Smoke Grenade of the Thief",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Soul Charge",
-          "type": "Spell Card"
-        },
-        {
-          "name": "The Forceful Sentry",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Imperial Order",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Last Turn",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Life Equalizer",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Magical Explosion",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Return from the Different Dimension",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Royal Oppression",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Sixth Sense",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Summon Limit",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Trap Dustshoot",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Ultimate Offering",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Vanity's Emptiness",
-          "type": "Trap Card"
-        }
-      ]
-    },
-    {
-      "title": "Limited",
-      "cards": [
-        {
-          "name": "Left Arm of the Forbidden One",
-          "type": "Normal Monster"
-        },
-        {
-          "name": "Left Leg of the Forbidden One",
-          "type": "Normal Monster"
-        },
-        {
-          "name": "Right Arm of the Forbidden One",
-          "type": "Normal Monster"
-        },
-        {
-          "name": "Right Leg of the Forbidden One",
-          "type": "Normal Monster"
-        },
-        {
-          "name": "Block Dragon",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Bystial Druiswurm",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Bystial Magnamhut",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Diabellstar the Black Witch",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Dimension Shifter",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Dracotail Mululu",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Exodia the Forbidden One",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Ext Ryzeal",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Fiendsmith Engraver",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Herald of Orange Light",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Ice Ryzeal",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "K9-66a Jokul",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Kashtira Unicorn",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Keldo the Sacred Protector",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Marshmao☆Yummy",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Mathmech Circular",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Maxx \"C\"",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Mudora the Sword Oracle",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "PSY-Framegear Gamma",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Snake-Eye Ash",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Snake-Eyes Poplar",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Spright Blue",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Superheavy Samurai Soulpiercer",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Sword Ryzeal",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tearlaments Havnis",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tearlaments Kashtira",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tearlaments Merrli",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tearlaments Reinoheart",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tearlaments Scheiren",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tenpai Dragon Chundra",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "The Bystial Lubellion",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Vanquish Soul Razen",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Zoodiac Ratpier",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Blaze Fenix, the Burning Bombardment Bird",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Phantom of Yubel",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Red-Eyes Dark Dragoon",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Herald of the Arc Light",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "PSY-Framelord Omega",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "T.G. Hyper Librarian",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Number 40: Gimmick Puppet of Strings",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Toadally Awesome",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Heavymetalfoes Electrumite",
-          "type": "Link Monster"
-        },
-        {
-          "name": "S:P Little Knight",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Yummy★Snatchy",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Allure of Darkness",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Bonfire",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Branded Fusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Brilliant Fusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Called by the Grave",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Card Destruction",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Crossout Designator",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Fiendsmith's Tract",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Foolish Burial",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Gateway of the Six",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Gold Sarcophagus",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Harpie's Feather Duster",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Heavy Storm",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Instant Fusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Ketu Dracotail",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Metamorphosis",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Monster Reborn",
-          "type": "Spell Card"
-        },
-        {
-          "name": "One Day of Peace",
-          "type": "Spell Card"
-        },
-        {
-          "name": "One for One",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Pot of Prosperity",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Pre-Preparation of Rites",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Primal Seed",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Primeval Planet Perlereino",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Reinforcement of the Army",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Runick Fountain",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Sangen Summoning",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Set Rotation",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Seventh Tachyon",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Sky Striker Mecha - Hornet Drones",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Terraforming",
-          "type": "Spell Card"
-        },
-        {
-          "name": "That Grass Looks Greener",
-          "type": "Spell Card"
-        },
-        {
-          "name": "WANTED: Seeker of Sinful Spoils",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Anti-Spell Fragrance",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Gozen Match",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Red Reboot",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Rivalry of Warlords",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Skill Drain",
-          "type": "Trap Card"
-        },
-        {
-          "name": "There Can Be Only One",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Trickstar Reincarnation",
-          "type": "Trap Card"
-        }
-      ]
-    },
-    {
-      "title": "Semi-Limited",
-      "cards": [
-        {
-          "name": "Ash Blossom & Joyous Spring",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "K9-17 Izuna",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Foolish Burial Goods",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Pot of Extravagance",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Spright Starter",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Dominus Impulse",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Solemn Judgment",
-          "type": "Trap Card"
-        }
-      ]
-    }
-  ],
-  "tcg": [
-    {
-      "title": "Forbidden",
-      "cards": [
-        {
-          "name": "Agido the Ancient Sentinel",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Archnemeses Protos",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Artifact Mjollnir",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Artifact Scythe",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Barrier Statue of the Drought",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Barrier Statue of the Inferno",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Barrier Statue of the Stormwinds",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Blackwing - Gofu the Vague Shadow",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Block Dragon",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Cyber-Stein",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Dandylion",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Djinn Releaser of Rituals",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Eclipse Wyvern",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Fairy Tail - Snow",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Fiber Jar",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Fishborg Blaster",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Fossil Dyna Pachycephalo",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Gimmick Puppet Nightmare",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Grinder Golem",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Jowgen the Spiritualist",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Kelbek the Ancient Vanguard",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Level Eater",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Magical Scientist",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Maxx \"C\"",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Mind Master",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Phoenixian Cluster Amaryllis",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Ronintoadin",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "SPYRAL Master Plan",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "The Tyrant Neptune",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Victory Dragon",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Elder Entity Norden",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Supreme King Dragon Starving Venom",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Tearlaments Kitkallos",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Baronne de Fleur",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Borreload Savage Dragon",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Chaos Ruler, the Chaotic Magical Dragon",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Hot Red Dragon Archfiend King Calamity",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Tempest Magician",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Abyss Dweller",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Bahamut Shark",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Beatrice, Lady of the Eternal",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Evilswarm Ouroboros",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Kashtira Arise-Heart",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "King of the Feral Imps",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Lavalval Chain",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "M-X-Saber Invoker",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 16: Shock Master",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 42: Galaxy Tomahawk",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 67: Pair-a-Dice Smasher",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 86: Heroic Champion - Rhongomyniad",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 89: Diablosis the Mind Hacker",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 95: Galaxy-Eyes Dark Matter Dragon",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number S0: Utopic ZEXAL",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Outer Entity Azathot",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "True King of All Calamities",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Wind-Up Carrier Zenmaity",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Zoodiac Broadbull",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Apollousa, Bow of the Goddess",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Crystron Halqifibrax",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Curious, the Lightsworn Dominion",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Guardragon Agarpain",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Guardragon Elpy",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Heavymetalfoes Electrumite",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Isolde, Two Tales of the Noble Knights",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Knightmare Goblin",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Knightmare Gryphon",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Knightmare Mermaid",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Link Decoder",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Linkross",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Mecha Phantom Beast Auroradon",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Moon of the Closed Heaven",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Prank-Kids Meow-Meow-Mu",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Predaplant Verte Anaconda",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Simorgh, Bird of Sovereignty",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Splash Mage",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Spright Elf",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Superheavy Samurai Scarecrow",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Topologic Gumblar Dragon",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Union Carrier",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Butterfly Dagger - Elma",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Card of Safe Return",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Cold Wave",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Confiscation",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Delinquent Duo",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Dimension Fusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Giant Trunade",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Graceful Charity",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Heavy Storm",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Kaiser Colosseum",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Last Will",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Mass Driver",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Metamorphosis",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Mirage of Nightmare",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Mystic Mine",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Original Sinful Spoils - Snake-Eye",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Painful Choice",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Pot of Greed",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Premature Burial",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Smoke Grenade of the Thief",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Soul Charge",
-          "type": "Spell Card"
-        },
-        {
-          "name": "The Forceful Sentry",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Appointer of the Red Lotus",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Branded Expulsion",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Dimensional Barrier",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Imperial Order",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Last Turn",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Red Reboot",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Return from the Different Dimension",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Royal Oppression",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Self-Destruct Button",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Sixth Sense",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Summon Limit",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Trap Dustshoot",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Ultimate Offering",
-          "type": "Trap Card"
-        }
-      ]
-    },
-    {
-      "title": "Limited",
-      "cards": [
-        {
-          "name": "Left Arm of the Forbidden One",
-          "type": "Normal Monster"
-        },
-        {
-          "name": "Left Leg of the Forbidden One",
-          "type": "Normal Monster"
-        },
-        {
-          "name": "Right Arm of the Forbidden One",
-          "type": "Normal Monster"
-        },
-        {
-          "name": "Right Leg of the Forbidden One",
-          "type": "Normal Monster"
-        },
-        {
-          "name": "Bystial Druiswurm",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Bystial Magnamhut",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Dark Grepher",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Dimension Shifter",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Exodia the Forbidden One",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Ext Ryzeal",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Keldo the Sacred Protector",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Mathmech Circular",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Miscellaneousaurus",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Mudora the Sword Oracle",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "PSY-Framegear Gamma",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Substitoad",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tearlaments Havnis",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tearlaments Merrli",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tearlaments Scheiren",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Tenpai Dragon Chundra",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Vanquish Soul Razen",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Zoodiac Ratpier",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Gem-Knight Master Diamond",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Phantom of Yubel",
-          "type": "Fusion Monster"
-        },
-        {
-          "name": "Herald of the Arc Light",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "PSY-Framelord Omega",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "T.G. Hyper Librarian",
-          "type": "Synchro Monster"
-        },
-        {
-          "name": "Daigusto Emeral",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number 40: Gimmick Puppet of Strings",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Number C40: Gimmick Puppet of Dark Strings",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Ryzeal Detonator",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Zoodiac Drident",
-          "type": "XYZ Monster"
-        },
-        {
-          "name": "Astrograph Sorcerer",
-          "type": "Pendulum Monster"
-        },
-        {
-          "name": "Linkuriboh",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Striker Dragon",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Summon Sorceress",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Sunavalon Dryas",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Sunvine Healer",
-          "type": "Link Monster"
-        },
-        {
-          "name": "Bonfire",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Brilliant Fusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Called by the Grave",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Card Destruction",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Card of Demise",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Chain Strike",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Change of Heart",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Chaos Space",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Chicken Game",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Crossout Designator",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Crystron Inclusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Divine Wind of Mist Valley",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Final Countdown",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Foolish Burial",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Gateway of the Six",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Gold Sarcophagus",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Infernity Launcher",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Instant Fusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Into the Void",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Magical Mid-Breaker Field",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Monster Gate",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Monster Reborn",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Obedience Schooled",
-          "type": "Spell Card"
-        },
-        {
-          "name": "One Day of Peace",
-          "type": "Spell Card"
-        },
-        {
-          "name": "One for One",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Pot of Prosperity",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Reasoning",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Reinforcement of the Army",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Sangen Kaimen",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Sangen Summoning",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Set Rotation",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Sky Striker Mecha - Hornet Drones",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Slash Draw",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Snatch Steal",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Stake your Soul!",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Terraforming",
-          "type": "Spell Card"
-        },
-        {
-          "name": "That Grass Looks Greener",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Triple Tactics Talent",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Anti-Spell Fragrance",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Gozen Match",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Magical Explosion",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Naturia Sacred Tree",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Rivalry of Warlords",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Skill Drain",
-          "type": "Trap Card"
-        },
-        {
-          "name": "Solemn Judgment",
-          "type": "Trap Card"
-        },
-        {
-          "name": "There Can Be Only One",
-          "type": "Trap Card"
-        }
-      ]
-    },
-    {
-      "title": "Semi-Limited",
-      "cards": [
-        {
-          "name": "Black Dragon Collapserpent",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Ice Ryzeal",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Sword Ryzeal",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Unchained Soul of Sharvara",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "White Dragon Wyverburster",
-          "type": "Effect Monster"
-        },
-        {
-          "name": "Branded Fusion",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Maliss in Underground",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Purrely Delicious Memory",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Purrely Sleepy Memory",
-          "type": "Spell Card"
-        },
-        {
-          "name": "Runick Fountain",
-          "type": "Spell Card"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "format": "ocg",
+    "list": [
+      {
+        "title": "Forbidden",
+        "cards": [
+          {
+            "name": "Agido the Ancient Sentinel",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Amazoness Archer",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Artifact Scythe",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Barrier Statue of the Stormwinds",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Blackwing - Gofu the Vague Shadow",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Cannon Soldier",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Cannon Soldier MK-2",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Catapult Turtle",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Cyber-Stein",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Dandylion",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Djinn Releaser of Rituals",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Fiber Jar",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Fishborg Blaster",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Grinder Golem",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Kashtira Fenrir",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Kelbek the Ancient Vanguard",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Level Eater",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Magical Scientist",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Mind Master",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Phoenixian Cluster Amaryllis",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Substitoad",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Superheavy Samurai Soulbreaker Armor",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "The Tyrant Neptune",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Toon Cannon Soldier",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Victory Dragon",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Wind-Up Hunter",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Elder Entity Norden",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Tearlaments Kitkallos",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Chaos Ruler, the Chaotic Magical Dragon",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Hot Red Dragon Archfiend King Calamity",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Tempest Magician",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Abyss Dweller",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Beatrice, Lady of the Eternal",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Evilswarm Ouroboros",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Lavalval Chain",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 16: Shock Master",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 41: Bagooska the Terribly Tired Tapir",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 67: Pair-a-Dice Smasher",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 86: Heroic Champion - Rhongomyniad",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 95: Galaxy-Eyes Dark Matter Dragon",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number S0: Utopic ZEXAL",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Outer Entity Azathot",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "True King of All Calamities",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Zoodiac Broadbull",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Apollousa, Bow of the Goddess",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Crystron Halqifibrax",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Guardragon Agarpain",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Guardragon Elpy",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Knightmare Mermaid",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Linkross",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Moon of the Closed Heaven",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Predaplant Verte Anaconda",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Splash Mage",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Spright Elf",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Topologic Gumblar Dragon",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Union Carrier",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Butterfly Dagger - Elma",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Card of Safe Return",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Cold Wave",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Confiscation",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Delinquent Duo",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Dimension Fusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Divine Sword - Phoenix Blade",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Giant Trunade",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Graceful Charity",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Kaiser Colosseum",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Last Will",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Mass Driver",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Mirage of Nightmare",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Mystic Mine",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Obedience Schooled",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Painful Choice",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Pot of Greed",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Premature Burial",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Smoke Grenade of the Thief",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Soul Charge",
+            "type": "Spell Card"
+          },
+          {
+            "name": "The Forceful Sentry",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Imperial Order",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Last Turn",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Life Equalizer",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Magical Explosion",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Return from the Different Dimension",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Royal Oppression",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Sixth Sense",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Summon Limit",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Trap Dustshoot",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Ultimate Offering",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Vanity's Emptiness",
+            "type": "Trap Card"
+          }
+        ]
+      },
+      {
+        "title": "Limited",
+        "cards": [
+          {
+            "name": "Left Arm of the Forbidden One",
+            "type": "Normal Monster"
+          },
+          {
+            "name": "Left Leg of the Forbidden One",
+            "type": "Normal Monster"
+          },
+          {
+            "name": "Right Arm of the Forbidden One",
+            "type": "Normal Monster"
+          },
+          {
+            "name": "Right Leg of the Forbidden One",
+            "type": "Normal Monster"
+          },
+          {
+            "name": "Block Dragon",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Bystial Druiswurm",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Bystial Magnamhut",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Diabellstar the Black Witch",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Dimension Shifter",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Dracotail Mululu",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Exodia the Forbidden One",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Ext Ryzeal",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Fiendsmith Engraver",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Herald of Orange Light",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Ice Ryzeal",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "K9-66a Jokul",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Kashtira Unicorn",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Keldo the Sacred Protector",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Marshmao☆Yummy",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Mathmech Circular",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Maxx \"C\"",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Mudora the Sword Oracle",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "PSY-Framegear Gamma",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Snake-Eye Ash",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Snake-Eyes Poplar",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Spright Blue",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Superheavy Samurai Soulpiercer",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Sword Ryzeal",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tearlaments Havnis",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tearlaments Kashtira",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tearlaments Merrli",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tearlaments Reinoheart",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tearlaments Scheiren",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tenpai Dragon Chundra",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "The Bystial Lubellion",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Vanquish Soul Razen",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Zoodiac Ratpier",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Blaze Fenix, the Burning Bombardment Bird",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Phantom of Yubel",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Red-Eyes Dark Dragoon",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Herald of the Arc Light",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "PSY-Framelord Omega",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "T.G. Hyper Librarian",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Number 40: Gimmick Puppet of Strings",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Toadally Awesome",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Heavymetalfoes Electrumite",
+            "type": "Link Monster"
+          },
+          {
+            "name": "S:P Little Knight",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Yummy★Snatchy",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Allure of Darkness",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Bonfire",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Branded Fusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Brilliant Fusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Called by the Grave",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Card Destruction",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Crossout Designator",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Fiendsmith's Tract",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Foolish Burial",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Gateway of the Six",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Gold Sarcophagus",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Harpie's Feather Duster",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Heavy Storm",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Instant Fusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Ketu Dracotail",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Metamorphosis",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Monster Reborn",
+            "type": "Spell Card"
+          },
+          {
+            "name": "One Day of Peace",
+            "type": "Spell Card"
+          },
+          {
+            "name": "One for One",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Pot of Prosperity",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Pre-Preparation of Rites",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Primal Seed",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Primeval Planet Perlereino",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Reinforcement of the Army",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Runick Fountain",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Sangen Summoning",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Set Rotation",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Seventh Tachyon",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Sky Striker Mecha - Hornet Drones",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Terraforming",
+            "type": "Spell Card"
+          },
+          {
+            "name": "That Grass Looks Greener",
+            "type": "Spell Card"
+          },
+          {
+            "name": "WANTED: Seeker of Sinful Spoils",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Anti-Spell Fragrance",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Gozen Match",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Red Reboot",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Rivalry of Warlords",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Skill Drain",
+            "type": "Trap Card"
+          },
+          {
+            "name": "There Can Be Only One",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Trickstar Reincarnation",
+            "type": "Trap Card"
+          }
+        ]
+      },
+      {
+        "title": "Semi-Limited",
+        "cards": [
+          {
+            "name": "Ash Blossom & Joyous Spring",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "K9-17 Izuna",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Foolish Burial Goods",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Pot of Extravagance",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Spright Starter",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Dominus Impulse",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Solemn Judgment",
+            "type": "Trap Card"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "format": "tcg",
+    "list": [
+      {
+        "title": "Forbidden",
+        "cards": [
+          {
+            "name": "Agido the Ancient Sentinel",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Archnemeses Protos",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Artifact Mjollnir",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Artifact Scythe",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Barrier Statue of the Drought",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Barrier Statue of the Inferno",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Barrier Statue of the Stormwinds",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Blackwing - Gofu the Vague Shadow",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Block Dragon",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Cyber-Stein",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Dandylion",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Djinn Releaser of Rituals",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Eclipse Wyvern",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Fairy Tail - Snow",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Fiber Jar",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Fishborg Blaster",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Fossil Dyna Pachycephalo",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Gimmick Puppet Nightmare",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Grinder Golem",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Jowgen the Spiritualist",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Kelbek the Ancient Vanguard",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Level Eater",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Magical Scientist",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Maxx \"C\"",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Mind Master",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Phoenixian Cluster Amaryllis",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Ronintoadin",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "SPYRAL Master Plan",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "The Tyrant Neptune",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Victory Dragon",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Elder Entity Norden",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Supreme King Dragon Starving Venom",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Tearlaments Kitkallos",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Baronne de Fleur",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Borreload Savage Dragon",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Chaos Ruler, the Chaotic Magical Dragon",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Hot Red Dragon Archfiend King Calamity",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Tempest Magician",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Abyss Dweller",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Bahamut Shark",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Beatrice, Lady of the Eternal",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Evilswarm Ouroboros",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Kashtira Arise-Heart",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "King of the Feral Imps",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Lavalval Chain",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "M-X-Saber Invoker",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 16: Shock Master",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 42: Galaxy Tomahawk",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 67: Pair-a-Dice Smasher",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 86: Heroic Champion - Rhongomyniad",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 89: Diablosis the Mind Hacker",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 95: Galaxy-Eyes Dark Matter Dragon",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number S0: Utopic ZEXAL",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Outer Entity Azathot",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "True King of All Calamities",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Wind-Up Carrier Zenmaity",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Zoodiac Broadbull",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Apollousa, Bow of the Goddess",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Crystron Halqifibrax",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Curious, the Lightsworn Dominion",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Guardragon Agarpain",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Guardragon Elpy",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Heavymetalfoes Electrumite",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Isolde, Two Tales of the Noble Knights",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Knightmare Goblin",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Knightmare Gryphon",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Knightmare Mermaid",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Link Decoder",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Linkross",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Mecha Phantom Beast Auroradon",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Moon of the Closed Heaven",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Prank-Kids Meow-Meow-Mu",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Predaplant Verte Anaconda",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Simorgh, Bird of Sovereignty",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Splash Mage",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Spright Elf",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Superheavy Samurai Scarecrow",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Topologic Gumblar Dragon",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Union Carrier",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Butterfly Dagger - Elma",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Card of Safe Return",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Cold Wave",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Confiscation",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Delinquent Duo",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Dimension Fusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Giant Trunade",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Graceful Charity",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Heavy Storm",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Kaiser Colosseum",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Last Will",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Mass Driver",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Metamorphosis",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Mirage of Nightmare",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Mystic Mine",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Original Sinful Spoils - Snake-Eye",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Painful Choice",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Pot of Greed",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Premature Burial",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Smoke Grenade of the Thief",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Soul Charge",
+            "type": "Spell Card"
+          },
+          {
+            "name": "The Forceful Sentry",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Appointer of the Red Lotus",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Branded Expulsion",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Dimensional Barrier",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Imperial Order",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Last Turn",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Red Reboot",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Return from the Different Dimension",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Royal Oppression",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Self-Destruct Button",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Sixth Sense",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Summon Limit",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Trap Dustshoot",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Ultimate Offering",
+            "type": "Trap Card"
+          }
+        ]
+      },
+      {
+        "title": "Limited",
+        "cards": [
+          {
+            "name": "Left Arm of the Forbidden One",
+            "type": "Normal Monster"
+          },
+          {
+            "name": "Left Leg of the Forbidden One",
+            "type": "Normal Monster"
+          },
+          {
+            "name": "Right Arm of the Forbidden One",
+            "type": "Normal Monster"
+          },
+          {
+            "name": "Right Leg of the Forbidden One",
+            "type": "Normal Monster"
+          },
+          {
+            "name": "Bystial Druiswurm",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Bystial Magnamhut",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Dark Grepher",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Dimension Shifter",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Exodia the Forbidden One",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Ext Ryzeal",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Keldo the Sacred Protector",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Mathmech Circular",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Miscellaneousaurus",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Mudora the Sword Oracle",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "PSY-Framegear Gamma",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Substitoad",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tearlaments Havnis",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tearlaments Merrli",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tearlaments Scheiren",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Tenpai Dragon Chundra",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Vanquish Soul Razen",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Zoodiac Ratpier",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Gem-Knight Master Diamond",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Phantom of Yubel",
+            "type": "Fusion Monster"
+          },
+          {
+            "name": "Herald of the Arc Light",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "PSY-Framelord Omega",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "T.G. Hyper Librarian",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Daigusto Emeral",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number 40: Gimmick Puppet of Strings",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Number C40: Gimmick Puppet of Dark Strings",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Ryzeal Detonator",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Zoodiac Drident",
+            "type": "XYZ Monster"
+          },
+          {
+            "name": "Astrograph Sorcerer",
+            "type": "Pendulum Monster"
+          },
+          {
+            "name": "Linkuriboh",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Striker Dragon",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Summon Sorceress",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Sunavalon Dryas",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Sunvine Healer",
+            "type": "Link Monster"
+          },
+          {
+            "name": "Bonfire",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Brilliant Fusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Called by the Grave",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Card Destruction",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Card of Demise",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Chain Strike",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Change of Heart",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Chaos Space",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Chicken Game",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Crossout Designator",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Crystron Inclusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Divine Wind of Mist Valley",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Final Countdown",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Foolish Burial",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Gateway of the Six",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Gold Sarcophagus",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Infernity Launcher",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Instant Fusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Into the Void",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Magical Mid-Breaker Field",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Monster Gate",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Monster Reborn",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Obedience Schooled",
+            "type": "Spell Card"
+          },
+          {
+            "name": "One Day of Peace",
+            "type": "Spell Card"
+          },
+          {
+            "name": "One for One",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Pot of Prosperity",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Reasoning",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Reinforcement of the Army",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Sangen Kaimen",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Sangen Summoning",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Set Rotation",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Sky Striker Mecha - Hornet Drones",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Slash Draw",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Snatch Steal",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Stake your Soul!",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Terraforming",
+            "type": "Spell Card"
+          },
+          {
+            "name": "That Grass Looks Greener",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Triple Tactics Talent",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Anti-Spell Fragrance",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Gozen Match",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Magical Explosion",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Naturia Sacred Tree",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Rivalry of Warlords",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Skill Drain",
+            "type": "Trap Card"
+          },
+          {
+            "name": "Solemn Judgment",
+            "type": "Trap Card"
+          },
+          {
+            "name": "There Can Be Only One",
+            "type": "Trap Card"
+          }
+        ]
+      },
+      {
+        "title": "Semi-Limited",
+        "cards": [
+          {
+            "name": "Black Dragon Collapserpent",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Ice Ryzeal",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Sword Ryzeal",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Unchained Soul of Sharvara",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "White Dragon Wyverburster",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Branded Fusion",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Maliss in Underground",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Purrely Delicious Memory",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Purrely Sleepy Memory",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Runick Fountain",
+            "type": "Spell Card"
+          }
+        ]
+      }
+    ]
+  }
+]
