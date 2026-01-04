@@ -1,0 +1,1993 @@
+[
+  {
+    "id": "f3a1c2b7-8e9d-4a6b-9c3e-1a2b3c4d5fff",
+    "title": "OCG Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Dec 20 2025",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 4,
+    "images": ["b1.webp"],
+    "winners": [
+      {
+        "name": "Friedrich Ferrer",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kim Mark Parane",
+        "position": 2,
+        "deck": "Elvennotes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Raphael Perez",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Warren Heromo",
+        "position": 4,
+        "deck": "Blackwing",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Maliss",
+        "count": 1
+      },
+      {
+        "name": "Elvennotes",
+        "count": 1
+      },
+      {
+        "name": "Blue-Eyes",
+        "count": 1
+      },
+      {
+        "name": "Blackwing",
+        "count": 1
+      },
+      {
+        "name": "Raidraptor",
+        "count": 2
+      },
+      {
+        "name": "Synchron",
+        "count": 1
+      },
+      {
+        "name": "Odion",
+        "count": 1
+      },
+      {
+        "name": "Sky Striker",
+        "count": 1
+      },
+      {
+        "name": "Branded",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "f3a1c2b7-8e9d-7su4-9c3e-1a2b3c4d5fff",
+    "title": "OCG Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Dec 20 2025",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 4,
+    "images": ["b1.webp"],
+    "winners": [
+      {
+        "name": "Friedrich Ferrer",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Rob Reyan Yvan Belgica",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Raphael Perez",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Kim Mark Parane",
+        "position": 4,
+        "deck": "Elvennotes",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Maliss",
+        "count": 1
+      },
+      {
+        "name": "Elvennotes",
+        "count": 1
+      },
+      {
+        "name": "Blue-Eyes",
+        "count": 1
+      },
+      {
+        "name": "Blackwing",
+        "count": 1
+      },
+      {
+        "name": "Raidraptor",
+        "count": 2
+      },
+      {
+        "name": "Synchron",
+        "count": 1
+      },
+      {
+        "name": "Mitsurugi",
+        "count": 1
+      },
+      {
+        "name": "Sky Striker",
+        "count": 1
+      },
+      {
+        "name": "Darklord",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "f3a1c2b7-8e9d-8dy4-9c3e-1a2b3c4d5fff",
+    "title": "OCG Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Dec 19 2025",
+    "where": "Japan Gacha",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [""],
+    "winners": [
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Joshua Lawagan",
+        "position": 2,
+        "deck": "White Forest Azamina Fiendsmith",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "White Forest Azamina Fiendsmith",
+        "count": 1
+      },
+      {
+        "name": "Blue-Eyes",
+        "count": 1
+      },
+      {
+        "name": "Exosister",
+        "count": 1
+      },
+      {
+        "name": "Runick",
+        "count": 1
+      },
+      {
+        "name": "Lunalight",
+        "count": 1
+      },
+      {
+        "name": "Mitsurugi Orcust",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "f2a1d2b7-8e9d-7su4-9c3e-1a2b3c4d5fff",
+    "title": "AE Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Dec 19 2025",
+    "where": "Japan Gacha",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": ["b1.webp"],
+    "winners": [
+      {
+        "name": "Jhon Gian Obiena",
+        "position": 1,
+        "deck": "Gimmick Puppet",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Louren Vidad",
+        "position": 2,
+        "deck": "VSK9",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Gimmick Puppet",
+        "count": 1
+      },
+      {
+        "name": "VSK9",
+        "count": 1
+      },
+      {
+        "name": "Mementotlan",
+        "count": 1
+      },
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Maliss",
+        "count": 1
+      },
+      {
+        "name": "Millenium",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "a1e2c3d4-arkn-1",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Dec 21 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "MJ Buebo",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Edmar Cañete",
+        "position": 2,
+        "deck": "Ryzeal",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Rover Lolarga",
+        "position": 3,
+        "deck": "Voiceless Voice",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Blue-Eyes",
+        "count": 2
+      },
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Ryzeal",
+        "count": 1
+      },
+      {
+        "name": "Voiceless Voice",
+        "count": 1
+      },
+      {
+        "name": "Centur-Ion",
+        "count": 1
+      },
+      {
+        "name": "Lunalight",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "a1e2c3d4-arkn-2",
+    "title": "AE Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Dec 21 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 1,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Vincent Oblefias",
+        "position": 2,
+        "deck": "VSK9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Ken Millar",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Edmar Cañete",
+        "position": 4,
+        "deck": "Ryzeal",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Blue-Eyes",
+        "count": 2
+      },
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Ryzeal",
+        "count": 1
+      },
+      {
+        "name": "Voiceless Voice",
+        "count": 1
+      },
+      {
+        "name": "VSK9",
+        "count": 1
+      },
+      {
+        "name": "Lunalight",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "f3a1c2b7-f8d9-7ed3-9c3e-1a28r94d5ff1",
+    "title": "RaVens Play Center's YearEnd Tournament 2025",
+    "host": "RaVens Play Center",
+    "when": "Dec 21 2025",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "winners": [
+      {
+        "name": "Raphael Perez",
+        "position": 1,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Cedric Soriao",
+        "position": 2,
+        "deck": "Lunalight",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Blue-Eyes",
+        "count": 1
+      },
+      {
+        "name": "Lunalight",
+        "count": 1
+      },
+      {
+        "name": "Mitsurugi",
+        "count": 2
+      },
+      {
+        "name": "Rishid",
+        "count": 1
+      },
+      {
+        "name": "Yummy",
+        "count": 2
+      },
+      {
+        "name": "Maliss",
+        "count": 1
+      },
+      {
+        "name": "Radiant Typhoon",
+        "count": 1
+      },
+      {
+        "name": "Exosister",
+        "count": 2
+      },
+      {
+        "name": "HERO",
+        "count": 1
+      },
+      {
+        "name": "Orcust",
+        "count": 1
+      },
+      {
+        "name": "Runick",
+        "count": 1
+      },
+      {
+        "name": "Swordsoul",
+        "count": 1
+      },
+      {
+        "name": "Enneacraft",
+        "count": 1
+      },
+      {
+        "name": "Dracotail Branded",
+        "count": 1
+      },
+      {
+        "name": "Raidraptor",
+        "count": 1
+      },
+      {
+        "name": "Synchron",
+        "count": 1
+      },
+      {
+        "name": "Blackwing",
+        "count": 1
+      },
+      {
+        "name": "DoomZ",
+        "count": 1
+      },
+      {
+        "name": "Branded",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "075f5391-d869-4769-b7eb-4e8e59027cb9",
+    "title": "Event OTS Premium - Juraishin, the Cursed Thunder God",
+    "host": "Courtside",
+    "when": "Dec 20 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Marlo Delda",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kenneth Febra",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Albert Santiago",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Tristan Cruz",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "33dbfa4d-e354-4929-9bc1-235a52b28e76",
+    "title": "OCG Pod 1",
+    "host": "Courtside",
+    "when": "Dec 20 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Martin Owen Calleja",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eda560e3-aaf9-48b1-9d93-ce7e87ca5d3d",
+    "title": "OCG Pod 1-A",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Frans Cuña",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eda560e3-aaf9-48b1-3433-ce7e87ca5d3d",
+    "title": "OCG Pod 1-B",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Ron Napalan",
+        "position": 1,
+        "deck": "Runick Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eda560e3-bb43-48b1-9d93-ce7e87ca5d3d",
+    "title": "OCG Pod 1-C",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Aian Maculata",
+        "position": 1,
+        "deck": "Mitsurugi Ryzeal",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eda560e3-aaf9-9d93-48b1-ce7e87ca5d3d",
+    "title": "OCG Pod 1-D",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jonard Cabantog",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "94f23fd0-448c-4897-aab5-1333066fdf25",
+    "title": "AE Pod 1-A",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Nazario Jesus Deladia",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "64279056-7a7a-4f07-b2bb-4d744745bc4b",
+    "title": "AE Pod 1-B",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jorence Quintana",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "54d22b4a-1d9e-4301-935c-b01c41831c28",
+    "title": "AE Pod 1-C",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Kenneth Febra",
+        "position": 1,
+        "deck": "Mitsurugi",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5bcf523b-1263-4985-8d87-6b44508226b7",
+    "title": "OCG Pod 2-A",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "b6720b8f-b9c1-41c7-9241-ef64e8c58e2a",
+    "title": "OCG Pod 2-B",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Miguelle Banjo Manalo",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ef80b5b3-191c-4658-a3cb-4788ef4c8329",
+    "title": "OCG Pod 2-C",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Van Joseph Lipana",
+        "position": 1,
+        "deck": "D/D/D",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "7d535c54-7d95-4176-bdf4-33a49788b547",
+    "title": "AE Pod 2-A",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jan Zedric Lorenzo",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ea846d64-3da9-4e39-b3be-bf44fc0131ac",
+    "title": "AE Pod 2-B",
+    "host": "Courtside",
+    "when": "Dec 13 2025",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Louren Vidad",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "12f7a3c0-2664-45cc-a387-8d23d5697f3c",
+    "title": "OCG Pod 1",
+    "host": "Rogue's Passage",
+    "when": "Dec 14 2025",
+    "where": "Pampangga",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Charles Wilson Panlilio",
+        "position": 1,
+        "deck": "D/D/D",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kyle Ong",
+        "position": 2,
+        "deck": "Dracotail",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "John Marvin Quindoza",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "D/D/D",
+        "count": 1
+      },
+      {
+        "name": "Dracotail",
+        "count": 1
+      },
+      {
+        "name": "Blue-Eyes",
+        "count": 2
+      },
+      {
+        "name": "Maliss",
+        "count": 1
+      },
+      {
+        "name": "Borea",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "1e489666-a4a1-40bc-a24c-fdcff9f9747d",
+    "title": "Toy Shogun 1v1 Year End Tournament",
+    "host": "Toy Shogun",
+    "when": "Dec 28 2025",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": true,
+    "rounds": "5",
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Pol Limjoco",
+        "position": 2,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jonard Cabantog",
+        "position": 3,
+        "deck": "Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Kenneth Pongco",
+        "position": 4,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Charlie Capiral",
+        "position": 5,
+        "deck": "Yummy Fiendsmith",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "John Rey Balderama",
+        "position": 6,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "6.webp"
+      },
+      {
+        "name": "Ryan Christian",
+        "position": 7,
+        "deck": "Mitsurugi Orcust",
+        "deckImagePath": "7.webp"
+      },
+      {
+        "name": "Julian San Diego",
+        "position": 8,
+        "deck": "Kewl Tune",
+        "deckImagePath": "8.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "bc270bf3-f5c3-43ab-bb14-a0b6528a4ac6",
+    "title": "Casual OCG Pod 2",
+    "host": "Toy Shogun",
+    "when": "Dec 26 2025",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "John Zedric Lorenzo",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jayson Dwight Catindig",
+        "position": 2,
+        "deck": "Mitsurugi Fiendsmith",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Charlie Caparal",
+        "position": 3,
+        "deck": "Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 4,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "078e1505-eafc-4174-9d4b-4cdef583946c",
+    "title": "Casual OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Dec 26 2025",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Julian San Pelipe",
+        "position": 1,
+        "deck": "Kewl Tune",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 2,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jayson Dwight Catindig",
+        "position": 3,
+        "deck": "Mitsurugi Fiendsmith",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Kenneth Pongco",
+        "position": 4,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "211f56c8-ae07-41a9-aa45-909d59f87825",
+    "title": "OCG Pod 2",
+    "host": "Toy Shogun",
+    "when": "Dec 21 2025",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jonard Cabantog",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kenneth Pongco",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "John Rey Balderama",
+        "position": 3,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Harry Untalan",
+        "position": 4,
+        "deck": "Branded",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "cff3c63c-b9a7-4f0f-a3bb-7df9684cdf6f",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Dec 21 2025",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Joy Rey Balderama",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Renz Carlo Pongco",
+        "position": 2,
+        "deck": "VSK9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jonard Cabantog",
+        "position": 3,
+        "deck": "Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Kenneth Pongco",
+        "position": 4,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "d7cc34b8-179e-4937-a1b1-7d292b84a468",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Dec 19 2025",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Harry Untalan",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "John Rey Balderama",
+        "position": 2,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jonard Cabantog",
+        "position": 3,
+        "deck": "Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "John Zedric Lorenzo",
+        "position": 4,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "63b38f41-30b8-406b-8f34-62103253abcf",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Dec 14 2025",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "JC",
+        "position": 1,
+        "deck": "Mikanko Fiendsmith",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Julian San Pelipe",
+        "position": 2,
+        "deck": "Kewl Tune",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Ajay",
+        "position": 3,
+        "deck": "Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Leonardo Bryant Clarin",
+        "position": 4,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "198a1615-9b2a-4c4a-bca6-0e053384972b",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Dec 12 2025",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Harry Untalan",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "John Rey Balderama",
+        "position": 2,
+        "deck": "Maliss",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Ruben Reyes",
+        "position": 3,
+        "deck": "Synchron",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "af815df4-9419-4c91-88f2-f97cbc629959",
+    "title": "OCG Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Dec 27 2025",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rob Reyan Yvan Belgica",
+        "position": 1,
+        "deck": "Mitsurugi",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Raphael Perez",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Christian Espiritu",
+        "position": 3,
+        "deck": "Raidraptor",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Cedric Soriao",
+        "position": 4,
+        "deck": "Lunalight",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "7b776f70-0374-41aa-b0aa-e53c47f766bc",
+    "title": "OCG Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Dec 27 2025",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Raphael Perez",
+        "position": 1,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "James Calderon",
+        "position": 2,
+        "deck": "Synchron",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Veni Rue Gonzales",
+        "position": 3,
+        "deck": "HERO",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Cedric Soriao",
+        "position": 4,
+        "deck": "Lunalight",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "61722281-a9c1-41c4-8aaa-d4bd3292fecc",
+    "title": "AE Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Dec 14 2025",
+    "where": "Bulacan",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Friedrich Ferrer",
+        "position": 1,
+        "deck": "Lunalight",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kenneth Febra",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jam",
+        "position": 3,
+        "deck": "Mitsurugi",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Mark Jericho Surio",
+        "position": 4,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "466f91da-e060-4a87-b196-30b06c713539",
+    "title": "AE Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Dec 14 2025",
+    "where": "Bulacan",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Kenneth Febra",
+        "position": 1,
+        "deck": "Mitsurugi",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jam",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Mark Jericho Surio",
+        "position": 3,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Friedrich Ferrer",
+        "position": 4,
+        "deck": "Lunalight",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "859207da-7b71-4733-8045-c07e600ad464",
+    "title": "OCG Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Dec 13 2025",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Raphael Perez",
+        "position": 1,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Alfonzo Almazar",
+        "position": 2,
+        "deck": "Odion",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Christian Espiritu",
+        "position": 3,
+        "deck": "Raidraptor",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Kim Mark Parane",
+        "position": 4,
+        "deck": "Odion",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "56000f2c-4a0f-4db7-ac7d-c56226b072dc",
+    "title": "OCG Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Dec 13 2025",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Richmond Reglo",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kim Mark Parane",
+        "position": 2,
+        "deck": "Odion",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Friedrich Ferrer",
+        "position": 3,
+        "deck": "Lunalight",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Raphael Perez",
+        "position": 4,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "1801d35f-444c-467c-a39e-b9eb0a759a0d",
+    "title": "AE Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Dec 28 2025",
+    "where": "Cavite",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "JC Salvador",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "913e6466-5175-492a-8a7e-cd90d616388c",
+    "title": "OCG Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Dec 24 2025",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Hiroshi Odate",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "7f8383d3-a447-4f95-90e1-319658dd3e82",
+    "title": "Season 0: MEIOCG National Weekly Rankings - Week 13",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Dec 27 2025",
+    "where": "Kai Royal Cafe Tea & Coffee / Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jan Michael Vicente",
+        "position": 1,
+        "deck": "Magistus Branded Exosister",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kristofer Edward Bondoc",
+        "position": 2,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Spenser Jones Go",
+        "position": 3,
+        "deck": "Fiendsmith",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "13b85cdf-84d4-4921-8e24-4068c11a20d2",
+    "title": "Season 0: MEIOCG National Weekly Rankings - Week 12",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Dec 20 2025",
+    "where": "Kai Royal Cafe Tea & Coffee / Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Shin Alter",
+        "position": 1,
+        "deck": "Artmage",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jan Michael Vicente",
+        "position": 2,
+        "deck": "Magistus Branded Exosister",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Joe Vincent Minguez",
+        "position": 3,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "61afda0d-4437-42f5-b1fa-62b587b84ac4",
+    "title": "Season 0: MEIOCG National Weekly Rankings - Week 11",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Dec 14 2025",
+    "where": "Ichiko Co / Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Joe Vincent Minguez",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Uriel Ray Dolorfino",
+        "position": 2,
+        "deck": "Yummy Mimighoul",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "7f63cb40-cfc7-4f47-9bdd-10f33780308b",
+    "title": "Davao YUGIOH Ranking Tournament S23.T46",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Dec 13 2025",
+    "where": "G-Hub Davao",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rave Nave",
+        "position": 1,
+        "deck": "Dracotail Branded Mitsurugi",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Andrew Aguinaldo",
+        "position": 2,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Earl Fernandez",
+        "position": 3,
+        "deck": "Dinomorphia",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "99578363-e7f9-43fe-ba4c-f6ad1681f69c",
+    "title": "BATANG GAPO DUELISTS YEAR-END TOURNAMENT",
+    "host": "Batang Gapo Duelist",
+    "when": "Dec 21 2025",
+    "where": "Save Point Café / Gapo",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Rallon Caseja",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Huswa Curiano",
+        "position": 2,
+        "deck": "VSK9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Bob Marzan",
+        "position": 3,
+        "deck": "Maliss",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Parest Matthews",
+        "position": 4,
+        "deck": "Sky Striker",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "0a78e633-4998-4d9d-bd59-72c843ff31d3",
+    "title": "Year-End Yu-Gi-Oh! Tournament!",
+    "host": "Entei Cards Shop",
+    "when": "Dec 30 2025",
+    "where": "Taguig",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Martin Owen Gonzalez Calleja",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "d355be48-74f8-44dd-902b-d49bf52df995",
+    "title": "OCG Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Dec 28 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Richmond Reglo",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 2,
+        "deck": "Exosister",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "JC Evangelista",
+        "position": 3,
+        "deck": "D/D/D",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Toneah Vergara",
+        "position": 4,
+        "deck": "Yummy",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ca7eb0d8-cba1-49f1-addf-5d6e728170cf",
+    "title": "OCG Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Dec 28 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": "1",
+    "images": [],
+    "winners": [
+      {
+        "name": "Paulo Rillo",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Tristan Cruz",
+        "position": 3,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "e212a672-19ce-4d58-8626-b67188aa1580",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Dec 28 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Louren Vidad",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Angelo Tanalgo",
+        "position": 2,
+        "deck": "K9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Vincent Oblefias",
+        "position": 3,
+        "deck": "VSK9",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Edmar Canete",
+        "position": 4,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "id": "4509da69-3199-48ec-a4ca-3c8bceba3fae",
+        "title": "AE Pod 2",
+        "host": "ARKEN CardZone",
+        "when": "Dec 28 2025",
+        "where": "Ayala Malls Circuit Makati",
+        "format": "AE",
+        "official": true,
+        "rounds": 4,
+        "images": [],
+        "winners": [
+          {
+            "name": "Louren Vidad",
+            "position": 1,
+            "deck": "VSK9",
+            "deckImagePath": "1.webp"
+          },
+          {
+            "name": "Jude Thomas Cruz",
+            "position": 2,
+            "deck": "Blue-Eyes",
+            "deckImagePath": "2.webp"
+          },
+          {
+            "name": "Rover Lolarga",
+            "position": 3,
+            "deck": "",
+            "deckImagePath": "3.webp"
+          },
+          {
+            "name": "Edmar Canete",
+            "position": 4,
+            "deck": "Onomat Ryzeal",
+            "deckImagePath": "4.webp"
+          }
+        ],
+        "decks": [],
+        "notes": ""
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "4509da69-3199-48ec-a4ca-3c8bceba3fae",
+    "title": "AE Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Dec 28 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Louren Vidad",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Rover Lolarga",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Edmar Canete",
+        "position": 4,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "dfa488a5-1501-4198-82bb-d851be19b42d",
+    "title": "OCG Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Dec 14 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Paulo Rillo",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 3,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "1085231b-c788-4cf8-8bf2-c333eaea1bdc",
+    "title": "OCG Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Dec 14 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 2,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Paulo Rillo",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "0fdc827e-141e-4744-9323-4697d63fbd17",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Dec 14 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Ken Lennart Millar",
+        "position": 1,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jhon Gian Obiena",
+        "position": 2,
+        "deck": "Voiceless Voice",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "d4fbb702-a698-472e-823c-aac7c14d3cd5",
+    "title": "AE Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Dec 14 2025",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Edmar Canete",
+        "position": 1,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Manuel Tiong",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "d8e07409-71d6-4544-8abc-2c1dbd3f9b55",
+    "title": "Pawns & Pixel Casual Tournament",
+    "host": "Cebu Yu-Gi-Oh Community",
+    "when": "Dec 14 2025",
+    "where": "Cebu",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Earl Joseph Satina",
+        "position": 1,
+        "deck": "Dracotail Fiendsmith",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Thomas Jason Tipactipac",
+        "position": 2,
+        "deck": "Exosister",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  }
+]

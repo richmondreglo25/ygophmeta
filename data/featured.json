@@ -1,0 +1,140 @@
+{
+  "videos": {
+    "itemsPerSlide": 2,
+    "items": [
+      {
+        "id": "video-001",
+        "type": "video",
+        "title": "Ryzeal Vs Evil Twin",
+        "description": ["Match Highlights"],
+        "link": "https://www.youtube.com/watch?v=16KTwxJWi1s"
+      },
+      {
+        "id": "video-002",
+        "type": "video",
+        "title": "Dragonmaid Vs @Ignister",
+        "description": ["Match Highlights"],
+        "link": "https://www.youtube.com/watch?v=KQ3nJ9uuqGA"
+      },
+      {
+        "id": "video-003",
+        "type": "video",
+        "title": "Yubel Vs Chimera",
+        "description": ["Match Highlights"],
+        "link": "https://www.youtube.com/watch?v=po_sB9wyZ_w&t=733s"
+      }
+    ]
+  },
+  "banners": {
+    "itemsPerSlide": 3,
+    "items": [
+      {
+        "id": "shop-001",
+        "type": "shop",
+        "title": "RaVens Play Center",
+        "description": ["Get your game on, RaVens!!"],
+        "image": "/shops/ravensplaycenterlogo.webp"
+      },
+      {
+        "id": "shop-002",
+        "type": "shop",
+        "title": "Toy Shogun",
+        "description": ["Hobby Distributor and Store"],
+        "image": "/shops/toyshogunlogo.webp"
+      },
+      {
+        "id": "shop-003",
+        "type": "shop",
+        "title": "ARKEN CardZone",
+        "description": [
+          "Your Card Games shop for all your Official & Trading Card Needs!"
+        ],
+        "image": "/shops/arkencardzonelogo.webp"
+      },
+      {
+        "id": "shop-004",
+        "type": "shop",
+        "title": "Madcap Gaming Philippines",
+        "description": ["TCG/OCG, card games, board games and accessories"],
+        "image": "/shops/madcapgamingphilippineslogo.webp"
+      },
+      {
+        "id": "shop-005",
+        "type": "shop",
+        "title": "Kimochi Hobby Shop",
+        "description": ["We cater to your hobby needs!"],
+        "image": "/shops/kimochihobbyshoplogo.webp"
+      },
+      {
+        "id": "shop-006",
+        "type": "shop",
+        "title": "Aqua Card Games and Collectibles",
+        "description": ["Welcome to Aqua Card Games and Collectibles"],
+        "image": "/shops/aquacardgamesandcollectibleslogo.webp"
+      },
+      {
+        "id": "shop-007",
+        "type": "shop",
+        "title": "Courtside",
+        "description": ["Distributor of Yu-Gi-Oh! Cards"],
+        "image": "/shops/courtsidelogo.webp"
+      }
+    ]
+  },
+  "topPlayers": {
+    "itemsPerSlide": 2,
+    "items": [
+      {
+        "id": "tp-001",
+        "type": "player",
+        "title": "Louren Vidad",
+        "description": [
+          "Challenger Cup PH 2025 - Champion",
+          "Battle Nexus PH 2025 - Champion",
+          "Asia Championship Series Finals - Top 9"
+        ],
+        "image": "/people/lourenvidad.webp"
+      },
+      {
+        "id": "tp-002",
+        "type": "player",
+        "title": "Martin Owen Gonzalez Calleja",
+        "description": ["Asia WCQ 2025 Philippines - Champion"],
+        "image": "/people/martinowengonzalezcalleja.webp"
+      },
+      {
+        "id": "tp-003",
+        "type": "player",
+        "title": "Rob Reyan Yvan Belgica",
+        "description": ["Asia Campus League 2025 - Champion"],
+        "image": "/people/robreyanivanbelgica.webp"
+      },
+      {
+        "id": "tp-004",
+        "type": "player",
+        "title": "Rod Allan Bonavente",
+        "description": ["Asian Championship Series - Semi Finalist"],
+        "image": "/people/rodallanbonavente.webp"
+      }
+    ]
+  },
+  "people": {
+    "itemsPerSlide": 2,
+    "items": [
+      {
+        "id": "judge-001",
+        "type": "judge",
+        "title": "Carlito del Mundo Jr",
+        "description": ["Official Judge"],
+        "image": "/people/carlitodelmundojr.webp"
+      },
+      {
+        "id": "judge-002",
+        "type": "judge",
+        "title": "Clark Jasper Ramos",
+        "description": ["Official Judge"],
+        "image": "/people/clarkjasperramos.webp"
+      }
+    ]
+  }
+}

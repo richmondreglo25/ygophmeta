@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Richmond Reglo",
+    "ign": "Richmond",
+    "imagePath": "/people/richmondreglo.webp",
+    "gender": "male",
+    "city": "Manila",
+    "team": "MaiTeam",
+    "deck": ["Yummy"]
+  },
+  {
+    "name": "Friedrich Ferrer",
+    "ign": "RitoruMikan",
+    "gender": "male",
+    "city": "San Jose del Monte",
+    "team": "Team Kwasong",
+    "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
+    "others": "kalbs"
+  }
+]

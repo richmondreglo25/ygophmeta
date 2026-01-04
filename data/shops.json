@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Anaheim Hobby Shop ",
+    "logo": "/shops/anaheimhobbyshoplogo.webp",
+    "address": "-",
+    "openHours": "-",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "Gundam, Yugioh Trading Card Game, Anime, Collectible Toys"
+  },
+  {
+    "name": "Aqua Card Games and Collectibles",
+    "logo": "/shops/aquacardgamesandcollectibleslogo.webp",
+    "address": "R.V.V.88 Commercial Center Salitran Roads",
+    "googleMaps": "https://www.google.com/maps/place/Aqua+Card+Games+Cavite/data=!4m2!3m1!1s0x0:0xa0d5749c98330a4f?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 2:00 PM - 12:00 AM",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "Aqua Card Games and Collectibles is a popular card shop located in Cavite"
+  },
+  {
+    "name": "ARKEN CardZone",
+    "logo": "/shops/arkencardzonelogo.webp",
+    "address": "Unit L2031, 2/F, Ayala Malls Circuit, Makati, Philippines",
+    "googleMaps": "https://www.google.com/maps/place/ARKEN+CardZone/data=!4m2!3m1!1s0x0:0x4996c6d92888854b?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 10:00 AM - 10:00 PM",
+    "tournamentSchedule": [
+      { "day": "Sunday", "time": "1:00 PM", "event": "OCG Pod 1" },
+      { "day": "Sunday", "time": "5:00 PM", "event": "OCG Pod 2" },
+      { "day": "Sunday", "time": "1:00 PM", "event": "AE Pod 1" },
+      { "day": "Sunday", "time": "5:00 PM", "event": "AE Pod 2" }
+    ],
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "Your Card Games shop for all your Official & Trading Card Needs!"
+  },
+  {
+    "name": "Aurorus Collections",
+    "logo": "/shops/auroruscollectionslogo.webp",
+    "address": "B2 L3A Commonwealth Ave. Fairview Quezon City",
+    "googleMaps": "https://www.google.com/maps/place/Aurorus+Collections/data=!4m2!3m1!1s0x0:0x4e8272673159cecc?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 10:00 AM - 9:00 PM",
+    "about": "Aurorus Collections is a card shop located in Quezon City"
+  },
+  {
+    "name": "Courtside",
+    "logo": "/shops/courtsidelogo.webp",
+    "address": "Level 2, Robinsons Galleria, Ortigas Ave, Ortigas Center, Quezon City, Metro Manila",
+    "googleMaps": "https://www.google.com/maps/place/courtside+galleria/data=!4m2!3m1!1s0x3397c819beea3c03:0xb1514cb8874753f6?sa=X&ved=1t:242&ictx=111",
+    "openHours": "Mon-Sun: 10:00 AM - 10:00 PM",
+    "tournamentSchedule": [
+      { "day": "Saturday", "time": "1:00 PM", "event": "OCG Pod 1" },
+      { "day": "Saturday", "time": "5:00 PM", "event": "OCG Pod 2" },
+      { "day": "Saturday", "time": "1:00 PM", "event": "AE Pod 1" },
+      { "day": "Saturday", "time": "5:00 PM", "event": "AE Pod 2" }
+    ],
+    "accolades": ["Official Tournament Store (OTS)", "OTS Premium"],
+    "about": "Distributor of Cards (NBA, Yugioh, Vanguard, WS, SV, One Piece, Digimon, Dragon Ball, UA and Pokemon)"
+  },
+  {
+    "name": "Entei Cards Shop",
+    "logo": "/shops/enteicardsshoplogo.webp",
+    "address": "3803 general santos ave. Lower bicutan, Taguig, Philippines",
+    "openHours": "Mon-Sun: 10:00 AM - 9:00 PM",
+    "tournamentSchedule": [
+      { "day": "Sunday", "time": "1:00 PM", "event": "OCG Pod" },
+      { "day": "Sunday", "time": "1:00 PM", "event": "AE Pod" }
+    ],
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "We’re an official store handling Yu-Gi-Oh!, One Piece, Pokémon, Digimon, Cookie Run, Dragon Ball, and many more TCGs"
+  },
+  {
+    "name": "Hyuray Trading",
+    "logo": "/shops/hyuraytradinglogo.webp",
+    "address": "Concepcion Townhouse, A. Guisama St, Marikina, 1800 Metro Manila",
+    "googleMaps": "https://www.google.com/maps/place/Hyuray+Trading/data=!4m2!3m1!1s0x0:0x65918e167f15132?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 8:00 AM - 5:00 PM",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "Hobby items, Board Games and Card Games, Collectible toys, gadgets, Rare and Vintage stuff, Electronics security devices. Also Retro video games. 90's Meromies and Vibes"
+  },
+  {
+    "name": "Kimochi Hobby Shop",
+    "logo": "/shops/kimochihobbyshoplogo.webp",
+    "address": "2119 Recto Ave, Sampaloc, Manila, 1008 Metro Manila",
+    "googleMaps": "https://www.google.com/maps/place/Kimochi+Hobby+shop/data=!4m2!3m1!1s0x0:0x62cf08252935cd57?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 9:00 AM - 9:00 PM",
+    "tournamentSchedule": [
+      { "day": "Friday", "time": "4:00 PM", "event": "OCG Pod" },
+      { "day": "Friday", "time": "4:00 PM", "event": "AE Pod" }
+    ],
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "We cater to your hobby needs!"
+  },
+  {
+    "name": "Madcap Gaming Philippines",
+    "logo": "/shops/madcapgamingphilippineslogo.webp",
+    "address": "Unit 7 Maclane Center Manila S Rd. National Highway, Barangay San Antonio, San Pedro, Philippines",
+    "googleMaps": "https://www.google.com/maps/place/Madcap+Gaming+Philippines/data=!4m2!3m1!1s0x0:0x358e2027e47e34cb?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 11:00 AM - 10:00 PM",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "TCG/OCG, card games, board games and accessories"
+  },
+  {
+    "name": "RaVens Play Center",
+    "logo": "/shops/ravensplaycenterlogo.webp",
+    "address": "2nd Floor, TM Centerpoint, SJDM, 3023 Bulacan",
+    "googleMaps": "https://www.google.com/maps/place/Raven's+Play+Center/data=!4m2!3m1!1s0x0:0x942825d037441668?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 10:00 AM - 9:00 PM",
+    "tournamentSchedule": [
+      { "day": "Saturday", "time": "1:00 PM", "event": "OCG Pod 1" },
+      { "day": "Saturday", "time": "5:00 PM", "event": "OCG Pod 2" },
+      { "day": "Sunday", "time": "1:00 PM", "event": "AE Pod 1" },
+      { "day": "Sunday", "time": "5:00 PM", "event": "AE Pod 2" }
+    ],
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "RaVens Play Center is a card shop located in Bulacan"
+  },
+  {
+    "name": "Rogue's Passage",
+    "logo": "/shops/roguespassagelogo.webp",
+    "address": "Ground Floor, L'Plaza Building, Barangay Lagundi, Mexico, Pampanga, Lagundi, Philippines",
+    "googleMaps": "https://www.google.com/maps/place/Rogue's+Passage/data=!4m2!3m1!1s0x0:0xb7cae864acc44a3a?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Tue-Sun: 12:00 PM - 2:00 AM",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "A tabletop game shop located in Mexico, Pampanga"
+  },
+  {
+    "name": "Toy Shogun",
+    "logo": "/shops/toyshogunlogo.webp",
+    "address": "6 Temple Street Forest Hill Subdivision Gulod Novaliches QC",
+    "googleMaps": "https://www.google.com/maps/search/toy+shogun/@14.7094744,121.0223866,14z?entry=s&sa=X&ved=1t%3A199789",
+    "openHours": "Mon-Sun: 12:00 PM - 12:00 AM",
+    "accolades": ["Official Tournament Store (OTS)"],
+    "about": "Hobby Distributor and Store!"
+  }
+]

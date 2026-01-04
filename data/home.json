@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Welcome, Duelist.",
+    "description": "Track events, analyze the current meta, discover shops, and see other players. Stay informed, refine your strategy, and prepare to compete at the highest level.",
+    "link": "/about"
+  },
+  {
+    "title": "Meta Analysis",
+    "description": "Dive deep into the current Yu-Gi-Oh! meta with comprehensive analysis and statistics. Understand trends to stay ahead of the competition.",
+    "link": "/meta"
+  }
+]
