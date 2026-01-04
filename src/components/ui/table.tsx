@@ -4,12 +4,20 @@ import { cn } from "@/lib/utils";
 
 const Table = React.forwardRef<
   HTMLTableElement,
-  React.HTMLAttributes<HTMLTableElement>
->(({ className, ...props }, ref) => (
-  <div className="max-h-[65vh] relative w-full overflow-auto">
+  React.HTMLAttributes<HTMLTableElement> & { compact?: boolean }
+>(({ className, compact, ...props }, ref) => (
+  <div
+    className={`${
+      !compact ? "max-h-[65vh]" : ""
+    } relative w-full overflow-auto`}
+  >
     <table
       ref={ref}
-      className={cn("w-full caption-bottom text-sm", className)}
+      className={cn(
+        "w-full caption-bottom text-sm",
+        compact ? "data-table-compact" : "",
+        className
+      )}
       {...props}
     />
   </div>

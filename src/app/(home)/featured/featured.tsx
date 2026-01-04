@@ -15,7 +15,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { getTypeBadgeClass } from "@/utils/featured";
+import { getBadgeClass } from "@/utils/featured";
 import { useJsonData } from "@/app/data/api";
 import { Sparkle } from "lucide-react";
 import Autoplay, { AutoplayType } from "embla-carousel-autoplay";
@@ -129,7 +129,7 @@ function renderCarousel(
                   <CardTitle className="text-md flex justify-between items-center gap-2">
                     {item.title}
                     <span
-                      className={`text-xs capitalize px-2 py-1 rounded-sm ${getTypeBadgeClass(
+                      className={`text-xs capitalize px-2 py-1 rounded-sm ${getBadgeClass(
                         item.type
                       )}`}
                     >

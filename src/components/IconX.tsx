@@ -1,4 +1,5 @@
 import {
+  Ban,
   CalendarDays,
   ChartArea,
   Cog,
@@ -34,6 +35,8 @@ export function IconX(param: IconXParam) {
       return <UserRound size={param.size} />;
     case "judges":
       return <Gavel size={param.size} />;
+    case "banlist":
+      return <Ban size={param.size} />;
     case "info":
       return <Library size={param.size} />;
     case "host":

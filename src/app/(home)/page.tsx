@@ -13,7 +13,7 @@ import { getJsonPath } from "@/utils/enviroment";
 import Link from "next/link";
 import { useEventsByYearMonthRange, useJsonData } from "../data/api";
 import Featured from "./featured/featured";
-import { getTypeBadgeClass } from "@/utils/featured";
+import { getBadgeClass } from "@/utils/featured";
 import { ChartSpline, Crown, Megaphone, Slash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TopPlayers } from "../meta/(charts)/top-players";
@@ -79,7 +79,7 @@ export default function Home() {
                   {item.title}
                 </div>
                 <span
-                  className={`text-xs capitalize px-2 py-1 rounded-sm ${getTypeBadgeClass(
+                  className={`text-xs capitalize px-2 py-1 rounded-sm ${getBadgeClass(
                     "guide"
                   )}`}
                 >

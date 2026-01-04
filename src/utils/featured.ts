@@ -33,4 +33,4 @@ function getColor(type: string, key: keyof (typeof colors)["default"]) {
   return colors[colorType]?.[key] ?? colors.default[key];
 }
 
-export const getTypeBadgeClass = (t: string) => getColor(t, "badge");
+export const getBadgeClass = (t: string) => getColor(t, "badge");

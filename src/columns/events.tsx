@@ -1,5 +1,5 @@
 import { Event } from "@/types/event";
-import { getTypeBadgeClass } from "@/utils/featured";
+import { getBadgeClass } from "@/utils/featured";
 import { ColumnDef } from "@tanstack/react-table";
 import { format } from "date-fns";
 
@@ -37,7 +37,7 @@ export const columns: ColumnDef<Event>[] = [
       const type = row.original.official ? "official" : "unofficial";
       return (
         <span
-          className={`text-xs capitalize px-2 py-1 rounded-sm font-semibold ${getTypeBadgeClass(
+          className={`text-xs capitalize px-2 py-1 rounded-sm font-semibold ${getBadgeClass(
             type
           )}`}
         >

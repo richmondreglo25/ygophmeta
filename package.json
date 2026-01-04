@@ -10,6 +10,7 @@
     "start": "next start",
     "lint": "eslint",
     "load:decks": "node ./scripts/deck-loader.js",
+    "load:banlist": "node ./scripts/banlist-loader.js",
     "deploy": "npm run build && npx shx touch ./out/.nojekyll && npx gh-pages -d out",
     "11ty:build": "eleventy",
     "11ty:serve": "eleventy --serve",

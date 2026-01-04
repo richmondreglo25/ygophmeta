@@ -7,6 +7,7 @@ const tabs: NavigationTab[] = [
   { title: "Meta", path: "/meta", icon: "chart" },
   { title: "Shops", path: "/shops", icon: "shops" },
   { title: "Community", path: "/community", icon: "community" },
+  { title: "Banlist", path: "/banlist", icon: "banlist" },
   { title: "About", path: "/about", icon: "info" },
 ];
 

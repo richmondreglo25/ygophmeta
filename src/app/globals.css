@@ -206,3 +206,14 @@ a {
 #data-table td:not(:last-child) {
   border-right: solid 1px hsl(var(--border));
 }
+
+/* Compact table container */
+.data-table-compact {
+  font-size: 0.75rem !important;
+}
+
+/* Compact table header */
+.data-table-compact th,
+.data-table-compact td {
+  padding: 2px 10px !important;
+}

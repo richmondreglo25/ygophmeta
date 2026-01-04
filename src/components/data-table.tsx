@@ -46,6 +46,8 @@ interface DataTableProps<TData, TValue> {
   data: TData[];
   searchColumn?: string;
   onClick?: (row: TData) => void;
+  compact?: boolean;
+  pagination?: boolean;
 }
 
 export function DataTable<TData, TValue>({
@@ -53,6 +55,8 @@ export function DataTable<TData, TValue>({
   data,
   searchColumn,
   onClick,
+  compact = false,
+  pagination = true,
 }: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
@@ -71,7 +75,7 @@ export function DataTable<TData, TValue>({
     onColumnFiltersChange: setColumnFilters,
     getFilteredRowModel: getFilteredRowModel(),
     initialState: {
-      pagination: { pageSize: 20 },
+      pagination: { pageSize: pagination ? 20 : data.length },
     },
     state: {
       sorting,
@@ -117,7 +121,7 @@ export function DataTable<TData, TValue>({
         id="data-table-wrapper"
         className="border rounded-sm overflow-hidden"
       >
-        <Table id="data-table">
+        <Table id="data-table" compact={compact}>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
@@ -126,9 +130,6 @@ export function DataTable<TData, TValue>({
                     return <TableHead key={header.id} />;
                   const enableSorting = header.column.columnDef.enableSorting;
                   const isSorted = header.column.getIsSorted();
-                  const minWidthClass = header.column.columnDef.minSize
-                    ? `w-[${header.column.columnDef.minSize}px]`
-                    : "";
                   return (
                     <TableHead
                       key={header.id}
@@ -145,11 +146,7 @@ export function DataTable<TData, TValue>({
                     >
                       <span
                         className={`flex justify-start items-center gap-1`}
-                        style={
-                          minWidthClass
-                            ? { minWidth: header.column.columnDef.minSize }
-                            : {}
-                        }
+                        style={{ minWidth: header.column.columnDef.minSize }}
                       >
                         {flexRender(
                           header.column.columnDef.header,
@@ -205,64 +202,66 @@ export function DataTable<TData, TValue>({
       </div>
 
       {/* Pagination Controls */}
-      <div className="flex items-center justify-center sm:justify-between flex-wrap gap-2 py-4">
-        <div className="items-center gap-2 hidden sm:flex">
-          <span className="text-xs">Rows per page:</span>
-          <select
-            className="border rounded-sm px-2 py-1 text-xs bg-background"
-            value={table.getState().pagination.pageSize}
-            onChange={(e) => table.setPageSize(Number(e.target.value))}
-          >
-            {[10, 20, 50, 100].map((pageSize) => (
-              <option key={pageSize} value={pageSize}>
-                {pageSize}
-              </option>
-            ))}
-          </select>
+      {pagination && (
+        <div className="flex items-center justify-center sm:justify-between flex-wrap gap-2 py-4">
+          <div className="items-center gap-2 hidden sm:flex">
+            <span className="text-xs">Rows per page:</span>
+            <select
+              className="border rounded-sm px-2 py-1 text-xs bg-background"
+              value={table.getState().pagination.pageSize}
+              onChange={(e) => table.setPageSize(Number(e.target.value))}
+            >
+              {[10, 20, 50, 100].map((pageSize) => (
+                <option key={pageSize} value={pageSize}>
+                  {pageSize}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              className="rounded-sm"
+              onClick={() => table.setPageIndex(0)}
+              disabled={!table.getCanPreviousPage()}
+            >
+              <ChevronFirst size={12} />
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              className="rounded-sm"
+              onClick={() => table.previousPage()}
+              disabled={!table.getCanPreviousPage()}
+            >
+              <ChevronLeft size={12} />
+            </Button>
+            <span className="px-2 text-xs whitespace-nowrap">
+              {table.getState().pagination.pageIndex + 1} of{" "}
+              {table.getPageCount()}
+            </span>
+            <Button
+              variant="outline"
+              size="sm"
+              className="rounded-sm"
+              onClick={() => table.nextPage()}
+              disabled={!table.getCanNextPage()}
+            >
+              <ChevronRight size={12} />
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              className="rounded-sm"
+              onClick={() => table.setPageIndex(table.getPageCount() - 1)}
+              disabled={!table.getCanNextPage()}
+            >
+              <ChevronLast size={12} />
+            </Button>
+          </div>
         </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <Button
-            variant="outline"
-            size="sm"
-            className="rounded-sm"
-            onClick={() => table.setPageIndex(0)}
-            disabled={!table.getCanPreviousPage()}
-          >
-            <ChevronFirst size={12} />
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="rounded-sm"
-            onClick={() => table.previousPage()}
-            disabled={!table.getCanPreviousPage()}
-          >
-            <ChevronLeft size={12} />
-          </Button>
-          <span className="px-2 text-xs whitespace-nowrap">
-            {table.getState().pagination.pageIndex + 1} of{" "}
-            {table.getPageCount()}
-          </span>
-          <Button
-            variant="outline"
-            size="sm"
-            className="rounded-sm"
-            onClick={() => table.nextPage()}
-            disabled={!table.getCanNextPage()}
-          >
-            <ChevronRight size={12} />
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="rounded-sm"
-            onClick={() => table.setPageIndex(table.getPageCount() - 1)}
-            disabled={!table.getCanNextPage()}
-          >
-            <ChevronLast size={12} />
-          </Button>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

@@ -52,6 +52,10 @@
     "imagePath": "dracotailbrandedmitsurugi.webp"
   },
   {
+    "name": "Dracotail Fiendsmith",
+    "imagePath": "dracotailfiendsmith.webp"
+  },
+  {
     "name": "Elvennotes",
     "imagePath": "elvennotes.webp"
   },
@@ -76,6 +80,10 @@
     "imagePath": "hero.webp"
   },
   {
+    "name": "K9",
+    "imagePath": "k9.webp"
+  },
+  {
     "name": "Kewl Tune",
     "imagePath": "kewltune.webp"
   },
@@ -94,6 +102,10 @@
   {
     "name": "Mementotlan",
     "imagePath": "mementotlan.webp"
+  },
+  {
+    "name": "Mikanko",
+    "imagePath": "mikanko.webp"
   },
   {
     "name": "Mikanko Fiendsmith",
