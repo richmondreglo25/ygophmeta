@@ -62,12 +62,7 @@ export default function Events() {
               </div>
             </AlertDescription>
           </Alert>
-          <DataTable
-            columns={columns}
-            data={events}
-            searchColumn="title"
-            onClick={onClick}
-          />
+          <DataTable columns={columns} data={events} onClick={onClick} />
           <Alert variant="info">
             <AlertTitle className="font-semibold flex items-center gap-2">
               <SquareArrowOutUpRight size={12} />

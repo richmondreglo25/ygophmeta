@@ -13,6 +13,7 @@ export const columns: ColumnDef<Event>[] = [
     accessorKey: "host",
     header: "Host",
     minSize: 140,
+    enableColumnFilter: true,
   },
   {
     accessorKey: "when",
@@ -27,6 +28,7 @@ export const columns: ColumnDef<Event>[] = [
     accessorKey: "format",
     header: "Format",
     minSize: 50,
+    enableColumnFilter: true,
   },
   {
     accessorKey: "official",

@@ -5,6 +5,8 @@ import {
   ColumnFiltersState,
   flexRender,
   getCoreRowModel,
+  getFacetedRowModel,
+  getFacetedUniqueValues,
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
@@ -32,6 +34,8 @@ import {
   ChevronUpIcon,
 } from "lucide-react";
 import { Input } from "./ui/input";
+import { DataTableColumnSelectFilter } from "./ui/data-table-column-filter";
+import { pluralize } from "@/utils/words";
 
 export type ColumnFilter = {
   column: string;
@@ -40,7 +44,7 @@ export type ColumnFilter = {
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
-  searchColumn?: string; // Column key to apply search filter.
+  searchColumn?: string;
   onClick?: (row: TData) => void;
 }
 
@@ -60,6 +64,8 @@ export function DataTable<TData, TValue>({
     columns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
+    getFacetedRowModel: getFacetedRowModel(),
+    getFacetedUniqueValues: getFacetedUniqueValues(),
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
     onColumnFiltersChange: setColumnFilters,
@@ -75,6 +81,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div>
+      {/* Column-specific search input */}
       {searchColumn && (
         <div className="mb-4 flex gap-2">
           <Input
@@ -89,6 +96,23 @@ export function DataTable<TData, TValue>({
           />
         </div>
       )}
+
+      {/* Column dropdown filters row */}
+      <div className="flex gap-2 flex-wrap mb-4">
+        {table
+          .getAllLeafColumns()
+          .map((column) =>
+            column.getCanFilter() ? (
+              <DataTableColumnSelectFilter
+                key={column.id}
+                column={column}
+                placeholder={`All ${pluralize(column.id, true)}`}
+              />
+            ) : null
+          )}
+      </div>
+
+      {/* Table */}
       <div
         id="data-table-wrapper"
         className="border rounded-sm overflow-hidden"
@@ -180,6 +204,7 @@ export function DataTable<TData, TValue>({
         </Table>
       </div>
 
+      {/* Pagination Controls */}
       <div className="flex items-center justify-center sm:justify-between flex-wrap gap-2 py-4">
         <div className="items-center gap-2 hidden sm:flex">
           <span className="text-xs">Rows per page:</span>
