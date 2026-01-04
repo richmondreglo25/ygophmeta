@@ -213,7 +213,6 @@ export function AddEventFormDrawer({ onClose }: Props) {
                 <HostQuickSearch
                   name="host"
                   placeholder="Host"
-                  minCharCount={3}
                   onValueChange={(e) => handleChange(e)}
                   className="text-gray-700 bg-white rounded-sm"
                   maxLength={80}
@@ -323,7 +322,6 @@ export function AddEventFormDrawer({ onClose }: Props) {
                         <PlayerQuickSearch
                           name="name"
                           placeholder="Name"
-                          minCharCount={3}
                           onValueChange={(e) => handleWinnerChange(idx, e)}
                           className="text-gray-700 bg-white rounded-sm"
                           maxLength={80}
