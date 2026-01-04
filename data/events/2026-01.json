@@ -1,0 +1,143 @@
+[
+  {
+    "id": "635d9443-cef3-4a56-b88b-47ad1d289fbd",
+    "title": "OCG Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Jan 03 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Richmond Reglo",
+        "position": 1,
+        "deck": "Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kim Mark Parane",
+        "position": 2,
+        "deck": "Odion",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "JM Caisip",
+        "position": 3,
+        "deck": "Sky Striker",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Raphael Perez",
+        "position": 4,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "0ab8d4cf-abbf-4b15-ac21-6943175f7ba1",
+    "title": "OCG Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Jan 03 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Alfonzo Almazar",
+        "position": 1,
+        "deck": "Mikanko",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Richmond Reglo",
+        "position": 2,
+        "deck": "Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Owen Cruz",
+        "position": 3,
+        "deck": "Branded",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Warren Heremo",
+        "position": 4,
+        "deck": "Blackwing",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "dbc61cea-0640-4ba7-986b-bcbbf9c40925",
+    "title": "OCG Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Jan 01 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Aian Maculata",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5a113dc6-491a-4630-9c7d-410cac281cfe",
+    "title": "AE Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Jan 01 2026",
+    "where": "Cavite",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jon Pad",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ffa69110-0ebc-44b5-b06c-b9da1a8233bc",
+    "title": "AE Pod 1",
+    "host": "Entei Cards Shop",
+    "when": "Jan 03 2026",
+    "where": "Taguig",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Chrizald Asama",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  }
+]
