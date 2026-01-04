@@ -12,7 +12,7 @@ import {
   ScrollText,
   Slash,
 } from "lucide-react";
-import { Event, EventDeck, EventWinner } from "@/columns/events";
+import { Event, EventDeck, EventWinner } from "@/types/event";
 import { getEventImagePath, getImagePath } from "@/utils/enviroment";
 import { IconX } from "@/components/IconX";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
@@ -26,7 +26,7 @@ import {
 } from "@/components/ui/accordion";
 import { TableChart } from "@/components/charts/table-chart";
 import playersData from "@/../public/data/players.json"; // Import players.json
-import { Player } from "@/columns/players";
+import { Player } from "@/types/player";
 
 export async function generateStaticParams() {
   const eventsDir = path.join(process.cwd(), "public/data/events");

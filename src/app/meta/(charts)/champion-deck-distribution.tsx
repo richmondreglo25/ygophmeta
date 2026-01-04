@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import type { Event } from "@/columns/events";
+import { Event } from "@/types/event";
 import { getGraphColors } from "@/utils/colors";
 import { ChartPie } from "@/components/charts/pie-chart";
 import { Info, Slash } from "lucide-react";

@@ -2,7 +2,7 @@ import { useState, useMemo, useRef, useEffect, ChangeEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { useJsonData } from "@/app/data/api";
 import { getJsonPath } from "@/utils/enviroment";
-import { Player } from "@/columns/players";
+import { Player } from "@/types/player";
 
 type PlayerQuickSearchProps = {
   name?: string;

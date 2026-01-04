@@ -1,6 +1,6 @@
 "use client";
 
-import { EventDeck } from "@/columns/events";
+import { EventDeck } from "@/types/event";
 
 /**
  * Calculate deck percentage.

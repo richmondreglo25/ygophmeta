@@ -2,7 +2,7 @@ import { useState, useMemo, useRef, useEffect, ChangeEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { useJsonData } from "@/app/data/api";
 import { getJsonPath } from "@/utils/enviroment";
-import { Shop } from "@/columns/shops";
+import { Shop } from "@/types/shop";
 
 type HostQuickSearchProps = {
   name?: string;

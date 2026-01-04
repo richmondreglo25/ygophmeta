@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import { DataTable } from "@/components/data-table";
-import { columns, Shop } from "@/columns/shops";
+import { columns } from "@/columns/shops";
 import { getJsonPath } from "@/utils/enviroment";
 import { useJsonData } from "../data/api";
 import { Loading } from "@/components/loading";
 import { ShopDrawer, useShopDrawer } from "@/components/shop-drawer";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Info } from "lucide-react";
+import { Shop } from "@/types/shop";
 
 export default function Shops() {
   const { data, loading } = useJsonData<Shop[]>(getJsonPath("shops.json"));

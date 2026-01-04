@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Event } from "@/columns/events";
-import type { Player } from "@/columns/players";
+import type { Event } from "@/types/event";
+import type { Player } from "@/types/player";
 import { Info, Slash } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { getImagePath } from "@/utils/enviroment";

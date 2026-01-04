@@ -8,7 +8,7 @@ import {
   DrawerTitle,
 } from "@/components/ui/drawer";
 import { X } from "lucide-react";
-import { Event, EventDesc, EventWinner } from "@/columns/events";
+import { Event, EventDesc, EventWinner } from "@/types/event";
 
 // Drawer hook for open/close state
 export function useEventDrawer(initialOpen = false) {

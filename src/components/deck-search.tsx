@@ -2,7 +2,7 @@ import { useState, useMemo, useRef, useEffect, ChangeEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { useJsonData } from "@/app/data/api";
 import { getJsonPath } from "@/utils/enviroment";
-import type { Shop as Deck } from "@/types/deck"; // Deck type is Shop
+import { Deck } from "@/types/deck"; // Deck type is Shop
 
 type DeckQuickSearchProps = {
   name?: string;

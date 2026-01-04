@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Event } from "@/columns/events";
+import { Event } from "@/types/event";
 import { getJsonPath } from "@/utils/enviroment";
 import { useEffect, useState } from "react";
 
