@@ -24,9 +24,9 @@ const varelaRound = Varela_Round({
 export const metadata: Metadata = {
   title: "Yu-Gi-Oh! PH Meta",
   icons: {
-    icon: `./favicon.ico`,
-    shortcut: `./favicon.ico`,
-    apple: `./apple-touch-icon.png`,
+    icon: `/favicon.ico`,
+    shortcut: `/favicon.ico`,
+    apple: `/apple-touch-icon.png`,
   },
 };
 
