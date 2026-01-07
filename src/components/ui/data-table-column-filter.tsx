@@ -14,13 +14,12 @@ export function DataTableColumnSelectFilter<TData, TValue>({
     return null;
   }
 
-  // Always convert unique values to strings for select options
+  // Always convert unique values to strings for select options and sort them
   const uniqueValues = Array.from(
     column.getFacetedUniqueValues?.().keys() ?? []
-  ).map(String);
-
-  console.log(column);
-  console.log(column.getFacetedUniqueValues?.());
+  )
+    .map(String)
+    .sort((a, b) => a.localeCompare(b));
 
   // Ensure the value is a string (or empty string for undefined)
   const filterValue = column.getFilterValue();

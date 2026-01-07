@@ -213,7 +213,10 @@ a {
 }
 
 /* Compact table header */
-.data-table-compact th,
-.data-table-compact td {
+.data-table-compact th {
   padding: 2px 10px !important;
+}
+
+.data-table-compact td {
+  padding: 0px !important;
 }

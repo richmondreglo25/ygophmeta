@@ -102,19 +102,23 @@ export function DataTable<TData, TValue>({
       )}
 
       {/* Column dropdown filters row */}
-      <div className="flex gap-2 flex-wrap mb-4">
-        {table
+      {(() => {
+        const filterableColumns = table
           .getAllLeafColumns()
-          .map((column) =>
-            column.getCanFilter() ? (
+          .filter((column) => column.columnDef.enableColumnFilter);
+
+        return filterableColumns.length > 0 ? (
+          <div className="flex gap-2 flex-wrap mb-4">
+            {filterableColumns.map((column) => (
               <DataTableColumnSelectFilter
                 key={column.id}
                 column={column}
                 placeholder={`All ${pluralize(column.id, true)}`}
               />
-            ) : null
-          )}
-      </div>
+            ))}
+          </div>
+        ) : null;
+      })()}
 
       {/* Table */}
       <div

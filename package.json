@@ -11,7 +11,7 @@
     "lint": "eslint",
     "load:decks": "node ./scripts/deck-loader.js",
     "load:banlist": "node ./scripts/banlist-loader.js",
-    "deploy": "npm run build && npx shx touch ./out/.nojekyll && npx gh-pages -d out",
+    "deploy": "npm run build && npx shx touch ./out/.nojekyll && npx gh-pages -d out -verbose",
     "11ty:build": "eleventy",
     "11ty:serve": "eleventy --serve",
     "11ty:deploy": "npm run 11ty:build && npx shx touch ./_output/.nojekyll && npx gh-pages -d _output"
