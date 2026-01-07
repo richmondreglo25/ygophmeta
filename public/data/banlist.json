@@ -1,6 +1,7 @@
 [
   {
     "format": "ocg",
+    "effectiveFrom": "01/01/2026",
     "list": [
       {
         "title": "Forbidden",
@@ -748,7 +749,107 @@
     ]
   },
   {
+    "format": "ae",
+    "effectiveFrom": "01/01/2026",
+    "list": [
+      {
+        "title": "Forbidden",
+        "cards": [
+          { "name": "Amazoness Archer", "type": "Effect Monster" },
+          { "name": "Cannon Soldier", "type": "Effect Monster" },
+          { "name": "Fiber Jar", "type": "Effect Monster" },
+          { "name": "Magical Scientist", "type": "Effect Monster" },
+          { "name": "Abyss Dweller", "type": "XYZ Monster" },
+          { "name": "Number 67: Pair-a-Dice Smasher", "type": "XYZ Monster" },
+          { "name": "Apollousa, Bow of the Goddess", "type": "Link Monster" },
+          { "name": "Butterfly Dagger - Elma", "type": "Spell Card" },
+          { "name": "Card of Safe Return", "type": "Spell Card" },
+          { "name": "Cold Wave", "type": "Spell Card" },
+          { "name": "Confiscation", "type": "Spell Card" },
+          { "name": "Delinquent Duo", "type": "Spell Card" },
+          { "name": "Dimension Fusion", "type": "Spell Card" },
+          { "name": "Giant Trunade", "type": "Spell Card" },
+          { "name": "Heavy Storm", "type": "Spell Card" },
+          { "name": "Kaiser Colosseum", "type": "Spell Card" },
+          { "name": "Last Will", "type": "Spell Card" },
+          { "name": "Mass Driver", "type": "Spell Card" },
+          { "name": "Metamorphosis", "type": "Spell Card" },
+          { "name": "Mirage of Nightmare", "type": "Spell Card" },
+          { "name": "Painful Choice", "type": "Spell Card" },
+          { "name": "Pot of Greed", "type": "Spell Card" },
+          { "name": "Premature Burial", "type": "Spell Card" },
+          { "name": "Smoke Grenade of the Thief", "type": "Spell Card" },
+          { "name": "The Forceful Sentry", "type": "Spell Card" },
+          { "name": "Imperial Order", "type": "Trap Card" },
+          { "name": "Last Turn", "type": "Trap Card" },
+          { "name": "Life Equalizer", "type": "Trap Card" },
+          { "name": "Magical Explosion", "type": "Trap Card" },
+          { "name": "Royal Oppression", "type": "Trap Card" },
+          { "name": "Summon Limit", "type": "Trap Card" },
+          { "name": "Trap Dustshoot", "type": "Trap Card" },
+          { "name": "Ultimate Offering", "type": "Trap Card" }
+        ]
+      },
+      {
+        "title": "Limited",
+        "cards": [
+          { "name": "Cupsy☆Yummy", "type": "Effect Monster" },
+          { "name": "Diabellstar the Black Witch", "type": "Effect Monster" },
+          { "name": "Dimension Shifter", "type": "Effect Monster" },
+          { "name": "Ext Ryzeal", "type": "Effect Monster" },
+          { "name": "K9-66a Jokul", "type": "Effect Monster" },
+          { "name": "Maliss <P> Dormouse", "type": "Effect Monster" },
+          { "name": "Maliss <P> March Hare", "type": "Effect Monster" },
+          { "name": "Maliss <P> White Rabbit", "type": "Effect Monster" },
+          { "name": "Snake-Eye Ash", "type": "Effect Monster" },
+          { "name": "Snake-Eyes Poplar", "type": "Effect Monster" },
+          { "name": "Sword Ryzeal", "type": "Effect Monster" },
+          { "name": "Tenpai Dragon Chundra", "type": "Effect Monster" },
+          { "name": "Herald of the Arc Light", "type": "Synchro Monster" },
+          { "name": "Bonfire", "type": "Spell Card" },
+          { "name": "Crossout Designator", "type": "Spell Card" },
+          { "name": "Foolish Burial", "type": "Spell Card" },
+          { "name": "Gold Sarcophagus", "type": "Spell Card" },
+          { "name": "Harpie's Feather Duster", "type": "Spell Card" },
+          { "name": "Ketu Dracotail", "type": "Spell Card" },
+          { "name": "Maliss in Underground", "type": "Spell Card" },
+          { "name": "Monster Reborn", "type": "Spell Card" },
+          { "name": "Obedience Schooled", "type": "Spell Card" },
+          { "name": "Pre-Preparation of Rites", "type": "Spell Card" },
+          { "name": "Reinforcement of the Army", "type": "Spell Card" },
+          { "name": "Runick Fountain", "type": "Spell Card" },
+          { "name": "Sangen Summoning", "type": "Spell Card" },
+          { "name": "Terraforming", "type": "Spell Card" },
+          { "name": "WANTED: Seeker of Sinful Spoils", "type": "Spell Card" },
+          { "name": "Gozen Match", "type": "Trap Card" },
+          { "name": "Rivalry of Warlords", "type": "Trap Card" },
+          { "name": "Skill Drain", "type": "Trap Card" }
+        ]
+      },
+      {
+        "title": "Semi-Limited",
+        "cards": [
+          { "name": "Ash Blossom & Joyous Spring", "type": "Effect Monster" },
+          { "name": "Fiendsmith Engraver", "type": "Effect Monster" },
+          { "name": "Ice Ryzeal", "type": "Effect Monster" },
+          { "name": "K9-17 Izuna", "type": "Effect Monster" },
+          { "name": "Maxx \"C\"", "type": "Effect Monster" },
+          { "name": "PSY-Framegear Gamma", "type": "Effect Monster" },
+          { "name": "Vanquish Soul Razen", "type": "Effect Monster" },
+          { "name": "Yummy★Snatchy", "type": "Link Monster" },
+          { "name": "Called by the Grave", "type": "Spell Card" },
+          { "name": "Fiendsmith's Tract", "type": "Spell Card" },
+          { "name": "One for One", "type": "Spell Card" },
+          { "name": "Pot of Extravagance", "type": "Spell Card" },
+          { "name": "Pot of Prosperity", "type": "Spell Card" },
+          { "name": "Red Reboot", "type": "Trap Card" }
+        ]
+      }
+    ]
+  },
+  {
     "format": "tcg",
+    "effectiveFrom": "10/27/2025",
     "list": [
       {
         "title": "Forbidden",

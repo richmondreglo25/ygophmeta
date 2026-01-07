@@ -45,5 +45,6 @@ export type BanlistSection = {
  */
 export type Banlist = {
   format: BanlistFormat;
+  effectiveFrom: string;
   list: BanlistSection[];
 }[];

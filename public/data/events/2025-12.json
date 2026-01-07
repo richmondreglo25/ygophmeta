@@ -1989,5 +1989,38 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "046c4796-c50f-41e3-872d-2369739bae74",
+    "title": "Davao YUGIOH Ranking Tournament S23.T47",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Dec 20 2025",
+    "where": "G-Hub Davao",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rave Nave",
+        "position": 1,
+        "deck": "Dracotail Branded Mitsurugi",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Quinn Lance Cuarez",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Adrian Gabriel Tan",
+        "position": 3,
+        "deck": "Sky Striker",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]

@@ -16,7 +16,7 @@ import { useJsonData } from "../data/api";
 import { getJsonPath } from "@/utils/enviroment";
 
 export default function BanlistPage() {
-  const formats: BanlistFormat[] = ["ocg", "tcg"];
+  const formats: BanlistFormat[] = ["ocg", "ae", "tcg"];
   const { data: banlist = [], loading } = useJsonData<Banlist>(
     getJsonPath("banlist.json")
   );
@@ -39,12 +39,22 @@ export default function BanlistPage() {
         className="flex flex-col"
         defaultValue={formats}
       >
-        {banlist.map(({ format, list }) => (
+        {banlist.map(({ format, effectiveFrom, list }) => (
           <AccordionItem key={format} value={format}>
             <AccordionTrigger>
               <div className="flex items-center gap-2">
                 <TextAlignJustify size={12} />
-                <h2 className="text-sm font-semibold uppercase">{format}</h2>
+                {/* <h2 className="text-sm font-semibold uppercase">
+                  {format} Effective From: {effectiveFrom}
+                </h2> */}
+
+                <h2 className="text-sm font-semibold tracking-wide flex flex-col sm:flex-row sm:items-center gap-1">
+                  <span className="text-primary uppercase">{format}</span>
+                  <span className="text-xs font-medium text-gray-500 sm:ml-2 italic">
+                    Effective From:{" "}
+                    <span className="font-semibold">{effectiveFrom}</span>
+                  </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent>

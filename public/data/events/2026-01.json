@@ -139,5 +139,554 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "c9edda21-bb82-4fe1-8397-8fde4a181894",
+    "title": "OCG Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Jan 04 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "JC Evangelista",
+        "position": 1,
+        "deck": "D/D/D",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Paulo Rillo",
+        "position": 3,
+        "deck": "Exosister",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "32ee5d9d-3c7f-48f3-8747-8158b5f1c9a3",
+    "title": "OCG Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Jan 04 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Frederico Miguel David",
+        "position": 1,
+        "deck": "Artmage",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "JC Evangelista",
+        "position": 2,
+        "deck": "D/D/D",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 3,
+        "deck": "Mitsurugi",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "2d9d8b1a-5cd9-43a0-8268-df1b9031ef29",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Jan 04 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Ken Lennart Millar",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 2,
+        "deck": "Crystron K9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 3,
+        "deck": "Mitsurugi K9",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Edmar Canete",
+        "position": 4,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "eef1a0f8-b403-461c-ad6a-1d9d91fa8e69",
+    "title": "AE Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Jan 04 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Edmar Canete",
+        "position": 2,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Ken Lennart Millar",
+        "position": 3,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Vincent Oblefias",
+        "position": 4,
+        "deck": "Purely",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "19943728-f428-4f5a-9832-46b22b1b3439",
+    "title": "OCG Pod 1-A",
+    "host": "Courtside",
+    "when": "Jan 03 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "John Christopher Evangelista",
+        "position": 1,
+        "deck": "D/D/D",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ae0a5de9-c2b8-422b-a15e-3fabc27d97bc",
+    "title": "OCG Pod 1-B",
+    "host": "Courtside",
+    "when": "Jan 03 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi K9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "83eb6f29-a0b8-4abe-8725-d6088c5a98b3",
+    "title": "OCG Pod 2-A",
+    "host": "Courtside",
+    "when": "Jan 03 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Marky Mojica",
+        "position": 1,
+        "deck": "Furhire",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "7a775eba-4edd-42c2-88c3-27c86f77f7a1",
+    "title": "OCG Pod 2-B",
+    "host": "Courtside",
+    "when": "Jan 03 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Van Joseph Lipana",
+        "position": 1,
+        "deck": "Solfachord Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "75003a42-1849-4547-aa55-c4b2557f74fc",
+    "title": "AE Pod 1-A",
+    "host": "Courtside",
+    "when": "Jan 03 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Banjo Buitizon",
+        "position": 1,
+        "deck": "Dracotail",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "d1265cbf-ec6f-4c2f-97fc-79e0e6ba0f42",
+    "title": "AE Pod 1-B",
+    "host": "Courtside",
+    "when": "Jan 03 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Louren Vidad",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "80b263e6-ec7a-4fe4-91a2-e3b37006346c",
+    "title": "AE Pod 2-A",
+    "host": "Courtside",
+    "when": "Jan 03 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Edmar Cañete",
+        "position": 1,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "c4e3eb91-a392-418f-9120-0b34badadc8c",
+    "title": "AE Pod 2-B",
+    "host": "Courtside",
+    "when": "Jan 03 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Keith Occidental",
+        "position": 1,
+        "deck": "Dracotail",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "8c042804-a074-42e5-8c8a-aebfeae8a81f",
+    "title": "OCG Pod 1",
+    "host": "Entei Cards Shop",
+    "when": "Jan 04 2026",
+    "where": "Taguig",
+    "format": "OCG",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Martin Owen Gonzalez Calleja",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Lyle",
+        "position": 2,
+        "deck": "Mermail Atlantean",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Saide",
+        "position": 3,
+        "deck": "Gladiator Beast Tri-Brigade",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "John Paul",
+        "position": 4,
+        "deck": "Branded",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "692d68a5-3145-4ff1-bf5b-aab59be4e1a0",
+    "title": "Season 4: Burst Protocol Seasonal Tournament",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Jan 03 2026",
+    "where": "Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Uriel Ray Dolorfino",
+        "position": 1,
+        "deck": "Radiant Typhoon Fiendsmith",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kristofer Edward Bondoc",
+        "position": 2,
+        "deck": "Artmage Azamina",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "78ed67ac-d5b7-4db4-bd7b-e9d50c98949f",
+    "title": "Season 4: Burst Protocol Seasonal Tournament",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Jan 04 2026",
+    "where": "IloIlo",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Kyle Chino Marquinez",
+        "position": 1,
+        "deck": "Artmage",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "8e32888a-3f71-4fb8-9458-d1db5f3b33da",
+    "title": "OCG Pod 1",
+    "host": "Rogue's Passage",
+    "when": "Jan 04 2026",
+    "where": "Pampanga",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Carl Adrian Fernando",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Marion Abujen",
+        "position": 2,
+        "deck": "Maliss",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Ronil Aguja",
+        "position": 3,
+        "deck": "Ryzeal",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "51ff706b-19d7-4d2f-b402-51b52a2dbf74",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Jan 04 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Mesiah Henceforth",
+        "position": 1,
+        "deck": "D/D/D",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Ruki",
+        "position": 2,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Albert",
+        "position": 3,
+        "deck": "Dogmatika",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Kenneth C",
+        "position": 4,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "32fe403e-75ae-49cb-bd4e-bb54db917192",
+    "title": "OCG Pod 2",
+    "host": "Toy Shogun",
+    "when": "Jan 04 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "John Rey Balderama",
+        "position": 1,
+        "deck": "Elvennotes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Leandro",
+        "position": 2,
+        "deck": "Dracotail",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Ruki",
+        "position": 3,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Charlie",
+        "position": 4,
+        "deck": "Yummy",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "93a8eddb-f491-48be-b347-4c0b9f538c19",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Jan 02 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "John Rey Balderama",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jade",
+        "position": 2,
+        "deck": "Mimighoul",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Clarin",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Marvin",
+        "position": 4,
+        "deck": "Dragunity",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]

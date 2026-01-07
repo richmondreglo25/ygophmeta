@@ -88,13 +88,20 @@ export function AddProfileFormDrawer({ onClose }: Props) {
       ([, value]) => value === form.gender
     )?.[0];
 
+    // Trim all string fields in form.
+    const trimmedForm = Object.fromEntries(
+      Object.entries(form).map(([k, v]) =>
+        typeof v === "string" ? [k, v.trim()] : [k, v]
+      )
+    );
+
     return {
-      id: profileId,
-      ...form,
-      imagePath: getImagePath(form.name),
-      gender,
-      deck: decks.filter((d) => d.trim() !== ""),
       type: profileType,
+      id: profileId,
+      ...trimmedForm,
+      imagePath: `/people/${getImagePath(form.name)}`,
+      gender,
+      deck: decks.map((d) => d.trim()).filter((d) => d !== ""),
     };
   }
 
