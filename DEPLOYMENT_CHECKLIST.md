@@ -34,9 +34,9 @@ npm run 11ty:deploy
 
 ## ✅ Post-Deployment Verification
 
-- [ ] Visit your GitHub Pages site
-- [ ] Check homepage loads: `https://yourusername.github.io/ygophmeta/`
-- [ ] Test an event page: `https://yourusername.github.io/ygophmeta/events/<event-id>.html`
+- [ ] Visit your site at `https://ygophmeta.com`
+- [ ] Check homepage loads: `https://ygophmeta.com/`
+- [ ] Test an event page: `https://ygophmeta.com/events/<event-id>.html`
 - [ ] Verify all event details display correctly
 - [ ] Check responsive design on mobile
 
@@ -69,11 +69,9 @@ npm run 11ty:deploy
 
 ## 🎯 URL Structure
 
-Base URL: `https://yourusername.github.io/ygophmeta/`
+Base URL: `https://ygophmeta.com/`
 
 | Page  | URL                       |
 | ----- | ------------------------- |
 | Home  | `/` or `/index.html`      |
 | Event | `/events/<event-id>.html` |
-
-Replace `yourusername` with your GitHub username and `ygophmeta` with your repository name.

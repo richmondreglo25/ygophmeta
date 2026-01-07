@@ -11,8 +11,9 @@ export function isDevelopment() {
  * @returns {string} The root path.
  */
 export function getRootPath() {
-  const isProd = process.env.NODE_ENV === "production";
-  return isProd ? "/ygophmeta" : "";
+  return "";
+  // const isProd = process.env.NODE_ENV === "production";
+  // return isProd ? "/ygophmeta" : "";
 }
 
 /**

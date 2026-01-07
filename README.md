@@ -1,8 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# YGO PH Meta
+
+Yu-Gi-Oh! Philippines Meta Database  
+A comprehensive database for the Yu-Gi-Oh! TCG community in the Philippines, featuring events, players, judges, shops, and banlist information.
+
+**Live site:** [https://ygophmeta.com](https://ygophmeta.com)
+
+---
+
+## Features
+
+- 🏆 **Events**: Browse and search official and community Yu-Gi-Oh! events in the Philippines.
+- 👤 **Players**: Player profiles, rankings, and statistics.
+- 🧑‍⚖️ **Judges**: List of certified judges.
+- 🏪 **Shops**: Directory of local game stores.
+- 🚫 **Banlist**: Up-to-date banlist information.
+- 🔎 **Search & Filter**: Powerful search and filter for all data tables.
+- 📱 **Responsive**: Mobile-friendly and fast.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### 2. Run the development server
 
 ```bash
 npm run dev
@@ -14,23 +45,55 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+
+- `app/` - Next.js app directory (pages, layouts, etc.)
+- `src/components/` - Reusable React components
+- `src/utils/` - Utility functions (environment, banlist, etc.)
+- `public/` - Static assets (images, CNAME, etc.)
+- `data/` - Static data files (events, players, etc.)
+
+---
+
+## Deployment
+
+This project is deployed as a static site to GitHub Pages at [https://ygophmeta.com](https://ygophmeta.com).
+
+### Custom Domain
+
+- The `public/CNAME` file contains the custom domain for GitHub Pages deployment.
+- DNS is configured to point `ygophmeta.com` to GitHub Pages.
+
+### Build & Export
+
+```bash
+npm run build
+npm run export
+```
+
+The static site will be output to the `out/` directory.
+
+---
+
+## Contributing
+
+Contributions are welcome!  
+Feel free to open issues or pull requests for features, bug fixes, or data updates.
+
+---
+
+## License
+
+[MIT](LICENSE)
+
+---
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
