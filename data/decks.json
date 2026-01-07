@@ -4,6 +4,10 @@
     "imagePath": "artmage.webp"
   },
   {
+    "name": "Artmage Azamina",
+    "imagePath": "artmageazamina.webp"
+  },
+  {
     "name": "Blackwing",
     "imagePath": "blackwing.webp"
   },
@@ -24,6 +28,10 @@
     "imagePath": "centurion.webp"
   },
   {
+    "name": "Crystron K9",
+    "imagePath": "crystronk9.webp"
+  },
+  {
     "name": "D/D/D",
     "imagePath": "ddd.webp"
   },
@@ -34,6 +42,10 @@
   {
     "name": "Dinomorphia",
     "imagePath": "dinomorphia.webp"
+  },
+  {
+    "name": "Dogmatika",
+    "imagePath": "dogmatika.webp"
   },
   {
     "name": "DoomZ",
@@ -72,8 +84,16 @@
     "imagePath": "fiendsmith.webp"
   },
   {
+    "name": "Furhire",
+    "imagePath": "furhire.webp"
+  },
+  {
     "name": "Gimmick Puppet",
     "imagePath": "gimmickpuppet.webp"
+  },
+  {
+    "name": "Gladiator Beast Tri-Brigade",
+    "imagePath": "gladiatorbeasttribrigade.webp"
   },
   {
     "name": "HERO",
@@ -104,6 +124,10 @@
     "imagePath": "mementotlan.webp"
   },
   {
+    "name": "Mermail Atlantean",
+    "imagePath": "mermailatlantean.webp"
+  },
+  {
     "name": "Mikanko",
     "imagePath": "mikanko.webp"
   },
@@ -122,6 +146,10 @@
   {
     "name": "Mitsurugi Fiendsmith",
     "imagePath": "mitsurugifiendsmith.webp"
+  },
+  {
+    "name": "Mitsurugi K9",
+    "imagePath": "mitsurugik9.webp"
   },
   {
     "name": "Mitsurugi Orcust",
@@ -148,8 +176,16 @@
     "imagePath": "orcust.webp"
   },
   {
+    "name": "Purely",
+    "imagePath": "purely.webp"
+  },
+  {
     "name": "Radiant Typhoon",
     "imagePath": "radianttyphoon.webp"
+  },
+  {
+    "name": "Radiant Typhoon Fiendsmith",
+    "imagePath": "radianttyphoonfiendsmith.webp"
   },
   {
     "name": "Raidraptor",
@@ -174,6 +210,10 @@
   {
     "name": "Sky Striker",
     "imagePath": "skystriker.webp"
+  },
+  {
+    "name": "Solfachord Yummy",
+    "imagePath": "solfachordyummy.webp"
   },
   {
     "name": "Swordsoul",

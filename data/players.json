@@ -53,6 +53,16 @@
     "deck": ["White Forest Azamina, Rishid, Elvennotes"]
   },
   {
+    "name": "Frederico Miguel David",
+    "ign": "DaathSenpai",
+    "imagePath": "/people/fredericomigueldavid.webp",
+    "gender": "MALE",
+    "city": "San Juan City",
+    "team": "Dragion",
+    "deck": ["K9 Crystron", "Yummy", "Artmage"],
+    "others": ""
+  },
+  {
     "name": "Louren Vidad",
     "ign": "Loumen",
     "imagePath": "/people/lourenvidad.webp",
