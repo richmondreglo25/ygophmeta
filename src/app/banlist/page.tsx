@@ -44,10 +44,6 @@ export default function BanlistPage() {
             <AccordionTrigger>
               <div className="flex items-center gap-2">
                 <TextAlignJustify size={12} />
-                {/* <h2 className="text-sm font-semibold uppercase">
-                  {format} Effective From: {effectiveFrom}
-                </h2> */}
-
                 <h2 className="text-sm font-semibold tracking-wide flex flex-col sm:flex-row sm:items-center gap-1">
                   <span className="text-primary uppercase">{format}</span>
                   <span className="text-xs font-medium text-gray-500 sm:ml-2 italic">
