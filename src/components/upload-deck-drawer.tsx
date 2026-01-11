@@ -285,8 +285,7 @@ export function UploadDeckDrawer({ onClose }: Props) {
                 <AlertDescription className="text-sm pt-1">
                   Please upload the deck image and details for the winner.
                   <br />
-                  For best display, use a <b>1:1 aspect ratio</b> and{" "}
-                  <b>.webp</b> format.
+                  For best display, use a <b>1:1 aspect ratio</b>.
                 </AlertDescription>
               </Alert>
               {/* Submit Email Danger Alert */}

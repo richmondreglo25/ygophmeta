@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 import fs from "fs/promises";
+import sharp from "sharp";
 
 // POST handler for deck image upload.
 export async function POST(req: NextRequest) {
@@ -21,7 +22,6 @@ export async function POST(req: NextRequest) {
   }
 
   // Build upload directory and file path.
-  const ext = deckImage.name.split(".").pop() || "webp";
   const uploadDir = path.join(
     process.cwd(),
     "public",
@@ -29,15 +29,17 @@ export async function POST(req: NextRequest) {
     "events",
     eventId
   );
-  const filename = `${winnerPosition}.${ext}`;
+  const filename = `${winnerPosition}.webp`;
   const filepath = path.join(uploadDir, filename);
 
   // Ensure upload directory exists.
   await fs.mkdir(uploadDir, { recursive: true });
 
-  // Save file to disk.
+  // Convert and save file as .webp using sharp.
   const arrayBuffer = await deckImage.arrayBuffer();
-  await fs.writeFile(filepath, Buffer.from(arrayBuffer));
+  const buffer = Buffer.from(arrayBuffer);
+  const webpBuffer = await sharp(buffer).webp().toBuffer();
+  await fs.writeFile(filepath, webpBuffer);
 
   // Optionally, save metadata (eventId, winnerPosition, filename) to a JSON file or database here.
 

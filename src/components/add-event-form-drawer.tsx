@@ -422,7 +422,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   winner.
                   <br />
                   For best display on the website and phone, use a{" "}
-                  <b>16:9 aspect ratio</b> and <b>.webp</b> format.
+                  <b>16:9 aspect ratio</b>.
                   <br />
                   <span className="italic">
                     This helps the site load images faster and look better on

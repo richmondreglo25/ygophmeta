@@ -320,8 +320,7 @@ export function AddProfileFormDrawer({ onClose }: Props) {
                 <AlertDescription className="text-sm pt-1">
                   You may upload a profile image.
                   <br />
-                  For best display, use a <b>1:1 aspect ratio</b> and{" "}
-                  <b>.webp</b> format.
+                  For best display, use a <b>1:1 aspect ratio</b>.
                   <br />
                   <span className="italic">
                     This helps the site load images faster and look better on
