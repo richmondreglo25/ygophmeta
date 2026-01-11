@@ -4,6 +4,9 @@ import { useJsonData } from "@/app/data/api";
 import { getJsonPath } from "@/utils/enviroment";
 import { Shop } from "@/types/shop";
 
+// Add import for community type if available, else use any
+type Community = { name: string };
+
 type HostQuickSearchProps = {
   name?: string;
   placeholder?: string;
@@ -28,9 +31,12 @@ export function HostQuickSearch({
   maxLength = 80,
   required,
 }: HostQuickSearchProps) {
-  const { data: shops, loading } = useJsonData<Shop[]>(
+  const { data: shops, loading: loadingShops } = useJsonData<Shop[]>(
     getJsonPath("shops.json")
   );
+  const { data: communities, loading: loadingCommunities } = useJsonData<
+    Community[]
+  >(getJsonPath("community.json"));
 
   const [value, setValue] = useState("");
   const [query, setQuery] = useState("");
@@ -38,23 +44,33 @@ export function HostQuickSearch({
   const inputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
+  // Combine shops and communities for search
+  const combinedList = useMemo(() => {
+    const shopList =
+      shops?.map((s) => ({ name: s.name, type: "Shop" as const })) ?? [];
+    const communityList =
+      communities?.map((c) => ({ name: c.name, type: "Community" as const })) ??
+      [];
+    return [...shopList, ...communityList];
+  }, [shops, communities]);
+
   const filtered = useMemo(() => {
     if (!query) return [];
     if (query.length < minCharCount) return [];
-    return shops.filter((s) =>
-      s.name.toLowerCase().includes(query.toLowerCase())
+    return combinedList.filter((item) =>
+      item.name.toLowerCase().includes(query.toLowerCase())
     );
-  }, [shops, query, minCharCount]);
+  }, [combinedList, query, minCharCount]);
 
   // Handle host selection from dropdown.
   // Returns a synthetic event to match the input's onChange signature.
-  function onHostSelect(shop: Shop) {
-    setValue(shop.name);
+  function onHostSelect(item: { name: string }) {
+    setValue(item.name);
     setQuery("");
     setShowDropdown(false);
 
     const syntheticEvent = {
-      target: { name, value: shop.name },
+      target: { name, value: item.name },
     } as React.ChangeEvent<HTMLInputElement>;
     onValueChange?.(syntheticEvent);
   }
@@ -94,7 +110,7 @@ export function HostQuickSearch({
           onChange={handleInputChange}
           onFocus={() => query && setShowDropdown(true)}
           className={className}
-          disabled={loading}
+          disabled={loadingShops || loadingCommunities}
           autoComplete="off"
           maxLength={maxLength}
           required={required}
@@ -106,13 +122,14 @@ export function HostQuickSearch({
           className="absolute left-0 right-0 z-10 border rounded-sm bg-background mt-1 divide-y shadow-lg"
           style={{ maxHeight: "240px", overflowY: "auto" }}
         >
-          {filtered.map((shop) => (
+          {filtered.map((item) => (
             <div
-              key={shop.name}
+              key={item.type + "-" + item.name}
               className="flex flex-row items-center gap-2 cursor-pointer hover:bg-accent p-2"
-              onClick={() => onHostSelect(shop)}
+              onClick={() => onHostSelect(item)}
             >
-              <span className="text-xs font-medium">{shop.name}</span>
+              <span className="text-xs font-medium">{item.name}</span>
+              <span className="text-[10px] text-gray-400">({item.type})</span>
             </div>
           ))}
         </div>

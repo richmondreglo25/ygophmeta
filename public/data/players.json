@@ -9,6 +9,16 @@
     "deck": ["HERO"]
   },
   {
+    "name": "Carl Adrian Fernando",
+    "ign": "Gaijiin.Kai",
+    "imagePath": "/people/carladrianfernando.webp",
+    "gender": "MALE",
+    "city": "San Fernando",
+    "team": "",
+    "deck": ["Yummy"],
+    "others": ""
+  },
+  {
     "name": "Friedrich Ferrer",
     "ign": "RitoruMikan",
     "imagePath": "/people/friedrichferrer.webp",

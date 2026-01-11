@@ -11,6 +11,7 @@ const alertVariants = cva(
         default: "bg-background text-foreground p-5",
         info: "border-blue-300 bg-blue-50 text-blue-900 rounded-sm",
         warning: "border-red-300 bg-red-50 text-red-900 rounded-sm",
+        success: "border-green-300 bg-green-50 text-green-900 rounded-sm",
       },
     },
     defaultVariants: {
