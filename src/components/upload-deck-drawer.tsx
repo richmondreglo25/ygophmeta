@@ -356,7 +356,9 @@ export function UploadDeckDrawer({ onClose }: Props) {
                   variant="submit"
                   type="submit"
                   className="rounded-sm"
-                  disabled={uploading || !selectedWinner || !file}
+                  disabled={
+                    uploading || !selectedWinner || (isDevelopment() && !file)
+                  }
                 >
                   {uploading ? "Submitting..." : "Submit"}
                 </Button>

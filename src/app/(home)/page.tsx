@@ -17,7 +17,7 @@ import { getBadgeClass } from "@/utils/featured";
 import { ChartSpline, Crown, Megaphone, Slash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TopPlayers } from "../meta/(charts)/top-players";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -26,6 +26,8 @@ import {
 } from "@/components/ui/accordion";
 import { DeckDistribution } from "../meta/(charts)/deck-distribution";
 import { Player } from "@/types/player";
+import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
+import { UploadDeckDrawer } from "@/components/upload-deck-drawer";
 
 function getCurrentMonthYearLabel(date = new Date()) {
   return date.toLocaleString("default", { month: "long", year: "numeric" });
@@ -58,6 +60,26 @@ export default function Home() {
   const { data: players = [], loading: playersLoading } = useJsonData<Player[]>(
     getJsonPath("players.json")
   );
+
+  // Drawer open states
+  const [openProfileFormDrawer, setOpenProfileFormDrawer] = useState(false);
+  const [openDeckDrawer, setOpenDeckDrawer] = useState(false);
+
+  function handleOpenProfileFormDrawer() {
+    setOpenProfileFormDrawer(true);
+  }
+
+  function handleCloseProfileFormDrawer() {
+    setOpenProfileFormDrawer(false);
+  }
+
+  function handleOpenDeckDrawer() {
+    setOpenDeckDrawer(true);
+  }
+
+  function handleCloseDeckDrawer() {
+    setOpenDeckDrawer(false);
+  }
 
   if (loading || eventsLoading || playersLoading) {
     return <Loading />;
@@ -99,7 +121,77 @@ export default function Home() {
             )}
           </Card>
         ))}
+
+        {/* Profile Submission Card */}
+        <Card className="flex flex-col p-0 rounded-sm border-[1px] shadow-none select-none">
+          <CardHeader className="p-5">
+            <CardTitle className="text-md flex justify-between items-center gap-2">
+              <div className="flex items-center gap-2">
+                <Megaphone size={12} className="text-green-700" />
+                Submit Your Player Profile
+              </div>
+              <span
+                className={`text-xs capitalize px-2 py-1 rounded-sm ${getBadgeClass(
+                  "guide"
+                )}`}
+              >
+                Profile
+              </span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm p-5 pt-0 flex-1">
+            Add yourself to the player database and get recognized in the
+            rankings and event results.
+          </CardContent>
+          <CardFooter className="flex justify-end text-sm p-5 pt-0 mt-auto">
+            <Button
+              variant="submit"
+              className="rounded-sm"
+              onClick={handleOpenProfileFormDrawer}
+            >
+              Submit Profile
+            </Button>
+          </CardFooter>
+        </Card>
+
+        {/* Deck Submission Card */}
+        <Card className="flex flex-col p-0 rounded-sm border-[1px] shadow-none select-none">
+          <CardHeader className="p-5">
+            <CardTitle className="text-md flex justify-between items-center gap-2">
+              <div className="flex items-center gap-2">
+                <Megaphone size={12} className="text-purple-700" />
+                Submit a Deck
+              </div>
+              <span
+                className={`text-xs capitalize px-2 py-1 rounded-sm ${getBadgeClass(
+                  "guide"
+                )}`}
+              >
+                Deck
+              </span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm p-5 pt-0 flex-1">
+            Upload your deck to share with the community and appear in deck
+            statistics.
+          </CardContent>
+          <CardFooter className="flex justify-end text-sm p-5 pt-0 mt-auto">
+            <Button
+              variant="submit"
+              className="rounded-sm"
+              onClick={handleOpenDeckDrawer}
+            >
+              Submit Deck
+            </Button>
+          </CardFooter>
+        </Card>
       </div>
+
+      {/* Drawers */}
+      {openProfileFormDrawer && (
+        <AddProfileFormDrawer onClose={handleCloseProfileFormDrawer} />
+      )}
+      {openDeckDrawer && <UploadDeckDrawer onClose={handleCloseDeckDrawer} />}
 
       <Accordion
         type="multiple"
