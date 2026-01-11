@@ -688,5 +688,44 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "473fc57b-9686-42b8-8923-a5cc8a20c4e6",
+    "title": "OCG Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Jan 10 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Friedrich Ferrer",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Richmond Reglo",
+        "position": 2,
+        "deck": "Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Cedric Soriao",
+        "position": 3,
+        "deck": "Lunalight",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Owen Cruz",
+        "position": 4,
+        "deck": "Exosister",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
