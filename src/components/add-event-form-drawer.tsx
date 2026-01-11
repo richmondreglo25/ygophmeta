@@ -3,7 +3,7 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { EventFormat } from "@/enums/event-format";
-import { Heart, Megaphone, Plus, Trash2, X } from "lucide-react";
+import { Megaphone, Plus, Trash2, X } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import {
   Accordion,
@@ -428,18 +428,6 @@ export function AddEventFormDrawer({ onClose }: Props) {
                     This helps the site load images faster and look better on
                     all devices.
                   </span>
-                </AlertDescription>
-              </Alert>
-
-              {/* Decklist Image Notice */}
-              <Alert variant="info">
-                <AlertTitle className="font-semibold flex items-center gap-2">
-                  <Heart size={14} />
-                  <span>Thank you for your contribution!</span>
-                </AlertTitle>
-                <AlertDescription className="text-sm pt-1">
-                  We will reach out to players regarding their decklist images
-                  if needed.
                 </AlertDescription>
               </Alert>
 

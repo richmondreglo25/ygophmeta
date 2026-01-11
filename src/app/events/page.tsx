@@ -84,7 +84,7 @@ export default function Events() {
               duelists!
             </AlertDescription>
           </Alert>
-          <div className="flex justify-end">
+          <div className="flex justify-end gap-2">
             <Button
               variant="submit"
               className="rounded-sm"
@@ -95,7 +95,7 @@ export default function Events() {
             {/* Example button to open UploadDeckDrawer */}
             <Button
               variant="submit"
-              className="ml-2"
+              className="rounded-sm"
               onClick={() => handleOpenUploadDeckDrawer()}
             >
               <span>Submit Deck</span>

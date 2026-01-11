@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import { X, Megaphone, Heart } from "lucide-react";
+import { X, Megaphone } from "lucide-react";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Button } from "./ui/button";
@@ -15,8 +15,15 @@ import {
   SelectValue,
 } from "./ui/select";
 import { useEventsByYearMonthRange } from "@/app/data/api";
+import { getImagePath, isDevelopment } from "@/utils/enviroment";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
+import Image from "next/image";
 
-// Drawer props.
 type Props = {
   onClose: () => void;
 };
@@ -53,7 +60,9 @@ export function UploadDeckDrawer({ onClose }: Props) {
   const [selectedWinner, setSelectedWinner] = useState("");
   const [file, setFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
-  const [success, setSuccess] = useState(false);
+
+  // State for copy feedback.
+  const [copied, setCopied] = useState(false);
 
   // Filter events by selected host.
   const filteredEvents = useMemo(
@@ -70,23 +79,56 @@ export function UploadDeckDrawer({ onClose }: Props) {
   // Winner list for selected event.
   const winners = useMemo(() => selectedEvent?.winners ?? [], [selectedEvent]);
 
+  // Get winner object by position.
+  const winnerObj = winners.find((w) => String(w.position) === selectedWinner);
+
+  // Helper to generate the deck submission JSON.
+  function getDeckJson() {
+    return {
+      eventId: selectedEventId,
+      eventTitle: selectedEvent?.title,
+      host: selectedHost,
+      winner: winnerObj
+        ? { name: winnerObj.name, position: winnerObj.position }
+        : undefined,
+      fileName: file?.name,
+    };
+  }
+
   // Handle form submission.
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setUploading(true);
-    setSuccess(false);
 
-    const formData = new FormData();
-    formData.append("eventId", selectedEventId);
-    formData.append("winnerPosition", selectedWinner); // Use position instead of name.
-    if (file) formData.append("deckImage", file);
+    const deckJson = getDeckJson();
 
-    await fetch("/api/upload-deck", { method: "POST", body: formData });
+    if (isDevelopment()) {
+      const formData = new FormData();
+      formData.append("eventId", selectedEventId);
+      formData.append("winnerPosition", selectedWinner); // Use position instead of name.
+      if (file) formData.append("deckImage", file);
 
-    setTimeout(() => {
+      await fetch("/api/upload-deck", { method: "POST", body: formData });
+
+      setTimeout(() => {
+        setUploading(false);
+      }, 1000);
+    } else {
+      // Open email client with JSON in body.
+      const subject = encodeURIComponent(
+        `Deck Submission: ${selectedEvent?.title || selectedEventId}`
+      );
+      const body = encodeURIComponent(
+        `I consent to my deck data being used and displayed publicly on ygophmeta.\n\nDeck Submission Data:\n${JSON.stringify(
+          deckJson,
+          null,
+          2
+        )}`
+      );
+      const mailto = `mailto:richmondreglo25@gmail.com?subject=${subject}&body=${body}`;
+      window.open(mailto, "_blank");
       setUploading(false);
-      setSuccess(true);
-    }, 1200);
+    }
   }
 
   // Show loading indicator if events are loading.
@@ -113,13 +155,10 @@ export function UploadDeckDrawer({ onClose }: Props) {
                 <span>Notice</span>
               </AlertTitle>
               <AlertDescription className="text-sm pt-1">
-                Please upload the deck image and details for the winner.
-                <br />
-                For best display, use a <b>1:1 aspect ratio</b> and <b>.webp</b>{" "}
-                format.
+                By submitting this form, you permit this site to use and display
+                your submitted data publicly.
               </AlertDescription>
             </Alert>
-            {/* Upload form. */}
             <form
               onSubmit={handleSubmit}
               className="flex flex-col gap-5 w-full"
@@ -166,7 +205,7 @@ export function UploadDeckDrawer({ onClose }: Props) {
                   <SelectContent>
                     {filteredEvents.map((event) => (
                       <SelectItem key={event.id} value={event.id}>
-                        {event.title} - {event.when} - {event.id}
+                        {event.title} - {event.when}
                       </SelectItem>
                     ))}
                   </SelectContent>
@@ -190,25 +229,119 @@ export function UploadDeckDrawer({ onClose }: Props) {
                         key={winner.position}
                         value={String(winner.position)}
                       >
-                        {winner.position} - {winner.name} - {winner.deck}
+                        {winner.position} - {winner.name}
                       </SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
               </label>
               {/* Deck Image input. */}
-              <label className="flex flex-col gap-1 text-sm font-medium">
-                Deck Image
-                <Input
-                  type="file"
-                  name="deckImage"
-                  accept="image/*"
-                  className="w-full text-xs"
-                  required
-                  disabled={!selectedWinner}
-                  onChange={(e) => setFile(e.target.files?.[0] || null)}
-                />
-              </label>
+              {isDevelopment() && (
+                <label className="flex flex-col gap-1 text-sm font-medium">
+                  Deck Image
+                  <Input
+                    type="file"
+                    name="deckImage"
+                    accept="image/*"
+                    className="w-full text-xs"
+                    required
+                    disabled={!selectedWinner}
+                    onChange={(e) => setFile(e.target.files?.[0] || null)}
+                  />
+                </label>
+              )}
+              {/* Sample images wrapped in Accordion and made full width */}
+              <Accordion type="single" collapsible className="w-full mt-2">
+                <AccordionItem value="sample-images">
+                  <AccordionTrigger className="text-sm font-medium px-0 py-2 rounded-sm">
+                    Sample Deck Images
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="grid grid-cols-2 gap-4 w-full">
+                      <Image
+                        src={getImagePath("events/demo/1.webp")}
+                        alt="Sample Deck 1"
+                        width={512}
+                        height={512}
+                        className="object-cover border rounded-sm w-full h-auto"
+                      />
+                      <Image
+                        src={getImagePath("events/demo/2.webp")}
+                        alt="Sample Deck 2"
+                        width={512}
+                        height={512}
+                        className="object-cover border rounded-sm w-full h-auto"
+                      />
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              {/* Deck Image Notice */}
+              <Alert variant="info">
+                <AlertTitle className="font-semibold flex items-center gap-2">
+                  <Megaphone size={14} />
+                  <span>Deck Image Upload</span>
+                </AlertTitle>
+                <AlertDescription className="text-sm pt-1">
+                  Please upload the deck image and details for the winner.
+                  <br />
+                  For best display, use a <b>1:1 aspect ratio</b> and{" "}
+                  <b>.webp</b> format.
+                </AlertDescription>
+              </Alert>
+              {/* Submit Email Danger Alert */}
+              <Alert variant="warning">
+                <AlertTitle className="font-semibold">
+                  Important: Email Submission Required
+                </AlertTitle>
+                <AlertDescription className="text-sm pt-2 select-text">
+                  Clicking <b>Submit</b> will open your email client to send
+                  your deck data.
+                  <br />
+                  <span className="font-semibold">
+                    If this does not work, you can manually email your deck
+                    details to:
+                  </span>
+                  <div className="mt-2">
+                    <b>Email:</b> richmondreglo25@gmail.com
+                    <br />
+                    <b>Subject:</b> Deck Upload Request: ygophmeta
+                  </div>
+                  <div className="mt-2">
+                    Please include your consent and the deck JSON data shown
+                    below.
+                  </div>
+                </AlertDescription>
+              </Alert>
+              {/* Sample JSON Preview */}
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="json-preview">
+                  <AccordionTrigger className="text-sm font-medium px-0 py-2 rounded-sm">
+                    Show JSON Preview
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="relative">
+                      <Button
+                        type="button"
+                        size="xs"
+                        variant="secondary"
+                        className="absolute top-2 right-2 z-10 rounded-sm"
+                        onClick={() => {
+                          const json = JSON.stringify(getDeckJson(), null, 2);
+                          navigator.clipboard.writeText(json);
+                          setCopied(true);
+                          setTimeout(() => setCopied(false), 1500);
+                        }}
+                      >
+                        {copied ? "Copied!" : "Copy"}
+                      </Button>
+                      <div className="bg-gray-100 border border-gray-300 text-xs font-mono p-4 whitespace-pre-wrap rounded-sm">
+                        {JSON.stringify(getDeckJson(), null, 2)}
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
               {/* Form actions. */}
               <div className="flex justify-end gap-2">
                 <Button
@@ -226,21 +359,9 @@ export function UploadDeckDrawer({ onClose }: Props) {
                   className="rounded-sm"
                   disabled={uploading || !selectedWinner || !file}
                 >
-                  {uploading ? "Uploading..." : "Upload"}
+                  {uploading ? "Submitting..." : "Submit"}
                 </Button>
               </div>
-              {/* Success alert. */}
-              {success && (
-                <Alert variant="success">
-                  <AlertTitle className="font-semibold flex items-center gap-2">
-                    <Heart size={14} />
-                    <span>Deck uploaded successfully!</span>
-                  </AlertTitle>
-                  <AlertDescription className="text-sm pt-1">
-                    Thank you for your contribution!
-                  </AlertDescription>
-                </Alert>
-              )}
             </form>
           </div>
         </div>

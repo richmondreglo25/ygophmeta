@@ -65,8 +65,15 @@ export default function Meta() {
         </AlertDescription>
       </Alert>
 
-      {/* Data Extraction Chart Accordion (collapsed by default) */}
-      <Accordion type="single" collapsible defaultValue="data-extraction-chart">
+      {/* Meta Insights Accordions */}
+      <Accordion
+        type="multiple"
+        defaultValue={[
+          "top-players",
+          "champion-deck-distribution",
+          "deck-distribution",
+        ]}
+      >
         <AccordionItem value="data-extraction-chart">
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
@@ -78,17 +85,6 @@ export default function Meta() {
             <DataExtractionChart events={events} />
           </AccordionContent>
         </AccordionItem>
-      </Accordion>
-
-      {/* Meta Insights Accordions */}
-      <Accordion
-        type="multiple"
-        defaultValue={[
-          "top-players",
-          "champion-deck-distribution",
-          "deck-distribution",
-        ]}
-      >
         <AccordionItem value="top-players">
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
