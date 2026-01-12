@@ -19,6 +19,16 @@
     "others": ""
   },
   {
+    "name": "Cris Joshua Curiano",
+    "ign": "Huswa",
+    "imagePath": "/people/crisjoshuacuriano.webp",
+    "gender": "MALE",
+    "city": "Olongapo City",
+    "team": "",
+    "deck": ["Vanquish Soul"],
+    "others": "Asia WCQ 2025 Philippines - Top 8"
+  },
+  {
     "name": "Friedrich Ferrer",
     "ign": "RitoruMikan",
     "imagePath": "/people/friedrichferrer.webp",
@@ -80,6 +90,15 @@
     "city": "Quezon City",
     "team": "Flex City",
     "deck": ["Ryzeal"]
+  },
+  {
+    "name": "Mark Jericho Surio",
+    "ign": "Exterio",
+    "imagePath": "/people/markjerichosurio.webp",
+    "gender": "MALE",
+    "city": "Bulacan",
+    "team": "",
+    "deck": ["Solfachord Yummy"]
   },
   {
     "name": "Martin Owen Gonzalez Calleja",

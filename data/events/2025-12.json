@@ -1600,7 +1600,7 @@
         "deckImagePath": "1.webp"
       },
       {
-        "name": "Huswa Curiano",
+        "name": "Cris Joshua Curiano",
         "position": 2,
         "deck": "VSK9",
         "deckImagePath": "2.webp"
@@ -2021,6 +2021,58 @@
       }
     ],
     "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "a98034c9-7ca9-4ea1-a022-b064e76431c3",
+    "title": "BATANG GAPO DUELISTS CASUAL TOURNAMENT",
+    "host": "Save Point Cafe",
+    "when": "Jan 11 2026",
+    "where": "Olongapo City, Zambales",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Cris Joshua Curiano",
+        "position": 1,
+        "deck": "K9 Dracotail Vanquish Soul",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Neil Bryan Bucsit",
+        "position": 2,
+        "deck": "Jurrac",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "K9 Dracotail Vanquish Soul",
+        "count": 1
+      },
+      {
+        "name": "Jurrac",
+        "count": 1
+      },
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Dracotail Branded",
+        "count": 1
+      },
+      {
+        "name": "Dragunity",
+        "count": 1
+      },
+      {
+        "name": "Elvennotes",
+        "count": 1
+      }
+    ],
     "notes": ""
   }
 ]
