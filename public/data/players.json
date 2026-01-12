@@ -19,6 +19,16 @@
     "others": ""
   },
   {
+    "name": "Cris Joshua Curiano",
+    "ign": "Huswa",
+    "imagePath": "/people/crisjoshuacuriano.webp",
+    "gender": "MALE",
+    "city": "Olongapo City",
+    "team": "",
+    "deck": ["Vanquish Soul"],
+    "others": "Asia WCQ 2025 Philippines - Top 8"
+  },
+  {
     "name": "Friedrich Ferrer",
     "ign": "RitoruMikan",
     "imagePath": "/people/friedrichferrer.webp",
@@ -73,6 +83,16 @@
     "others": ""
   },
   {
+    "name": "Jude Thomas Cruz",
+    "ign": "DudeItsJude",
+    "imagePath": "/people/judethomascruz.webp",
+    "gender": "MALE",
+    "city": "Paranaque",
+    "team": "Dragon",
+    "deck": ["Blue-Eyes", "Exosister"],
+    "others": "Challenger Cup 2025 PH Top 16"
+  },
+  {
     "name": "Louren Vidad",
     "ign": "Loumen",
     "imagePath": "/people/lourenvidad.webp",
@@ -80,6 +100,15 @@
     "city": "Quezon City",
     "team": "Flex City",
     "deck": ["Ryzeal"]
+  },
+  {
+    "name": "Mark Jericho Surio",
+    "ign": "Exterio",
+    "imagePath": "/people/markjerichosurio.webp",
+    "gender": "MALE",
+    "city": "Bulacan",
+    "team": "",
+    "deck": ["Solfachord Yummy"]
   },
   {
     "name": "Martin Owen Gonzalez Calleja",
@@ -103,6 +132,7 @@
   {
     "name": "Owen Cruz",
     "ign": "DmaN14",
+    "imagePath": "/people/owencruz.webp",
     "gender": "MALE",
     "city": "Bulacan",
     "team": "Team Kwasong",
