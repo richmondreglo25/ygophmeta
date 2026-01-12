@@ -91,6 +91,16 @@
     "deck": ["Radiant Typhoon"]
   },
   {
+    "name": "Marvin Tamayo",
+    "ign": "Redfield",
+    "imagePath": "/people/marvintamayo.webp",
+    "gender": "MALE",
+    "city": "Caloocan",
+    "team": "",
+    "deck": ["Dracotail Metalmorph Primite"],
+    "others": ""
+  },
+  {
     "name": "Owen Cruz",
     "ign": "DmaN14",
     "gender": "MALE",

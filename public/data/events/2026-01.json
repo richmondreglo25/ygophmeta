@@ -818,7 +818,7 @@
     "images": [],
     "winners": [
       {
-        "name": "Marvin Joseph Tamayo",
+        "name": "Marvin Tamayo",
         "position": 1,
         "deck": "Dracotail Metalmorph",
         "deckImagePath": "1.webp"
@@ -966,6 +966,183 @@
         "position": 1,
         "deck": "Solfachord K9",
         "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "64041fe0-15ec-42d3-97a1-024df144c8cf",
+    "title": "OCG Pod 1",
+    "host": "Rogue's Passage",
+    "when": "Jan 11 2026",
+    "where": "Pampanga",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Carl Adrian Fernando",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Charles Panlilio",
+        "position": 2,
+        "deck": "D/D/D",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Kyle Ong",
+        "position": 3,
+        "deck": "Mitsurugi Fiendsmith",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "62d2acfc-9ba0-49a6-9e6c-469036cd0f49",
+    "title": "OCG Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Jan 11 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Toni Angel Vergara",
+        "position": 1,
+        "deck": "Mermail Atlantean",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Martin Owen Gonzalez Calleja",
+        "position": 3,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Tristan Cruz",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "9250fdc0-e60c-4990-9003-26b65af94ac8",
+    "title": "OCG Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Jan 11 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": "1",
+    "images": [],
+    "winners": [
+      {
+        "name": "Frederico Miguel David",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Martin Owen Gonzalez Calleja",
+        "position": 3,
+        "deck": "Mitsurugi",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "a998977b-534c-4569-a788-52c0db47524a",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Jan 11 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Frederico Miguel David",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jeon Arinto",
+        "position": 2,
+        "deck": "Onomat Argostars",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Arwin Joseph Cruz",
+        "position": 3,
+        "deck": "White Forest Azamina Fiendsmith",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 4,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "edf6ebd9-4325-470a-950f-c3e2b0b235ee",
+    "title": "AE Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Jan 11 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": "3",
+    "images": [],
+    "winners": [
+      {
+        "name": "Jayson Dwight Catindig",
+        "position": 1,
+        "deck": "Mitsurugi K9",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 2,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jeon Arinto",
+        "position": 3,
+        "deck": "Onomat Argostars",
+        "deckImagePath": "3.webp"
       }
     ],
     "decks": [],
