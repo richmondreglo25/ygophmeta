@@ -83,6 +83,16 @@
     "others": ""
   },
   {
+    "name": "Jude Thomas Cruz",
+    "ign": "DudeItsJude",
+    "imagePath": "/people/judethomascruz.webp",
+    "gender": "MALE",
+    "city": "Paranaque",
+    "team": "Dragon",
+    "deck": ["Blue-Eyes", "Exosister"],
+    "others": "Challenger Cup 2025 PH Top 16"
+  },
+  {
     "name": "Louren Vidad",
     "ign": "Loumen",
     "imagePath": "/people/lourenvidad.webp",
@@ -122,6 +132,7 @@
   {
     "name": "Owen Cruz",
     "ign": "DmaN14",
+    "imagePath": "/people/owencruz.webp",
     "gender": "MALE",
     "city": "Bulacan",
     "team": "Team Kwasong",
