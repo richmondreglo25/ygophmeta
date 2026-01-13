@@ -29,6 +29,16 @@
     "others": "Asia WCQ 2025 Philippines - Top 8"
   },
   {
+    "name": "Frederico Miguel David",
+    "ign": "DaathSenpai",
+    "imagePath": "/people/fredericomigueldavid.webp",
+    "gender": "MALE",
+    "city": "San Juan City",
+    "team": "Dragion",
+    "deck": ["K9 Crystron", "Yummy", "Artmage"],
+    "others": ""
+  },
+  {
     "name": "Friedrich Ferrer",
     "ign": "RitoruMikan",
     "imagePath": "/people/friedrichferrer.webp",
@@ -64,6 +74,16 @@
     "deck": ["Orcust"]
   },
   {
+    "name": "Jude Thomas Cruz",
+    "ign": "DudeItsJude",
+    "imagePath": "/people/judethomascruz.webp",
+    "gender": "MALE",
+    "city": "Paranaque",
+    "team": "Dragion",
+    "deck": ["Blue-Eyes", "Exosister"],
+    "others": "Challenger Cup 2025 PH Top 16"
+  },
+  {
     "name": "Kim Mark Parane",
     "ign": "Kim",
     "imagePath": "/people/kimmarkparane.webp",
@@ -73,24 +93,14 @@
     "deck": ["White Forest Azamina, Rishid, Elvennotes"]
   },
   {
-    "name": "Frederico Miguel David",
-    "ign": "DaathSenpai",
-    "imagePath": "/people/fredericomigueldavid.webp",
-    "gender": "MALE",
-    "city": "San Juan City",
-    "team": "Dragion",
-    "deck": ["K9 Crystron", "Yummy", "Artmage"],
-    "others": ""
-  },
-  {
-    "name": "Jude Thomas Cruz",
-    "ign": "DudeItsJude",
-    "imagePath": "/people/judethomascruz.webp",
-    "gender": "MALE",
-    "city": "Paranaque",
-    "team": "Dragion",
-    "deck": ["Blue-Eyes", "Exosister"],
-    "others": "Challenger Cup 2025 PH Top 16"
+    "name": "Kyle Ong",
+    "ign": "Ong",
+    "imagePath": "/people/kyleong.webp",
+    "gender": "Male",
+    "city": "Mabalcat",
+    "team": "",
+    "deck": ["Mitsurugi Fiendsmith"],
+    "others": ", #1 Staller ng Pampanga!"
   },
   {
     "name": "Louren Vidad",
@@ -190,6 +200,16 @@
     "city": "Bulacan",
     "team": "",
     "deck": ["Exosister, Rescue-ACE"]
+  },
+  {
+    "name": "Toni Angel Vergara",
+    "ign": "Toneah",
+    "imagePath": "/people/toniangelvergara.webp",
+    "gender": "PREFER_NOT_TO_SAY",
+    "city": "Taguig",
+    "team": "",
+    "deck": ["Mermail Atlantean"],
+    "others": "Happy Playing, Sports, Competitive but not abuser!"
   },
   {
     "name": "Tristan Cruz",
