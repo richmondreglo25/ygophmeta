@@ -96,11 +96,11 @@
     "name": "Kyle Ong",
     "ign": "Ong",
     "imagePath": "/people/kyleong.webp",
-    "gender": "Male",
+    "gender": "MALE",
     "city": "Mabalcat",
     "team": "",
     "deck": ["Mitsurugi Fiendsmith"],
-    "others": ", #1 Staller ng Pampanga!"
+    "others": "#1 Staller ng Pampanga!"
   },
   {
     "name": "Louren Vidad",
