@@ -41,8 +41,6 @@ export async function POST(req: NextRequest) {
   const webpBuffer = await sharp(buffer).webp().toBuffer();
   await fs.writeFile(filepath, webpBuffer);
 
-  // Optionally, save metadata (eventId, winnerPosition, filename) to a JSON file or database here.
-
   // Respond with success and file info.
   return NextResponse.json({
     success: true,

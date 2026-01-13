@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Loading } from "@/components/loading";
-import { getJsonPath } from "@/utils/enviroment";
+import { getJsonPath, isDevelopment } from "@/utils/enviroment";
 import { useJsonData } from "../data/api";
 import { IconX } from "@/components/IconX";
 import { ProfileDrawer, useProfileDrawer } from "@/components/profile-drawer";
@@ -19,6 +19,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Info, SquareArrowOutUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
+import { UploadProfileImageDrawer } from "@/components/upload-profile-image";
 import { Player } from "@/types/player";
 import { Judge } from "@/types/judge";
 
@@ -47,6 +48,8 @@ export default function Community() {
   // Add Profile Drawer.
   const [openAddProfileFormDrawer, setOpenAddProfileFormDrawer] =
     useState(false);
+  const [openUploadProfileImageDrawer, setOpenUploadProfileImageDrawer] =
+    useState(false);
 
   function onClick(row: unknown) {
     if (!row) return; // Invalid row.
@@ -61,6 +64,14 @@ export default function Community() {
 
   function handleCloseProfileFormDrawer() {
     setOpenAddProfileFormDrawer(false);
+  }
+
+  function handleOpenUploadProfileImageDrawer() {
+    setOpenUploadProfileImageDrawer(true);
+  }
+
+  function handleCloseUploadProfileImageDrawer() {
+    setOpenUploadProfileImageDrawer(false);
   }
 
   return (
@@ -122,7 +133,7 @@ export default function Community() {
             community.
           </AlertDescription>
         </Alert>
-        <div className="flex justify-end">
+        <div className="flex justify-end gap-2">
           <Button
             variant="submit"
             className="rounded-sm"
@@ -130,9 +141,23 @@ export default function Community() {
           >
             <span>Submit Profile</span>
           </Button>
+          {isDevelopment() && (
+            <Button
+              variant="submit"
+              className="rounded-sm"
+              onClick={handleOpenUploadProfileImageDrawer}
+            >
+              <span>Upload Image</span>
+            </Button>
+          )}
         </div>
         {openAddProfileFormDrawer && (
           <AddProfileFormDrawer onClose={handleCloseProfileFormDrawer} />
+        )}
+        {openUploadProfileImageDrawer && (
+          <UploadProfileImageDrawer
+            onClose={handleCloseUploadProfileImageDrawer}
+          />
         )}
       </div>
     </>

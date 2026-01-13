@@ -98,6 +98,14 @@
     "about": "TCG/OCG, card games, board games and accessories"
   },
   {
+    "name": "PlayCafé",
+    "logo": "/shops/playcafelogo.webp",
+    "address": "Upper McKinley Hill, Tuscany Residences (Strip), Taguig, Philippines",
+    "googleMaps": "https://www.google.com/maps/place/Playcafe/@14.5369746,121.0493104,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c9002706d13f:0x5a6d92266f8b5df2!8m2!3d14.5369694!4d121.0518853!16s%2Fg%2F11w9v27tpz?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D",
+    "openHours": "Mon-Fri: 2:00 PM - 2:00 AM, Sat-Sun: 10:00 AM - 2:00 AM",
+    "about": "Make your day at PlayCafé!"
+  },
+  {
     "name": "RaVens Play Center",
     "logo": "/shops/ravensplaycenterlogo.webp",
     "address": "2nd Floor, TM Centerpoint, SJDM, 3023 Bulacan",

@@ -1,5 +1,12 @@
 [
   {
+    "name": "Carlito del Mundo Jr",
+    "ign": "SkullBuster",
+    "imagePath": "/people/carlitodelmundojr.webp",
+    "gender": "MALE",
+    "city": "Los Baños"
+  },
+  {
     "name": "Clark Jasper Ramos",
     "ign": "sLarky",
     "imagePath": "/people/clarkjasperramos.webp",
@@ -7,12 +14,5 @@
     "city": "Pasig",
     "team": "JudgeTeam",
     "deck": ["Dark Magician"]
-  },
-  {
-    "name": "Carlito del Mundo Jr",
-    "ign": "SkullBuster",
-    "imagePath": "/people/carlitodelmundojr.webp",
-    "gender": "MALE",
-    "city": "Los Baños"
   }
 ]
