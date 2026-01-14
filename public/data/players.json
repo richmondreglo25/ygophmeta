@@ -229,5 +229,33 @@
     "city": "Pasig",
     "team": "Team Kwasong",
     "deck": ["Killer Tune", "Elvennotes", "White Forest"]
+  },
+  {
+    "name": "Marion Abujen",
+    "ign": "MARch Hare 11",
+    "imagePath": "/people/marionabujen.webp",
+    "gender": "MALE",
+    "city": "Pampanga",
+    "team": "Team Co blinks",
+    "deck": ["Maliss"],
+    "others": ""
+  },
+  {
+    "type": "Player",
+    "id": "805cb83b-c589-417d-945d-4201b717d9bb",
+    "name": "Arwin Joseph Cruz",
+    "ign": "Batista069",
+    "imagePath": "/people/arwinjosephcruz.webp",
+    "gender": "MALE",
+    "city": "Navotas",
+    "team": "",
+    "deck": [
+      "White Forest Azamina Fiendsmith",
+      "Onomat Ryzeal",
+      "Mannaduim",
+      "White Forest",
+      "Mitsurugi Ryzeal"
+    ],
+    "others": ""
   }
 ]
