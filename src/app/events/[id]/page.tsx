@@ -138,7 +138,7 @@ export default async function EventPage({
             {event.images.map((imagePath: string, index: number) => (
               <Avatar
                 key={index}
-                className="text-sm rounded border w-full max-h-[40vh] overflow-hidden flex items-center justify-center bg-white"
+                className="text-sm rounded-sm border w-full max-h-[40vh] overflow-hidden flex items-center justify-center bg-white"
               >
                 <AvatarImage
                   src={getEventImagePath(event.id, imagePath)}
@@ -226,6 +226,7 @@ export default async function EventPage({
                     key={index}
                     className="flex flex-col justify-start items-start gap-3 text-sm font-semibold"
                   >
+                    {/* Position, Name, Deck */}
                     <div className="flex flex-row gap-2 items-center">
                       <span
                         className={`text-xs px-3 py-0.5 border font-semibold ${badgeColor}`}
@@ -236,6 +237,8 @@ export default async function EventPage({
                       <Slash size={10} />
                       <span>{winner.deck}</span>
                     </div>
+
+                    {/* Player Image */}
                     {player && (
                       <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8] h-full w-full p-5 rounded-sm">
                         <Avatar
@@ -259,8 +262,10 @@ export default async function EventPage({
                         Player profile not found
                       </div>
                     )}
+
+                    {/* Deck Image */}
                     {winner.deckImagePath && (
-                      <Avatar className="text-sm rounded flex-1 object-contain border h-full w-full">
+                      <Avatar className="text-sm rounded-sm flex-1 object-contain border h-full w-full">
                         <AvatarImage
                           src={getEventImagePath(
                             event.id,

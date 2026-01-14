@@ -28,6 +28,7 @@ import { DeckDistribution } from "../meta/(charts)/deck-distribution";
 import { Player } from "@/types/player";
 import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
 import { UploadDeckDrawer } from "@/components/upload-deck-drawer";
+import { RecentWinners } from "../meta/(charts)/recent-winners";
 
 function getCurrentMonthYearLabel(date = new Date()) {
   return date.toLocaleString("default", { month: "long", year: "numeric" });
@@ -195,8 +196,19 @@ export default function Home() {
 
       <Accordion
         type="multiple"
-        defaultValue={["deck-distribution", "top-players"]}
+        defaultValue={["recent-winners", "deck-distribution", "top-players"]}
       >
+        <AccordionItem value="recent-winners">
+          <AccordionTrigger>
+            <div className="flex items-center gap-1.5">
+              <Crown size={10} />
+              <span>Recent Winners (Last 10 Days)</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent>
+            <RecentWinners events={events} players={players} />
+          </AccordionContent>
+        </AccordionItem>
         <AccordionItem value="top-players">
           <AccordionTrigger>
             <div className="flex items-center gap-1.5">
