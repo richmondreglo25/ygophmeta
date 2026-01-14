@@ -2024,55 +2024,69 @@
     "notes": ""
   },
   {
-    "id": "a98034c9-7ca9-4ea1-a022-b064e76431c3",
-    "title": "BATANG GAPO DUELISTS CASUAL TOURNAMENT",
-    "host": "Batang Gapo Duelist",
-    "when": "Jan 11 2026",
-    "where": "Save Point Cafe / Olongapo City, Zambales",
+    "id": "a21cf92d-a70b-4e52-92f1-69b112910319",
+    "title": "Davao-Tagum YUGIOH Tournament S23.T48",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Dec 20 2025",
+    "where": "Robinsons Tagum - JK Hobby Shop",
     "format": "OCG",
     "official": false,
     "rounds": 3,
     "images": [],
     "winners": [
       {
-        "name": "Cris Joshua Curiano",
+        "name": "Lian Estabillo",
         "position": 1,
-        "deck": "K9 Dracotail Vanquish Soul",
+        "deck": "Maliss",
         "deckImagePath": "1.webp"
       },
       {
-        "name": "Neil Bryan Bucsit",
+        "name": "Alfred Zamora",
         "position": 2,
-        "deck": "Jurrac",
+        "deck": "Dracotail Branded Magistus",
         "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Louie Acodile",
+        "position": 3,
+        "deck": "Solfachord Yummy",
+        "deckImagePath": "3.webp"
       }
     ],
-    "decks": [
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "00e29655-095b-44ee-856e-e5b4b07044f6",
+    "title": "Davao YUGIOH Ranking Tournament S23.T49",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Dec 27 2025",
+    "where": "Gaisano Mall of Davao",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
       {
-        "name": "K9 Dracotail Vanquish Soul",
-        "count": 1
+        "name": "Jobelle Vios",
+        "position": 1,
+        "deck": "Lunalight",
+        "deckImagePath": "1.webp"
       },
       {
-        "name": "Jurrac",
-        "count": 1
+        "name": "Andrew Aguinaldo",
+        "position": 2,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "2.webp"
       },
       {
-        "name": "Yummy",
-        "count": 1
-      },
-      {
-        "name": "Dracotail Branded",
-        "count": 1
-      },
-      {
-        "name": "Dragunity",
-        "count": 1
-      },
-      {
-        "name": "Elvennotes",
-        "count": 1
+        "name": "Vivo Milo Crame",
+        "position": 3,
+        "deck": "Mitsurugi Horus",
+        "deckImagePath": "3.webp"
       }
     ],
+    "decks": [],
     "notes": ""
   }
 ]

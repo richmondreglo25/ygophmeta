@@ -1147,5 +1147,417 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "ace8997f-4653-4c6f-b143-c22078e995a0",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Jan 11 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jonard Cabantog",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "John Rey Balderama",
+        "position": 2,
+        "deck": "R.B.",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Harry Untalan",
+        "position": 3,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Reggie",
+        "position": 4,
+        "deck": "Enneacraft",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "bad4d1f1-a33b-4587-967a-fa5c2542eb46",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Jan 09 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Harry Untalan",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Richmond Reglo",
+        "position": 2,
+        "deck": "Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jeremy",
+        "position": 3,
+        "deck": "White Forest",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Christian Espiritu",
+        "position": 4,
+        "deck": "Raidraptor",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "1fa02101-0156-45ec-aaf8-de8bafc300d1",
+    "title": "OCG Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Jan 04 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Ariel Catana",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "137914f5-0303-441d-a737-acf68d01b2ca",
+    "title": "AE Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Jan 04 2026",
+    "where": "Cavite",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Ariel Catana",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "bd03129c-a275-4043-8d9d-6fd6f7d658d4",
+    "title": "OCG Pod 1-A",
+    "host": "Courtside",
+    "when": "Jan 10 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Martin Owen Gonzalez Calleja",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "a98034c9-7ca9-4ea1-a022-b064e76431c3",
+    "title": "BATANG GAPO DUELISTS CASUAL TOURNAMENT",
+    "host": "Batang Gapo Duelist",
+    "when": "Jan 11 2026",
+    "where": "Save Point Cafe / Olongapo City, Zambales",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Cris Joshua Curiano",
+        "position": 1,
+        "deck": "K9 Dracotail Vanquish Soul",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Neil Bryan Bucsit",
+        "position": 2,
+        "deck": "Jurrac",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "K9 Dracotail Vanquish Soul",
+        "count": 1
+      },
+      {
+        "name": "Jurrac",
+        "count": 1
+      },
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Dracotail Branded",
+        "count": 1
+      },
+      {
+        "name": "Dragunity",
+        "count": 1
+      },
+      {
+        "name": "Elvennotes",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cb967d61-8ec7-4f42-b269-1c23fbaf1dd9",
+    "title": "OCG Pod 1-B",
+    "host": "Courtside",
+    "when": "Jan 10 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Frans Cuña",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "328c33e7-5a8f-48ee-b865-8909e364c70a",
+    "title": "OCG Pod 2-A",
+    "host": "Courtside",
+    "when": "Jan 10 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Aian Maculata",
+        "position": 1,
+        "deck": "Dracotail",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "cd1193db-f54e-4580-a574-ad4465ae7271",
+    "title": "OCG Pod 2-B",
+    "host": "Courtside",
+    "when": "Jan 10 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "John Christopher Evangelista",
+        "position": 1,
+        "deck": "D/D/D",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "8b709f41-10f3-4dd0-a672-96629281b7b1",
+    "title": "AE Pod 1-A",
+    "host": "Courtside",
+    "when": "Jan 10 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Joriel Suñga",
+        "position": 1,
+        "deck": "Mermail Atlantean",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "bb745cfb-28b3-4ca7-98bf-d9258d74d204",
+    "title": "AE Pod 1-B",
+    "host": "Courtside",
+    "when": "Jan 10 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Bip-Bip Ducut",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "9adfe047-b6ff-4e6f-9a06-f3e474f36ae3",
+    "title": "AE Pod 2-A",
+    "host": "Courtside",
+    "when": "Jan 10 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Louren Vidad",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "4fc2658a-56a7-4efa-9efe-612eea294f51",
+    "title": "AE Pod 2-B",
+    "host": "Courtside",
+    "when": "Jan 10 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Gio Agoto",
+        "position": 1,
+        "deck": "Dracotail",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "54bbc6b4-399a-42ec-9575-89e0d487ad35",
+    "title": "Davao-Tagum YUGIOH Tournament S23.T50",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Dec 27 2025",
+    "where": "Robinsons Tagum - JK Hobby Shop",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Lian Estabillo",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Alexis John Sison",
+        "position": 2,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Alfred Zamora",
+        "position": 3,
+        "deck": "Dracotail Branded Magistus",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Jechris Magallanes",
+        "position": 4,
+        "deck": "Crystron K9",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ec06569f-5df7-4225-a7fe-0d02efd79552",
+    "title": "YU-GI-OH! MABALACAT COMMUNITY – CASUAL TOURNAMENT",
+    "host": "Mabalacat Yu-Gi-Oh Community",
+    "when": "Jan 10 2026",
+    "where": "Mabalacat",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Marion Abujen",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Lance",
+        "position": 2,
+        "deck": "Rescue-ACE",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Myke",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
