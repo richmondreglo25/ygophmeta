@@ -57,6 +57,16 @@
     "deck": ["Orcust", "Mermail"]
   },
   {
+    "name": "Jayson Dwight Catindig",
+    "ign": "Jaysonstander",
+    "imagePath": "/people/jaysondwightcatindig.webp",
+    "gender": "MALE",
+    "city": "Makati",
+    "team": "",
+    "deck": ["Mitsurugi"],
+    "others": ""
+  },
+  {
     "name": "Jhon Gian Obiena",
     "ign": "Jean",
     "imagePath": "/people/jhongianobiena.webp",
