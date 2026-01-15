@@ -1559,5 +1559,113 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "1cdec360-831d-4c3f-899a-f75baa68e30b",
+    "title": "Season 1: MEIOCG National Weekly Rankings - Week 1",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Jan 10 2026",
+    "where": "Kai Royal Cafe Tea & Coffee / Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": "5",
+    "images": [],
+    "winners": [
+      {
+        "name": "Jansen Ong",
+        "position": 1,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kristofer Edward Bondoc",
+        "position": 2,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Joe Vincent Minguez",
+        "position": 3,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Uriel Ray Dolorfino",
+        "position": 4,
+        "deck": "Radiant Typhoon Fiendsmith",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "1cdec360-831d-4c3f-899a-f75baa68e30b",
+    "title": "Season 4: Burst Protocol",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Jan 11 2026",
+    "where": "Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Uriel Ray Dolorfino",
+        "position": 1,
+        "deck": "Elvennotes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Cedrick Mijares Tono",
+        "position": 2,
+        "deck": "Tellarknight",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "c6aade41-829d-4883-b62b-0e8c976705c0",
+    "title": "OCG Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Jan 08 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 1,
+        "deck": "Mitsurugi",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "c6aade41-829d-4883-b62b-0e8c976705c0",
+    "title": "AE Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Jan 08 2026",
+    "where": "Cavite",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Bip-Bip Ducut",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
