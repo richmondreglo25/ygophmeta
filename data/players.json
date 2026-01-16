@@ -158,6 +158,16 @@
     "deck": ["White Forest Azamina, Rishid, Elvennotes"]
   },
   {
+    "name": "Kyle Chino Marquinez",
+    "ign": "Kokoreo",
+    "imagePath": "/people/kylechinomarquinez.webp",
+    "gender": "MALE",
+    "city": "Iloilo City",
+    "team": "",
+    "deck": ["Artmage Azamina", "Elvennotes Fiendsmith", "DOOMZ Fiendsmith"],
+    "others": ""
+  },
+  {
     "name": "Kyle Ong",
     "ign": "Ong",
     "imagePath": "/people/kyleong.webp",
