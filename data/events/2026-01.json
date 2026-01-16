@@ -1700,5 +1700,137 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "b4d2e118-08d9-400d-b676-2a6d49e7d6af",
+    "title": "OCG Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Jan 16 2026",
+    "where": "Japan Gacha",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Frederico Miguel David",
+        "position": 1,
+        "deck": "Crystron K9",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 2,
+        "deck": "Elvennotes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Miguel Guevarra",
+        "position": 3,
+        "deck": "Branded",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "96b6d259-b004-4f9b-9fe9-8972a86d62d8",
+    "title": "OCG Pod 2",
+    "host": "Kimochi Hobby Shop",
+    "when": "Jan 16 2026",
+    "where": "Japan Gacha",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 1,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 2,
+        "deck": "Crystron K9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 3,
+        "deck": "Elvennotes",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "fd404ed5-2697-4264-9e44-56fbea6bbcd9",
+    "title": "AE Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Jan 16 2026",
+    "where": "Japan Gacha",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Edmar Canete",
+        "position": 2,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Halston Agdamag",
+        "position": 3,
+        "deck": "Branded",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "a3cb2168-cd78-4bbe-8007-77a07ea3abe2",
+    "title": "AE Pod 2",
+    "host": "Kimochi Hobby Shop",
+    "when": "Jan 16 2026",
+    "where": "Japan Gacha",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Manuel Tiong",
+        "position": 2,
+        "deck": "Mementotlan",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Arwin Joseph Cruz",
+        "position": 3,
+        "deck": "White Forest Azamina Fiendsmith",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
