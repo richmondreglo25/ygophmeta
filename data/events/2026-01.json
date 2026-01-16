@@ -1675,7 +1675,7 @@
     "when": "Jan 03 2026",
     "where": "G-Hub Davao",
     "format": "OCG",
-    "official": false,
+    "official": true,
     "rounds": 3,
     "images": [],
     "winners": [
