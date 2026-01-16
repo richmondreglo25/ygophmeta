@@ -1667,5 +1667,38 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "379932f8-b684-44bf-b8d8-32adcb655cb3",
+    "title": "Davao YUGIOH Ranking Tournament S24.T1",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 03 2026",
+    "where": "G-Hub Davao",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Vivo Milo Crame",
+        "position": 1,
+        "deck": "Mitsurugi Horus",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jobelle Vios",
+        "position": 2,
+        "deck": "Lunalight",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Alexis John Sison",
+        "position": 3,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
