@@ -47,6 +47,23 @@
     "others": ""
   },
   {
+    "name": "Castel Noleal",
+    "ign": "Kasuteru_kun",
+    "imagePath": "/people/castelnoleal.webp",
+    "gender": "MALE",
+    "city": "Cebu City",
+    "team": "",
+    "deck": [
+      "Solfachord Elvennotes K9 Amorphage",
+      "Solfachord K9",
+      "Solfachord Amorphage",
+      "Solfachord Z-Arc",
+      "Solfachord",
+      "Solfachord Melodius"
+    ],
+    "others": "MEIOCG NRS 2025 Season 0: Rank 1"
+  },
+  {
     "name": "Cris Joshua Curiano",
     "ign": "Huswa",
     "imagePath": "/people/crisjoshuacuriano.webp",
@@ -75,6 +92,16 @@
     "team": "Team Kwasong",
     "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
     "others": "kalbs"
+  },
+  {
+    "name": "Gio Agoto",
+    "ign": "syveol24",
+    "imagePath": "/people/gioagoto.webp",
+    "gender": "MALE",
+    "city": "Quezon City",
+    "team": "",
+    "deck": ["Crystron K9", "Dracotail", "Dracotail Branded", "Yummy"],
+    "others": ""
   },
   {
     "name": "Jayson Bergado",
@@ -129,6 +156,16 @@
     "city": "Bulacan",
     "team": "TEAM RPC",
     "deck": ["White Forest Azamina, Rishid, Elvennotes"]
+  },
+  {
+    "name": "Kyle Chino Marquinez",
+    "ign": "Kokoreo",
+    "imagePath": "/people/kylechinomarquinez.webp",
+    "gender": "MALE",
+    "city": "Iloilo City",
+    "team": "",
+    "deck": ["Artmage Azamina", "Elvennotes Fiendsmith", "DOOMZ Fiendsmith"],
+    "others": ""
   },
   {
     "name": "Kyle Ong",
