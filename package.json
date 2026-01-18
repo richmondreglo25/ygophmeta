@@ -9,6 +9,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "eslint",
+    "load:cards": "ts-node ./scripts/card-reader.js",
     "load:decks": "node ./scripts/deck-loader.js",
     "load:banlist": "node ./scripts/banlist-loader.js",
     "sort:profiles": "node ./scripts/profile-sorter.js",

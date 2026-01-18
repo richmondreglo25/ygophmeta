@@ -19,6 +19,25 @@
     "others": ""
   },
   {
+    "name": "Anthony Jenrick Apelado",
+    "ign": "Zero Tetsu",
+    "imagePath": "/people/anthonyjenrickapelado.webp",
+    "gender": "MALE",
+    "city": "Culasi Antique",
+    "team": "",
+    "deck": [
+      "Blue-Eyes",
+      "HERO",
+      "Neo Spacian",
+      "Infernoble Flame Swordsman",
+      "Ancient Gear",
+      "Dragonlink",
+      "Dragunity",
+      "ABC XYZ"
+    ],
+    "others": ""
+  },
+  {
     "type": "Player",
     "id": "805cb83b-c589-417d-945d-4201b717d9bb",
     "name": "Arwin Joseph Cruz",
@@ -101,6 +120,23 @@
     "city": "Quezon City",
     "team": "",
     "deck": ["Crystron K9", "Dracotail", "Dracotail Branded", "Yummy"],
+    "others": ""
+  },
+  {
+    "name": "Jansen Ong",
+    "ign": "Fannitosis",
+    "imagePath": "/people/jansenong.webp",
+    "gender": "MALE",
+    "city": "Iloilo",
+    "team": "",
+    "deck": [
+      "Odion",
+      "Dracotail Branded",
+      "Swordsoul Branded",
+      "Darklord",
+      "Hecahands",
+      "Blue-Eyes"
+    ],
     "others": ""
   },
   {
@@ -225,6 +261,16 @@
     "others": ""
   },
   {
+    "name": "Michael Cayanan",
+    "ign": "0502618317",
+    "imagePath": "/people/michaelcayanan.webp",
+    "gender": "MALE",
+    "city": "Pampanga",
+    "team": "Team Maimpis",
+    "deck": ["Yummy"],
+    "others": ""
+  },
+  {
     "name": "Owen Cruz",
     "ign": "DmaN14",
     "imagePath": "/people/owencruz.webp",
@@ -304,5 +350,15 @@
     "city": "Pasig",
     "team": "Team Kwasong",
     "deck": ["Killer Tune", "Elvennotes", "White Forest"]
+  },
+  {
+    "name": "Uriel Ray Dolorfino",
+    "ign": "Uriel",
+    "imagePath": "/people/urielraydolorfino.webp",
+    "gender": "MALE",
+    "city": "Iloilo",
+    "team": "",
+    "deck": ["Yummy", "White Forest", "Radiant Typhoon", "Voiceless Voice"],
+    "others": ""
   }
 ]
