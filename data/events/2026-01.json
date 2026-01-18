@@ -1832,5 +1832,83 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "d67b7ca8-ed86-4a7f-9624-4314a1ea269f",
+    "title": "OCG Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Jan 17 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Friedrich Ferrer",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Owen Cruz",
+        "position": 2,
+        "deck": "Exosister",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Gerald Kent Hui",
+        "position": 3,
+        "deck": "Mitsurugi",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Patt Naguit",
+        "position": 4,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "4f87b0a3-330c-4147-bedc-f51b2da4f11f",
+    "title": "OCG Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Jan 17 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Kim Mark Parane",
+        "position": 1,
+        "deck": "Elvennotes",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Gerald Kent Hui",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Warren Heromo",
+        "position": 3,
+        "deck": "Mitsurugi Blackwing",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Patt Naguit",
+        "position": 4,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
