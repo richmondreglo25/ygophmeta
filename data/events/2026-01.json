@@ -1910,5 +1910,57 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "6dcca2d6-91b4-4755-9c7b-d6d2a0c8aa6d",
+    "title": "OCG Pod 1",
+    "host": "Rogue's Passage",
+    "when": "Jan 15 2026",
+    "where": "Pampanga",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Michael Cayanan",
+        "position": 1,
+        "deck": "VS K9",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jan Marvin Quindoza",
+        "position": 2,
+        "deck": "Yummy",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Yummy",
+        "count": 1
+      },
+      {
+        "name": "Tenpai",
+        "count": 1
+      },
+      {
+        "name": "VS K9",
+        "count": 1
+      },
+      {
+        "name": "Rescue Ace",
+        "count": 1
+      },
+      {
+        "name": "Crystron K9",
+        "count": 1
+      },
+      {
+        "name": "Sky Striker",
+        "count": 1
+      }
+    ],
+    "notes": ""
   }
 ]
