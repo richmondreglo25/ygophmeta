@@ -104,6 +104,23 @@
     "others": ""
   },
   {
+    "name": "Jansen Ong",
+    "ign": "Fannitosis",
+    "imagePath": "/people/jansenong.webp",
+    "gender": "MALE",
+    "city": "Iloilo",
+    "team": "",
+    "deck": [
+      "Odion",
+      "Dracotail Branded",
+      "Swordsoul Branded",
+      "Darklord",
+      "Hecahands",
+      "Blue-Eyes"
+    ],
+    "others": ""
+  },
+  {
     "name": "Jayson Bergado",
     "ign": "Jay Jay",
     "gender": "MALE",
@@ -314,5 +331,15 @@
     "city": "Pasig",
     "team": "Team Kwasong",
     "deck": ["Killer Tune", "Elvennotes", "White Forest"]
+  },
+  {
+    "name": "Uriel Ray Dolorfino",
+    "ign": "Uriel",
+    "imagePath": "/people/urielraydolorfino.webp",
+    "gender": "MALE",
+    "city": "Iloilo",
+    "team": "",
+    "deck": ["Yummy", "White Forest", "Radiant Typhoon", "Voiceless Voice"],
+    "others": ""
   }
 ]
