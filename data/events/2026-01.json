@@ -2020,5 +2020,59 @@
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "55f78852-160a-44b7-9caf-57f257f4715b",
+    "title": "Season 4: Burst Protocol",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Jan 18 2026",
+    "where": "Kai Royal Cafe Tea & Coffee, Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Anthony Jenrick Apelado",
+        "position": 1,
+        "deck": "Dragunity",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kristofer Edward Bondoc",
+        "position": 2,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "3f4e87a4-aaea-4d80-a822-9e5508765e35",
+    "title": "Season 1: MEIOCG National Weekly Rankings - Week 2",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Jan 17 2026",
+    "where": "Kai Royal Cafe Tea & Coffee, Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Joe Vincent Minguez",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Silverjo Ambubuyog",
+        "position": 2,
+        "deck": "Exosister",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
