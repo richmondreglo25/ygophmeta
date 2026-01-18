@@ -225,6 +225,16 @@
     "others": ""
   },
   {
+    "name": "Michael Cayanan",
+    "ign": "0502618317",
+    "imagePath": "/people/michaelcayanan.webp",
+    "gender": "MALE",
+    "city": "Pampanga",
+    "team": "Team Maimpis",
+    "deck": ["Yummy"],
+    "others": ""
+  },
+  {
     "name": "Owen Cruz",
     "ign": "DmaN14",
     "imagePath": "/people/owencruz.webp",
