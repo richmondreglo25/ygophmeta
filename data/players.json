@@ -19,6 +19,25 @@
     "others": ""
   },
   {
+    "name": "Anthony Jenrick Apelado",
+    "ign": "Zero Tetsu",
+    "imagePath": "/people/anthonyjenrickapelado.webp",
+    "gender": "MALE",
+    "city": "Culasi Antique",
+    "team": "",
+    "deck": [
+      "Blue-Eyes",
+      "HERO",
+      "Neo Spacian",
+      "Infernoble Flame Swordsman",
+      "Ancient Gear",
+      "Dragonlink",
+      "Dragunity",
+      "ABC XYZ"
+    ],
+    "others": ""
+  },
+  {
     "type": "Player",
     "id": "805cb83b-c589-417d-945d-4201b717d9bb",
     "name": "Arwin Joseph Cruz",
