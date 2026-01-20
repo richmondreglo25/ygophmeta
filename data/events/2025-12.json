@@ -2088,5 +2088,32 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "cb6825f5-26f3-4dbb-9e3e-23c870f1d889",
+    "title": "OCG Pod 2",
+    "host": "Toy Shogun",
+    "when": "Jan 16 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Harry Untalan",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Julian San Diego",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]

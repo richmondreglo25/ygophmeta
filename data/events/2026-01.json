@@ -2074,5 +2074,326 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "67859ba0-00e4-4419-bd18-9c861d65cea8",
+    "title": "OCG Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Jan 18 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Martin Owen Gonzalez Calleja",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Malone Pabua",
+        "position": 2,
+        "deck": "Dracotail Regenesis",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "John Christopher Evangelista",
+        "position": 3,
+        "deck": "Maliss",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 4,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "cb92f7a8-f568-4aaa-ba15-3cf3cf6ea8bf",
+    "title": "OCG Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Jan 18 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Martin Owen Gonzalez Calleja",
+        "position": 1,
+        "deck": "Mitsurugi Magistus",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jasper Gonzales",
+        "position": 2,
+        "deck": "Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "John Christopher Evangelista",
+        "position": 4,
+        "deck": "Maliss",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "df43f9b4-910c-45bd-9aeb-d437a529dded",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Jan 18 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 2,
+        "deck": "Crystron K9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jayson Dwight Catindig",
+        "position": 3,
+        "deck": "Mitsurugi Ryzeal",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Jeon Arinto",
+        "position": 4,
+        "deck": "Argostars Odion",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "218aaf61-c3d6-4306-b90f-34d1b8c50e0c",
+    "title": "AE Pod 2",
+    "host": "ARKEN CardZone",
+    "when": "Jan 18 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Arwin Joseph Cruz",
+        "position": 2,
+        "deck": "Mitsurugi K9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Ken Lennart Millar",
+        "position": 3,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Adrian Abarca",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "cba02dcb-b07c-48c4-b5ee-c3945254ec82",
+    "title": "OCG Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Jan 15 2026",
+    "where": "",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Joshua Lawagan",
+        "position": 1,
+        "deck": "Elvennotes Diabellstar",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Gary Non",
+        "position": 2,
+        "deck": "Mitsurugi Maliss",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 3,
+        "deck": "Mitsurugi",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Ian Viernes",
+        "position": 4,
+        "deck": "Vanquish Soul",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "e794aa78-e2e1-4fc8-a51a-01de9a0ca490",
+    "title": "OCG Pod 1",
+    "host": "Entei Cards Shop",
+    "when": "Jan 18 2026",
+    "where": "Taguig",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Walter Fat",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "abb54dab-904d-4185-bedd-444fb3391405",
+    "title": "AE Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Jan 18 2026",
+    "where": "Bulacan",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jam",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "John Zedric Lorenzo",
+        "position": 2,
+        "deck": "VSK9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Friedrich Ferrer",
+        "position": 3,
+        "deck": "Lunalight",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Marvin Tamayo",
+        "position": 4,
+        "deck": "Runick Radiant Typhoon",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "c8a0917f-3bfc-445e-b7cb-613ec54aeee0",
+    "title": "AE Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Jan 18 2026",
+    "where": "Bulacan",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "John Zedric Lorenzo",
+        "position": 1,
+        "deck": "VSK9",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jam",
+        "position": 2,
+        "deck": "Sky Striker",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Marvin Tamayo",
+        "position": 3,
+        "deck": "Runick Radiant Typhoon",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Friedrich Ferrer",
+        "position": 4,
+        "deck": "Lunalight",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "6538a280-c3af-41f4-8b24-002214815459",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Jan 16 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Harry Untalan",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Mesiah Henceforth",
+        "position": 2,
+        "deck": "D/D/D",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]

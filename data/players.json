@@ -158,6 +158,16 @@
     "others": ""
   },
   {
+    "name": "Jeon Arinto",
+    "ign": "ＡＲＧ☆Ｓ - Team Manager Jeon",
+    "imagePath": "/people/jeonarinto.webp",
+    "gender": "MALE",
+    "city": "Taguig",
+    "team": "Dragion",
+    "deck": ["Onomat Argostars", "Odion Argostars", "Armored XYZ Onomat"],
+    "others": ""
+  },
+  {
     "name": "Jhon Gian Obiena",
     "ign": "Jean",
     "imagePath": "/people/jhongianobiena.webp",
