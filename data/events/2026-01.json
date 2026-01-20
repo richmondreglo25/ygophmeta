@@ -2395,5 +2395,65 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "cb6825f5-26f3-4dbb-9e3e-23c870f1d889",
+    "title": "OCG Pod 2",
+    "host": "Toy Shogun",
+    "when": "Jan 16 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Harry Untalan",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Julian San Diego",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "524582e6-f5bf-4b87-b53f-2cbcb48fbda2",
+    "title": "Davao-Tagum YUGIOH Tournament S24.T2",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 03 2026",
+    "where": "Robinsons Tagum - JK Hobby Shop / Davao",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Lian Estabillo",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Eljun Mer Paimalan",
+        "position": 2,
+        "deck": "Odd-Eyes Performapal",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Louie Acodile",
+        "position": 3,
+        "deck": "Solfachord Yummy",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
