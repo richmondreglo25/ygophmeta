@@ -2455,5 +2455,32 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "65ebc9f0-955e-4b5b-8cef-59fa1226706a",
+    "title": "OCG Pod 1",
+    "host": "Rogue's Passage",
+    "when": "Jan 18 2026",
+    "where": "",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Keith Jeremy David",
+        "position": 1,
+        "deck": "Yubel Fiendsmith",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Rime Louise Pineda",
+        "position": 2,
+        "deck": "Pendulum Magician",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]

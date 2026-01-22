@@ -195,6 +195,16 @@
     "others": "Challenger Cup 2025 PH Top 16"
   },
   {
+    "name": "Keith Jeremy David",
+    "ign": "Bakekujira",
+    "imagePath": "/people/keithjeremydavid.webp",
+    "gender": "MALE",
+    "city": "Pampanga",
+    "team": "",
+    "deck": ["Yubel Fiendsmith"],
+    "others": ""
+  },
+  {
     "name": "Kim Mark Parane",
     "ign": "Kim",
     "imagePath": "/people/kimmarkparane.webp",
