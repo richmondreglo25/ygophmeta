@@ -2482,5 +2482,89 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "32687bb8-ee43-4ef5-9ee6-e031355f2dce",
+    "title": "OCG Pod 1-A",
+    "host": "Courtside",
+    "when": "Jan 17 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Tristan Cruz",
+        "position": 1,
+        "deck": "Killer Tune",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "8378bd43-d0fb-449b-a196-c94c36ba7d92",
+    "title": "OCG Pod 1-B",
+    "host": "Courtside",
+    "when": "Jan 17 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Pol Limjoco",
+        "position": 1,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ca3e1153-aa38-4b3d-8aea-96aa85eeb73a",
+    "title": "AE Pod 1-A",
+    "host": "Courtside",
+    "when": "Jan 17 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Kenneth Febra",
+        "position": 1,
+        "deck": "Mitsurugi",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "b7b6425b-9580-44d9-b669-2da81c47c907",
+    "title": "AE Pod 1-B",
+    "host": "Courtside",
+    "when": "Jan 17 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Nazario Jesus Deladia",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
