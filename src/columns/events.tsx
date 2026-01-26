@@ -38,7 +38,7 @@ export const columns: ColumnDef<Event>[] = [
       return (
         <span
           className={`text-xs capitalize px-2 py-1 rounded-sm font-semibold ${getBadgeClass(
-            type
+            type,
           )}`}
         >
           {type.charAt(0).toUpperCase() + type.slice(1)}

@@ -38,8 +38,6 @@
     "others": ""
   },
   {
-    "type": "Player",
-    "id": "805cb83b-c589-417d-945d-4201b717d9bb",
     "name": "Arwin Joseph Cruz",
     "ign": "Batista069",
     "imagePath": "/people/arwinjosephcruz.webp",
@@ -81,6 +79,16 @@
       "Solfachord Melodius"
     ],
     "others": "MEIOCG NRS 2025 Season 0: Rank 1"
+  },
+  {
+    "name": "Charles Araneta",
+    "ign": "Charles",
+    "imagePath": "/people/charlesaraneta.webp",
+    "gender": "MALE",
+    "city": "Manila, Bulacan",
+    "team": "Packboys",
+    "deck": ["Yummy"],
+    "others": ""
   },
   {
     "name": "Cris Joshua Curiano",
@@ -158,6 +166,16 @@
     "others": ""
   },
   {
+    "name": "Jeon Arinto",
+    "ign": "ＡＲＧ☆Ｓ - Team Manager Jeon",
+    "imagePath": "/people/jeonarinto.webp",
+    "gender": "MALE",
+    "city": "Taguig",
+    "team": "Dragion",
+    "deck": ["Onomat Argostars", "Odion Argostars", "Armored XYZ Onomat"],
+    "others": ""
+  },
+  {
     "name": "Jhon Gian Obiena",
     "ign": "Jean",
     "imagePath": "/people/jhongianobiena.webp",
@@ -183,6 +201,16 @@
     "team": "Dragion",
     "deck": ["Blue-Eyes", "Exosister"],
     "others": "Challenger Cup 2025 PH Top 16"
+  },
+  {
+    "name": "Keith Jeremy David",
+    "ign": "Bakekujira",
+    "imagePath": "/people/keithjeremydavid.webp",
+    "gender": "MALE",
+    "city": "Pampanga",
+    "team": "",
+    "deck": ["Yubel Fiendsmith"],
+    "others": ""
   },
   {
     "name": "Kim Mark Parane",
@@ -220,7 +248,17 @@
     "gender": "MALE",
     "city": "Quezon City",
     "team": "Flex City",
-    "deck": ["Ryzeal"]
+    "deck": [
+      "VSK9",
+      "Ryzeal",
+      "Tearlaments",
+      "Thunder Dragon",
+      "Orcust",
+      "Altergeist",
+      "Nekroz",
+      "Etc"
+    ],
+    "others": "Yu-Gi-Oh! WCS-ASIA REP, ACS'19 2nd🥈, YOT'19 1st🏆, YOT'24 AE Top5, 3x ACQ PH🏆🏆🏆, 1x Challengers Cup'25 🏆- 3on3 JP/AE PH'24 🏆🏆- Battle Nexus'24 🥇 and many more tops."
   },
   {
     "name": "Marion Abujen",
@@ -359,6 +397,16 @@
     "city": "Iloilo",
     "team": "",
     "deck": ["Yummy", "White Forest", "Radiant Typhoon", "Voiceless Voice"],
+    "others": ""
+  },
+  {
+    "name": "John Zedric Lorenzo",
+    "ign": "PapaZed",
+    "imagePath": "/people/johnzedriclorenzo.webp",
+    "gender": "MALE",
+    "city": "Bulacan",
+    "team": "Hayahay",
+    "deck": ["VSK9", "Ryzeal", "Maliss", "Yummy", "Dracotail"],
     "others": ""
   }
 ]

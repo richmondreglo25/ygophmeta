@@ -115,6 +115,13 @@
         "title": "Rod Allan Bonavente",
         "description": ["Asian Championship Series - Semi Finalist"],
         "image": "/people/rodallanbonavente.webp"
+      },
+      {
+        "id": "tp-005",
+        "type": "player",
+        "title": "Charles Araneta",
+        "description": ["Asian Championship Series - Top 8"],
+        "image": "/people/charlesaraneta.webp"
       }
     ]
   },
