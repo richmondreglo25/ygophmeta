@@ -38,8 +38,6 @@
     "others": ""
   },
   {
-    "type": "Player",
-    "id": "805cb83b-c589-417d-945d-4201b717d9bb",
     "name": "Arwin Joseph Cruz",
     "ign": "Batista069",
     "imagePath": "/people/arwinjosephcruz.webp",
@@ -81,6 +79,16 @@
       "Solfachord Melodius"
     ],
     "others": "MEIOCG NRS 2025 Season 0: Rank 1"
+  },
+  {
+    "name": "Charles Araneta",
+    "ign": "Charles",
+    "imagePath": "/people/charlesaraneta.webp",
+    "gender": "MALE",
+    "city": "Manila, Bulacan",
+    "team": "Packboys",
+    "deck": ["Yummy"],
+    "others": ""
   },
   {
     "name": "Cris Joshua Curiano",
