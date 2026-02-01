@@ -1,0 +1,119 @@
+[
+  {
+    "id": "e5a9ee87-8f60-4e60-8e76-df3e2ecb433f",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Feb 01 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Julian San Diego",
+        "position": 1,
+        "deck": "Train",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "John Rey Balderama",
+        "position": 2,
+        "deck": "Elvennotes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Albert Sison",
+        "position": 3,
+        "deck": "Clown Clan",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Leonardo Bryant Clarin",
+        "position": 4,
+        "deck": "Dracotail",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "7a635345-42bd-4125-beb1-655e80e85f29",
+    "title": "AE Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Feb 01 2026",
+    "where": "Bulacan",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Mark Jericho Surio",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "JM",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Friedrich Ferrer",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Alfonzo Almazar",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "2020fa6d-6466-473b-a659-3b82484332d1",
+    "title": "OCG Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Feb 01 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Friedrich Ferrer",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Christian Espiritu",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Mark Jericho Surio",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Warren Heremo",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  }
+]

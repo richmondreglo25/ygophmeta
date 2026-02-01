@@ -67,6 +67,14 @@
     "about": "We’re an official store handling Yu-Gi-Oh!, One Piece, Pokémon, Digimon, Cookie Run, Dragon Ball, and many more TCGs"
   },
   {
+    "name": "Honor's Ground Hobby Shop",
+    "logo": "/shops/honorsgroundhobbyshoplogo.webp",
+    "address": "Basement Level, Pristine Hardware Bldg, #46 Upper Kayang Street, Baguio City, Philippines, 2600",
+    "googleMaps": "https://www.google.com/maps/place/Honor's+Ground+Hobby+and+Toy+Shop/data=!4m2!3m1!1s0x0:0x58b53b834553f17d?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 10:00 AM - 8:00 PM",
+    "about": "Honor's Ground Hobby Shop is a card shop located in Baguio City"
+  },
+  {
     "name": "Hyuray Trading",
     "logo": "/shops/hyuraytradinglogo.webp",
     "address": "Concepcion Townhouse, A. Guisama St, Marikina, 1800 Metro Manila",
@@ -128,6 +136,14 @@
     "openHours": "Tue-Sun: 12:00 PM - 2:00 AM",
     "accolades": ["Official Tournament Store (OTS)"],
     "about": "A tabletop game shop located in Mexico, Pampanga"
+  },
+  {
+    "name": "Tadaima Hobbies and Toy Shop",
+    "logo": "/shops/tadaimahobbiesandtoyshoplogo.webp",
+    "address": "Blk 1 Lot 5 Maunlad Phase 2, 24 de Agosto St., Brgy, Caingin, Malolos, Philippines, 3000",
+    "googleMaps": "https://www.google.com/maps/place/Tadaima+Hobbies+and+Toy+Shop/data=!4m2!3m1!1s0x0:0x4fcded9955f6a6ed?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 10:00 AM - 9:00 PM",
+    "about": "Tadaima Hobbies and Toy Shop is a card shop located in Malolos, Bulacan"
   },
   {
     "name": "Toy Shogun",
