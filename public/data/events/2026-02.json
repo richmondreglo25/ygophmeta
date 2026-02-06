@@ -1,0 +1,308 @@
+[
+  {
+    "id": "e5a9ee87-8f60-4e60-8e76-df3e2ecb433f",
+    "title": "OCG Pod 1",
+    "host": "Toy Shogun",
+    "when": "Feb 01 2026",
+    "where": "Novaliches",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Julian San Diego",
+        "position": 1,
+        "deck": "Train",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "John Rey Balderama",
+        "position": 2,
+        "deck": "Elvennotes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Albert Sison",
+        "position": 3,
+        "deck": "Clown Clan",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Leonardo Bryant Clarin",
+        "position": 4,
+        "deck": "Dracotail",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "7a635345-42bd-4125-beb1-655e80e85f29",
+    "title": "AE Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Feb 01 2026",
+    "where": "Bulacan",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Mark Jericho Surio",
+        "position": 1,
+        "deck": "Mitsurugi Yummy Solfachord",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "JM",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Friedrich Ferrer",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Alfonzo Almazar",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "2020fa6d-6466-473b-a659-3b82484332d1",
+    "title": "OCG Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Feb 01 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Friedrich Ferrer",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Christian Espiritu",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Mark Jericho Surio",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Warren Heremo",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "f0bae44c-8f71-44fe-ba79-5dccca2251cd",
+    "title": "OCG Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Feb 01 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": "5",
+    "images": [],
+    "winners": [
+      {
+        "name": "Martin Owen Gonzalez Calleja",
+        "position": 1,
+        "deck": "Mitsurugi",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Oscar Neones",
+        "position": 2,
+        "deck": "D/D/D",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 3,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Anthony Jordan Dizon",
+        "position": 4,
+        "deck": "Exosister",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Vincent Oblefias",
+        "position": 5,
+        "deck": "Sky Striker",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 6,
+        "deck": "Killer Tune",
+        "deckImagePath": "6.webp"
+      },
+      {
+        "name": "Julius Felipp Zapata",
+        "position": 7,
+        "deck": "Mermail Atlantean",
+        "deckImagePath": "7.webp"
+      },
+      {
+        "name": "Ananias Quipit Jr.",
+        "position": 8,
+        "deck": "Dracotail",
+        "deckImagePath": "8.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "829c33c8-6c7a-44d4-a716-f8b35f582763",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Feb 01 2026",
+    "where": "Ayala Malls Circuit Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": "5",
+    "images": [],
+    "winners": [
+      {
+        "name": "Frederico Miguel David",
+        "position": 1,
+        "deck": "Crystron K9",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Vincent Oblefias",
+        "position": 2,
+        "deck": "VS K9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Paulo Rillo",
+        "position": 3,
+        "deck": "Maliss",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Jeon Arinto",
+        "position": 4,
+        "deck": "Argostars Odion",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 5,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "5.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "cfc78d74-842e-4656-98af-4f0198ec00c3",
+    "title": "OCG Pod 1",
+    "host": "Entei Cards Shop",
+    "when": "Feb 01 2026",
+    "where": "Taguig",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jomari Dalut",
+        "position": 1,
+        "deck": "Eldlich",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Toni Angel Vergara",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Anthony",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5213bf52-294d-4a71-b682-ccf5d12bfa34",
+    "title": "Season 5: Blazing Dominion",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Feb 01 2026",
+    "where": "Kai Royal Cafe Tea & Coffee, Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Anthony Jenrick Apelado",
+        "position": 1,
+        "deck": "HERO",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "b1dfcf74-1c20-4593-aca9-d7dc577f8252",
+    "title": "OCG Pod 1",
+    "host": "PlayCafé",
+    "when": "Feb 04 2026",
+    "where": "Taguig",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jeon Arinto",
+        "position": 1,
+        "deck": "Argostars Odion",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  }
+]
