@@ -133,7 +133,7 @@
       {
         "name": "Chrizald Asama",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       }
     ],
@@ -403,7 +403,7 @@
       {
         "name": "Louren Vidad",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       }
     ],
@@ -859,7 +859,7 @@
       {
         "name": "Frans Cuña",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       }
     ],
@@ -943,7 +943,7 @@
       {
         "name": "Joseph Roy",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       }
     ],
@@ -1355,7 +1355,7 @@
       {
         "name": "Frans Cuña",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       }
     ],
@@ -1460,7 +1460,7 @@
       {
         "name": "Louren Vidad",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       }
     ],
@@ -2311,7 +2311,7 @@
       {
         "name": "John Zedric Lorenzo",
         "position": 2,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "2.webp"
       },
       {
@@ -2344,7 +2344,7 @@
       {
         "name": "John Zedric Lorenzo",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       },
       {
@@ -2581,7 +2581,7 @@
       {
         "name": "Frans Cuña",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       },
       {
@@ -2929,7 +2929,7 @@
       {
         "name": "Charles Wilson Panlilio",
         "position": 2,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "2.webp"
       },
       {
@@ -3097,7 +3097,7 @@
       {
         "name": "Louren Vidad",
         "position": 1,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "1.webp"
       }
     ],
@@ -3376,7 +3376,7 @@
       {
         "name": "Ian Viernes",
         "position": 2,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "2.webp"
       },
       {
@@ -3409,7 +3409,7 @@
       {
         "name": "Ian Viernes",
         "position": 2,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "2.webp"
       },
       {
@@ -3421,7 +3421,7 @@
       {
         "name": "Frans Cuña",
         "position": 4,
-        "deck": "VSK9",
+        "deck": "VS K9",
         "deckImagePath": "4.webp"
       }
     ],
@@ -3620,6 +3620,54 @@
         "name": "Bryan De Guzman",
         "position": 1,
         "deck": "DoomZ",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "634be9d9-a30d-46e9-9d06-b99cf0cdf9b5",
+    "title": "OCG Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Jan 29 2026",
+    "where": "Pasig",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jess Laher",
+        "position": 1,
+        "deck": "Dracotail",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Llyod Baradas",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "87bab5d8-2af3-483d-a84a-aa228df7f822",
+    "title": "OTS Premium",
+    "host": "Courtside",
+    "when": "Jan 24 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": "5",
+    "images": [],
+    "winners": [
+      {
+        "name": "Jayson Bergado",
+        "position": 1,
+        "deck": "Crystron",
         "deckImagePath": "1.webp"
       }
     ],

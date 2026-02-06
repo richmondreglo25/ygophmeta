@@ -1,11 +1,19 @@
 [
   {
+    "name": "Argostars Odion",
+    "imagePath": "argostarsodion.webp"
+  },
+  {
     "name": "Artmage",
     "imagePath": "artmage.webp"
   },
   {
     "name": "Artmage Azamina",
     "imagePath": "artmageazamina.webp"
+  },
+  {
+    "name": "Artmage K9",
+    "imagePath": "artmagek9.webp"
   },
   {
     "name": "Blackwing",
@@ -26,6 +34,14 @@
   {
     "name": "Centur-Ion",
     "imagePath": "centurion.webp"
+  },
+  {
+    "name": "Clown Clan",
+    "imagePath": "clownclan.webp"
+  },
+  {
+    "name": "Crystron",
+    "imagePath": "crystron.webp"
   },
   {
     "name": "Crystron K9",
@@ -76,12 +92,28 @@
     "imagePath": "dracotailmetalmorph.webp"
   },
   {
+    "name": "Dracotail Regenesis",
+    "imagePath": "dracotailregenesis.webp"
+  },
+  {
     "name": "Dragunity",
     "imagePath": "dragunity.webp"
   },
   {
+    "name": "Eldlich",
+    "imagePath": "eldlich.webp"
+  },
+  {
     "name": "Elvennotes",
     "imagePath": "elvennotes.webp"
+  },
+  {
+    "name": "Elvennotes Diabellstar",
+    "imagePath": "elvennotesdiabellstar.webp"
+  },
+  {
+    "name": "Elvennotes Yummy",
+    "imagePath": "elvennotesyummy.webp"
   },
   {
     "name": "Enneacraft",
@@ -120,6 +152,14 @@
     "imagePath": "k9.webp"
   },
   {
+    "name": "K9 Bystial",
+    "imagePath": "k9bystial.webp"
+  },
+  {
+    "name": "K9 Cyber Dragon",
+    "imagePath": "k9cyberdragon.webp"
+  },
+  {
     "name": "K9 Dracotail Vanquish Soul",
     "imagePath": "k9dracotailvanquishsoul.webp"
   },
@@ -130,6 +170,10 @@
   {
     "name": "Killer Tune",
     "imagePath": "killertune.webp"
+  },
+  {
+    "name": "Killer Tune Synchron",
+    "imagePath": "killertunesynchron.webp"
   },
   {
     "name": "Lunalight",
@@ -176,6 +220,10 @@
     "imagePath": "mitsurugi.webp"
   },
   {
+    "name": "Mitsurugi Blackwing",
+    "imagePath": "mitsurugiblackwing.webp"
+  },
+  {
     "name": "Mitsurugi Fiendsmith",
     "imagePath": "mitsurugifiendsmith.webp"
   },
@@ -188,6 +236,14 @@
     "imagePath": "mitsurugik9.webp"
   },
   {
+    "name": "Mitsurugi Magistus",
+    "imagePath": "mitsurugimagistus.webp"
+  },
+  {
+    "name": "Mitsurugi Maliss",
+    "imagePath": "mitsurugimaliss.webp"
+  },
+  {
     "name": "Mitsurugi Orcust",
     "imagePath": "mitsurugiorcust.webp"
   },
@@ -198,6 +254,18 @@
   {
     "name": "Mitsurugi Yummy",
     "imagePath": "mitsurugiyummy.webp"
+  },
+  {
+    "name": "Mitsurugi Yummy Solfachord",
+    "imagePath": "mitsurugiyummysolfachord.webp"
+  },
+  {
+    "name": "Neo-Spacian",
+    "imagePath": "neospacian.webp"
+  },
+  {
+    "name": "Odd-Eyes Performapal",
+    "imagePath": "oddeyesperformapal.webp"
   },
   {
     "name": "Odion",
@@ -214,6 +282,10 @@
   {
     "name": "Orcust",
     "imagePath": "orcust.webp"
+  },
+  {
+    "name": "Pendulum Magician",
+    "imagePath": "pendulummagician.webp"
   },
   {
     "name": "Purely",
@@ -236,6 +308,10 @@
     "imagePath": "raidraptor.webp"
   },
   {
+    "name": "Rescue Ace",
+    "imagePath": "rescueace.webp"
+  },
+  {
     "name": "Rescue-ACE",
     "imagePath": "rescueace.webp"
   },
@@ -254,6 +330,10 @@
   {
     "name": "Ryzeal",
     "imagePath": "ryzeal.webp"
+  },
+  {
+    "name": "Salamangreat",
+    "imagePath": "salamangreat.webp"
   },
   {
     "name": "Sky Striker",
@@ -276,11 +356,27 @@
     "imagePath": "synchron.webp"
   },
   {
+    "name": "Tellarknight",
+    "imagePath": "tellarknight.webp"
+  },
+  {
+    "name": "Tenpai",
+    "imagePath": "tenpai.webp"
+  },
+  {
+    "name": "Train",
+    "imagePath": "train.webp"
+  },
+  {
+    "name": "Vanquish Soul",
+    "imagePath": "vanquishsoul.webp"
+  },
+  {
     "name": "Voiceless Voice",
     "imagePath": "voicelessvoice.webp"
   },
   {
-    "name": "VSK9",
+    "name": "VS K9",
     "imagePath": "vsk9.webp"
   },
   {
@@ -288,12 +384,24 @@
     "imagePath": "whiteforest.webp"
   },
   {
+    "name": "White Forest Azamina",
+    "imagePath": "whiteforestazamina.webp"
+  },
+  {
     "name": "White Forest Azamina Fiendsmith",
     "imagePath": "whiteforestazaminafiendsmith.webp"
   },
   {
+    "name": "Yubel Fiendsmith",
+    "imagePath": "yubelfiendsmith.webp"
+  },
+  {
     "name": "Yummy",
     "imagePath": "yummy.webp"
+  },
+  {
+    "name": "Yummy Elvennotes",
+    "imagePath": "yummyelvennotes.webp"
   },
   {
     "name": "Yummy Fiendsmith",
