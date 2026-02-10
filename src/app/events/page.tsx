@@ -5,7 +5,6 @@ import { useEventsByYearMonthRange } from "../data/api";
 import { useMemo, useState } from "react";
 import { columns } from "@/columns/events";
 import { DataTable } from "@/components/data-table";
-import { useRouter } from "next/navigation";
 import { AddEventFormDrawer } from "@/components/add-event-form-drawer";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
@@ -14,8 +13,6 @@ import { Event } from "@/types/event";
 import { UploadDeckDrawer } from "@/components/upload-deck-drawer";
 
 export default function Events() {
-  const router = useRouter();
-
   // Events (last 12 months).
   const now = useMemo(() => new Date(), []);
   const start = useMemo(() => {
@@ -28,7 +25,7 @@ export default function Events() {
       year: now.getFullYear(),
       month: now.getMonth() + 1,
     }),
-    [now]
+    [now],
   );
 
   // Data fetching.
@@ -37,8 +34,8 @@ export default function Events() {
   const [openUploadDeckDrawer, setOpenUploadDeckDrawer] = useState(false);
 
   function onClick(row: Event) {
-    // Navigate to the dynamic Next.js route.
-    router.push(`/events/${row.id}`);
+    // Open the event in a new browser tab.
+    window.open(`/events/${row.id}`, "_blank", "noopener,noreferrer");
   }
 
   function handleAddEventFormDrawer() {

@@ -1083,7 +1083,7 @@
   },
   {
     "format": "tcg",
-    "effectiveFrom": "10/27/2025",
+    "effectiveFrom": "02/02/2026",
     "list": [
       {
         "title": "Forbidden",
@@ -1114,6 +1114,10 @@
           },
           {
             "name": "Barrier Statue of the Stormwinds",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "Barrier Statue of the Torrent",
             "type": "Effect Monster"
           },
           {
@@ -1230,6 +1234,10 @@
           },
           {
             "name": "Chaos Ruler, the Chaotic Magical Dragon",
+            "type": "Synchro Monster"
+          },
+          {
+            "name": "Herald of the Arc Light",
             "type": "Synchro Monster"
           },
           {
@@ -1505,6 +1513,10 @@
             "type": "Trap Card"
           },
           {
+            "name": "Harpie's Feather Storm",
+            "type": "Trap Card"
+          },
+          {
             "name": "Imperial Order",
             "type": "Trap Card"
           },
@@ -1543,6 +1555,10 @@
           {
             "name": "Ultimate Offering",
             "type": "Trap Card"
+          },
+          {
+            "name": "Vanity's Emptiness",
+            "type": "Trap Card"
           }
         ]
       },
@@ -1574,11 +1590,11 @@
             "type": "Effect Monster"
           },
           {
-            "name": "Dark Grepher",
+            "name": "Dimension Shifter",
             "type": "Effect Monster"
           },
           {
-            "name": "Dimension Shifter",
+            "name": "Dracotail Mululu",
             "type": "Effect Monster"
           },
           {
@@ -1587,6 +1603,10 @@
           },
           {
             "name": "Ext Ryzeal",
+            "type": "Effect Monster"
+          },
+          {
+            "name": "K9-66a Jokul",
             "type": "Effect Monster"
           },
           {
@@ -1630,12 +1650,16 @@
             "type": "Effect Monster"
           },
           {
-            "name": "Vanquish Soul Razen",
+            "name": "Vanquish Soul Hollie Sue",
             "type": "Effect Monster"
           },
           {
             "name": "Zoodiac Ratpier",
             "type": "Effect Monster"
+          },
+          {
+            "name": "Fiendsmith's Lacrima",
+            "type": "Fusion Monster"
           },
           {
             "name": "Gem-Knight Master Diamond",
@@ -1644,10 +1668,6 @@
           {
             "name": "Phantom of Yubel",
             "type": "Fusion Monster"
-          },
-          {
-            "name": "Herald of the Arc Light",
-            "type": "Synchro Monster"
           },
           {
             "name": "PSY-Framelord Omega",
@@ -1671,10 +1691,6 @@
           },
           {
             "name": "Ryzeal Detonator",
-            "type": "XYZ Monster"
-          },
-          {
-            "name": "Zoodiac Drident",
             "type": "XYZ Monster"
           },
           {
@@ -1702,6 +1718,14 @@
             "type": "Link Monster"
           },
           {
+            "name": "Yummy★Snatchy",
+            "type": "Link Monster"
+          },
+          {
+            "name": "\"A Case for K9\"",
+            "type": "Spell Card"
+          },
+          {
             "name": "Bonfire",
             "type": "Spell Card"
           },
@@ -1726,10 +1750,6 @@
             "type": "Spell Card"
           },
           {
-            "name": "Change of Heart",
-            "type": "Spell Card"
-          },
-          {
             "name": "Chaos Space",
             "type": "Spell Card"
           },
@@ -1739,10 +1759,6 @@
           },
           {
             "name": "Crossout Designator",
-            "type": "Spell Card"
-          },
-          {
-            "name": "Crystron Inclusion",
             "type": "Spell Card"
           },
           {
@@ -1766,6 +1782,10 @@
             "type": "Spell Card"
           },
           {
+            "name": "Harpie's Feather Duster",
+            "type": "Spell Card"
+          },
+          {
             "name": "Infernity Launcher",
             "type": "Spell Card"
           },
@@ -1775,6 +1795,10 @@
           },
           {
             "name": "Into the Void",
+            "type": "Spell Card"
+          },
+          {
+            "name": "Ketu Dracotail",
             "type": "Spell Card"
           },
           {
@@ -1822,6 +1846,10 @@
             "type": "Spell Card"
           },
           {
+            "name": "Sekka's Light",
+            "type": "Spell Card"
+          },
+          {
             "name": "Set Rotation",
             "type": "Spell Card"
           },
@@ -1831,14 +1859,6 @@
           },
           {
             "name": "Slash Draw",
-            "type": "Spell Card"
-          },
-          {
-            "name": "Snatch Steal",
-            "type": "Spell Card"
-          },
-          {
-            "name": "Stake your Soul!",
             "type": "Spell Card"
           },
           {
@@ -1884,6 +1904,10 @@
           {
             "name": "There Can Be Only One",
             "type": "Trap Card"
+          },
+          {
+            "name": "Ame no Habakiri no Mitsurugi",
+            "type": "Ritual Effect Monster"
           }
         ]
       },
@@ -1891,7 +1915,7 @@
         "title": "Semi-Limited",
         "cards": [
           {
-            "name": "Black Dragon Collapserpent",
+            "name": "Droll & Lock Bird",
             "type": "Effect Monster"
           },
           {
@@ -1904,10 +1928,6 @@
           },
           {
             "name": "Unchained Soul of Sharvara",
-            "type": "Effect Monster"
-          },
-          {
-            "name": "White Dragon Wyverburster",
             "type": "Effect Monster"
           },
           {
