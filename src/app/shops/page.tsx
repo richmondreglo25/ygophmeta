@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { DataTable } from "@/components/data-table";
 import { columns } from "@/columns/shops";
-import { getJsonPath } from "@/utils/enviroment";
+import { getJsonPath, isDevelopment } from "@/utils/enviroment";
 import { useJsonData } from "../data/api";
 import { Loading } from "@/components/loading";
 import { ShopDrawer, useShopDrawer } from "@/components/shop-drawer";
@@ -11,6 +11,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Info, SquareArrowOutUpRight } from "lucide-react";
 import { Shop } from "@/types/shop";
 import { AddShopFormDrawer } from "@/components/add-shop-form-drawer";
+import { UploadShopImageDrawer } from "@/components/upload-shop-image-drawer";
 import { Button } from "@/components/ui/button";
 
 export default function Shops() {
@@ -18,6 +19,8 @@ export default function Shops() {
   const [selected, setSelected] = useState<Shop | null>(null);
   const { open, openDrawer, closeDrawer } = useShopDrawer();
   const [openShopFormDrawer, setOpenShopFormDrawer] = useState(false);
+  const [openUploadShopImageDrawer, setOpenUploadShopImageDrawer] =
+    useState(false);
 
   function onClick(row: Shop) {
     if (!row) return; // Invalid row.
@@ -32,6 +35,14 @@ export default function Shops() {
 
   function handleCloseShopFormDrawer() {
     setOpenShopFormDrawer(false);
+  }
+
+  function handleOpenUploadShopImageDrawer() {
+    setOpenUploadShopImageDrawer(true);
+  }
+
+  function handleCloseUploadShopImageDrawer() {
+    setOpenUploadShopImageDrawer(false);
   }
 
   return (
@@ -83,9 +94,21 @@ export default function Shops() {
           >
             <span>Submit Shop</span>
           </Button>
+          {isDevelopment() && (
+            <Button
+              variant="submit"
+              className="rounded-sm"
+              onClick={handleOpenUploadShopImageDrawer}
+            >
+              <span>Upload Image</span>
+            </Button>
+          )}
         </div>
         {openShopFormDrawer && (
           <AddShopFormDrawer onClose={handleCloseShopFormDrawer} />
+        )}
+        {openUploadShopImageDrawer && (
+          <UploadShopImageDrawer onClose={handleCloseUploadShopImageDrawer} />
         )}
       </div>
     </div>

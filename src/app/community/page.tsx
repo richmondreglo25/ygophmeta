@@ -19,7 +19,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Info, SquareArrowOutUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
-import { UploadProfileImageDrawer } from "@/components/upload-profile-image";
+import { UploadProfileImageDrawer } from "@/components/upload-profile-image-drawer";
 import { Player } from "@/types/player";
 import { Judge } from "@/types/judge";
 
