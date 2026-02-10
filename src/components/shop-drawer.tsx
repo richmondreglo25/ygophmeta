@@ -38,7 +38,7 @@ function renderValue(key: string, value: unknown) {
         </Avatar>
       );
     }
-    return <span className="italic text-muted-foreground">No Logo</span>;
+    return <span className="text-muted-foreground">No Logo</span>;
   } else if (key === "images" && Array.isArray(value)) {
     // Use Next.js Image for optimization
     return (

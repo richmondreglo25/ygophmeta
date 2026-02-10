@@ -28,8 +28,12 @@ export default function About() {
       <Accordion type="multiple" className="w-full">
         {data.map((item) => (
           <AccordionItem key={item.value} value={item.value}>
-            <AccordionTrigger>{item.title}</AccordionTrigger>
-            <AccordionContent>{item.content}</AccordionContent>
+            <AccordionTrigger className="hover:no-underline">
+              <span className="font-medium text-sm">{item.title}</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-sm text-gray-600 dark:text-gray-300">
+              {item.content}
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

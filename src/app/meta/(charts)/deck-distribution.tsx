@@ -97,7 +97,7 @@ export function DeckDistribution({
 
             const _isEventDeck = isEventDeck(deck);
             const deckName = _isEventDeck ? deck.name : deck.deck;
-            const deckCount = _isEventDeck ? deck.count ?? 1 : 1;
+            const deckCount = _isEventDeck ? (deck.count ?? 1) : 1;
 
             for (let c = 0; c < deckCount; c++) {
               const participantObj: DeckParticipant = {
@@ -131,14 +131,14 @@ export function DeckDistribution({
     // Sort participants in each group by date descending.
     Object.values(groups).forEach((group) => {
       group.participants = group.participants.sort(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
       );
 
       // Also sort each month group.
       Object.values(group.participantsByMonth).forEach((arr) =>
         arr.sort(
-          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-        )
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        ),
       );
     });
 
@@ -216,16 +216,19 @@ export function DeckDistribution({
                         .sort((a, b) =>
                           Number(b.value) - Number(a.value) !== 0
                             ? Number(b.value) - Number(a.value)
-                            : String(a.name).localeCompare(String(b.name))
+                            : String(a.name).localeCompare(String(b.name)),
                         );
                       const COLORS = getGraphColors(pieData.length, "#2563eb");
-                      const pieConfig = pieData.reduce((acc, item, idx) => {
-                        acc[item.name] = {
-                          color: COLORS[idx % COLORS.length],
-                          label: `${item.name} (${item.value})`,
-                        };
-                        return acc;
-                      }, {} as Record<string, { color: string; label: string }>);
+                      const pieConfig = pieData.reduce(
+                        (acc, item, idx) => {
+                          acc[item.name] = {
+                            color: COLORS[idx % COLORS.length],
+                            label: `${item.name} (${item.value})`,
+                          };
+                          return acc;
+                        },
+                        {} as Record<string, { color: string; label: string }>,
+                      );
 
                       return (
                         <CarouselItem key={monthLabel}>
@@ -242,7 +245,7 @@ export function DeckDistribution({
                           />
                         </CarouselItem>
                       );
-                    }
+                    },
                   )}
                 </CarouselContent>
                 <CarouselSlideInfo />

@@ -87,7 +87,7 @@ export default async function EventPage({
 
   // Create a lookup by player name (case-insensitive)
   const playersByName = Object.fromEntries(
-    (playersData as Player[]).map((p) => [p.name.toLowerCase(), p])
+    (playersData as Player[]).map((p) => [p.name.toLowerCase(), p]),
   );
 
   const details = [
@@ -99,7 +99,7 @@ export default async function EventPage({
         label: "Participants",
         value: event.decks.reduce(
           (acc: number, deck: { count: number }) => acc + deck.count,
-          0
+          0,
         ),
         icon: "players",
       },
@@ -152,7 +152,7 @@ export default async function EventPage({
                     width: "100%",
                   }}
                 />
-                <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+                <AvatarFallback className="flex justify-center items-center text-xs font-normal h-full w-full p-5">
                   Unable to load image
                 </AvatarFallback>
               </Avatar>
@@ -212,10 +212,10 @@ export default async function EventPage({
                   index === 0
                     ? "bg-yellow-400 text-white border-yellow-400"
                     : index === 1
-                    ? "bg-gray-300 text-gray-900 border-gray-300"
-                    : index === 2
-                    ? "bg-amber-700 text-white border-amber-700"
-                    : "bg-gray-200 text-gray-600 border-gray-300";
+                      ? "bg-gray-300 text-gray-900 border-gray-300"
+                      : index === 2
+                        ? "bg-amber-700 text-white border-amber-700"
+                        : "bg-gray-200 text-gray-600 border-gray-300";
 
                 // Find player by name (case-insensitive)
                 const player =
@@ -240,7 +240,7 @@ export default async function EventPage({
 
                     {/* Player Image */}
                     {player && (
-                      <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8] h-full w-full p-5 rounded-sm">
+                      <div className="flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 h-full w-full p-5 rounded-sm border">
                         <Avatar
                           key={player.name}
                           className="flex justify-center items-center"
@@ -251,14 +251,14 @@ export default async function EventPage({
                             loading="lazy"
                             className="object-cover rounded-full h-[150px] w-[150px] border-4 border-white shadow-lg"
                           />
-                          <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+                          <AvatarFallback className="flex justify-center items-center text-xs font-normal h-full w-full p-5">
                             Unable to load player image
                           </AvatarFallback>
                         </Avatar>
                       </div>
                     )}
                     {!player && (
-                      <div className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5 border rounded-sm">
+                      <div className="flex justify-center items-center text-xs font-normal h-full w-full p-5 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-slate-600 dark:text-slate-400 rounded-sm border">
                         Player profile not found
                       </div>
                     )}
@@ -269,13 +269,13 @@ export default async function EventPage({
                         <AvatarImage
                           src={getEventImagePath(
                             event.id,
-                            winner.deckImagePath
+                            winner.deckImagePath,
                           )}
                           alt={winner.deck}
                           loading="lazy"
                           className="flex justify-center items-center h-full w-full object-contain"
                         />
-                        <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
+                        <AvatarFallback className="flex justify-center items-center text-xs font-normal h-full w-full p-5 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-slate-600 dark:text-slate-400 rounded-sm">
                           Unable to load deck image
                         </AvatarFallback>
                       </Avatar>
@@ -335,7 +335,7 @@ function getOrdinal(n: number): string {
 function DeckSummaryPieChart({ decks }: { decks: EventDeck[] }) {
   // Sort decks by count descending
   const sortedDecks = [...decks].sort((a, b) =>
-    b.count !== a.count ? b.count - a.count : a.name.localeCompare(b.name)
+    b.count !== a.count ? b.count - a.count : a.name.localeCompare(b.name),
   );
 
   // Generate pie chart data from decks, label as "<Deck name> (count)"
@@ -347,13 +347,16 @@ function DeckSummaryPieChart({ decks }: { decks: EventDeck[] }) {
   // Generate config with color cycling.
   const COLORS = getGraphColors(pieData.length, "#2563eb");
 
-  const pieConfig = pieData.reduce((acc, item, idx) => {
-    acc[item.name] = {
-      color: COLORS[idx % COLORS.length],
-      label: `${item.name} (${item.value})`,
-    };
-    return acc;
-  }, {} as Record<string, { color: string; label: string }>);
+  const pieConfig = pieData.reduce(
+    (acc, item, idx) => {
+      acc[item.name] = {
+        color: COLORS[idx % COLORS.length],
+        label: `${item.name} (${item.value})`,
+      };
+      return acc;
+    },
+    {} as Record<string, { color: string; label: string }>,
+  );
 
   return (
     <ChartPie
@@ -363,7 +366,7 @@ function DeckSummaryPieChart({ decks }: { decks: EventDeck[] }) {
       nameKey="name"
       title={`Deck Distribution (Total: ${decks.reduce(
         (acc, deck) => acc + deck.count,
-        0
+        0,
       )})`}
       description="Distribution of decks used by participants."
       maxItems={10}

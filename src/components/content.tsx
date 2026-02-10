@@ -15,10 +15,10 @@ export function Content({ children }: { children: React.ReactNode }) {
         <div className="flex-1" />
         <div className="bg-white w-full max-w-6xl px-5 md:px-10">
           {currentTab && (
-            <div className="flex items-center gap-1.5 py-5">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100 flex items-center gap-2 py-5">
               <IconX type={currentTab.icon} size={14} />
-              <h1>{currentTab.title}</h1>
-            </div>
+              <span className="text-sm font-medium">{currentTab.title}</span>
+            </h2>
           )}
           <div className="pb-5">{children}</div>
         </div>

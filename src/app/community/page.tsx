@@ -16,7 +16,7 @@ import { IconX } from "@/components/IconX";
 import { ProfileDrawer, useProfileDrawer } from "@/components/profile-drawer";
 import { useState } from "react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Info, SquareArrowOutUpRight } from "lucide-react";
+import { Info, SquareArrowOutUpRight, Users, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
 import { UploadProfileImageDrawer } from "@/components/upload-profile-image-drawer";
@@ -76,8 +76,8 @@ export default function Community() {
 
   return (
     <>
-      <Alert variant="info">
-        <AlertDescription className="flex items-center gap-1.5 text-sm">
+      <Alert variant="info" className="shadow-sm">
+        <AlertDescription className="flex items-center gap-2 text-sm text-blue-700 dark:text-blue-300">
           <Info size={14} />
           <div>
             <span className="font-semibold">Click</span> a community member to
@@ -93,10 +93,12 @@ export default function Community() {
       >
         {sources.map(({ key, label, plural, data, columns }) => (
           <AccordionItem key={key} value={key}>
-            <AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline">
               <div className="flex items-center gap-2">
                 <IconX type={`${key}`} size={16} />
-                {data.data.length > 1 ? plural : label} ({data.data.length})
+                <span className="font-medium text-sm">
+                  {data.data.length > 1 ? plural : label} ({data.data.length})
+                </span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -136,18 +138,22 @@ export default function Community() {
         <div className="flex justify-end gap-2">
           <Button
             variant="submit"
-            className="rounded-sm"
+            size="sm"
+            className="rounded-md"
             onClick={handleAddProfileFormDrawer}
           >
-            <span>Submit Profile</span>
+            <Users className="w-3 h-3" />
+            Submit Profile
           </Button>
           {isDevelopment() && (
             <Button
               variant="submit"
-              className="rounded-sm"
+              size="sm"
+              className="rounded-md"
               onClick={handleOpenUploadProfileImageDrawer}
             >
-              <span>Upload Image</span>
+              <Upload className="w-3 h-3" />
+              Upload Image
             </Button>
           )}
         </div>

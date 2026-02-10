@@ -8,7 +8,7 @@ import { DataTable } from "@/components/data-table";
 import { AddEventFormDrawer } from "@/components/add-event-form-drawer";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
-import { Info, SquareArrowOutUpRight } from "lucide-react";
+import { Info, SquareArrowOutUpRight, Calendar, Send } from "lucide-react";
 import { Event } from "@/types/event";
 import { UploadDeckDrawer } from "@/components/upload-deck-drawer";
 
@@ -60,9 +60,9 @@ export default function Events() {
         <Loading />
       ) : (
         <div className="flex flex-col gap-4">
-          <Alert variant="info">
-            <AlertDescription className="flex items-center gap-1.5 text-sm">
-              <Info size={14} />
+          <Alert variant="info" className="shadow-sm">
+            <AlertDescription className="flex items-center gap-2 text-sm text-blue-700 dark:text-blue-300">
+              <Info size={14} className="text-blue-600" />
               <div>
                 <span className="font-semibold">Click</span> an event to learn
                 more.
@@ -70,12 +70,12 @@ export default function Events() {
             </AlertDescription>
           </Alert>
           <DataTable columns={columns} data={events} onClick={onClick} />
-          <Alert variant="info">
-            <AlertTitle className="font-semibold flex items-center gap-2">
-              <SquareArrowOutUpRight size={12} />
+          <Alert variant="info" className="shadow-sm">
+            <AlertTitle className="font-semibold flex items-center gap-2 text-blue-800 dark:text-blue-200">
+              <SquareArrowOutUpRight size={14} className="text-blue-600" />
               Share Your Event Results!
             </AlertTitle>
-            <AlertDescription className="text-sm pt-1">
+            <AlertDescription className="text-sm pt-2 text-blue-700 dark:text-blue-300">
               Help the community grow by submitting your event results. Your
               contribution makes the meta more accurate and helps other
               duelists!
@@ -84,18 +84,22 @@ export default function Events() {
           <div className="flex justify-end gap-2">
             <Button
               variant="submit"
-              className="rounded-sm"
+              size="sm"
+              className="rounded-md"
               onClick={handleAddEventFormDrawer}
             >
-              <span>Submit Event</span>
+              <Calendar className="w-3 h-3" />
+              Submit Event
             </Button>
             {/* Example button to open UploadDeckDrawer */}
             <Button
               variant="submit"
-              className="rounded-sm"
+              size="sm"
+              className="rounded-md"
               onClick={() => handleOpenUploadDeckDrawer()}
             >
-              <span>Submit Deck</span>
+              <Send className="w-3 h-3" />
+              Submit Deck
             </Button>
           </div>
           {openEventFormDrawer && (

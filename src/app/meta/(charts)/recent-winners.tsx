@@ -45,7 +45,7 @@ type RecentWinnersProps = {
  */
 function WinnerCard({ winner }: WinnerCardProps) {
   return (
-    <div className="flex flex-col justify-start items-start gap-3 text-sm font-semibold border rounded-sm p-4">
+    <div className="flex flex-col justify-start items-start gap-3 text-sm font-semibold border rounded-sm p-4 shadow-sm hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-200 cursor-pointer">
       {/* Position, Name, Deck. */}
       <div className="flex flex-row gap-2 items-center">
         <Crown size={14} className="text-yellow-500" />
@@ -56,7 +56,7 @@ function WinnerCard({ winner }: WinnerCardProps) {
 
       {/* Player Image. */}
       {winner.playerImage ? (
-        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#E3E8F0] to-[#F3F5F8] h-full w-full p-5 rounded-sm">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 h-full w-full p-5 rounded-sm border">
           <Avatar className="flex justify-center items-center">
             <AvatarImage
               src={winner.playerImage}
@@ -64,14 +64,14 @@ function WinnerCard({ winner }: WinnerCardProps) {
               loading="lazy"
               className="object-cover rounded-full h-[100px] w-[100px] border-4 border-white shadow-lg"
             />
-            <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
-              Unable to load player image.
+            <AvatarFallback className="flex justify-center items-center text-xs font-normal h-full w-full p-5 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-slate-600 dark:text-slate-400">
+              Profile not available
             </AvatarFallback>
           </Avatar>
         </div>
       ) : (
-        <div className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5 border rounded-sm">
-          Player profile not found.
+        <div className="flex justify-center items-center text-xs font-normal h-full w-full p-5 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-slate-600 dark:text-slate-400 rounded-sm border">
+          Profile not available
         </div>
       )}
 
@@ -84,8 +84,8 @@ function WinnerCard({ winner }: WinnerCardProps) {
             loading="lazy"
             className="flex justify-center items-center h-full w-full object-contain"
           />
-          <AvatarFallback className="flex justify-center items-center text-xs font-normal italic h-full w-full p-5">
-            Unable to load deck image.
+          <AvatarFallback className="flex justify-center items-center text-xs font-normal h-full w-full p-5 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-slate-600 dark:text-slate-400 rounded-sm">
+            Deck image not available
           </AvatarFallback>
         </Avatar>
       )}
@@ -97,14 +97,14 @@ function WinnerCard({ winner }: WinnerCardProps) {
           <div className="flex flex-row gap-2 items-center">
             <span
               className={`text-xs capitalize px-2 py-0.5 rounded-sm ${getBadgeClass(
-                "guide"
+                "guide",
               )}`}
             >
               {winner.format}
             </span>
             <span
               className={`text-xs capitalize px-2 py-0.5 rounded-sm ${getBadgeClass(
-                winner.official ? "official" : "unofficial"
+                winner.official ? "official" : "unofficial",
               )}`}
             >
               {winner.official ? "Official" : "Unofficial"}
@@ -146,7 +146,7 @@ export function RecentWinners({ events, players }: RecentWinnersProps) {
         .forEach((winner, idx) => {
           // Find player image.
           const player = players.find(
-            (p) => p.name.toLowerCase() === winner.name.toLowerCase()
+            (p) => p.name.toLowerCase() === winner.name.toLowerCase(),
           );
           const playerImage =
             player?.imagePath && player.imagePath.trim() !== ""
@@ -176,7 +176,7 @@ export function RecentWinners({ events, players }: RecentWinnersProps) {
     });
     // Sort by date descending.
     return result.sort(
-      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
     );
   }, [events, players]);
 

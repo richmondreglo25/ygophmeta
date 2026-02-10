@@ -18,16 +18,16 @@ import { getJsonPath } from "@/utils/enviroment";
 export default function BanlistPage() {
   const formats: BanlistFormat[] = ["ocg", "ae", "tcg"];
   const { data: banlist = [], loading } = useJsonData<Banlist>(
-    getJsonPath("banlist.json")
+    getJsonPath("banlist.json"),
   );
 
   if (loading) return <Loading />;
 
   return (
     <div className="flex flex-col gap-4">
-      <Alert variant="info">
-        <AlertDescription className="flex items-center gap-1.5 text-sm">
-          <Info size={14} />
+      <Alert variant="info" className="shadow-sm">
+        <AlertDescription className="flex items-center gap-2 text-sm text-blue-700 dark:text-blue-300">
+          <Info size={14} className="text-blue-600" />
           <span>
             <span className="font-semibold">Click</span> on format to expand or
             collapse the respective banlist.
@@ -41,7 +41,7 @@ export default function BanlistPage() {
       >
         {banlist.map(({ format, effectiveFrom, list }) => (
           <AccordionItem key={format} value={format}>
-            <AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline">
               <div className="flex items-center gap-2">
                 <TextAlignJustify size={12} />
                 <h2 className="text-sm font-semibold tracking-wide flex flex-col sm:flex-row sm:items-center gap-1">

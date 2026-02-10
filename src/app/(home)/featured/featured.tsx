@@ -77,7 +77,7 @@ function getContent(item: FeaturedItem) {
   } else if (item.type === "video") {
     let embedUrl = item.link;
     const match = item.link?.match(
-      /(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/
+      /(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/,
     );
     if (match) {
       embedUrl = `https://www.youtube-nocookie.com/embed/${match[1]}`;
@@ -102,7 +102,7 @@ function getContent(item: FeaturedItem) {
 function renderCarousel(
   items: FeaturedItem[],
   itemsPerSlide: number = 1,
-  autoplayInstance: AutoplayType
+  autoplayInstance: AutoplayType,
 ) {
   if (!items || items.length === 0) return null;
   return (
@@ -130,7 +130,7 @@ function renderCarousel(
                     {item.title}
                     <span
                       className={`text-xs capitalize px-2 py-1 rounded-sm ${getBadgeClass(
-                        item.type
+                        item.type,
                       )}`}
                     >
                       {item.type}
@@ -176,7 +176,7 @@ function renderCarousel(
 export default function Featured() {
   const isSm = useMediaQuery({ maxWidth: 767 });
   const { data, loading } = useJsonData<FeaturedJson>(
-    getJsonPath("featured.json")
+    getJsonPath("featured.json"),
   );
 
   if (loading || !data) {
@@ -184,32 +184,35 @@ export default function Featured() {
   }
 
   // Create a unique autoplay instance for each carousel group
-  const autoplayRefs = Object.keys(data).reduce((acc, group) => {
-    acc[group] = Autoplay({
-      delay: 7000,
-      playOnInit: true,
-      stopOnInteraction: true,
-    });
-    return acc;
-  }, {} as Record<string, AutoplayType>);
+  const autoplayRefs = Object.keys(data).reduce(
+    (acc, group) => {
+      acc[group] = Autoplay({
+        delay: 7000,
+        playOnInit: true,
+        stopOnInteraction: true,
+      });
+      return acc;
+    },
+    {} as Record<string, AutoplayType>,
+  );
 
   return (
-    <div className="flex flex-col gap-2">
-      <div className="flex items-center gap-1 text-xs font-normal italic">
-        <Sparkle size={10} />
-        <span>Featured</span>
-      </div>
+    <div className="flex flex-col gap-2 space-y-2">
+      <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100 flex items-center gap-2">
+        <Sparkle size={14} className="text-yellow-600" />
+        <span className="text-sm font-medium">Featured</span>
+      </h2>
       <div className="flex flex-col gap-5">
         {Object.entries(data).map(([group, groupData]) =>
           Array.isArray(groupData.items) && groupData.items.length > 0 ? (
             <div key={group}>
               {renderCarousel(
                 groupData.items,
-                isSm ? 1 : groupData.itemsPerSlide ?? 1,
-                autoplayRefs[group]
+                isSm ? 1 : (groupData.itemsPerSlide ?? 1),
+                autoplayRefs[group],
               )}
             </div>
-          ) : null
+          ) : null,
         )}
       </div>
     </div>

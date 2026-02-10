@@ -108,7 +108,7 @@ export function TopPlayers({
         }
         player.count += data.count;
         player.decks = Array.from(
-          new Set([...player.decks, ...Array.from(data.decks)])
+          new Set([...player.decks, ...Array.from(data.decks)]),
         );
       });
     });
@@ -116,7 +116,7 @@ export function TopPlayers({
     // Sort players in each group by count desc, then name asc
     Object.values(groups).forEach((group) => {
       group.players = group.players.sort((a, b) =>
-        b.count !== a.count ? b.count - a.count : a.name.localeCompare(b.name)
+        b.count !== a.count ? b.count - a.count : a.name.localeCompare(b.name),
       );
     });
 
@@ -219,7 +219,7 @@ export function TopPlayers({
                     )}
                     {group.players.map((p) => {
                       const _player = players.find(
-                        (pl) => pl.name.toLowerCase() === p.name.toLowerCase()
+                        (pl) => pl.name.toLowerCase() === p.name.toLowerCase(),
                       );
                       // Check if player has valid image path.
                       const hasImage =

@@ -58,7 +58,7 @@ function groupEventsByHostAndWeek(events: Event[]) {
   const allWeeks = Array.from(weekLabelToStartDate.keys()).sort(
     (a, b) =>
       weekLabelToStartDate.get(b)!.getTime() -
-      weekLabelToStartDate.get(a)!.getTime()
+      weekLabelToStartDate.get(a)!.getTime(),
   );
   const allHosts = Array.from(new Set(events.map((e) => e.host))).sort();
 
@@ -125,12 +125,12 @@ export function DataExtractionChart({ events }: Props) {
                         const parts = [];
                         if (counts.official > 0) {
                           parts.push(
-                            `<span style="color:#2563eb;font-weight:bold">${format} (${counts.official})</span>`
+                            `<span style="color:#2563eb;font-weight:bold">${format} (${counts.official})</span>`,
                           );
                         }
                         if (counts.unofficial > 0) {
                           parts.push(
-                            `<span style="color:#6b7280;">${format} (${counts.unofficial})</span>`
+                            `<span style="color:#6b7280;">${format} (${counts.unofficial})</span>`,
                           );
                         }
                         return parts;

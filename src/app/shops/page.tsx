@@ -8,7 +8,7 @@ import { useJsonData } from "../data/api";
 import { Loading } from "@/components/loading";
 import { ShopDrawer, useShopDrawer } from "@/components/shop-drawer";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Info, SquareArrowOutUpRight } from "lucide-react";
+import { Info, SquareArrowOutUpRight, Store, Upload } from "lucide-react";
 import { Shop } from "@/types/shop";
 import { AddShopFormDrawer } from "@/components/add-shop-form-drawer";
 import { UploadShopImageDrawer } from "@/components/upload-shop-image-drawer";
@@ -51,9 +51,9 @@ export default function Shops() {
         <Loading />
       ) : (
         <>
-          <Alert variant="info">
-            <AlertDescription className="flex items-center gap-1.5 text-sm">
-              <Info size={14} />
+          <Alert variant="info" className="shadow-sm">
+            <AlertDescription className="flex items-center gap-2 text-sm text-blue-700 dark:text-blue-300">
+              <Info size={14} className="text-blue-600" />
               <div>
                 <span className="font-semibold">Click</span> a shop to learn
                 more.
@@ -76,12 +76,12 @@ export default function Shops() {
       />
 
       <div className="flex flex-col gap-4 pt-4">
-        <Alert variant="info">
-          <AlertTitle className="font-semibold flex items-center gap-2">
-            <SquareArrowOutUpRight size={12} />
+        <Alert variant="info" className="shadow-sm">
+          <AlertTitle className="font-semibold flex items-center gap-2 text-blue-800 dark:text-blue-200">
+            <SquareArrowOutUpRight size={14} className="text-blue-600" />
             Share Your Shop!
           </AlertTitle>
-          <AlertDescription className="text-sm pt-1">
+          <AlertDescription className="text-sm pt-2 text-blue-700 dark:text-blue-300">
             Showcase your shop, highlight your offerings, and support the
             community.
           </AlertDescription>
@@ -89,18 +89,22 @@ export default function Shops() {
         <div className="flex justify-end gap-2">
           <Button
             variant="submit"
-            className="rounded-sm"
+            size="sm"
+            className="rounded-md"
             onClick={handleOpenShopFormDrawer}
           >
-            <span>Submit Shop</span>
+            <Store className="w-3 h-3" />
+            Submit Shop
           </Button>
           {isDevelopment() && (
             <Button
               variant="submit"
-              className="rounded-sm"
+              size="sm"
+              className="rounded-md"
               onClick={handleOpenUploadShopImageDrawer}
             >
-              <span>Upload Image</span>
+              <Upload className="w-3 h-3" />
+              Upload Image
             </Button>
           )}
         </div>
