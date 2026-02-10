@@ -50,7 +50,7 @@ export default function Home() {
       year: now.getFullYear(),
       month: now.getMonth() + 1,
     }),
-    [now]
+    [now],
   );
 
   // Events.
@@ -59,7 +59,7 @@ export default function Home() {
 
   // Players.
   const { data: players = [], loading: playersLoading } = useJsonData<Player[]>(
-    getJsonPath("players.json")
+    getJsonPath("players.json"),
   );
 
   // Drawer open states
@@ -103,7 +103,7 @@ export default function Home() {
                 </div>
                 <span
                   className={`text-xs capitalize px-2 py-1 rounded-sm ${getBadgeClass(
-                    "guide"
+                    "guide",
                   )}`}
                 >
                   Guide
@@ -133,7 +133,7 @@ export default function Home() {
               </div>
               <span
                 className={`text-xs capitalize px-2 py-1 rounded-sm ${getBadgeClass(
-                  "guide"
+                  "guide",
                 )}`}
               >
                 Profile
@@ -165,7 +165,7 @@ export default function Home() {
               </div>
               <span
                 className={`text-xs capitalize px-2 py-1 rounded-sm ${getBadgeClass(
-                  "guide"
+                  "guide",
                 )}`}
               >
                 Deck
