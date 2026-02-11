@@ -3468,45 +3468,6 @@
     "notes": ""
   },
   {
-    "id": "f4e3cb8a-66f9-44c5-8523-87b9e8e4bec4",
-    "title": "OCG Pod 2",
-    "host": "RaVens Play Center",
-    "when": "Jan 31 2026",
-    "where": "Bulacan",
-    "format": "OCG",
-    "official": true,
-    "rounds": 3,
-    "images": [],
-    "winners": [
-      {
-        "name": "Friedrich Ferrer",
-        "position": 1,
-        "deck": "",
-        "deckImagePath": "1.webp"
-      },
-      {
-        "name": "Nero The Great",
-        "position": 2,
-        "deck": "",
-        "deckImagePath": "2.webp"
-      },
-      {
-        "name": "Tristan Cruz",
-        "position": 3,
-        "deck": "",
-        "deckImagePath": "3.webp"
-      },
-      {
-        "name": "Owen Cruz",
-        "position": 4,
-        "deck": "",
-        "deckImagePath": "4.webp"
-      }
-    ],
-    "decks": [],
-    "notes": ""
-  },
-  {
     "id": "3b6fa0c6-c1fc-459d-8e2e-e551b896cc61",
     "title": "AE Pod 1",
     "host": "Rogue's Passage",
@@ -3668,6 +3629,249 @@
         "name": "Jayson Bergado",
         "position": 1,
         "deck": "Crystron",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "400b341b-f231-4bc6-ab81-91cc72c5378c",
+    "title": "Davao YUGIOH Ranking Tournament S24.T3",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 10 2026",
+    "where": "Green Coffee Davao",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Vivo Milo Crame",
+        "position": 1,
+        "deck": "Mitsurugi Horus",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jobelle Vios",
+        "position": 2,
+        "deck": "Lunalight",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Lian Estabillo",
+        "position": 3,
+        "deck": "Elfnote Fiendsmith",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "b410fed2-3367-4ff2-9f3e-3ec9121ccde4",
+    "title": "OCG Pod 2",
+    "host": "RaVens Play Center",
+    "when": "Jan 31 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Friedrich Ferrer",
+        "position": 1,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Nero",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Tristan Cruz",
+        "position": 3,
+        "deck": "Killer Tune",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Owen Cruz",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5a0b203c-3068-4ba6-95d4-435faad223fb",
+    "title": "OCG Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Jan 31 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Tristan Cruz",
+        "position": 1,
+        "deck": "Killer Tune",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Kim Mark Parane",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Alfonzo Almazar",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "King Robles",
+        "position": 4,
+        "deck": "Branded",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ea256d34-8031-496a-bd5d-41374e226825",
+    "title": "AE Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Jan 25 2026",
+    "where": "Bulacan",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Gerald Kent Hui",
+        "position": 1,
+        "deck": "Mitsurugi",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Alfonzo Almazar",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Friedrich Ferrer",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Marvin Tamayo",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "cff95905-6623-4f8d-83f2-d45c8cf0d338",
+    "title": "AE Pod 1",
+    "host": "RaVens Play Center",
+    "when": "Jan 25 2026",
+    "where": "Bulacan",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Mark Jericho Surio",
+        "position": 1,
+        "deck": "Mitsurugi Yummy Solfachord",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Gerald Kent Hui",
+        "position": 2,
+        "deck": "Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Alfonzo Almazar",
+        "position": 3,
+        "deck": "",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Friedrich Ferrer",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "e7a8e1c9-caa6-4995-a6e5-f167aceced7a",
+    "title": "Davao YUGIOH Ranking Tournament S24.T3",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 10 2026",
+    "where": "Green Coffee Davao",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Vivo Milo Crame",
+        "position": 1,
+        "deck": "Mitsurugi Horus",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jobelle Vios",
+        "position": 2,
+        "deck": "Lunalight",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Lian Estabillo",
+        "position": 3,
+        "deck": "Elfnote Fiendsmith",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "3bd0e2e9-07ba-4cad-820b-37628c0ef762",
+    "title": "OCG Pod 1",
+    "host": "Tadaima Hobbies and Toy Shop",
+    "when": "Jan 31 2026",
+    "where": "Bulacan",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Pao",
+        "position": 1,
+        "deck": "K9",
         "deckImagePath": "1.webp"
       }
     ],
