@@ -126,7 +126,7 @@ export function ChartPie({
   }
 
   return (
-    <Card className="flex flex-col p-0 text-sm h-full w-full rounded-sm border-[1px] shadow-none">
+    <Card className="flex flex-col p-0 text-sm h-full w-full rounded-sm border shadow-sm">
       <CardHeader className="items-center pt-5 pb-0">
         <CardTitle>{title}</CardTitle>
         {description && (

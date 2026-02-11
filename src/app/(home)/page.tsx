@@ -160,7 +160,7 @@ export default function Home() {
 
       {/* Quick Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card className="p-4 text-center shadow-none">
+        <Card className="p-4 text-center shadow-sm rounded-sm border hover:shadow-md transition-shadow duration-200">
           <div className="flex items-center justify-center mb-2">
             <Users className="w-5 h-5 text-blue-600" />
           </div>
@@ -171,7 +171,7 @@ export default function Home() {
             Players
           </div>
         </Card>
-        <Card className="p-4 text-center shadow-none">
+        <Card className="p-4 text-center shadow-sm rounded-sm border hover:shadow-md transition-shadow duration-200">
           <div className="flex items-center justify-center mb-2">
             <Trophy className="w-5 h-5 text-purple-600" />
           </div>
@@ -182,7 +182,7 @@ export default function Home() {
             Total Events
           </div>
         </Card>
-        <Card className="p-4 text-center shadow-none">
+        <Card className="p-4 text-center shadow-sm rounded-sm border hover:shadow-md transition-shadow duration-200">
           <div className="flex items-center justify-center mb-2">
             <Calendar className="w-5 h-5 text-green-600" />
           </div>
@@ -193,7 +193,7 @@ export default function Home() {
             This Week
           </div>
         </Card>
-        <Card className="p-4 text-center shadow-none">
+        <Card className="p-4 text-center shadow-sm rounded-sm border hover:shadow-md transition-shadow duration-200">
           <div className="flex items-center justify-center mb-2">
             <TrendingUp className="w-5 h-5 text-orange-600" />
           </div>
@@ -219,7 +219,7 @@ export default function Home() {
           {data.map((item, index) => (
             <Card
               key={index}
-              className="flex flex-col border rounded-lg shadow-none"
+              className="flex flex-col border rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200"
             >
               <CardHeader className="p-4">
                 <CardTitle className="text-sm flex justify-between items-center gap-2">
@@ -255,7 +255,7 @@ export default function Home() {
           ))}
 
           {/* Profile Submission Card */}
-          <Card className="flex flex-col border rounded-lg shadow-none">
+          <Card className="flex flex-col border rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200">
             <CardHeader className="p-4">
               <CardTitle className="text-sm flex justify-between items-center gap-2">
                 <div className="flex items-center gap-2">
@@ -286,7 +286,7 @@ export default function Home() {
           </Card>
 
           {/* Deck Submission Card */}
-          <Card className="flex flex-col border shadow-none">
+          <Card className="flex flex-col border rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200">
             <CardHeader className="p-4">
               <CardTitle className="text-sm flex justify-between items-center gap-2">
                 <div className="flex items-center gap-2">
@@ -317,7 +317,7 @@ export default function Home() {
           </Card>
 
           {/* Shop Submission Card */}
-          <Card className="flex flex-col border shadow-none">
+          <Card className="flex flex-col border rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200">
             <CardHeader className="p-4">
               <CardTitle className="text-sm flex justify-between items-center gap-2">
                 <div className="flex items-center gap-2">

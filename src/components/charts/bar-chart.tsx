@@ -38,7 +38,7 @@ export function ChartBar({
   description = "",
 }: ChartBarProps) {
   return (
-    <Card className="flex flex-col p-0 text-sm rounded-sm border-[1px] shadow-none">
+    <Card className="flex flex-col p-0 text-sm rounded-sm border shadow-sm">
       <CardHeader className="items-center pt-5 pb-3">
         <CardTitle>{title}</CardTitle>
         {description && <CardDescription>{description}</CardDescription>}

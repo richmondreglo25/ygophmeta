@@ -65,6 +65,7 @@ export default function Shops() {
             data={data}
             searchColumn="name"
             onClick={onClick}
+            mobileGridCols={1}
           />
         </>
       )}

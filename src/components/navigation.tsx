@@ -36,7 +36,7 @@ export function Navigation() {
                     href={tab.path}
                   >
                     <IconX type={tab.icon} size={14} />
-                    <span className="hidden sm:inline">{tab.title}</span>
+                    <span className="hidden md:inline">{tab.title}</span>
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>

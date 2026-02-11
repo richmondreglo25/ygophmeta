@@ -3,8 +3,9 @@
 import { useMemo, useState } from "react";
 import type { Event } from "@/types/event";
 import type { Player } from "@/types/player";
-import { Info, Slash } from "lucide-react";
+import { Info, Slash, Trophy } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardContent } from "@/components/ui/card";
 import { getImagePath } from "@/utils/enviroment";
 import {
   Select,
@@ -14,6 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { useMediaQuery } from "react-responsive";
 
 type TopPlayersProps = {
   events: Event[];
@@ -52,6 +54,7 @@ export function TopPlayers({
   showSelection = true,
 }: TopPlayersProps) {
   const [months, setMonths] = useState(1);
+  const isMobile = useMediaQuery({ maxWidth: 639 });
 
   // Filter events by selected months.
   const filteredEvents = useMemo(() => {
@@ -185,89 +188,156 @@ export function TopPlayers({
                   {group.official ? "Official" : "Unofficial"}
                 </span>
               </div>
-              <div
-                id="data-table-wrapper"
-                className="border rounded-sm overflow-auto"
-              >
-                <table
-                  id="data-table"
-                  className="w-full caption-bottom text-sm"
-                >
-                  <thead>
-                    <tr className="border-b transition-colors hover:bg-muted/50">
-                      <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
-                        Player
-                      </th>
-                      <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
-                        Wins
-                      </th>
-                      <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
-                        Decks
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {group.players.length === 0 && (
-                      <tr>
-                        <td
-                          colSpan={3}
-                          className="text-sm border-b last:border-b-0 hover:bg-gray-50 transition"
-                        >
-                          No data
-                        </td>
-                      </tr>
-                    )}
-                    {group.players.map((p) => {
-                      const _player = players.find(
-                        (pl) => pl.name.toLowerCase() === p.name.toLowerCase(),
-                      );
-                      // Check if player has valid image path.
-                      const hasImage =
-                        _player?.imagePath && _player.imagePath.trim() !== "";
 
-                      // Get full image path.
-                      const imagePath = hasImage
-                        ? getImagePath(_player.imagePath)
-                        : "";
+              {isMobile ? (
+                // Mobile card view
+                <div className="flex flex-col gap-2 max-h-[60vh] overflow-y-auto">
+                  {group.players.length === 0 && (
+                    <div className="text-sm text-muted-foreground">No data</div>
+                  )}
+                  {group.players.map((p) => {
+                    const _player = players.find(
+                      (pl) => pl.name.toLowerCase() === p.name.toLowerCase(),
+                    );
+                    const hasImage =
+                      _player?.imagePath && _player.imagePath.trim() !== "";
+                    const imagePath = hasImage
+                      ? getImagePath(_player.imagePath)
+                      : "";
 
-                      return (
-                        <tr
-                          key={p.name}
-                          className="text-sm border-b last:border-b-0 hover:bg-gray-50 transition"
-                        >
-                          <td>
-                            <div className="flex items-center gap-1.5">
-                              <Avatar className="h-4 w-4">
-                                {hasImage && (
-                                  <AvatarImage
-                                    src={imagePath}
-                                    alt={p.name}
-                                    loading="lazy"
-                                  />
-                                )}
-                                <AvatarFallback>
-                                  <span className="text-xs">
-                                    {p.name.charAt(0)}
-                                  </span>
-                                </AvatarFallback>
-                              </Avatar>
-                              <span>{p.name}</span>
+                    return (
+                      <Card
+                        key={p.name}
+                        className="shadow-sm rounded-sm border hover:shadow-md transition-shadow duration-200"
+                      >
+                        <CardContent className="p-3">
+                          <div className="flex items-center gap-3">
+                            <Avatar className="h-12 w-12 flex justify-center items-center">
+                              {hasImage && (
+                                <AvatarImage
+                                  src={imagePath}
+                                  alt={p.name}
+                                  loading="lazy"
+                                  className="object-cover rounded-full h-12 w-12"
+                                />
+                              )}
+                              <AvatarFallback className="flex justify-center items-center">
+                                <span className="text-sm">
+                                  {p.name.charAt(0)}
+                                </span>
+                              </AvatarFallback>
+                            </Avatar>
+                            <div className="flex-1 flex flex-col gap-2">
+                              <div className="font-semibold text-sm">
+                                {p.name}
+                              </div>
+                              <div className="flex items-center gap-2 text-xs">
+                                <Trophy size={12} className="text-yellow-600" />
+                                <span className="font-medium">
+                                  {p.count} Win{p.count !== 1 ? "s" : ""}
+                                </span>
+                              </div>
+                              {p.decks.length > 0 && (
+                                <div className="text-xs text-muted-foreground">
+                                  <span className="font-semibold">Decks: </span>
+                                  {p.decks.join(", ")}
+                                </div>
+                              )}
                             </div>
-                          </td>
-                          <td>{p.count}</td>
-                          <td>
-                            {p.decks.length > 0 ? (
-                              p.decks.join(", ")
-                            ) : (
-                              <span className="text-muted-foreground">—</span>
-                            )}
+                          </div>
+                        </CardContent>
+                      </Card>
+                    );
+                  })}
+                </div>
+              ) : (
+                // Desktop table view
+                <div
+                  id="data-table-wrapper"
+                  className="border rounded-sm overflow-auto"
+                >
+                  <table
+                    id="data-table"
+                    className="w-full caption-bottom text-sm"
+                  >
+                    <thead>
+                      <tr className="border-b transition-colors hover:bg-muted/50">
+                        <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
+                          Player
+                        </th>
+                        <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
+                          Wins
+                        </th>
+                        <th className="h-10 px-2 text-left align-middle font-medium text-muted-foreground cursor-pointer select-none">
+                          Decks
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {group.players.length === 0 && (
+                        <tr>
+                          <td
+                            colSpan={3}
+                            className="text-sm border-b last:border-b-0 hover:bg-gray-50 transition"
+                          >
+                            No data
                           </td>
                         </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
+                      )}
+                      {group.players.map((p) => {
+                        const _player = players.find(
+                          (pl) =>
+                            pl.name.toLowerCase() === p.name.toLowerCase(),
+                        );
+                        // Check if player has valid image path.
+                        const hasImage =
+                          _player?.imagePath && _player.imagePath.trim() !== "";
+
+                        // Get full image path.
+                        const imagePath = hasImage
+                          ? getImagePath(_player.imagePath)
+                          : "";
+
+                        return (
+                          <tr
+                            key={p.name}
+                            className="text-sm border-b last:border-b-0 hover:bg-gray-50 transition"
+                          >
+                            <td>
+                              <div className="flex items-center gap-1.5">
+                                <Avatar className="h-4 w-4 flex justify-center items-center">
+                                  {hasImage && (
+                                    <AvatarImage
+                                      src={imagePath}
+                                      alt={p.name}
+                                      loading="lazy"
+                                      className="object-cover rounded-full h-4 w-4"
+                                    />
+                                  )}
+                                  <AvatarFallback className="flex justify-center items-center">
+                                    <span className="text-xs">
+                                      {p.name.charAt(0)}
+                                    </span>
+                                  </AvatarFallback>
+                                </Avatar>
+                                <span>{p.name}</span>
+                              </div>
+                            </td>
+                            <td>{p.count}</td>
+                            <td>
+                              {p.decks.length > 0 ? (
+                                p.decks.join(", ")
+                              ) : (
+                                <span className="text-muted-foreground">—</span>
+                              )}
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              )}
             </div>
           ))}
         </div>

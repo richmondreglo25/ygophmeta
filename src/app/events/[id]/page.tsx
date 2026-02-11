@@ -170,7 +170,7 @@ export default async function EventPage({
             {details.map((item) => (
               <Card
                 key={item.label}
-                className="flex flex-col p-0 rounded-sm border-[1px] shadow-none"
+                className="flex flex-col p-0 rounded-sm border shadow-sm hover:shadow-md transition-shadow duration-200"
               >
                 <CardHeader className="p-3 pb-1">
                   <CardTitle className="text-sm flex justify-between items-center gap-2">
