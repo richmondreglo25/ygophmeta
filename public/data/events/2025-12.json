@@ -277,7 +277,7 @@
         "deckImagePath": "1.webp"
       },
       {
-        "name": "Edmar Canete",
+        "name": "Edmar Cañete",
         "position": 2,
         "deck": "Ryzeal",
         "deckImagePath": "2.webp"
@@ -347,7 +347,7 @@
         "deckImagePath": "3.webp"
       },
       {
-        "name": "Edmar Canete",
+        "name": "Edmar Cañete",
         "position": 4,
         "deck": "Ryzeal",
         "deckImagePath": "4.webp"
@@ -1744,7 +1744,7 @@
         "deckImagePath": "3.webp"
       },
       {
-        "name": "Edmar Canete",
+        "name": "Edmar Cañete",
         "position": 4,
         "deck": "Onomat Ryzeal",
         "deckImagePath": "4.webp"
@@ -1779,7 +1779,7 @@
             "deckImagePath": "3.webp"
           },
           {
-            "name": "Edmar Canete",
+            "name": "Edmar Cañete",
             "position": 4,
             "deck": "Onomat Ryzeal",
             "deckImagePath": "4.webp"
@@ -1822,7 +1822,7 @@
         "deckImagePath": "3.webp"
       },
       {
-        "name": "Edmar Canete",
+        "name": "Edmar Cañete",
         "position": 4,
         "deck": "Onomat Ryzeal",
         "deckImagePath": "4.webp"
@@ -1942,7 +1942,7 @@
     "images": [],
     "winners": [
       {
-        "name": "Edmar Canete",
+        "name": "Edmar Cañete",
         "position": 1,
         "deck": "Onomat Ryzeal",
         "deckImagePath": "1.webp"
