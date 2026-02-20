@@ -3877,5 +3877,233 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "126ef416-987f-4818-8861-d0e7b6d4c3ca",
+    "title": "OCG Pod 1-A",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "John Rey Balderama",
+        "position": 1,
+        "deck": "Elvennotes Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "933cdd71-50a5-4a19-847f-f1df26140955",
+    "title": "OCG Pod 1-B",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Gary Non",
+        "position": 1,
+        "deck": "Killer Tune",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "e2bf4935-18b7-4cc3-9b92-de8fcfa4cc4d",
+    "title": "OCG Pod 2-A",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "John Christopher Evangelista",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "cd47782a-e2f8-48d3-9dcf-8c5d8310d222",
+    "title": "OCG Pod 2-B",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Armell Gabuya",
+        "position": 1,
+        "deck": "Killer Tune",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5d22679e-d027-43b4-8cd9-0e88be18fa40",
+    "title": "AE Pod 1-A",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Edmar Cañete",
+        "position": 1,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "10692315-901b-4a71-8476-1fea9c557e25",
+    "title": "AE Pod 1-B",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "846e96dc-9aa9-425f-8fd2-14cd0b95558b",
+    "title": "AE Pod 2-A",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Byron Salvador",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5cf5990b-3342-45a5-978f-fe00a0830381",
+    "title": "AE Pod 2-B",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Christian Dorotan",
+        "position": 1,
+        "deck": "Voiceless Voice",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5059dcff-2c51-49ba-8e00-f7e26ffffb92",
+    "title": "OTS Premium Garden Rose Flora",
+    "host": "Courtside",
+    "when": "Jan 31 2026",
+    "where": "Robinson Galleria",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Buitizon Banjo",
+        "position": 1,
+        "deck": "",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jorence Quintana",
+        "position": 2,
+        "deck": "",
+        "deckImagePath": "2.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "afa0ad30-da43-4b69-8d31-02afebf8ab98",
+    "title": "Davao-Tagum YUGIOH Tournament S24.T4",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 10 2026",
+    "where": "Robinsons Tagum - JK Hobby Shop, Davao",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Louie Acodile",
+        "position": 1,
+        "deck": "Solfachord Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Prime Cruz",
+        "position": 2,
+        "deck": "Odion",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Aaron John Marcon",
+        "position": 3,
+        "deck": "White Forest Azamina",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]

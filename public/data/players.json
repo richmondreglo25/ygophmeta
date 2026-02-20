@@ -329,6 +329,21 @@
     "others": ""
   },
   {
+    "name": "Miguelle Banjo Manalo",
+    "ign": "Baaanjoker",
+    "imagePath": "/people/miguellebanjomanalo.webp",
+    "gender": "MALE",
+    "city": "Manila",
+    "team": "",
+    "deck": [
+      "Mitsurugi Yummy",
+      "Goblin Biker Fiendsmith",
+      "Mitsurugi Ogdoadic",
+      "Radiant Typhoon"
+    ],
+    "others": ""
+  },
+  {
     "name": "Owen Cruz",
     "ign": "DmaN14",
     "imagePath": "/people/owencruz.webp",
