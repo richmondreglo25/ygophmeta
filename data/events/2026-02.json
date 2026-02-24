@@ -1441,5 +1441,134 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "04be3701-fbc3-4b68-9c10-371b56a10b06",
+    "title": "OCG Pod 1",
+    "host": "Aqua Card Games and Collectibles",
+    "when": "Feb 19 2026",
+    "where": "Pasig",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Hiroshi Odate",
+        "position": 1,
+        "deck": "VS K9",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "21bfc016-bd64-464a-9db7-bab2d6f900f9",
+    "title": "OCG Pod 1",
+    "host": "Cebu Yu-Gi-Oh Community",
+    "when": "Feb 23 2026",
+    "where": "Pawns & Pixels, Cebu",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Kenth",
+        "position": 1,
+        "deck": "Fairy Tail Magistus",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jan",
+        "position": 2,
+        "deck": "Exosister Magistus",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Earl",
+        "position": 3,
+        "deck": "Magical Musketeer Fiendsmith",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "9aa299be-aa14-4f4a-8f34-333301fc28c4",
+    "title": "Season 1: MEIOCG National Weekly Rankings - Week 7",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Feb 21 2026",
+    "where": "Kai Royal Cafe Tea & Coffee, Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Shin Alter",
+        "position": 1,
+        "deck": "Artmage Solfachord",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Genz Robles",
+        "position": 2,
+        "deck": "Clown Clan",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Joe Vincent Minguez",
+        "position": 3,
+        "deck": "Dracotail Branded Magistus",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "8f65c10c-57dc-4c21-a26d-7e853a5b835f",
+    "title": "Season 5: Blazing Dominion",
+    "host": "Iloilo Yu-Gi-Oh Community",
+    "when": "Feb 22 2026",
+    "where": "Kai Royal Cafe Tea & Coffee, Iloilo",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Earl Andrew Camara",
+        "position": 1,
+        "deck": "Mermail Atlantean",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "8db7355e-9205-418f-9de1-a07f6c212fbf",
+    "title": "OCG Pod 1",
+    "host": "PlayCafé",
+    "when": "Feb 18 2026",
+    "where": "Taguig",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jeon Arinto",
+        "position": 1,
+        "deck": "Argostars Odion",
+        "deckImagePath": "1.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
