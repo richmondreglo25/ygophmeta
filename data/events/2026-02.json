@@ -1603,7 +1603,7 @@
       {
         "name": "Marvin Tamayo",
         "position": 4,
-        "deck": "Apophis",
+        "deck": "Odion",
         "deckImagePath": "4.webp"
       }
     ],
@@ -1621,7 +1621,7 @@
         "count": 1
       },
       {
-        "name": "Apophis",
+        "name": "Odion",
         "count": 1
       },
       {
@@ -1961,6 +1961,24 @@
         "position": 1,
         "deck": "Mitsurugi Yummy",
         "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 2,
+        "deck": "Killer Tune",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 3,
+        "deck": "Artmage",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "MC Guevarra",
+        "position": 4,
+        "deck": "Branded",
+        "deckImagePath": "4.webp"
       }
     ],
     "decks": [],
@@ -1974,7 +1992,7 @@
     "where": "Japan Gacha",
     "format": "AE",
     "official": true,
-    "rounds": "3",
+    "rounds": 3,
     "images": [],
     "winners": [
       {
@@ -1982,6 +2000,207 @@
         "position": 1,
         "deck": "Argostars Odion",
         "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Edmar Cañete",
+        "position": 2,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "-",
+        "position": 4,
+        "deck": "",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Arwin Joseph Cruz",
+        "position": 5,
+        "deck": "Onomat Ryzeal Mitsurugi",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Jamel Ibrahim",
+        "position": 6,
+        "deck": "Mitsurugi Maliss",
+        "deckImagePath": "6.webp"
+      },
+      {
+        "name": "Manuel Tiong",
+        "position": 7,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "7.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "bbea76fb-b9e7-4930-ac50-77334de2f8d1",
+    "title": "OCG Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Feb 22 2026",
+    "where": "Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": "5",
+    "images": [],
+    "winners": [
+      {
+        "name": "John Christopher Evangelista",
+        "position": 1,
+        "deck": "Maliss",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jasper Gonzales",
+        "position": 2,
+        "deck": "Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Vincent Oblefias",
+        "position": 3,
+        "deck": "Sky Striker",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Paulo Rillo",
+        "position": 4,
+        "deck": "Maliss",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 5,
+        "deck": "Artmage",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Gary Non",
+        "position": 6,
+        "deck": "Killer Tune",
+        "deckImagePath": "6.webp"
+      },
+      {
+        "name": "Rafael Serna",
+        "position": 7,
+        "deck": "Sky Striker",
+        "deckImagePath": "7.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 8,
+        "deck": "Killer Tune",
+        "deckImagePath": "8.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "a189918c-62d1-4ddc-be7e-ef40cfc05fb0",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Feb 22 2026",
+    "where": "Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Edmar Cañete",
+        "position": 1,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Ken Lennart Millar",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Tristan Jay Cruz",
+        "position": 3,
+        "deck": "Killer Tune",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Jeon Arinto",
+        "position": 4,
+        "deck": "Argostars Onomat",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 5,
+        "deck": "RB",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Toni Angel Vergara",
+        "position": 6,
+        "deck": "Crystron Yummy",
+        "deckImagePath": "6.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "8930867e-5324-4908-a9b9-cffde9813633",
+    "title": "OCG Pod 1",
+    "host": "PlayCafé",
+    "when": "Feb 25 2026",
+    "where": "Taguig",
+    "format": "OCG",
+    "official": false,
+    "rounds": "4",
+    "images": [],
+    "winners": [
+      {
+        "name": "Manuel Tiong",
+        "position": 1,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jayson Dwight Catindig",
+        "position": 3,
+        "deck": "Mitsurugi",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Joseph Tanalgo",
+        "position": 4,
+        "deck": "Clown Clan",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 5,
+        "deck": "Solfachord Yummy",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Lyle Bilway",
+        "position": 6,
+        "deck": "Mermail Atlantean",
+        "deckImagePath": "6.webp"
       }
     ],
     "decks": [],
