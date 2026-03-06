@@ -15,6 +15,18 @@
         "position": 1,
         "deck": "Yummy Solfacord",
         "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Gary Non",
+        "position": 2,
+        "deck": "Mitsurugi Maliss",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 3,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "3.webp"
       }
     ],
     "decks": [],
