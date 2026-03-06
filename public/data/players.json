@@ -167,7 +167,7 @@
   },
   {
     "name": "Jeon Arinto",
-    "ign": "ＡＲＧ☆Ｓ - Team Manager Jeon",
+    "ign": "Supervillain Jeon",
     "imagePath": "/people/jeonarinto.webp",
     "gender": "MALE",
     "city": "Taguig",
@@ -211,6 +211,16 @@
     "team": "Dragion",
     "deck": ["Blue-Eyes", "Exosister"],
     "others": "Challenger Cup 2025 PH Top 16"
+  },
+  {
+    "name": "Julius Maveric Tanchingco",
+    "ign": "Mave Mave Mave",
+    "imagePath": "/people/juliusmaverictanchingco.webp",
+    "gender": "MALE",
+    "city": "Rizal",
+    "team": "YOTI CORP",
+    "deck": ["Kewl Tune", "Yummy"],
+    "others": "Asia WCQ PH Top 4"
   },
   {
     "name": "Keith Jeremy David",

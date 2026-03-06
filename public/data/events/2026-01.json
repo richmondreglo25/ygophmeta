@@ -3158,7 +3158,7 @@
     "images": [],
     "winners": [
       {
-        "name": "VJ Lipana",
+        "name": "Van Joseph Lipana",
         "position": 1,
         "deck": "Solfachord Yummy",
         "deckImagePath": "1.webp"
@@ -4101,6 +4101,45 @@
         "position": 3,
         "deck": "White Forest Azamina",
         "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "d06053fa-10cd-47bd-9817-4468d3f52687",
+    "title": "OCG Pod 1",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 17 2026",
+    "where": "Gaisano Mall of Davao",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Peter Lor",
+        "position": 1,
+        "deck": "Gem-Knight",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Andrew Aguinaldo",
+        "position": 2,
+        "deck": "Yummy Elvennotes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Kong",
+        "position": 3,
+        "deck": "Mitsurugi",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Reinhard de Leon",
+        "position": 4,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "4.webp"
       }
     ],
     "decks": [],

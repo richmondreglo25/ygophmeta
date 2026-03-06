@@ -40,6 +40,14 @@
     "about": "Aurorus Collections is a card shop located in Quezon City"
   },
   {
+    "name": "BK Secret SHop",
+    "logo": "/shops/bksecretshoplogo.webp",
+    "address": "2nd flr Ferdinand Building, Sarmiento Homes, Muzon, San Jose del Monte, Philippines, 3023",
+    "googleMaps": "https://www.google.com/maps/search/bk+secret+shop/@14.8064523,121.0322478,17z?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D",
+    "openHours": "Mon-Sun: 1:00 PM - 9:00 PM",
+    "about": "BK Secret Shop is a card shop located in San Jose del Monte, Bulacan"
+  },
+  {
     "name": "Courtside",
     "logo": "/shops/courtsidelogo.webp",
     "address": "Level 2, Robinsons Galleria, Ortigas Ave, Ortigas Center, Quezon City, Metro Manila",

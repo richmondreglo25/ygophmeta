@@ -41,6 +41,7 @@ import { Player } from "@/types/player";
 import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
 import { AddShopFormDrawer } from "@/components/add-shop-form-drawer";
 import { UploadDeckDrawer } from "@/components/upload-deck-drawer";
+import { AddEventFormDrawer } from "@/components/add-event-form-drawer";
 import { RecentWinners } from "../meta/(charts)/recent-winners";
 
 function getCurrentMonthYearLabel(date = new Date()) {
@@ -77,6 +78,7 @@ export default function Home() {
 
   // Drawer open states
   const [openProfileFormDrawer, setOpenProfileFormDrawer] = useState(false);
+  const [openEventFormDrawer, setOpenEventFormDrawer] = useState(false);
   const [openDeckDrawer, setOpenDeckDrawer] = useState(false);
   const [openShopFormDrawer, setOpenShopFormDrawer] = useState(false);
 
@@ -86,6 +88,14 @@ export default function Home() {
 
   function handleCloseProfileFormDrawer() {
     setOpenProfileFormDrawer(false);
+  }
+
+  function handleOpenEventFormDrawer() {
+    setOpenEventFormDrawer(true);
+  }
+
+  function handleCloseEventFormDrawer() {
+    setOpenEventFormDrawer(false);
   }
 
   function handleOpenDeckDrawer() {
@@ -215,7 +225,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {data.map((item, index) => (
             <Card
               key={index}
@@ -281,6 +291,37 @@ export default function Home() {
               >
                 <Users className="w-3 h-3" />
                 Submit Profile
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* Event Submission Card */}
+          <Card className="flex flex-col border rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200">
+            <CardHeader className="p-4">
+              <CardTitle className="text-sm flex justify-between items-center gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="font-medium">Share Event Results</span>
+                </div>
+                <span
+                  className={`text-xs px-2 py-1 rounded ${getBadgeClass("event")}`}
+                >
+                  Event
+                </span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm p-4 pt-0 flex-1 text-gray-600 dark:text-gray-300">
+              Submit your tournament results to contribute to the meta database.
+              Track {totalEvents}+ events and counting!
+            </CardContent>
+            <CardFooter className="flex justify-end p-4 pt-0 mt-auto">
+              <Button
+                variant="submit"
+                size="sm"
+                className="rounded-md"
+                onClick={handleOpenEventFormDrawer}
+              >
+                <Trophy className="w-3 h-3" />
+                Submit Event
               </Button>
             </CardFooter>
           </Card>
@@ -352,6 +393,9 @@ export default function Home() {
       {/* Drawers */}
       {openProfileFormDrawer && (
         <AddProfileFormDrawer onClose={handleCloseProfileFormDrawer} />
+      )}
+      {openEventFormDrawer && (
+        <AddEventFormDrawer onClose={handleCloseEventFormDrawer} />
       )}
       {openDeckDrawer && <UploadDeckDrawer onClose={handleCloseDeckDrawer} />}
       {openShopFormDrawer && (
