@@ -4144,5 +4144,38 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "f4af8f2f-2e32-462f-931b-82cd409c57bc",
+    "title": "Davao YUGIOH Ranking Tournament S24.T7",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 24 2026",
+    "where": "G-Hub Davao",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Adrian Gabriel Tan",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Quinn Lance Cuarez",
+        "position": 2,
+        "deck": "Tachyon Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Allen Coquilla",
+        "position": 3,
+        "deck": "White Forest Azamina",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
