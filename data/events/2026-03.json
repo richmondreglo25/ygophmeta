@@ -490,5 +490,83 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "8bfabca4-8d32-449c-9dc8-b58beb45fa2b",
+    "title": "OCG Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Feb 27 2026",
+    "where": "Japan Gacha",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 1,
+        "deck": "Killer Tune",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Gary Non",
+        "position": 2,
+        "deck": "Killer Tune",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Christian John Cruz",
+        "position": 3,
+        "deck": "Mitsurugi Orcust",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Ian Viernes",
+        "position": 4,
+        "deck": "VS K9",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "8c9c2f24-4b90-4845-acbd-6d9df66ccab7",
+    "title": "AE Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Feb 27 2026",
+    "where": "Japan Gacha",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Marlo Delda",
+        "position": 1,
+        "deck": "Mitsurugi Fiendsmith",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jamel Ibrahim",
+        "position": 2,
+        "deck": "VS K9",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Manuel Tiong",
+        "position": 3,
+        "deck": "Dracotail Branded",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 4,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
