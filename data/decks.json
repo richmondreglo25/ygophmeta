@@ -160,6 +160,10 @@
     "imagePath": "elvennotes.webp"
   },
   {
+    "name": "Elvennotes Branded",
+    "imagePath": "elvennotesbranded.webp"
+  },
+  {
     "name": "Elvennotes Diabellstar",
     "imagePath": "elvennotesdiabellstar.webp"
   },
@@ -264,6 +268,10 @@
     "imagePath": "killertune.webp"
   },
   {
+    "name": "Killer Tune Elvennotes",
+    "imagePath": "killertuneelvennotes.webp"
+  },
+  {
     "name": "Killer Tune Synchron",
     "imagePath": "killertunesynchron.webp"
   },
@@ -338,6 +346,10 @@
   {
     "name": "Mitsurugi Fiendsmith",
     "imagePath": "mitsurugifiendsmith.webp"
+  },
+  {
+    "name": "Mitsurugi Gimmick",
+    "imagePath": "mitsurugigimmick.webp"
   },
   {
     "name": "Mitsurugi Horus",
@@ -438,6 +450,10 @@
   {
     "name": "RB",
     "imagePath": "rb.webp"
+  },
+  {
+    "name": "Regenesis",
+    "imagePath": "regenesis.webp"
   },
   {
     "name": "Rescue Ace",
