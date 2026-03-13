@@ -1078,5 +1078,107 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "99cd8bcc-e557-4280-89aa-294123df6292",
+    "title": "OCG Pod 1",
+    "host": "Mage-Ring Hobby Shop",
+    "when": "Mar 08 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jp Par",
+        "position": 1,
+        "deck": "Monarch",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jordan",
+        "position": 2,
+        "deck": "True Draco Stun",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Enrico",
+        "position": 3,
+        "deck": "Chimera Hecahands Fiendsmith",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Elmard",
+        "position": 4,
+        "deck": "Gouki",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Weldy",
+        "position": 5,
+        "deck": "Branded Stun",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Daryl",
+        "position": 6,
+        "deck": "Mekk Knight",
+        "deckImagePath": "6.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "785dd82a-4ed0-4d21-ad41-d6b30be3ece3",
+    "title": "OCG Pod 1",
+    "host": "Mage-Ring Hobby Shop",
+    "when": "Mar 01 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Enrico",
+        "position": 1,
+        "deck": "Chimera Hecahands",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Weldy P Fungo",
+        "position": 2,
+        "deck": "Stun",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Julius Bernard Mortera",
+        "position": 3,
+        "deck": "Drytron",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Dennis Agor",
+        "position": 4,
+        "deck": "Crystron K9",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Elmard Ramos",
+        "position": 5,
+        "deck": "Artmage",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Mhark Q",
+        "position": 6,
+        "deck": "D/D/D",
+        "deckImagePath": "6.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]

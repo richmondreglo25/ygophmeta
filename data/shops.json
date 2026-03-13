@@ -114,6 +114,14 @@
     "about": "TCG/OCG, card games, board games and accessories"
   },
   {
+    "name": "Mage-Ring Hobby Shop",
+    "logo": "/shops/mageringhobbyshoplogo.webp",
+    "address": "52, Unit 1G Eva Commercial Building, Don P. Campos Ave., Brgy. San Jose, Dasmarinas City, Cavite Philippines 4114, Dasmariñas, Philippines",
+    "googleMaps": "https://www.google.com/maps/place/Mage-Ring+Hobby+Shop/data=!4m2!3m1!1s0x0:0x22e273fc01298729?sa=X&ved=1t:2428&ictx=111",
+    "openHours": "Mon-Sun: 12:00 PM - 10:00 PM",
+    "about": "Mage-Ring Hobby Shop is a card shop located in Dasmarinas City, Cavite"
+  },
+  {
     "name": "PlayCafé",
     "logo": "/shops/playcafelogo.webp",
     "address": "Upper McKinley Hill, Tuscany Residences (Strip), Taguig, Philippines",
