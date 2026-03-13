@@ -4177,5 +4177,38 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "627ca23d-cbec-47e7-9169-40d8c41bb841",
+    "title": "Davao YUGIOH Ranking Tournament S24.T8",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 31 2026",
+    "where": "G-Hub Davao",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Andrew Aguinaldo",
+        "position": 1,
+        "deck": "Elvennotes Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Quinn Lance Cuarez",
+        "position": 2,
+        "deck": "Mitsurugi Tachyon",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Vivo Milo Crame",
+        "position": 3,
+        "deck": "Mitsurugi Horus",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
