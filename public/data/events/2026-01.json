@@ -625,7 +625,7 @@
       {
         "name": "John Rey Balderama",
         "position": 1,
-        "deck": "Elvennotes",
+        "deck": "Elfnotes",
         "deckImagePath": "1.webp"
       },
       {
@@ -832,7 +832,7 @@
       {
         "name": "Mark Jericho Surio",
         "position": 3,
-        "deck": "Yummy Solfacord",
+        "deck": "Solfachord Yummy",
         "deckImagePath": "3.webp"
       },
       {
@@ -1036,7 +1036,7 @@
       {
         "name": "Tristan Cruz",
         "position": 4,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "4.webp"
       }
     ],
@@ -1335,7 +1335,7 @@
         "count": 1
       },
       {
-        "name": "Elvennotes",
+        "name": "Elfnotes",
         "count": 1
       }
     ],
@@ -1613,7 +1613,7 @@
       {
         "name": "Uriel Ray Dolorfino",
         "position": 1,
-        "deck": "Elvennotes",
+        "deck": "Elfnotes",
         "deckImagePath": "1.webp"
       },
       {
@@ -1721,7 +1721,7 @@
       {
         "name": "Emmanuel Jamorabo",
         "position": 2,
-        "deck": "Elvennotes",
+        "deck": "Elfnotes",
         "deckImagePath": "2.webp"
       },
       {
@@ -1760,7 +1760,7 @@
       {
         "name": "Emmanuel Jamorabo",
         "position": 3,
-        "deck": "Elvennotes",
+        "deck": "Elfnotes",
         "deckImagePath": "3.webp"
       }
     ],
@@ -1886,7 +1886,7 @@
       {
         "name": "Kim Mark Parane",
         "position": 1,
-        "deck": "Elvennotes",
+        "deck": "Elfnotes",
         "deckImagePath": "1.webp"
       },
       {
@@ -2007,7 +2007,7 @@
         "count": 1
       },
       {
-        "name": "Elvennotes",
+        "name": "Elfnotes",
         "count": 1
       },
       {
@@ -2245,7 +2245,7 @@
       {
         "name": "Joshua Lawagan",
         "position": 1,
-        "deck": "Elvennotes Diabellstar",
+        "deck": "Elfnotes Diabellstar",
         "deckImagePath": "1.webp"
       },
       {
@@ -2497,7 +2497,7 @@
       {
         "name": "Tristan Cruz",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       }
     ],
@@ -2956,7 +2956,7 @@
       {
         "name": "John Rey Balderama",
         "position": 1,
-        "deck": "Yummy Elvennotes",
+        "deck": "Yummy Elfnotes",
         "deckImagePath": "1.webp"
       },
       {
@@ -3076,7 +3076,7 @@
       {
         "name": "John Rey Balderama",
         "position": 1,
-        "deck": "Elvennotes Yummy",
+        "deck": "Elfnotes Yummy",
         "deckImagePath": "1.webp"
       }
     ],
@@ -3139,7 +3139,7 @@
       {
         "name": "Lloyd Baradas",
         "position": 1,
-        "deck": "Killer Tune Synchron",
+        "deck": "Kewl Tune Synchron",
         "deckImagePath": "1.webp"
       }
     ],
@@ -3541,7 +3541,7 @@
       {
         "name": "Julian San Diego",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       },
       {
@@ -3694,7 +3694,7 @@
       {
         "name": "Tristan Cruz",
         "position": 3,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "3.webp"
       },
       {
@@ -3721,7 +3721,7 @@
       {
         "name": "Tristan Cruz",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       },
       {
@@ -3825,39 +3825,6 @@
     "notes": ""
   },
   {
-    "id": "e7a8e1c9-caa6-4995-a6e5-f167aceced7a",
-    "title": "Davao YUGIOH Ranking Tournament S24.T3",
-    "host": "Davao Yu-Gi-Oh Community",
-    "when": "Jan 10 2026",
-    "where": "Green Coffee Davao",
-    "format": "OCG",
-    "official": true,
-    "rounds": 3,
-    "images": [],
-    "winners": [
-      {
-        "name": "Vivo Milo Crame",
-        "position": 1,
-        "deck": "Mitsurugi Horus",
-        "deckImagePath": "1.webp"
-      },
-      {
-        "name": "Jobelle Vios",
-        "position": 2,
-        "deck": "Lunalight",
-        "deckImagePath": "2.webp"
-      },
-      {
-        "name": "Lian Estabillo",
-        "position": 3,
-        "deck": "Elfnote Fiendsmith",
-        "deckImagePath": "3.webp"
-      }
-    ],
-    "decks": [],
-    "notes": ""
-  },
-  {
     "id": "3bd0e2e9-07ba-4cad-820b-37628c0ef762",
     "title": "OCG Pod 1",
     "host": "Tadaima Hobbies and Toy Shop",
@@ -3892,7 +3859,7 @@
       {
         "name": "John Rey Balderama",
         "position": 1,
-        "deck": "Elvennotes Yummy",
+        "deck": "Elfnotes Yummy",
         "deckImagePath": "1.webp"
       }
     ],
@@ -3913,7 +3880,7 @@
       {
         "name": "Gary Non",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       }
     ],
@@ -3955,7 +3922,7 @@
       {
         "name": "Armell Gabuya",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       }
     ],
@@ -4108,7 +4075,7 @@
   },
   {
     "id": "d06053fa-10cd-47bd-9817-4468d3f52687",
-    "title": "OCG Pod 1",
+    "title": "Davao YUGIOH Ranking Tournament S24.T5",
     "host": "Davao Yu-Gi-Oh Community",
     "when": "Jan 17 2026",
     "where": "Gaisano Mall of Davao",
@@ -4126,7 +4093,7 @@
       {
         "name": "Andrew Aguinaldo",
         "position": 2,
-        "deck": "Yummy Elvennotes",
+        "deck": "Yummy Elfnotes",
         "deckImagePath": "2.webp"
       },
       {
@@ -4140,6 +4107,105 @@
         "position": 4,
         "deck": "Onomat Ryzeal",
         "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "f4af8f2f-2e32-462f-931b-82cd409c57bc",
+    "title": "Davao YUGIOH Ranking Tournament S24.T7",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 24 2026",
+    "where": "G-Hub Davao",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Adrian Gabriel Tan",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Quinn Lance Cuarez",
+        "position": 2,
+        "deck": "Tachyon Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Allen Coquilla",
+        "position": 3,
+        "deck": "White Forest Azamina",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "627ca23d-cbec-47e7-9169-40d8c41bb841",
+    "title": "Davao YUGIOH Ranking Tournament S24.T8",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 31 2026",
+    "where": "G-Hub Davao",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Andrew Aguinaldo",
+        "position": 1,
+        "deck": "Elfnotes Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Quinn Lance Cuarez",
+        "position": 2,
+        "deck": "Mitsurugi Tachyon",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Vivo Milo Crame",
+        "position": 3,
+        "deck": "Mitsurugi Horus",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "4fd3f285-c3ee-4462-a7a8-09eb412fe958",
+    "title": "Davao-Tagum YUGIOH Tournament S24.T9",
+    "host": "Davao Yu-Gi-Oh Community",
+    "when": "Jan 31 2026",
+    "where": "Robinsons Tagum - JK Hobby Shop",
+    "format": "OCG",
+    "official": false,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Alfred Zamora",
+        "position": 1,
+        "deck": "Dracotail Branded Magistus",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Alexis John Sison",
+        "position": 2,
+        "deck": "Elfnotes White Forest Azamina",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Louie Acodile",
+        "position": 3,
+        "deck": "Solfachord Yummy",
+        "deckImagePath": "3.webp"
       }
     ],
     "decks": [],
