@@ -71,7 +71,7 @@
     "city": "Cebu City",
     "team": "",
     "deck": [
-      "Solfachord Elvennotes K9 Amorphage",
+      "Solfachord Elfnotes K9 Amorphage",
       "Solfachord K9",
       "Solfachord Amorphage",
       "Solfachord Z-Arc",
@@ -240,7 +240,7 @@
     "gender": "MALE",
     "city": "Bulacan",
     "team": "TEAM RPC",
-    "deck": ["White Forest Azamina, Rishid, Elvennotes"]
+    "deck": ["White Forest Azamina, Rishid, Elfnotes"]
   },
   {
     "name": "Kyle Chino Marquinez",
@@ -249,7 +249,7 @@
     "gender": "MALE",
     "city": "Iloilo City",
     "team": "",
-    "deck": ["Artmage Azamina", "Elvennotes Fiendsmith", "DOOMZ Fiendsmith"],
+    "deck": ["Artmage Azamina", "Elfnotes Fiendsmith", "DOOMZ Fiendsmith"],
     "others": ""
   },
   {
@@ -434,7 +434,7 @@
     "gender": "MALE",
     "city": "Pasig",
     "team": "Team Kwasong",
-    "deck": ["Killer Tune", "Elvennotes", "White Forest"]
+    "deck": ["Kewl Tune", "Elfnotes", "White Forest"]
   },
   {
     "name": "Uriel Ray Dolorfino",

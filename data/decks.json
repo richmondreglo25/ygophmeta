@@ -52,6 +52,10 @@
     "imagePath": "branded.webp"
   },
   {
+    "name": "Branded Stun",
+    "imagePath": "brandedstun.webp"
+  },
+  {
     "name": "Branded Swordsoul",
     "imagePath": "brandedswordsoul.webp"
   },
@@ -62,6 +66,10 @@
   {
     "name": "Chimera Hecahands",
     "imagePath": "chimerahecahands.webp"
+  },
+  {
+    "name": "Chimera Hecahands Fiendsmith",
+    "imagePath": "chimerahecahandsfiendsmith.webp"
   },
   {
     "name": "Clown Clan",
@@ -86,6 +94,10 @@
   {
     "name": "D/D/D",
     "imagePath": "ddd.webp"
+  },
+  {
+    "name": "Dark Magician",
+    "imagePath": "darkmagician.webp"
   },
   {
     "name": "Darklord",
@@ -144,6 +156,10 @@
     "imagePath": "dragunity.webp"
   },
   {
+    "name": "Drytron",
+    "imagePath": "drytron.webp"
+  },
+  {
     "name": "Eldlich",
     "imagePath": "eldlich.webp"
   },
@@ -156,28 +172,28 @@
     "imagePath": "elfnotefiendsmith.webp"
   },
   {
-    "name": "Elvennotes",
-    "imagePath": "elvennotes.webp"
+    "name": "Elfnotes",
+    "imagePath": "elfnotes.webp"
   },
   {
-    "name": "Elvennotes Branded",
-    "imagePath": "elvennotesbranded.webp"
+    "name": "Elfnotes Branded",
+    "imagePath": "elfnotesbranded.webp"
   },
   {
-    "name": "Elvennotes Diabellstar",
-    "imagePath": "elvennotesdiabellstar.webp"
+    "name": "Elfnotes Diabellstar",
+    "imagePath": "elfnotesdiabellstar.webp"
   },
   {
-    "name": "Elvennotes Power Patron",
-    "imagePath": "elvennotespowerpatron.webp"
+    "name": "Elfnotes Power Patron",
+    "imagePath": "elfnotespowerpatron.webp"
   },
   {
-    "name": "Elvennotes White Forest Azamina",
-    "imagePath": "elvennoteswhiteforestazamina.webp"
+    "name": "Elfnotes White Forest Azamina",
+    "imagePath": "elfnoteswhiteforestazamina.webp"
   },
   {
-    "name": "Elvennotes Yummy",
-    "imagePath": "elvennotesyummy.webp"
+    "name": "Elfnotes Yummy",
+    "imagePath": "elfnotesyummy.webp"
   },
   {
     "name": "Enneacraft",
@@ -224,6 +240,10 @@
     "imagePath": "gladiatorbeasttribrigade.webp"
   },
   {
+    "name": "Gouki",
+    "imagePath": "gouki.webp"
+  },
+  {
     "name": "HERO",
     "imagePath": "hero.webp"
   },
@@ -264,16 +284,12 @@
     "imagePath": "kewltune.webp"
   },
   {
-    "name": "Killer Tune",
-    "imagePath": "killertune.webp"
+    "name": "Kewl Tune Elfnotes",
+    "imagePath": "kewltuneelfnotes.webp"
   },
   {
-    "name": "Killer Tune Elvennotes",
-    "imagePath": "killertuneelvennotes.webp"
-  },
-  {
-    "name": "Killer Tune Synchron",
-    "imagePath": "killertunesynchron.webp"
+    "name": "Kewl Tune Synchron",
+    "imagePath": "kewltunesynchron.webp"
   },
   {
     "name": "Labrynth",
@@ -300,12 +316,16 @@
     "imagePath": "maliss.webp"
   },
   {
-    "name": "Maliss Elvennotes",
-    "imagePath": "malisselvennotes.webp"
+    "name": "Maliss Elfnotes",
+    "imagePath": "malisselfnotes.webp"
   },
   {
     "name": "Megalith",
     "imagePath": "megalith.webp"
+  },
+  {
+    "name": "Mekk Knight",
+    "imagePath": "mekkknight.webp"
   },
   {
     "name": "Mementotlan",
@@ -376,12 +396,24 @@
     "imagePath": "mitsurugiryzeal.webp"
   },
   {
+    "name": "Mitsurugi Tachyon",
+    "imagePath": "mitsurugitachyon.webp"
+  },
+  {
+    "name": "Mitsurugi Voiceless Voice",
+    "imagePath": "mitsurugivoicelessvoice.webp"
+  },
+  {
     "name": "Mitsurugi Yummy",
     "imagePath": "mitsurugiyummy.webp"
   },
   {
     "name": "Mitsurugi Yummy Solfachord",
     "imagePath": "mitsurugiyummysolfachord.webp"
+  },
+  {
+    "name": "Monarch",
+    "imagePath": "monarch.webp"
   },
   {
     "name": "Neo-Spacian",
@@ -504,6 +536,10 @@
     "imagePath": "solfachordyummy.webp"
   },
   {
+    "name": "Stun",
+    "imagePath": "stun.webp"
+  },
+  {
     "name": "Supreme King",
     "imagePath": "supremeking.webp"
   },
@@ -520,6 +556,10 @@
     "imagePath": "synchron.webp"
   },
   {
+    "name": "Tachyon Branded",
+    "imagePath": "tachyonbranded.webp"
+  },
+  {
     "name": "Tellarknight",
     "imagePath": "tellarknight.webp"
   },
@@ -530,6 +570,10 @@
   {
     "name": "Train",
     "imagePath": "train.webp"
+  },
+  {
+    "name": "True Draco Stun",
+    "imagePath": "truedracostun.webp"
   },
   {
     "name": "Vanquish Soul",
@@ -564,8 +608,12 @@
     "imagePath": "yummy.webp"
   },
   {
-    "name": "Yummy Elvennotes",
-    "imagePath": "yummyelvennotes.webp"
+    "name": "Yummy Dark Magician",
+    "imagePath": "yummydarkmagician.webp"
+  },
+  {
+    "name": "Yummy Elfnotes",
+    "imagePath": "yummyelfnotes.webp"
   },
   {
     "name": "Yummy Fiendsmith",
@@ -574,9 +622,5 @@
   {
     "name": "Yummy Mimighoul",
     "imagePath": "yummymimighoul.webp"
-  },
-  {
-    "name": "Yummy Solfacord",
-    "imagePath": "yummysolfacord.webp"
   }
 ]

@@ -13,7 +13,7 @@
       {
         "name": "Frederico Miguel David",
         "position": 1,
-        "deck": "Yummy Solfacord",
+        "deck": "Solfachord Yummy",
         "deckImagePath": "1.webp"
       },
       {
@@ -109,7 +109,7 @@
       {
         "name": "Cris Joshua Curiano",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       }
     ],
@@ -130,7 +130,7 @@
       {
         "name": "Van Joseph Lipana",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       }
     ],
@@ -172,7 +172,7 @@
       {
         "name": "Louie Acodile",
         "position": 1,
-        "deck": "Yummy Solfacord",
+        "deck": "Solfachord Yummy",
         "deckImagePath": "1.webp"
       },
       {
@@ -238,7 +238,7 @@
       {
         "name": "Shin Alter",
         "position": 3,
-        "deck": "Killer Tune Elvennotes",
+        "deck": "Kewl Tune Elfnotes",
         "deckImagePath": "3.webp"
       },
       {
@@ -265,7 +265,7 @@
       {
         "name": "Shin Alter",
         "position": 1,
-        "deck": "Killer Tune Elvennotes",
+        "deck": "Kewl Tune Elfnotes",
         "deckImagePath": "1.webp"
       },
       {
@@ -370,7 +370,7 @@
       {
         "name": "Julius Maveric Tanchingco",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       },
       {
@@ -382,7 +382,7 @@
       {
         "name": "Renz Guizzagan",
         "position": 3,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "3.webp"
       },
       {
@@ -394,13 +394,13 @@
       {
         "name": "Richmond Reglo",
         "position": 5,
-        "deck": "Elvennotes Branded",
+        "deck": "Elfnotes Branded",
         "deckImagePath": "5.webp"
       },
       {
         "name": "Frederico Miguel David",
         "position": 6,
-        "deck": "Yummy Solfacord",
+        "deck": "Solfachord Yummy",
         "deckImagePath": "6.webp"
       },
       {
@@ -412,7 +412,7 @@
       {
         "name": "Tristan Cruz",
         "position": 8,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "8.webp"
       }
     ],
@@ -517,13 +517,13 @@
       {
         "name": "Emmanuel Jamorabo",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       },
       {
         "name": "Gary Non",
         "position": 2,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "2.webp"
       },
       {
@@ -582,7 +582,7 @@
     "notes": ""
   },
   {
-    "id": "b08452b6-17e2-4162-b404-e6a350f1a87e",
+    "id": "716fd950-6628-434d-82b3-25d268cbc3a7",
     "title": "OCG Pod 1",
     "host": "ARKEN CardZone",
     "when": "Mar 08 2026",
@@ -595,15 +595,45 @@
       {
         "name": "Martin Owen Gonzalez Calleja",
         "position": 1,
-        "deck": "",
+        "deck": "Yummy Dark Magician",
         "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Ken Lennart Millar",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Eldric Miguel Mundo",
+        "position": 3,
+        "deck": "Sky Striker",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Gary Non",
+        "position": 4,
+        "deck": "Maliss",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Edmar Canete",
+        "position": 5,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Rizen Calub",
+        "position": 6,
+        "deck": "Sky Striker",
+        "deckImagePath": "6.webp"
       }
     ],
     "decks": [],
     "notes": ""
   },
   {
-    "id": "bb9a283e-d22d-4b4a-878e-05d2fc88f7c4",
+    "id": "699ca070-3ec7-4707-9abe-d385ed6e5f79",
     "title": "AE Pod 1",
     "host": "ARKEN CardZone",
     "when": "Mar 08 2026",
@@ -616,8 +646,26 @@
       {
         "name": "Rod Allan Bonavente",
         "position": 1,
-        "deck": "",
+        "deck": "Mitsurugi Yummy",
         "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 2,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 3,
+        "deck": "Solfachord Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Arwin Joseph Cruz",
+        "position": 4,
+        "deck": "Onomat Ryzeal Mitsurugi",
+        "deckImagePath": "4.webp"
       }
     ],
     "decks": [],
@@ -649,7 +697,7 @@
       {
         "name": "Armell John Gabuya",
         "position": 3,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "3.webp"
       },
       {
@@ -799,7 +847,7 @@
       {
         "name": "Gio Agoto",
         "position": 1,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "1.webp"
       }
     ],
@@ -847,7 +895,7 @@
       {
         "name": "Charles Araneta",
         "position": 2,
-        "deck": "Elvennotes Yummy",
+        "deck": "Elfnotes Yummy",
         "deckImagePath": "2.webp"
       },
       {
@@ -859,7 +907,7 @@
       {
         "name": "Van Joseph Lipana",
         "position": 4,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "4.webp"
       }
     ],
@@ -886,7 +934,7 @@
       {
         "name": "Shin Alter",
         "position": 2,
-        "deck": "Killer Tune Elvennotes",
+        "deck": "Kewl Tune Elfnotes",
         "deckImagePath": "2.webp"
       },
       {
@@ -1024,7 +1072,7 @@
       {
         "name": "Renz Guizzagan",
         "position": 2,
-        "deck": "Killer Tune",
+        "deck": "Kewl Tune",
         "deckImagePath": "2.webp"
       },
       {
@@ -1176,6 +1224,180 @@
         "position": 6,
         "deck": "D/D/D",
         "deckImagePath": "6.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "43f65d51-c806-44be-94da-c4aaec6cd6da",
+    "title": "OCG Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Mar 13 2026",
+    "where": "Japan Gacha",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 1,
+        "deck": "Kewl Tune",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Jasper Gonzales",
+        "position": 2,
+        "deck": "Branded",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jan Kevin Lao",
+        "position": 3,
+        "deck": "Dark Magician",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Christian John Cruz",
+        "position": 4,
+        "deck": "Mitsurugi",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "ca602fbb-2e53-40ef-928f-0ac971d605e0",
+    "title": "AE Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Mar 13 2026",
+    "where": "Japan Gacha",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Charles Araneta",
+        "position": 1,
+        "deck": "Yummy",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Marlo Delda",
+        "position": 2,
+        "deck": "Onomat Ryzeal Mitsurugi",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 3,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 4,
+        "deck": "Solfachord Yummy",
+        "deckImagePath": "4.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "a6976b68-0bfe-4de7-a0bc-dba15f41fe8a",
+    "title": "OCG Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Mar 15 2026",
+    "where": "Makati",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Jasper Gonzales",
+        "position": 1,
+        "deck": "Branded",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Emmanuel Jamorabo",
+        "position": 2,
+        "deck": "Kewl Tune",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Paulo Rillo",
+        "position": 3,
+        "deck": "Maliss",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Tristan Cruz",
+        "position": 4,
+        "deck": "Kewl Tune",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Lian Estabillo",
+        "position": 5,
+        "deck": "Maliss",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "JC Evangelista",
+        "position": 6,
+        "deck": "Maliss",
+        "deckImagePath": "6.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "60e732c1-ae28-45f4-a9e1-c5a07274c89d",
+    "title": "AE Pod 1",
+    "host": "ARKEN CardZone",
+    "when": "Mar 15 2026",
+    "where": "Makati",
+    "format": "AE",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Vincent Oblefias",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 2,
+        "deck": "RB",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jhay Brylle Buenaflor",
+        "position": 3,
+        "deck": "Sky Striker",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Edmar Canete",
+        "position": 4,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Rover Lolarga",
+        "position": 5,
+        "deck": "Mitsurugi Voiceless Voice",
+        "deckImagePath": "5.webp"
       }
     ],
     "decks": [],
