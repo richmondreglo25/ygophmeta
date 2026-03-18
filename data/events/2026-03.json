@@ -1402,5 +1402,56 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "04a972b0-27c5-4252-800f-0585430ac9e0",
+    "title": "OCG Pod 1",
+    "host": "Mage-Ring Hobby Shop",
+    "when": "Mar 15 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Elmard",
+        "position": 1,
+        "deck": "Artmage",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Joshua",
+        "position": 2,
+        "deck": "Monarch",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Jan Daryl",
+        "position": 3,
+        "deck": "Mekk Knight K9",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Weldy",
+        "position": 4,
+        "deck": "Branded Stun",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Enrico",
+        "position": 5,
+        "deck": "Chimera Hecahands",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "JB",
+        "position": 6,
+        "deck": "Drytron",
+        "deckImagePath": "6.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
