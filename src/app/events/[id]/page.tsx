@@ -27,6 +27,8 @@ import {
 import { TableChart } from "@/components/charts/table-chart";
 import playersData from "@/../public/data/players.json"; // Import players.json
 import { Player } from "@/types/player";
+import { OrdinalType } from "@/enums/ordinal-type";
+import { getOrdinal } from "@/utils/ordinal";
 
 export async function generateStaticParams() {
   const eventsDir = path.join(process.cwd(), "public/data/events");
@@ -84,6 +86,9 @@ export default async function EventPage({
   if (!event) {
     notFound();
   }
+
+  // Default to SIMPLE ordinal type if not specified
+  const ordinalType = event.ordinalType || OrdinalType.SIMPLE;
 
   // Create a lookup by player name (case-insensitive)
   const playersByName = Object.fromEntries(
@@ -208,12 +213,18 @@ export default async function EventPage({
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-5">
               {event.winners.map((winner: EventWinner, index: number) => {
+                // Determine bronze positions based on ordinal type
+                const isBronze =
+                  ordinalType === OrdinalType.GROUPED
+                    ? winner.position === 3 || winner.position === 4
+                    : winner.position === 3;
+
                 const badgeColor =
-                  index === 0
+                  winner.position === 1
                     ? "bg-yellow-400 text-white border-yellow-400"
-                    : index === 1
+                    : winner.position === 2
                       ? "bg-gray-300 text-gray-900 border-gray-300"
-                      : index === 2
+                      : isBronze
                         ? "bg-amber-700 text-white border-amber-700"
                         : "bg-gray-200 text-gray-600 border-gray-300";
 
@@ -231,7 +242,7 @@ export default async function EventPage({
                       <span
                         className={`text-xs px-3 py-0.5 border font-semibold ${badgeColor}`}
                       >
-                        {getOrdinal(winner.position)}
+                        {getOrdinal(winner.position, ordinalType)}
                       </span>
                       <span>{winner.name}</span>
                       <Slash size={10} />
@@ -312,19 +323,6 @@ export default async function EventPage({
       </div>
     </div>
   );
-}
-/**
- * Get ordinal suffix for a number.
- * @param n - The number to get the ordinal for.
- * @returns The number with its ordinal suffix.
- */
-function getOrdinal(n: number): string {
-  const j = n % 10;
-  const k = n % 100;
-  if (j == 1 && k != 11) return n + "st";
-  if (j == 2 && k != 12) return n + "nd";
-  if (j == 3 && k != 13) return n + "rd";
-  return n + "th";
 }
 
 /**

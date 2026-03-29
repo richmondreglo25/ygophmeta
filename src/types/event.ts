@@ -1,3 +1,5 @@
+import { OrdinalType } from "@/enums/ordinal-type";
+
 export type EventDesc = {
   name: string;
   desc: number | string;
@@ -23,6 +25,7 @@ export type Event = {
   where: string;
   format: string;
   official: boolean;
+  ordinalType?: OrdinalType;
   rounds?: number;
   images?: string[];
   winners: EventWinner[];

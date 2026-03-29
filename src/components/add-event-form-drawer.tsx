@@ -3,6 +3,7 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { EventFormat } from "@/enums/event-format";
+import { OrdinalType } from "@/enums/ordinal-type";
 import { Megaphone, Plus, Trash2, X } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import {
@@ -41,6 +42,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
     where: "",
     format: EventFormat.OCG,
     official: false,
+    ordinalType: OrdinalType.SIMPLE,
     rounds: 3,
     winners: [] as EventWinner[],
     decks: [] as EventDeck[],
@@ -60,7 +62,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
   function handleChange(
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    >,
   ) {
     const { name, value, type } = e.target;
     const checked =
@@ -74,19 +76,19 @@ export function AddEventFormDrawer({ onClose }: Props) {
 
   function handleWinnerChange(
     idx: number,
-    e: React.ChangeEvent<HTMLInputElement>
+    e: React.ChangeEvent<HTMLInputElement>,
   ) {
     const { name, value } = e.target;
     setWinners((prev) =>
       prev.map((winner, i) =>
-        i === idx ? { ...winner, [name]: value } : winner
-      )
+        i === idx ? { ...winner, [name]: value } : winner,
+      ),
     );
   }
 
   function handleDeckChange(
     idx: number,
-    e: React.ChangeEvent<HTMLInputElement>
+    e: React.ChangeEvent<HTMLInputElement>,
   ) {
     const { name, value } = e.target;
     setDecks((prev) =>
@@ -96,8 +98,8 @@ export function AddEventFormDrawer({ onClose }: Props) {
               ...deck,
               [name]: name === "count" ? Math.max(1, Number(value)) : value,
             }
-          : deck
-      )
+          : deck,
+      ),
     );
   }
 
@@ -135,6 +137,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
       where: form.where.trim(),
       format: form.format.trim(),
       official: form.official,
+      ordinalType: form.ordinalType,
       rounds: form.rounds,
       images: [],
       winners: winners.map((winner, idx) => ({
@@ -159,7 +162,7 @@ export function AddEventFormDrawer({ onClose }: Props) {
 
     const subject = encodeURIComponent("Event Listing Request: ygophmeta");
     const body = encodeURIComponent(
-      `I consent to my data being used and displayed publicly on ygophmeta.\n\nEvent Data:\n${jsonData}`
+      `I consent to my data being used and displayed publicly on ygophmeta.\n\nEvent Data:\n${jsonData}`,
     );
     const mailto = `mailto:richmondreglo25@gmail.com?subject=${subject}&body=${body}`;
     window.open(mailto, "_blank");
@@ -279,6 +282,31 @@ export function AddEventFormDrawer({ onClose }: Props) {
                   }
                 />
                 Official
+              </label>
+              <label className="flex flex-col gap-1 text-sm font-medium">
+                Ordinal Type
+                <Select
+                  name="ordinalType"
+                  value={form.ordinalType}
+                  onValueChange={(value) =>
+                    setForm((prev) => ({
+                      ...prev,
+                      ordinalType: value as OrdinalType,
+                    }))
+                  }
+                  required
+                >
+                  <SelectTrigger className="w-full text-gray-700 rounded-sm shadow-none">
+                    <SelectValue placeholder="Select ordinal type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {Object.values(OrdinalType).map((type) => (
+                      <SelectItem key={type} value={type}>
+                        {type}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </label>
               <label className="flex flex-col gap-1 text-sm font-medium">
                 Rounds
