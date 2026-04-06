@@ -1,52 +1,73 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 import path from "path";
-import fs from "fs/promises";
-import { promises as fssync } from "fs";
-import sharp from "sharp";
+import {
+  errorResponse,
+  successResponse,
+  validationError,
+  notFoundError,
+  internalError,
+} from "@/lib/api-response";
+import { processAndSaveImage } from "@/lib/image-processor";
+import { validateRequiredFields } from "@/lib/validation";
+import { loadShops } from "@/lib/data-loader";
+import { PATHS, API_ERRORS } from "@/lib/constants";
+import { Shop } from "@/types/shop";
 
-// POST handler for shop image upload.
+/**
+ * POST handler for shop image upload
+ * Uploads a logo image for a specific shop
+ */
 export async function POST(req: NextRequest) {
-  // Parse multipart/form-data.
-  const formData = await req.formData();
+  try {
+    // Parse multipart/form-data
+    const formData = await req.formData();
 
-  // Extract fields from form data.
-  const shopName = formData.get("shopName") as string;
-  const image = formData.get("image") as File;
+    // Extract fields from form data
+    const shopName = formData.get("shopName") as string;
+    const image = formData.get("image") as File;
 
-  // Validate required fields.
-  if (!shopName || !image) {
-    return NextResponse.json(
-      { error: "Missing required fields." },
-      { status: 400 },
+    // Validate required fields
+    const validation = validateRequiredFields({ shopName, image }, [
+      "shopName",
+      "image",
+    ]);
+
+    if (!validation.valid) {
+      return validationError(
+        `${API_ERRORS.MISSING_FIELDS}: ${validation.missing?.join(", ")}`,
+      );
+    }
+
+    // Load shops data
+    const shops = (await loadShops()) as Shop[];
+
+    // Find the shop by name
+    const shop = shops.find((s) => s.name === shopName);
+    if (!shop) {
+      return notFoundError("Shop not found");
+    }
+
+    // Get the image path (should be like "/shops/xxxlogo.webp")
+    const imagePath = shop.logo.startsWith("/")
+      ? shop.logo.slice(1)
+      : shop.logo;
+
+    const filename = path.basename(imagePath);
+    const filepath = path.join(PATHS.IMAGES.ROOT, imagePath);
+
+    // Process and save image
+    const result = await processAndSaveImage(image, filepath);
+
+    if (!result.success) {
+      return errorResponse(result.error || API_ERRORS.UPLOAD_FAILED);
+    }
+
+    // Respond with success and file info
+    return successResponse({ filename, url: imagePath });
+  } catch (error) {
+    console.error("Shop image upload error:", error);
+    return internalError(
+      error instanceof Error ? error.message : API_ERRORS.INTERNAL_ERROR,
     );
   }
-
-  // Load shops data to find the shop.
-  const shopsPath = path.join(process.cwd(), "public", "data", "shops.json");
-  const shopsData = await fs.readFile(shopsPath, "utf-8");
-  const shops: { name: string; logo: string }[] = JSON.parse(shopsData);
-
-  // Find the shop by name.
-  const shop = shops.find((s) => s.name === shopName);
-  if (!shop) {
-    return NextResponse.json({ error: "Shop not found." }, { status: 404 });
-  }
-
-  // Get the image path (should be like "/shops/xxxlogo.webp").
-  const imagePath = shop.logo.startsWith("/") ? shop.logo.slice(1) : shop.logo;
-
-  const filename = path.basename(imagePath);
-  const filepath = path.resolve(process.cwd(), "public", "images", imagePath);
-
-  // Ensure upload directory exists.
-  await fssync.mkdir(path.dirname(filepath), { recursive: true });
-
-  // Convert and save file as .webp using sharp.
-  const arrayBuffer = await image.arrayBuffer();
-  const buffer = Buffer.from(arrayBuffer);
-  const webpBuffer = await sharp(buffer).webp().toBuffer();
-  await fs.writeFile(filepath, webpBuffer);
-
-  // Respond with success and file info.
-  return NextResponse.json({ success: true, filename, url: imagePath });
 }

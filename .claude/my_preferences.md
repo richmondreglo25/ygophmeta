@@ -1,5 +1,7 @@
 # My Preferences for YGOPhMeta Project
 
+> **Note**: For comprehensive project guidelines, see [.github/copilot-instructions.md](../.github/copilot-instructions.md)
+
 ## Card Component Styling Standards
 
 ### Base Card Styles

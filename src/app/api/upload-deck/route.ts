@@ -1,50 +1,67 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 import path from "path";
-import fs from "fs/promises";
-import sharp from "sharp";
+import {
+  errorResponse,
+  successResponse,
+  validationError,
+  internalError,
+} from "@/lib/api-response";
+import { processAndSaveImage } from "@/lib/image-processor";
+import { validateRequiredFields, isValidUUID } from "@/lib/validation";
+import { PATHS, API_ERRORS } from "@/lib/constants";
 
-// POST handler for deck image upload.
+/**
+ * POST handler for deck image upload
+ * Uploads a deck image for a specific event and winner position
+ */
 export async function POST(req: NextRequest) {
-  // Parse multipart/form-data.
-  const formData = await req.formData();
+  try {
+    // Parse multipart/form-data
+    const formData = await req.formData();
 
-  // Extract fields from form data.
-  const eventId = formData.get("eventId") as string;
-  const winnerPosition = formData.get("winnerPosition") as string;
-  const deckImage = formData.get("deckImage") as File;
+    // Extract fields from form data
+    const eventId = formData.get("eventId") as string;
+    const winnerPosition = formData.get("winnerPosition") as string;
+    const deckImage = formData.get("deckImage") as File;
 
-  // Validate required fields.
-  if (!eventId || !winnerPosition || !deckImage) {
-    return NextResponse.json(
-      { error: "Missing required fields." },
-      { status: 400 }
+    // Validate required fields
+    const validation = validateRequiredFields(
+      { eventId, winnerPosition, deckImage },
+      ["eventId", "winnerPosition", "deckImage"],
+    );
+
+    if (!validation.valid) {
+      return validationError(
+        `${API_ERRORS.MISSING_FIELDS}: ${validation.missing?.join(", ")}`,
+      );
+    }
+
+    // Validate event ID format
+    if (!isValidUUID(eventId)) {
+      return validationError("Invalid event ID format");
+    }
+
+    // Build upload directory and file path
+    const uploadDir = path.join(PATHS.IMAGES.EVENTS, eventId);
+    const filename = `${winnerPosition}.webp`;
+    const filepath = path.join(uploadDir, filename);
+
+    // Process and save image
+    const result = await processAndSaveImage(deckImage, filepath);
+
+    if (!result.success) {
+      return errorResponse(result.error || API_ERRORS.UPLOAD_FAILED);
+    }
+
+    // Respond with success and file info
+    return successResponse({
+      filename,
+      url: `/images/events/${eventId}/${filename}`,
+    });
+  } catch (error) {
+    console.error("Deck upload error:", error);
+    return internalError(
+      error instanceof Error ? error.message : API_ERRORS.INTERNAL_ERROR,
     );
   }
-
-  // Build upload directory and file path.
-  const uploadDir = path.join(
-    process.cwd(),
-    "public",
-    "images",
-    "events",
-    eventId
-  );
-  const filename = `${winnerPosition}.webp`;
-  const filepath = path.join(uploadDir, filename);
-
-  // Ensure upload directory exists.
-  await fs.mkdir(uploadDir, { recursive: true });
-
-  // Convert and save file as .webp using sharp.
-  const arrayBuffer = await deckImage.arrayBuffer();
-  const buffer = Buffer.from(arrayBuffer);
-  const webpBuffer = await sharp(buffer).webp().toBuffer();
-  await fs.writeFile(filepath, webpBuffer);
-
-  // Respond with success and file info.
-  return NextResponse.json({
-    success: true,
-    filename,
-    url: `/images/events/${eventId}/${filename}`,
-  });
 }
