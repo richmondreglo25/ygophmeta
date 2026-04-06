@@ -7,11 +7,12 @@ import {
   DrawerContent,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { X } from "lucide-react";
+import { X, Edit } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Gender } from "@/enums/gender";
 import { Mars, Venus } from "lucide-react";
-import { getImagePath } from "@/utils/enviroment";
+import { getImagePath, isDevelopment } from "@/utils/enviroment";
+import { Button } from "@/components/ui/button";
 
 // Drawer hook for open/close state
 export function useProfileDrawer(initialOpen = false) {
@@ -65,6 +66,7 @@ interface ProfileDrawerProps<T = Record<string, unknown>> {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   data: T;
+  onEdit?: () => void;
 }
 
 export function ProfileDrawer<T = Record<string, unknown>>({
@@ -72,6 +74,7 @@ export function ProfileDrawer<T = Record<string, unknown>>({
   open,
   onOpenChange,
   data,
+  onEdit,
 }: ProfileDrawerProps<T>) {
   // Show image at the top if available
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -90,9 +93,22 @@ export function ProfileDrawer<T = Record<string, unknown>>({
               {/* <IconX type="players" size={18} /> */}
               {title}
             </div>
-            <DrawerClose>
-              <X size={18} />
-            </DrawerClose>
+            <div className="flex items-center gap-2">
+              {isDevelopment() && onEdit && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={onEdit}
+                  className="h-8 w-8 p-0"
+                  title="Edit profile"
+                >
+                  <Edit size={16} />
+                </Button>
+              )}
+              <DrawerClose>
+                <X size={18} />
+              </DrawerClose>
+            </div>
           </DrawerTitle>
           <div className="p-4 flex flex-col items-center flex-1 overflow-auto">
             {hasImage && (

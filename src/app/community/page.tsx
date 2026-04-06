@@ -20,11 +20,15 @@ import { Info, SquareArrowOutUpRight, Users, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AddProfileFormDrawer } from "@/components/add-profile-form-drawer";
 import { UploadProfileImageDrawer } from "@/components/upload-profile-image-drawer";
+import { EditProfileFormDrawer } from "@/components/edit-profile-form-drawer";
 import { Player } from "@/types/player";
 import { Judge } from "@/types/judge";
 
 export default function Community() {
   const [data, setData] = useState<unknown>(null);
+  const [selectedType, setSelectedType] = useState<"Player" | "Judge">(
+    "Player",
+  );
   const { open, openDrawer, closeDrawer } = useProfileDrawer();
 
   // Data Sources.
@@ -50,11 +54,13 @@ export default function Community() {
     useState(false);
   const [openUploadProfileImageDrawer, setOpenUploadProfileImageDrawer] =
     useState(false);
+  const [openEditProfileDrawer, setOpenEditProfileDrawer] = useState(false);
 
-  function onClick(row: unknown) {
+  function onClick(row: unknown, type: "Player" | "Judge") {
     if (!row) return; // Invalid row.
 
     setData(row);
+    setSelectedType(type);
     openDrawer();
   }
 
@@ -72,6 +78,19 @@ export default function Community() {
 
   function handleCloseUploadProfileImageDrawer() {
     setOpenUploadProfileImageDrawer(false);
+  }
+
+  function handleOpenEditProfileDrawer() {
+    setOpenEditProfileDrawer(true);
+  }
+
+  function handleCloseEditProfileDrawer() {
+    setOpenEditProfileDrawer(false);
+  }
+
+  function handleEditSuccess() {
+    // Close only the edit drawer, keep profile detail drawer open
+    setOpenEditProfileDrawer(false);
   }
 
   return (
@@ -109,7 +128,7 @@ export default function Community() {
                   columns={columns}
                   data={data.data}
                   searchColumn="name"
-                  onClick={onClick}
+                  onClick={(row) => onClick(row, label as "Player" | "Judge")}
                 />
               )}
             </AccordionContent>
@@ -122,7 +141,17 @@ export default function Community() {
         open={open}
         onOpenChange={(o) => (o ? openDrawer() : closeDrawer())}
         data={data}
+        onEdit={handleOpenEditProfileDrawer}
       />
+
+      {data && openEditProfileDrawer && (
+        <EditProfileFormDrawer
+          profile={data as Player | Judge}
+          profileType={selectedType}
+          onClose={handleCloseEditProfileDrawer}
+          onSuccess={handleEditSuccess}
+        />
+      )}
 
       <div className="flex flex-col gap-4 pt-4">
         <Alert variant="info">

@@ -4,7 +4,7 @@ export type Judge = {
   name: string;
   ign: string;
   imagePath: string;
-  gender: Gender;
+  gender?: Gender;
   city: string;
   team: string;
   deck: string[];

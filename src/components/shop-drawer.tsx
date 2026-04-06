@@ -7,10 +7,11 @@ import {
   DrawerContent,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { X } from "lucide-react";
+import { X, Edit } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { getImagePath } from "@/utils/enviroment";
+import { getImagePath, isDevelopment } from "@/utils/enviroment";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 // Drawer hook for open/close state
 export function useShopDrawer(initialOpen = false) {
@@ -102,6 +103,7 @@ interface ShopDrawerProps<T = Record<string, unknown>> {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   data: T;
+  onEdit?: () => void;
 }
 
 export function ShopDrawer<T = Record<string, unknown>>({
@@ -109,6 +111,7 @@ export function ShopDrawer<T = Record<string, unknown>>({
   open,
   onOpenChange,
   data,
+  onEdit,
 }: ShopDrawerProps<T>) {
   // Show logo at the top if available
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -124,9 +127,22 @@ export function ShopDrawer<T = Record<string, unknown>>({
             className={`flex justify-between items-center p-4 text-sm font-medium border-b`}
           >
             <div className="flex items-center gap-2">{title}</div>
-            <DrawerClose>
-              <X size={18} />
-            </DrawerClose>
+            <div className="flex items-center gap-2">
+              {isDevelopment() && onEdit && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={onEdit}
+                  className="h-8 w-8 p-0"
+                  title="Edit shop"
+                >
+                  <Edit size={16} />
+                </Button>
+              )}
+              <DrawerClose>
+                <X size={18} />
+              </DrawerClose>
+            </div>
           </DrawerTitle>
           <div className="p-4 flex flex-col items-center flex-1 overflow-auto">
             {hasLogo && (

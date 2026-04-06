@@ -12,6 +12,7 @@ import { Info, SquareArrowOutUpRight, Store, Upload } from "lucide-react";
 import { Shop } from "@/types/shop";
 import { AddShopFormDrawer } from "@/components/add-shop-form-drawer";
 import { UploadShopImageDrawer } from "@/components/upload-shop-image-drawer";
+import { EditShopFormDrawer } from "@/components/edit-shop-form-drawer";
 import { Button } from "@/components/ui/button";
 
 export default function Shops() {
@@ -21,6 +22,7 @@ export default function Shops() {
   const [openShopFormDrawer, setOpenShopFormDrawer] = useState(false);
   const [openUploadShopImageDrawer, setOpenUploadShopImageDrawer] =
     useState(false);
+  const [openEditShopDrawer, setOpenEditShopDrawer] = useState(false);
 
   function onClick(row: Shop) {
     if (!row) return; // Invalid row.
@@ -43,6 +45,19 @@ export default function Shops() {
 
   function handleCloseUploadShopImageDrawer() {
     setOpenUploadShopImageDrawer(false);
+  }
+
+  function handleOpenEditShopDrawer() {
+    setOpenEditShopDrawer(true);
+  }
+
+  function handleCloseEditShopDrawer() {
+    setOpenEditShopDrawer(false);
+  }
+
+  function handleEditSuccess() {
+    // Close only the edit drawer, keep shop detail drawer open
+    setOpenEditShopDrawer(false);
   }
 
   return (
@@ -74,7 +89,16 @@ export default function Shops() {
         open={open}
         onOpenChange={(o) => (o ? openDrawer() : closeDrawer())}
         data={selected}
+        onEdit={handleOpenEditShopDrawer}
       />
+
+      {selected && openEditShopDrawer && (
+        <EditShopFormDrawer
+          shop={selected}
+          onClose={handleCloseEditShopDrawer}
+          onSuccess={handleEditSuccess}
+        />
+      )}
 
       <div className="flex flex-col gap-4 pt-4">
         <Alert variant="info" className="shadow-sm">

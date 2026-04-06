@@ -6,7 +6,9 @@
     "gender": "MALE",
     "city": "Manila",
     "team": "TEAM RPC",
-    "deck": ["HERO"]
+    "deck": [
+      "HERO"
+    ]
   },
   {
     "name": "Aian-Jhay Maculata",
@@ -15,7 +17,9 @@
     "gender": "MALE",
     "city": "Marikina",
     "team": "",
-    "deck": ["Dracotail Branded"],
+    "deck": [
+      "Dracotail Branded"
+    ],
     "others": ""
   },
   {
@@ -60,7 +64,9 @@
     "gender": "MALE",
     "city": "San Fernando",
     "team": "",
-    "deck": ["Yummy"],
+    "deck": [
+      "Yummy"
+    ],
     "others": ""
   },
   {
@@ -87,7 +93,9 @@
     "gender": "MALE",
     "city": "Manila, Bulacan",
     "team": "Packboys",
-    "deck": ["Yummy"],
+    "deck": [
+      "Yummy"
+    ],
     "others": ""
   },
   {
@@ -97,7 +105,9 @@
     "gender": "MALE",
     "city": "Olongapo City",
     "team": "",
-    "deck": ["Vanquish Soul"],
+    "deck": [
+      "Vanquish Soul"
+    ],
     "others": "Asia WCQ 2025 Philippines - Top 8"
   },
   {
@@ -107,7 +117,11 @@
     "gender": "MALE",
     "city": "San Juan City",
     "team": "Dragion",
-    "deck": ["K9 Crystron", "Yummy", "Artmage"],
+    "deck": [
+      "K9 Crystron",
+      "Yummy",
+      "Artmage"
+    ],
     "others": ""
   },
   {
@@ -117,7 +131,11 @@
     "gender": "MALE",
     "city": "San Jose del Monte",
     "team": "Team Kwasong",
-    "deck": ["Maliss", "Rescue-ACE", "Sky Striker"],
+    "deck": [
+      "Maliss",
+      "Rescue-ACE",
+      "Sky Striker"
+    ],
     "others": "kalbs"
   },
   {
@@ -127,7 +145,12 @@
     "gender": "MALE",
     "city": "Quezon City",
     "team": "",
-    "deck": ["Crystron K9", "Dracotail", "Dracotail Branded", "Yummy"],
+    "deck": [
+      "Crystron K9",
+      "Dracotail",
+      "Dracotail Branded",
+      "Yummy"
+    ],
     "others": ""
   },
   {
@@ -153,7 +176,10 @@
     "gender": "MALE",
     "city": "Bulacan",
     "team": "Team San Jose Bulacan",
-    "deck": ["Orcust", "Mermail"]
+    "deck": [
+      "Orcust",
+      "Mermail"
+    ]
   },
   {
     "name": "Jayson Dwight Catindig",
@@ -162,7 +188,9 @@
     "gender": "MALE",
     "city": "Makati",
     "team": "",
-    "deck": ["Mitsurugi"],
+    "deck": [
+      "Mitsurugi"
+    ],
     "others": ""
   },
   {
@@ -172,7 +200,11 @@
     "gender": "MALE",
     "city": "Taguig",
     "team": "Dragion",
-    "deck": ["Onomat Argostars", "Odion Argostars", "Armored XYZ Onomat"],
+    "deck": [
+      "Onomat Argostars",
+      "Odion Argostars",
+      "Armored XYZ Onomat"
+    ],
     "others": ""
   },
   {
@@ -182,7 +214,9 @@
     "gender": "MALE",
     "city": "Manila",
     "team": "",
-    "deck": ["Gimmick Puppet"]
+    "deck": [
+      "Gimmick Puppet"
+    ]
   },
   {
     "name": "JM Caisip",
@@ -191,7 +225,9 @@
     "gender": "MALE",
     "city": "San Jose del Monte",
     "team": "",
-    "deck": ["Orcust"]
+    "deck": [
+      "Orcust"
+    ]
   },
   {
     "name": "John Zedric Lorenzo",
@@ -200,7 +236,13 @@
     "gender": "MALE",
     "city": "Bulacan",
     "team": "Hayahay",
-    "deck": ["VS K9", "Ryzeal", "Maliss", "Yummy", "Dracotail"],
+    "deck": [
+      "VS K9",
+      "Ryzeal",
+      "Maliss",
+      "Yummy",
+      "Dracotail"
+    ],
     "others": ""
   },
   {
@@ -210,7 +252,10 @@
     "gender": "MALE",
     "city": "Paranaque",
     "team": "Dragion",
-    "deck": ["Blue-Eyes", "Exosister"],
+    "deck": [
+      "Blue-Eyes",
+      "Exosister"
+    ],
     "others": "Challenger Cup 2025 PH Top 16"
   },
   {
@@ -220,7 +265,10 @@
     "gender": "MALE",
     "city": "Rizal",
     "team": "YOTI CORP",
-    "deck": ["Kewl Tune", "Yummy"],
+    "deck": [
+      "Kewl Tune",
+      "Yummy"
+    ],
     "others": "Asia WCQ PH Top 4"
   },
   {
@@ -230,7 +278,9 @@
     "gender": "MALE",
     "city": "Pampanga",
     "team": "",
-    "deck": ["Yubel Fiendsmith"],
+    "deck": [
+      "Yubel Fiendsmith"
+    ],
     "others": ""
   },
   {
@@ -240,7 +290,9 @@
     "gender": "MALE",
     "city": "Bulacan",
     "team": "TEAM RPC",
-    "deck": ["White Forest Azamina, Rishid, Elfnotes"]
+    "deck": [
+      "White Forest Azamina, Rishid, Elfnotes"
+    ]
   },
   {
     "name": "Kyle Chino Marquinez",
@@ -249,7 +301,11 @@
     "gender": "MALE",
     "city": "Iloilo City",
     "team": "",
-    "deck": ["Artmage Azamina", "Elfnotes Fiendsmith", "DOOMZ Fiendsmith"],
+    "deck": [
+      "Artmage Azamina",
+      "Elfnotes Fiendsmith",
+      "DOOMZ Fiendsmith"
+    ],
     "others": ""
   },
   {
@@ -259,7 +315,9 @@
     "gender": "MALE",
     "city": "Mabalcat",
     "team": "",
-    "deck": ["Mitsurugi Fiendsmith"],
+    "deck": [
+      "Mitsurugi Fiendsmith"
+    ],
     "others": "#1 Staller ng Pampanga!"
   },
   {
@@ -288,7 +346,9 @@
     "gender": "MALE",
     "city": "Manila",
     "team": "",
-    "deck": ["Mementotlan"],
+    "deck": [
+      "Mementotlan"
+    ],
     "others": ""
   },
   {
@@ -298,7 +358,9 @@
     "gender": "MALE",
     "city": "Pampanga",
     "team": "Team Co blinks",
-    "deck": ["Maliss"],
+    "deck": [
+      "Maliss"
+    ],
     "others": ""
   },
   {
@@ -308,7 +370,9 @@
     "gender": "MALE",
     "city": "Bulacan",
     "team": "",
-    "deck": ["Solfachord Yummy"]
+    "deck": [
+      "Solfachord Yummy"
+    ]
   },
   {
     "name": "Martin Owen Gonzalez Calleja",
@@ -317,7 +381,9 @@
     "gender": "MALE",
     "city": "Manila",
     "team": "Dark Emperor",
-    "deck": ["Radiant Typhoon"]
+    "deck": [
+      "Radiant Typhoon"
+    ]
   },
   {
     "name": "Marvin Tamayo",
@@ -326,7 +392,9 @@
     "gender": "MALE",
     "city": "Caloocan",
     "team": "",
-    "deck": ["Dracotail Metalmorph Primite"],
+    "deck": [
+      "Dracotail Metalmorph Primite"
+    ],
     "others": ""
   },
   {
@@ -336,7 +404,9 @@
     "gender": "MALE",
     "city": "Pampanga",
     "team": "Team Maimpis",
-    "deck": ["Yummy"],
+    "deck": [
+      "Yummy"
+    ],
     "others": ""
   },
   {
@@ -358,19 +428,25 @@
     "name": "Owen Cruz",
     "ign": "DmaN14",
     "imagePath": "/people/owencruz.webp",
-    "gender": "MALE",
+    "gender": "male",
     "city": "Bulacan",
     "team": "Team Kwasong",
-    "deck": ["Branded", "Exosister", "Magic Musketeer"]
+    "deck": [
+      "Branded",
+      "Exosister",
+      "Magic Musketeer"
+    ]
   },
   {
     "name": "Raphael Perez",
     "ign": "Rappyraph",
     "imagePath": "",
-    "gender": "MALE",
+    "gender": "male",
     "city": "Bulacan",
     "team": "",
-    "deck": ["Blue-Eyes"]
+    "deck": [
+      "Blue-Eyes"
+    ]
   },
   {
     "name": "Renz Guizzagan",
@@ -379,7 +455,11 @@
     "gender": "MALE",
     "city": "Bulacan",
     "team": "Bang",
-    "deck": ["Lunalight", "Dracotail Branded", "Ryzeal"]
+    "deck": [
+      "Lunalight",
+      "Dracotail Branded",
+      "Ryzeal"
+    ]
   },
   {
     "name": "Richmond Reglo",
@@ -388,7 +468,9 @@
     "gender": "MALE",
     "city": "Manila",
     "team": "",
-    "deck": ["Yummy"]
+    "deck": [
+      "Yummy"
+    ]
   },
   {
     "name": "Rob Reyan Yvan Belgica",
@@ -397,7 +479,9 @@
     "gender": "MALE",
     "city": "Manila",
     "team": "",
-    "deck": ["Yummy"]
+    "deck": [
+      "Yummy"
+    ]
   },
   {
     "name": "Rod Allan Bonavente",
@@ -406,7 +490,9 @@
     "gender": "MALE",
     "city": "Manila",
     "team": "Pack boys",
-    "deck": ["k9"]
+    "deck": [
+      "k9"
+    ]
   },
   {
     "name": "Samuel Migs Gamay",
@@ -415,16 +501,20 @@
     "gender": "MALE",
     "city": "Bulacan",
     "team": "",
-    "deck": ["Exosister, Rescue-ACE"]
+    "deck": [
+      "Exosister, Rescue-ACE"
+    ]
   },
   {
     "name": "Toni Angel Vergara",
     "ign": "Toneah",
     "imagePath": "/people/toniangelvergara.webp",
-    "gender": "PREFER_NOT_TO_SAY",
+    "gender": "prefer not to say",
     "city": "Taguig",
     "team": "",
-    "deck": ["Mermail Atlantean"],
+    "deck": [
+      "Mermail Atlantean"
+    ],
     "others": "Happy Playing, Sports, Competitive but not abuser!"
   },
   {
@@ -434,7 +524,11 @@
     "gender": "MALE",
     "city": "Pasig",
     "team": "Team Kwasong",
-    "deck": ["Kewl Tune", "Elfnotes", "White Forest"]
+    "deck": [
+      "Kewl Tune",
+      "Elfnotes",
+      "White Forest"
+    ]
   },
   {
     "name": "Uriel Ray Dolorfino",
@@ -443,7 +537,12 @@
     "gender": "MALE",
     "city": "Iloilo",
     "team": "",
-    "deck": ["Yummy", "White Forest", "Radiant Typhoon", "Voiceless Voice"],
+    "deck": [
+      "Yummy",
+      "White Forest",
+      "Radiant Typhoon",
+      "Voiceless Voice"
+    ],
     "others": ""
   }
 ]
