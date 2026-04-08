@@ -5,7 +5,6 @@ import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { EventFormat } from "@/enums/event-format";
 import { OrdinalType } from "@/enums/ordinal-type";
 import { Plus, Trash2, X, Loader2 } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { format } from "date-fns";
 import { getOrdinal } from "@/utils/ordinal";
 import { isDevelopment } from "@/utils/enviroment";
@@ -19,6 +18,7 @@ import {
 } from "./ui/select";
 import { Checkbox } from "./ui/checkbox";
 import { Event, EventDeck, EventWinner } from "@/types/event";
+import { AlertModal } from "./alert-modal";
 
 type Props = {
   event: Event;
@@ -31,8 +31,12 @@ export function EditEventFormDrawer({ event, onClose, onSuccess }: Props) {
   const [winners, setWinners] = useState<EventWinner[]>(event.winners || []);
   const [decks, setDecks] = useState<EventDeck[]>(event.decks || []);
   const [saving, setSaving] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalVariant, setModalVariant] = useState<"success" | "error">(
+    "success",
+  );
+  const [modalMessage, setModalMessage] = useState("");
 
   useEffect(() => {
     setForm(event);
@@ -110,13 +114,14 @@ export function EditEventFormDrawer({ event, onClose, onSuccess }: Props) {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setError(null);
     setSaving(true);
 
     try {
       // In development mode, allow editing
       if (!isDevelopment()) {
-        setError("Editing is only available in development mode");
+        setModalVariant("error");
+        setModalMessage("Editing is only available in development mode");
+        setShowModal(true);
         setSaving(false);
         return;
       }
@@ -157,12 +162,15 @@ export function EditEventFormDrawer({ event, onClose, onSuccess }: Props) {
       }
 
       setSuccess(true);
-      setTimeout(() => {
-        onSuccess?.();
-        onClose();
-      }, 1500);
+      setModalVariant("success");
+      setModalMessage("Event updated successfully");
+      setShowModal(true);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to update event");
+      const errorMsg =
+        err instanceof Error ? err.message : "Failed to update event";
+      setModalVariant("error");
+      setModalMessage(errorMsg);
+      setShowModal(true);
     } finally {
       setSaving(false);
     }
@@ -451,24 +459,6 @@ export function EditEventFormDrawer({ event, onClose, onSuccess }: Props) {
                 </label>
               </fieldset>
 
-              {success && (
-                <Alert variant="success">
-                  <AlertTitle className="font-semibold">Success!</AlertTitle>
-                  <AlertDescription className="text-sm pt-1">
-                    Event updated successfully
-                  </AlertDescription>
-                </Alert>
-              )}
-
-              {error && (
-                <Alert variant="warning">
-                  <AlertTitle className="font-semibold">Error</AlertTitle>
-                  <AlertDescription className="text-sm pt-1">
-                    {error}
-                  </AlertDescription>
-                </Alert>
-              )}
-
               <div className="flex justify-end gap-2 pt-4 border-t">
                 <Button
                   type="button"
@@ -499,6 +489,19 @@ export function EditEventFormDrawer({ event, onClose, onSuccess }: Props) {
           </div>
         </div>
       </DrawerContent>
+      <AlertModal
+        open={showModal}
+        onClose={() => {
+          setShowModal(false);
+          if (modalVariant === "success") {
+            onSuccess?.();
+            onClose();
+          }
+        }}
+        variant={modalVariant}
+        title={modalVariant === "success" ? "Success!" : "Error"}
+        description={modalMessage}
+      />
     </Drawer>
   );
 }

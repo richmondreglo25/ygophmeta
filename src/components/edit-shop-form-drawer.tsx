@@ -3,10 +3,10 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Drawer, EditDrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { X, Loader2 } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Textarea } from "./ui/textarea";
 import { Shop } from "@/types/shop";
 import { isDevelopment } from "@/utils/enviroment";
+import { AlertModal } from "./alert-modal";
 
 type Props = {
   shop: Shop;
@@ -19,6 +19,11 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalVariant, setModalVariant] = useState<"success" | "error">(
+    "success",
+  );
+  const [modalMessage, setModalMessage] = useState("");
 
   useEffect(() => {
     setForm(shop);
@@ -89,12 +94,16 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
       }
 
       setSuccess(true);
-      setTimeout(() => {
-        onSuccess?.();
-        onClose();
-      }, 1500);
+      setModalVariant("success");
+      setModalMessage("Shop updated successfully!");
+      setShowModal(true);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to update shop");
+      const errorMsg =
+        err instanceof Error ? err.message : "Failed to update shop";
+      setError(errorMsg);
+      setModalVariant("error");
+      setModalMessage(errorMsg);
+      setShowModal(true);
     } finally {
       setSaving(false);
     }
@@ -240,21 +249,6 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
                 </div>
               </fieldset>
 
-              {error && (
-                <Alert variant="warning">
-                  <AlertTitle>Error</AlertTitle>
-                  <AlertDescription>{error}</AlertDescription>
-                </Alert>
-              )}
-              {success && (
-                <Alert variant="success">
-                  <AlertTitle>Success</AlertTitle>
-                  <AlertDescription>
-                    Shop updated successfully!
-                  </AlertDescription>
-                </Alert>
-              )}
-
               <div className="flex justify-end gap-2 pt-4 border-t">
                 <Button
                   type="button"
@@ -285,6 +279,19 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
           </div>
         </div>
       </EditDrawerContent>
+      <AlertModal
+        open={showModal}
+        onClose={() => {
+          setShowModal(false);
+          if (modalVariant === "success") {
+            onSuccess?.();
+            onClose();
+          }
+        }}
+        variant={modalVariant}
+        title={modalVariant === "success" ? "Success!" : "Error"}
+        description={modalMessage}
+      />
     </Drawer>
   );
 }

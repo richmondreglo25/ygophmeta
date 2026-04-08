@@ -3,7 +3,6 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Drawer, EditDrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { X, Loader2 } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Textarea } from "./ui/textarea";
 import {
   Select,
@@ -16,6 +15,7 @@ import { Player } from "@/types/player";
 import { Judge } from "@/types/judge";
 import { Gender } from "@/enums/gender";
 import { isDevelopment } from "@/utils/enviroment";
+import { AlertModal } from "./alert-modal";
 
 type Props = {
   profile: Player | Judge;
@@ -32,8 +32,12 @@ export function EditProfileFormDrawer({
 }: Props) {
   const [form, setForm] = useState<Player | Judge>(profile);
   const [saving, setSaving] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalVariant, setModalVariant] = useState<"success" | "error">(
+    "success",
+  );
+  const [modalMessage, setModalMessage] = useState("");
 
   useEffect(() => {
     setForm(profile);
@@ -79,13 +83,14 @@ export function EditProfileFormDrawer({
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setError(null);
     setSaving(true);
 
     try {
       // In development mode, allow editing
       if (!isDevelopment()) {
-        setError("Editing is only available in development mode");
+        setModalVariant("error");
+        setModalMessage("Editing is only available in development mode");
+        setShowModal(true);
         setSaving(false);
         return;
       }
@@ -114,16 +119,17 @@ export function EditProfileFormDrawer({
       }
 
       setSuccess(true);
-      setTimeout(() => {
-        onSuccess?.();
-        onClose();
-      }, 1500);
+      setModalVariant("success");
+      setModalMessage(`${profileType} updated successfully!`);
+      setShowModal(true);
     } catch (err) {
-      setError(
+      const errorMsg =
         err instanceof Error
           ? err.message
-          : `Failed to update ${profileType.toLowerCase()}`,
-      );
+          : `Failed to update ${profileType.toLowerCase()}`;
+      setModalVariant("error");
+      setModalMessage(errorMsg);
+      setShowModal(true);
     } finally {
       setSaving(false);
     }
@@ -274,21 +280,6 @@ export function EditProfileFormDrawer({
                 </label>
               </fieldset>
 
-              {error && (
-                <Alert variant="warning">
-                  <AlertTitle>Error</AlertTitle>
-                  <AlertDescription>{error}</AlertDescription>
-                </Alert>
-              )}
-              {success && (
-                <Alert variant="success">
-                  <AlertTitle>Success</AlertTitle>
-                  <AlertDescription>
-                    {profileType} updated successfully!
-                  </AlertDescription>
-                </Alert>
-              )}
-
               <div className="flex justify-end gap-2 pt-4 border-t">
                 <Button
                   type="button"
@@ -319,6 +310,19 @@ export function EditProfileFormDrawer({
           </div>
         </div>
       </EditDrawerContent>
+      <AlertModal
+        open={showModal}
+        onClose={() => {
+          setShowModal(false);
+          if (modalVariant === "success") {
+            onSuccess?.();
+            onClose();
+          }
+        }}
+        variant={modalVariant}
+        title={modalVariant === "success" ? "Success!" : "Error"}
+        description={modalMessage}
+      />
     </Drawer>
   );
 }
