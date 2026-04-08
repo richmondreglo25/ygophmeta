@@ -29,6 +29,19 @@ function beautifyKey(key: string) {
     .replace(/ign/i, "IGN");
 }
 
+function isEmptyValue(value: unknown): boolean {
+  // Check for null or undefined
+  if (value === null || value === undefined) return true;
+
+  // Check for empty string
+  if (typeof value === "string" && value.trim() === "") return true;
+
+  // Check for empty array
+  if (Array.isArray(value) && value.length === 0) return true;
+
+  return false;
+}
+
 function renderValue(key: string, value: unknown) {
   if (key === "logo") {
     if (typeof value === "string" && value.trim() !== "") {
@@ -127,13 +140,13 @@ export function ShopDrawer<T = Record<string, unknown>>({
             className={`flex justify-between items-center p-4 text-sm font-medium border-b`}
           >
             <div className="flex items-center gap-2">{title}</div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               {isDevelopment() && onEdit && (
                 <Button
                   variant="ghost"
                   size="sm"
                   onClick={onEdit}
-                  className="h-8 w-8 p-0"
+                  className="h-4 w-4 p-0"
                   title="Edit shop"
                 >
                   <Edit size={16} />
@@ -165,6 +178,7 @@ export function ShopDrawer<T = Record<string, unknown>>({
               {data ? (
                 Object.entries(data)
                   .filter(([key]) => key !== "logo")
+                  .filter(([, value]) => !isEmptyValue(value))
                   .map(([key, value]) => (
                     <div
                       key={key}

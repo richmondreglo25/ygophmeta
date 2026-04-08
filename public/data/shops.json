@@ -59,7 +59,8 @@
     "address": "B2 L3A Commonwealth Ave. Fairview Quezon City",
     "googleMaps": "https://www.google.com/maps/place/Aurorus+Collections/data=!4m2!3m1!1s0x0:0x4e8272673159cecc?sa=X&ved=1t:2428&ictx=111",
     "openHours": "Mon-Sun: 10:00 AM - 9:00 PM",
-    "about": "Aurorus Collections is a card shop located in Quezon City"
+    "about": "Aurorus Collections is a card shop located in Quezon City",
+    "accolades": []
   },
   {
     "name": "BK Secret SHop",
@@ -67,7 +68,8 @@
     "address": "2nd flr Ferdinand Building, Sarmiento Homes, Muzon, San Jose del Monte, Philippines, 3023",
     "googleMaps": "https://www.google.com/maps/search/bk+secret+shop/@14.8064523,121.0322478,17z?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D",
     "openHours": "Mon-Sun: 1:00 PM - 9:00 PM",
-    "about": "BK Secret Shop is a card shop located in San Jose del Monte, Bulacan"
+    "about": "BK Secret Shop is a card shop located in San Jose del Monte, Bulacan",
+    "accolades": []
   },
   {
     "name": "Courtside",
