@@ -123,18 +123,6 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
             />
           </DrawerTitle>
           <div className="flex flex-col items-center flex-1 gap-4 overflow-auto p-4">
-            {error && (
-              <Alert variant="warning">
-                <AlertTitle>Error</AlertTitle>
-                <AlertDescription>{error}</AlertDescription>
-              </Alert>
-            )}
-            {success && (
-              <Alert variant="success">
-                <AlertTitle>Success</AlertTitle>
-                <AlertDescription>Shop updated successfully!</AlertDescription>
-              </Alert>
-            )}
             <form
               onSubmit={handleSubmit}
               className="flex flex-col gap-5 w-full"
@@ -251,6 +239,21 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
                   </Button>
                 </div>
               </fieldset>
+
+              {error && (
+                <Alert variant="warning">
+                  <AlertTitle>Error</AlertTitle>
+                  <AlertDescription>{error}</AlertDescription>
+                </Alert>
+              )}
+              {success && (
+                <Alert variant="success">
+                  <AlertTitle>Success</AlertTitle>
+                  <AlertDescription>
+                    Shop updated successfully!
+                  </AlertDescription>
+                </Alert>
+              )}
 
               <div className="flex justify-end gap-2 pt-4 border-t">
                 <Button

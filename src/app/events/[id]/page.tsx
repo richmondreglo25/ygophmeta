@@ -29,6 +29,7 @@ import playersData from "@/../public/data/players.json"; // Import players.json
 import { Player } from "@/types/player";
 import { OrdinalType } from "@/enums/ordinal-type";
 import { getOrdinal } from "@/utils/ordinal";
+import { EventEditButton } from "@/components/event-edit-button";
 
 export async function generateStaticParams() {
   const eventsDir = path.join(process.cwd(), "public/data/events");
@@ -321,6 +322,9 @@ export default async function EventPage({
           </div>
         )}
       </div>
+
+      {/* Edit Button - Bottom Right, Development Only */}
+      <EventEditButton event={event} />
     </div>
   );
 }
