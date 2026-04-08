@@ -17,7 +17,6 @@ type Props = {
 export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
   const [form, setForm] = useState<Shop>(shop);
   const [saving, setSaving] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [modalVariant, setModalVariant] = useState<"success" | "error">(
@@ -62,13 +61,11 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setError(null);
     setSaving(true);
 
     try {
       // In development mode, allow editing
       if (!isDevelopment()) {
-        setError("Editing is only available in development mode");
         setSaving(false);
         return;
       }
@@ -100,7 +97,6 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
     } catch (err) {
       const errorMsg =
         err instanceof Error ? err.message : "Failed to update shop";
-      setError(errorMsg);
       setModalVariant("error");
       setModalMessage(errorMsg);
       setShowModal(true);

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "880c5150-bb1e-488b-869e-80d46b60c398",
+    "title": "BATANG GAPO DUELISTS CASUAL TOURNAMENT",
+    "host": "Batang Gapo Duelist",
+    "when": "Apr 04 2026",
+    "where": "Save Point Cafe",
+    "format": "OCG",
+    "official": false,
+    "ordinalType": "Simple",
+    "rounds": "5",
+    "images": [],
+    "winners": [
+      {
+        "name": "Bob Marzan",
+        "position": 1,
+        "deck": "Sky Striker",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Cris Joshua Curiano",
+        "position": 2,
+        "deck": "Kewl Tune",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Harvey Obispo",
+        "position": 3,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "3.webp"
+      }
+    ],
+    "decks": [
+      {
+        "name": "Sky Striker",
+        "count": 1
+      },
+      {
+        "name": "Kewl Tune",
+        "count": 1
+      },
+      {
+        "name": "Radiant Typhoon",
+        "count": 2
+      },
+      {
+        "name": "Yummy Dark Magician",
+        "count": 1
+      },
+      {
+        "name": "Elfnote Fiendsmith",
+        "count": 2
+      },
+      {
+        "name": "DoomZ",
+        "count": 1
+      },
+      {
+        "name": "Raidraptor",
+        "count": 1
+      },
+      {
+        "name": "Branded",
+        "count": 1
+      },
+      {
+        "name": "Cyber Dragon",
+        "count": 1
+      },
+      {
+        "name": "Clown Clan",
+        "count": 1
+      },
+      {
+        "name": "Jurrac",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  }
+]
