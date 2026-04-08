@@ -91,7 +91,7 @@ export function UploadShopImageDrawer({ onClose }: Props) {
                 onChange={(e) => setFile(e.target.files?.[0] || null)}
               />
             </label>
-            <div className="flex justify-end gap-2">
+            <div className="flex justify-end gap-2 pt-4 border-t">
               <Button
                 type="button"
                 variant="cancel"

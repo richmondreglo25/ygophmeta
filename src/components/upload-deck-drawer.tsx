@@ -41,7 +41,7 @@ export function UploadDeckDrawer({ onClose }: Props) {
       year: now.getFullYear(),
       month: now.getMonth() + 1,
     }),
-    [now]
+    [now],
   );
 
   // Fetch events in date range.
@@ -67,13 +67,13 @@ export function UploadDeckDrawer({ onClose }: Props) {
   // Filter events by selected host.
   const filteredEvents = useMemo(
     () => events.filter((e) => e.host === selectedHost),
-    [events, selectedHost]
+    [events, selectedHost],
   );
 
   // Find selected event.
   const selectedEvent = useMemo(
     () => filteredEvents.find((e) => e.id === selectedEventId),
-    [filteredEvents, selectedEventId]
+    [filteredEvents, selectedEventId],
   );
 
   // Winner list for selected event.
@@ -116,14 +116,14 @@ export function UploadDeckDrawer({ onClose }: Props) {
     } else {
       // Open email client with JSON in body.
       const subject = encodeURIComponent(
-        `Deck Submission: ${selectedEvent?.title || selectedEventId}`
+        `Deck Submission: ${selectedEvent?.title || selectedEventId}`,
       );
       const body = encodeURIComponent(
         `I consent to my deck data being used and displayed publicly on ygophmeta.\n\nDeck Submission Data:\n${JSON.stringify(
           deckJson,
           null,
-          2
-        )}`
+          2,
+        )}`,
       );
       const mailto = `mailto:richmondreglo25@gmail.com?subject=${subject}&body=${body}`;
       window.open(mailto, "_blank");
@@ -342,7 +342,7 @@ export function UploadDeckDrawer({ onClose }: Props) {
                 </AccordionItem>
               </Accordion>
               {/* Form actions. */}
-              <div className="flex justify-end gap-2">
+              <div className="flex justify-end gap-2 pt-4 border-t">
                 <Button
                   type="button"
                   variant="cancel"

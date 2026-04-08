@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Drawer, EditDrawerContent, DrawerTitle } from "@/components/ui/drawer";
-import { X, Save, Loader2 } from "lucide-react";
+import { X, Loader2 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Textarea } from "./ui/textarea";
 import { Shop } from "@/types/shop";
@@ -102,7 +102,7 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
 
   return (
     <Drawer open dismissible={false} onClose={onClose} direction="right">
-      <EditDrawerContent className="rounded-sm fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-lg">
+      <EditDrawerContent className="rounded-sm fixed top-0 right-0 left-auto mt-0 w-full sm:max-w-md">
         <div className="flex flex-col gap-2 w-full h-full">
           <DrawerTitle className="flex justify-between items-center p-4 text-sm font-medium border-b">
             <div className="flex items-center gap-2">
@@ -252,13 +252,13 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
                 </div>
               </fieldset>
 
-              <div className="flex gap-2 pt-4 border-t">
+              <div className="flex justify-end gap-2 pt-4 border-t">
                 <Button
                   type="button"
-                  variant="outline"
+                  variant="cancel"
                   onClick={onClose}
                   disabled={saving || success}
-                  className="flex-1"
+                  className="rounded-sm"
                 >
                   Cancel
                 </Button>
@@ -266,7 +266,7 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
                   type="submit"
                   variant="submit"
                   disabled={saving || success}
-                  className="flex-1 flex items-center gap-2"
+                  className="rounded-sm flex items-center gap-2"
                 >
                   {saving ? (
                     <>
@@ -274,10 +274,7 @@ export function EditShopFormDrawer({ shop, onClose, onSuccess }: Props) {
                       Saving...
                     </>
                   ) : (
-                    <>
-                      <Save size={16} />
-                      Save Changes
-                    </>
+                    <>Save</>
                   )}
                 </Button>
               </div>
