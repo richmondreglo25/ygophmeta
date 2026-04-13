@@ -231,5 +231,133 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "633b22af-352b-4cc2-82aa-e4f38b4d7242",
+    "title": "OCG Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Apr 03 2026",
+    "where": "Japan Gacha",
+    "format": "OCG",
+    "official": true,
+    "ordinalType": "Simple",
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 1,
+        "deck": "Yummy Dark Magician",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Joshua Lawagan",
+        "position": 2,
+        "deck": "DoomZ",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Paulo Rillo",
+        "position": 3,
+        "deck": "Maliss",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Francis Velarde",
+        "position": 4,
+        "deck": "Sky Striker",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Rizen Calub",
+        "position": 5,
+        "deck": "Sky Striker",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Ryan Christian",
+        "position": 6,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "6.webp"
+      },
+      {
+        "name": "Manuel Tiong",
+        "position": 7,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": "7.webp"
+      },
+      {
+        "name": "John Christoper Evangelista",
+        "position": 8,
+        "deck": "Maliss",
+        "deckImagePath": "8.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "4e98badf-14f3-4d50-9f4a-134fd80f1193",
+    "title": "AE Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Apr 03 2026",
+    "where": "Japan Gacha",
+    "format": "AE",
+    "official": true,
+    "ordinalType": "Simple",
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Frederico Miguel David",
+        "position": 1,
+        "deck": "VS K9",
+        "deckImagePath": "1.webp"
+      },
+      {
+        "name": "Edmar Canete",
+        "position": 2,
+        "deck": "Onomat Ryzeal",
+        "deckImagePath": "2.webp"
+      },
+      {
+        "name": "Larry Solis",
+        "position": 3,
+        "deck": "Lunalight",
+        "deckImagePath": "3.webp"
+      },
+      {
+        "name": "Marlo Delda",
+        "position": 4,
+        "deck": "Mitsurugi Ryzeal",
+        "deckImagePath": "4.webp"
+      },
+      {
+        "name": "Banjo Buitizon",
+        "position": 5,
+        "deck": "Dracotail",
+        "deckImagePath": "5.webp"
+      },
+      {
+        "name": "Jude Thomas Cruz",
+        "position": 6,
+        "deck": "Blue-Eyes",
+        "deckImagePath": "6.webp"
+      },
+      {
+        "name": "Jonathan Gue",
+        "position": 7,
+        "deck": "Mitsurugi Ryzeal",
+        "deckImagePath": "7.webp"
+      },
+      {
+        "name": "Jamel Ibrahem",
+        "position": 8,
+        "deck": "Kewl Tune",
+        "deckImagePath": "8.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
   }
 ]
