@@ -2318,5 +2318,141 @@
     ],
     "decks": [],
     "notes": ""
+  },
+  {
+    "id": "c889c679-ecc3-4d55-a991-3b24050094d5",
+    "title": "OCG Pod 1",
+    "host": "Mage-Ring Hobby Shop",
+    "when": "Mar 22 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "ordinalType": "Simple",
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Dennis",
+        "position": 1,
+        "deck": "Lunalight",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Weldy",
+        "position": 2,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Elmard",
+        "position": 3,
+        "deck": "Artmage",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Timothy",
+        "position": 4,
+        "deck": "Sky Striker",
+        "deckImagePath": ""
+      }
+    ],
+    "decks": [
+      {
+        "name": "Lunalight",
+        "count": 1
+      },
+      {
+        "name": "Radiant Typhoon",
+        "count": 1
+      },
+      {
+        "name": "Artmage",
+        "count": 1
+      },
+      {
+        "name": "Sky Striker",
+        "count": 1
+      },
+      {
+        "name": "Monarch",
+        "count": 1
+      },
+      {
+        "name": "Branded",
+        "count": 1
+      },
+      {
+        "name": "Gimmick Puppet",
+        "count": 1
+      },
+      {
+        "name": "Mitsurugi",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "d1e4a904-29f4-4425-ad5b-50bcfaec22dc",
+    "title": "OCG Pod 1",
+    "host": "Mage-Ring Hobby Shop",
+    "when": "Mar 29 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "ordinalType": "Simple",
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Weldy",
+        "position": 1,
+        "deck": "Clown Clan",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Daryl",
+        "position": 2,
+        "deck": "Shaddoll",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Enrico",
+        "position": 3,
+        "deck": "Branded",
+        "deckImagePath": ""
+      }
+    ],
+    "decks": [
+      {
+        "name": "Clown Clan",
+        "count": 1
+      },
+      {
+        "name": "Shaddoll",
+        "count": 1
+      },
+      {
+        "name": "Branded",
+        "count": 1
+      },
+      {
+        "name": "Drytron",
+        "count": 1
+      },
+      {
+        "name": "Fire King",
+        "count": 1
+      },
+      {
+        "name": "Naturia",
+        "count": 1
+      },
+      {
+        "name": "Mitsurugi",
+        "count": 1
+      }
+    ],
+    "notes": ""
   }
 ]

@@ -6,7 +6,7 @@
     "when": "Apr 04 2026",
     "where": "Save Point Cafe",
     "format": "OCG",
-    "official": false,
+    "official": true,
     "ordinalType": "Simple",
     "rounds": "5",
     "images": [],
@@ -355,6 +355,316 @@
         "position": 8,
         "deck": "Kewl Tune",
         "deckImagePath": "8.webp"
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "5c170327-e17f-46f3-a9ee-dcf5f0b7fc82",
+    "title": "OCG Pod 1",
+    "host": "Mage-Ring Hobby Shop",
+    "when": "Apr 05 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "ordinalType": "Simple",
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Weldy",
+        "position": 1,
+        "deck": "Clown Clan",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Daryl",
+        "position": 2,
+        "deck": "Tellarknight",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Dennis",
+        "position": 3,
+        "deck": "Crystron K9",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Joshua",
+        "position": 4,
+        "deck": "Drytron",
+        "deckImagePath": ""
+      }
+    ],
+    "decks": [
+      {
+        "name": "Drytron",
+        "count": 1
+      },
+      {
+        "name": "Blue-Eyes",
+        "count": 1
+      },
+      {
+        "name": "Naturia",
+        "count": 1
+      },
+      {
+        "name": "Branded",
+        "count": 1
+      },
+      {
+        "name": "Dinosaur",
+        "count": 1
+      },
+      {
+        "name": "Tellarknight",
+        "count": 1
+      },
+      {
+        "name": "Mitsurugi Ryzeal",
+        "count": 1
+      },
+      {
+        "name": "Clown Clan",
+        "count": 1
+      },
+      {
+        "name": "Fire King",
+        "count": 1
+      },
+      {
+        "name": "Archfiend",
+        "count": 1
+      },
+      {
+        "name": "Galaxy",
+        "count": 1
+      },
+      {
+        "name": "Crystron K9",
+        "count": 1
+      },
+      {
+        "name": "Monarch",
+        "count": 1
+      },
+      {
+        "name": "Sky Striker",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "762b674c-d36e-4683-a1c7-412e9b813f8d",
+    "title": "OCG Pod 1",
+    "host": "Mage-Ring Hobby Shop",
+    "when": "Apr 12 2026",
+    "where": "Cavite",
+    "format": "OCG",
+    "official": true,
+    "ordinalType": "Simple",
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Elmard",
+        "position": 1,
+        "deck": "Artmage",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Raymond",
+        "position": 2,
+        "deck": "Mitsurugi Ryzeal",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Ryan",
+        "position": 3,
+        "deck": "Centur-Ion",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Kim",
+        "position": 4,
+        "deck": "Fire King",
+        "deckImagePath": ""
+      }
+    ],
+    "decks": [
+      {
+        "name": "Artmage",
+        "count": 1
+      },
+      {
+        "name": "Mitsurugi Ryzeal",
+        "count": 1
+      },
+      {
+        "name": "Centur-Ion",
+        "count": 1
+      },
+      {
+        "name": "Fire King",
+        "count": 1
+      },
+      {
+        "name": "Drytron",
+        "count": 1
+      },
+      {
+        "name": "Mermail Atlantean",
+        "count": 1
+      },
+      {
+        "name": "Naturia",
+        "count": 1
+      },
+      {
+        "name": "Branded",
+        "count": 1
+      },
+      {
+        "name": "Tellarknight",
+        "count": 1
+      },
+      {
+        "name": "Dinosaur",
+        "count": 1
+      },
+      {
+        "name": "Galaxy",
+        "count": 1
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ddcd76e0-16da-4d04-8493-9a161059788e",
+    "title": "OCG Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Apr 10 2026",
+    "where": "Japan Gacha",
+    "format": "OCG",
+    "official": true,
+    "ordinalType": "Simple",
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Gary Non",
+        "position": 1,
+        "deck": "Kewl Tune",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Eyan Bastasa",
+        "position": 2,
+        "deck": "Branded",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Larry Solis",
+        "position": 3,
+        "deck": "Lunalight",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Manuel Tiong",
+        "position": 4,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Arwin Joseph Cruz",
+        "position": 5,
+        "deck": "White Forest",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 6,
+        "deck": "Yummy Dark Magician",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Frederico Miguel David",
+        "position": 7,
+        "deck": "Orcust Horus",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Ryan Christian",
+        "position": 8,
+        "deck": "Orcust Azamina Mitsurugi",
+        "deckImagePath": ""
+      }
+    ],
+    "decks": [],
+    "notes": ""
+  },
+  {
+    "id": "f88c0000-c620-4702-90f4-e5fd0435bf44",
+    "title": "AE Pod 1",
+    "host": "Kimochi Hobby Shop",
+    "when": "Apr 10 2026",
+    "where": "Japan Gacha",
+    "format": "AE",
+    "official": true,
+    "ordinalType": "Simple",
+    "rounds": 3,
+    "images": [],
+    "winners": [
+      {
+        "name": "Frederico Miguel David",
+        "position": 1,
+        "deck": "VS K9",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Ronald Allan Dela Cruz",
+        "position": 2,
+        "deck": "D/D/D",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Gary Non",
+        "position": 3,
+        "deck": "Maliss",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Rod Allan Bonavente",
+        "position": 4,
+        "deck": "Mitsurugi Yummy",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Larry Solis",
+        "position": 5,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Ron Napalan",
+        "position": 6,
+        "deck": "Metabeat",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Francis Velarde",
+        "position": 7,
+        "deck": "Sky Striker",
+        "deckImagePath": ""
+      },
+      {
+        "name": "Manuel Tiong",
+        "position": 8,
+        "deck": "Radiant Typhoon",
+        "deckImagePath": ""
       }
     ],
     "decks": [],

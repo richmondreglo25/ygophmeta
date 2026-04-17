@@ -8,6 +8,10 @@
     "imagePath": "argostarsonomat.webp"
   },
   {
+    "name": "Archfiend",
+    "imagePath": "archfiend.webp"
+  },
+  {
     "name": "Artmage",
     "imagePath": "artmage.webp"
   },
@@ -106,6 +110,10 @@
   {
     "name": "Dinomorphia",
     "imagePath": "dinomorphia.webp"
+  },
+  {
+    "name": "Dinosaur",
+    "imagePath": "dinosaur.webp"
   },
   {
     "name": "Dogmatika",
@@ -224,6 +232,14 @@
     "imagePath": "furhire.webp"
   },
   {
+    "name": "Fire King",
+    "imagePath": "fireking.webp"
+  },
+  {
+    "name": "Galaxy",
+    "imagePath": "galaxy.webp"
+  },
+  {
     "name": "Gem-Knight",
     "imagePath": "gemknight.webp"
   },
@@ -332,6 +348,10 @@
     "imagePath": "mementotlan.webp"
   },
   {
+    "name": "Metabeat",
+    "imagePath": "metabeat.webp"
+  },
+  {
     "name": "Mermail Atlantean",
     "imagePath": "mermailatlantean.webp"
   },
@@ -420,6 +440,10 @@
     "imagePath": "neospacian.webp"
   },
   {
+    "name": "Naturia",
+    "imagePath": "naturia.webp"
+  },
+  {
     "name": "Odd-Eyes Performapal",
     "imagePath": "oddeyesperformapal.webp"
   },
@@ -446,6 +470,14 @@
   {
     "name": "Orcust",
     "imagePath": "orcust.webp"
+  },
+  {
+    "name": "Orcust Azamina Mitsurugi",
+    "imagePath": "orcustazaminamitsurugi.webp"
+  },
+  {
+    "name": "Orcust Horus",
+    "imagePath": "orcusthorus.webp"
   },
   {
     "name": "P.U.N.K.",
@@ -518,6 +550,10 @@
   {
     "name": "Salamangreat",
     "imagePath": "salamangreat.webp"
+  },
+  {
+    "name": "Shaddoll",
+    "imagePath": "shaddoll.webp"
   },
   {
     "name": "Shaddoll Dracotail",
